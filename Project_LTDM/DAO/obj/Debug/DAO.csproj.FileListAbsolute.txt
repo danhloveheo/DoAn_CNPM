@@ -1,0 +1,7 @@
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.dll
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.pdb
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.dll
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.pdb
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb

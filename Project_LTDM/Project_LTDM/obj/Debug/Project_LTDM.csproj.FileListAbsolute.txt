@@ -1,0 +1,12 @@
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
