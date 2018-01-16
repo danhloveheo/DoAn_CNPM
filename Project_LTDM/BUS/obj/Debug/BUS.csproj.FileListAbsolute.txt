@@ -7,3 +7,12 @@ E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
 E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
 E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
