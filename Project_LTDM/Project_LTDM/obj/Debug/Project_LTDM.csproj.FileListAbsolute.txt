@@ -23,3 +23,16 @@ C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Pro
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache

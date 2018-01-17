@@ -855,6 +855,7 @@
             this.Name = "Frm_LuyenTap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_LuyenTap";
+            this.Load += new System.EventHandler(this.Frm_LuyenTap_Load);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

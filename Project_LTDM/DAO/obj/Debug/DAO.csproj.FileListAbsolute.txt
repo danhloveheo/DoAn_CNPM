@@ -12,3 +12,10 @@ C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.pdb
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.dll
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.dll
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb

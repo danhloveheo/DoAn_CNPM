@@ -16,3 +16,12 @@ C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.dll
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.dll
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.dll
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
+D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
