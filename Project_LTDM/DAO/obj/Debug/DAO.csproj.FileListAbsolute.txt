@@ -19,3 +19,11 @@ D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.pdb
 D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
 D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb

@@ -16,7 +16,7 @@ namespace Project_LTDM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_LuyenTap());
+            Application.Run(new Frm_Register());
         }
     }
 }
