@@ -18,86 +18,46 @@ namespace Project_LTDM
             InitializeComponent();
         }
 
-        private void txtUsername_Validating(object sender, CancelEventArgs e)
-        {
-            string errorMsg = "Username ";
-            if(!BUS_Validation.ValidTextFormat(txtUsername.Text, ref errorMsg))
-            {
-                e.Cancel = true;
-                this.errorProvider1.SetError(txtUsername, errorMsg);
-            }
-        }
+      
+      
+      
 
-        private void txtUsername_Validated(object sender, EventArgs e)
-        {
-            errorProvider1.SetError(txtUsername, "");
-        }
-
-        private void txtPassword_Validating(object sender, CancelEventArgs e)
-        {
-            string errorMsg = "Password ";
-            if (!BUS_Validation.ValidTextFormat(txtPassword.Text, ref errorMsg))
-            {
-                e.Cancel = true;
-                this.errorProvider2.SetError(txtPassword, errorMsg);
-            }
-        }
-
-        private void txtPassword_Validated(object sender, EventArgs e)
-        {
-            errorProvider2.SetError(txtPassword, "");
-        }
-
-        private void txtPasswordConfirm_Validating(object sender, CancelEventArgs e)
-        {
-            string errorMsg ="";
-            if (!BUS_Validation.ValidConfirmPassword(txtPassword.Text, txtPasswordConfirm.Text,ref errorMsg))
-            {
-                e.Cancel = true;
-                this.errorProvider3.SetError(txtPasswordConfirm, errorMsg);
-            }
-        }
-
-        private void txtPasswordConfirm_Validated(object sender, EventArgs e)
-        {
-            errorProvider3.SetError(txtPasswordConfirm, "");
-        }
-
-        private void txtEmail_Validating(object sender, CancelEventArgs e)
-        {
-            string errorMsg = "";
-            if (!BUS_Validation.ValidEmailFormat(txtEmail.Text, ref errorMsg))
-            {
-                e.Cancel = true;
-                this.errorProvider4.SetError(txtEmail, errorMsg);
-            }
-        }
-
-        private void txtEmail_Validated(object sender, EventArgs e)
-        {
-            errorProvider4.SetError(txtEmail, "");
-        }
+        
+      
 
 
-        private void btnExit_Click(object sender, EventArgs e)
+       
+      
+
+        private void Frm_Register_FormClosing(object sender, FormClosingEventArgs e)
         {
+            e.Cancel = false;
             Application.Exit();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
+        
+
+        private void lbRegister_Click(object sender, EventArgs e)
+        {
+            Frm_Login fLogin = new Frm_Login();
+            fLogin.Show();
+            this.Hide();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             string usernameErr = errorProvider1.GetError(txtUsername);
             string passwordErr = errorProvider2.GetError(txtPassword);
             string passwordConfimErr = errorProvider3.GetError(txtPasswordConfirm);
             string emaailErr = errorProvider4.GetError(txtEmail);
 
-            if (usernameErr != "" || passwordErr != "" || passwordConfimErr != "" || emaailErr !="")
+            if (usernameErr != "" || passwordErr != "" || passwordConfimErr != "" || emaailErr != "")
             {
                 MessageBox.Show("Please enter valid information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if (txtUsername.Text == "" || txtPassword.Text == "" || txtPasswordConfirm.Text == "" || txtEmail.Text =="")
+            if (txtUsername.Text == "" || txtPassword.Text == "" || txtPasswordConfirm.Text == "" || txtEmail.Text == "")
             {
                 MessageBox.Show("Please enter all mandatory fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -112,17 +72,106 @@ namespace Project_LTDM
             }
         }
 
-        private void Frm_Register_FormClosing(object sender, FormClosingEventArgs e)
+        private void txtEmail_Validated_1(object sender, EventArgs e)
         {
-            e.Cancel = false;
+            errorProvider4.SetError(txtEmail, "");
+        }
+
+        private void txtEmail_Validating_1(object sender, CancelEventArgs e)
+        {
+            string errorMsg = "";
+            if (!BUS_Validation.ValidEmailFormat(txtEmail.Text, ref errorMsg))
+            {
+                e.Cancel = true;
+                this.errorProvider4.SetError(txtEmail, errorMsg);
+            }
+        }
+
+        private void txtPasswordConfirm_Validated_1(object sender, EventArgs e)
+        {
+            errorProvider3.SetError(txtPasswordConfirm, "");
+        }
+
+        private void txtPasswordConfirm_Validating_1(object sender, CancelEventArgs e)
+        {
+            string errorMsg = "";
+            if (!BUS_Validation.ValidConfirmPassword(txtPassword.Text, txtPasswordConfirm.Text, ref errorMsg))
+            {
+                e.Cancel = true;
+                this.errorProvider3.SetError(txtPasswordConfirm, errorMsg);
+            }
+        }
+
+        private void txtPassword_Validated_1(object sender, EventArgs e)
+        {
+            errorProvider2.SetError(txtPassword, "");
+        }
+
+        private void txtPassword_Validating_1(object sender, CancelEventArgs e)
+        {
+            string errorMsg = "Password ";
+            if (!BUS_Validation.ValidTextFormat(txtPassword.Text, ref errorMsg))
+            {
+                e.Cancel = true;
+                this.errorProvider2.SetError(txtPassword, errorMsg);
+            }
+        }
+
+        private void txtUsername_Validated_1(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(txtUsername, "");
+        }
+
+        private void txtUsername_Validating_1(object sender, CancelEventArgs e)
+        {
+            string errorMsg = "Username ";
+            if (!BUS_Validation.ValidTextFormat(txtUsername.Text, ref errorMsg))
+            {
+                e.Cancel = true;
+                this.errorProvider1.SetError(txtUsername, errorMsg);
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
             Application.Exit();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-            Frm_Login fLogin = new Frm_Login();
-            fLogin.Show();
-            this.Hide();
+            WindowState = FormWindowState.Minimized;
         }
+
+        private void txtUsername_Click(object sender, EventArgs e)
+        {
+            txtUsername.Clear();
+        }
+
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            txtPassword.Clear();
+        }
+
+        private void txtPasswordConfirm_Click(object sender, EventArgs e)
+        {
+            txtPasswordConfirm.Clear();
+        }
+
+        private void txtEmail_Click(object sender, EventArgs e)
+        {
+            txtEmail.Clear();
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            txtPassword.PasswordChar = '*';
+        }
+
+        private void txtPasswordConfirm_TextChanged(object sender, EventArgs e)
+        {
+            txtPasswordConfirm.PasswordChar = '*';
+        }
+
+       
     }
 }
