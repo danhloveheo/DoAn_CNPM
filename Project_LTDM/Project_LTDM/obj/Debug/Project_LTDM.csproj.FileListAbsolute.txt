@@ -72,3 +72,20 @@ E:\BaiTap\KHTN\test giao dien\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
+E:\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache

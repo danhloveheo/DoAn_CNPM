@@ -840,6 +840,7 @@
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(810, 118);
             this.textBox1.TabIndex = 83;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Frm_LuyenTap
             // 
@@ -856,6 +857,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_LuyenTap";
             this.Load += new System.EventHandler(this.Frm_LuyenTap_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Frm_LuyenTap_KeyDown);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
