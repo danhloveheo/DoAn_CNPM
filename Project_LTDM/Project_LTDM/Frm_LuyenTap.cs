@@ -51,641 +51,1593 @@ namespace Project_LTDM
         private void Frm_LuyenTap_Load(object sender, EventArgs e)
         {
             Frm_LuyenTap p = new Frm_LuyenTap();
-            string s1 = p.RandomString(5, true);
-            textBox1.Text = s1;
+            string a = p.RandomString(1, true);
+            label.Text = a;
+
+            Frm_LuyenTap p1 = new Frm_LuyenTap();
+            string a1 = p1.RandomString(1, true);
+            label1.Text = a1;
+
+            Frm_LuyenTap p2 = new Frm_LuyenTap();
+            string a2 = p2.RandomString(1, true);
+            label2.Text = a2;
+
+            Frm_LuyenTap p3 = new Frm_LuyenTap();
+            string a3 = p3.RandomString(1, true);
+            label3.Text = a3;
+
+            Frm_LuyenTap p4 = new Frm_LuyenTap();
+            string a4 = p4.RandomString(1, true);
+            label4.Text = a4;
+
+            Frm_LuyenTap p5 = new Frm_LuyenTap();
+            string a5 = p5.RandomString(1, true);
+            label5.Text = a5;
+
+            Frm_LuyenTap p6 = new Frm_LuyenTap();
+            string a6 = p6.RandomString(1, true);
+            label6.Text = a6;
+
+            Frm_LuyenTap p7 = new Frm_LuyenTap();
+            string a7 = p7.RandomString(1, true);
+            label7.Text = a7;
+
             this.KeyPreview = true;
         }
+        private void HighLight(Button btn)
+        {
+            btn.BackColor = Color.LightSeaGreen;
+
+        }
+
+        private void Normal(Button btn)
+        {
+            btn.UseVisualStyleBackColor = true;
+        }
+
+        private void Sai(Button btn)
+        {
+            btn.BackColor = Color.Red;
+        }
+
+        private void ColorLabel_True(Label lb)
+        {
+            lb.BackColor = Color.LightSeaGreen;
+        }
+
+
+        private void ColorLabel_Default(Label lb)
+        {
+            lb.BackColor = SystemColors.Control;
+        }
+
+        int z = 0;
+        int k = 0;
 
         private void Frm_LuyenTap_KeyDown(object sender, KeyEventArgs e)
         {
-             int[] k = new int[5];
+            string[] chuoi = new string[8];
+            chuoi[0] = label.Text;
+            chuoi[1] = label1.Text;
+            chuoi[2] = label2.Text;
+            chuoi[3] = label3.Text;
+            chuoi[4] = label4.Text;
+            chuoi[5] = label5.Text;
+            chuoi[6] = label6.Text;
+            chuoi[7] = label7.Text;
 
-            for (int z = 0; z < 5; z++)
+            string stringlabel = chuoi[z];
+            switch (e.KeyCode)
             {
-                k[z] = z;
-            }
-
-
-            string keya = button50.Text;
-            string keyc = button69.Text;
-            string keyb = button71.Text;
-            string keye = button36.Text;
-            string keyq = button34.Text;
-            string keyw = button35.Text;
-            string keyr = button37.Text;
-            string keyt = button38.Text;
-            string keyy = button39.Text;
-            string keyu = button99.Text;
-            string keyi = button9.Text;
-            string keyo = button15.Text;
-            string keyp = button28.Text;
-            string keys = button51.Text;
-            string keyd = button52.Text;
-            string keyf = button53.Text;
-            string keyg = button54.Text;
-            string keyh = button55.Text;
-            string keyj = button100.Text;
-            string keyk = button10.Text;
-            string keyl = button16.Text;
-            string keyz = button67.Text;
-            string keyx = button68.Text;
-            string keyv = button70.Text;
-            string keyn = button101.Text;
-            string keym = button11.Text;
-
-            string b = textBox1.Text;
-
-            b = b.Substring(k[i], 1);
-          
-            if (e.KeyCode == Keys.M)
-            {
-                if (string.Compare(keym, b, true) != 0)
-                {
-                    button11.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button11.BackColor = Color.Green;
-
-                    if (i == 4)
+                case Keys.Q:
+                    string q = btnq.Text;
+                    if (string.Compare(q, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btnq);
+                        z++;
+
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++;
+                            return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++;
+                            return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit();
+                            return;
+                        }
+
                     }
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.N)
-            {
-                if (string.Compare(keyn, b, true) != 0)
-                {
-                    button101.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button101.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btnq);
                     }
-                    i++;
-                    return;
-                }
+                    break;
+                case Keys.W:
+                    string w = btnw.Text;
 
-            }
-            if (e.KeyCode == Keys.B)
-            {
-                if (string.Compare(keyb, b, true) != 0)
-                {
-                    button71.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button71.BackColor = Color.Green;
-
-                    if (i == 4)
+                    if (string.Compare(w, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+
+                        HighLight(btnw);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++;
+                            return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++;
+                            return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
                     }
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.V)
-            {
-                if (string.Compare(keyv, b, true) != 0)
-                {
-                    button70.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button70.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btnw);
                     }
-                    i++;
-                    return;
-                }
+                    break;
+                case Keys.E:
+                    string keye = btne.Text;
 
-            }
-            if (e.KeyCode == Keys.C)
-            {
-                if (string.Compare(keyc, b, true) != 0)
-                {
-                    button69.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button69.BackColor = Color.Green;
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.X)
-            {
-                if (string.Compare(keyx, b, true) != 0)
-                {
-                    button68.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button68.BackColor = Color.Green;
-
-                    if (i == 4)
+                    if (string.Compare(keye, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btne);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++;
+                            return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++;
+                            return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
                     }
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.Z)
-            {
-                if (string.Compare(keyz, b, true) != 0)
-                {
-                    button67.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button67.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btne);
                     }
-                    i++;
-                    return;
-                }
+                    break;
+                case Keys.R:
+                    string r = btnr.Text;
 
-            }
-            if (e.KeyCode == Keys.L)
-            {
-                if (string.Compare(keyl, b, true) != 0)
-                {
-                    button16.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button16.BackColor = Color.Green;
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.K)
-            {
-                if (string.Compare(keyk, b, true) != 0)
-                {
-                    button10.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button10.BackColor = Color.Green;
-
-                    if (i == 4)
+                    if (string.Compare(r, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btnr);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++;
+                            return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++;
+                            return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
                     }
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.J)
-            {
-                if (string.Compare(keyj, b, true) != 0)
-                {
-                    button100.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button100.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btnr);
                     }
-                    i++;
-                    return;
-                }
+                    break;
+                case Keys.T:
+                    string t = btnt.Text;
 
-            }
-            if (e.KeyCode == Keys.H)
-            {
-                if (string.Compare(keyh, b, true) != 0)
-                {
-                    button55.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button55.BackColor = Color.Green;
-
-                    if (i == 4)
+                    if (string.Compare(t, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btnt);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++;
+                            return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++;
+                            return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
                     }
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.G)
-            {
-                if (string.Compare(keyg, b, true) != 0)
-                {
-                    button54.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button54.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btnt);
                     }
-                    i++;
-                    return;
-                }
+                    break;
+                case Keys.Y:
+                    string y = btny.Text;
 
-            }
-            if (e.KeyCode == Keys.F)
-            {
-                if (string.Compare(keyf, b, true) != 0)
-                {
-                    button53.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button53.BackColor = Color.Green;
-
-                    if (i == 4)
+                    if (string.Compare(y, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btny);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++;
+                            return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++;
+                            return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
                     }
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.D)
-            {
-                if (string.Compare(keyd, b, true) != 0)
-                {
-                    button52.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button52.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btny);
                     }
-                    i++;
-                    return;
-                }
+                    break;
+                case Keys.U:
+                    string u = btnu.Text;
 
-            }
-
-            if (e.KeyCode == Keys.S)
-            {
-                if (string.Compare(keys, b, true) != 0)
-                {
-                    button51.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button51.BackColor = Color.Green;
-
-                    if (i == 4)
+                    if (string.Compare(u, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btnu);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++;
+                            return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++;
+                            return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
                     }
-                    i++;
-                    return;
-                }
-
-            }
-
-            if (e.KeyCode == Keys.A)
-            {
-                if (string.Compare(keya, b, true) != 0)
-                {
-                    button50.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button50.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btnu);
                     }
-                    i++;
-                    return;
-                }
+                    break;
+                case Keys.I:
+                    string i = btni.Text;
 
-            }
-            if (e.KeyCode == Keys.P)
-            {
-                if (string.Compare(keyp, b, true) != 0)
-                {
-                    button28.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button28.BackColor = Color.Green;
-
-                    if (i == 4)
+                    if (string.Compare(i, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btni);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++;
+                            return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++;
+                            return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
                     }
-                    i++;
-                    return;
-                }
-
-            }
-
-            if (e.KeyCode == Keys.O)
-            {
-                if (string.Compare(keyo, b, true) != 0)
-                {
-                    button15.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button15.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btni);
                     }
-                    i++;
-                    return;
-                }
 
-            }
-            if (e.KeyCode == Keys.Q)
-            {
-                if (string.Compare(keyq, b, true) != 0)
-                {
-                    button34.BackColor = Color.Red;
+                    break;
+                case Keys.O:
+                    string o = btno.Text;
 
-                    return;
-
-                }
-                else
-                {
-                    button34.BackColor = Color.Green;
-
-                    if (i == 4)
+                    if (string.Compare(o, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btno);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++;
+                            return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++;
+                            return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
                     }
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.Y)
-            {
-                if (string.Compare(keyy, b, true) != 0)
-                {
-                    button39.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button39.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btno);
                     }
-                    i++;
-                    return;
-                }
+                    break;
+                case Keys.P:
+                    string p = btnp.Text;
 
-            }
-            if (e.KeyCode == Keys.U)
-            {
-                if (string.Compare(keyu, b, true) != 0)
-                {
-                    button99.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button99.BackColor = Color.Green;
-
-                    if (i == 4)
+                    if (string.Compare(p, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btnp);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++;
+                            return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++;
+                            return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
                     }
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.I)
-            {
-                if (string.Compare(keyi, b, true) != 0)
-                {
-                    button9.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button9.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btnp);
                     }
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.T)
-            {
-                if (string.Compare(keyt, b, true) != 0)
-                {
-                    button38.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button38.BackColor = Color.Green;
-
-                    if (i == 4)
+                    break;
+                case Keys.A:
+                    string a = btna.Text;
+                    if (string.Compare(a, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btna);
+                        z++;
+
+
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
                     }
-                    i++;
-                    return;
-                }
-
-            }
-            if (e.KeyCode == Keys.R)
-            {
-                if (string.Compare(keyr, b, true) != 0)
-                {
-                    button37.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button37.BackColor = Color.Green;
-
-                    if (i == 4)
+                    else
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        Sai(btna);
                     }
-                    i++;
-                    return;
-                }
+                    break;
+                case Keys.S:
 
-            }
-            if (e.KeyCode == Keys.W)
-            {
-                if (string.Compare(keyw, b, true) != 0)
-                {
-                    button35.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                {
-                    button35.BackColor = Color.Green;
-
-                    if (i == 4)
+                    string s = btns.Text;
+                    if (string.Compare(s, stringlabel, true) == 0)
                     {
-                        MessageBox.Show("Hoan thanh");
-                        Application.Exit();
-                        return;
+                        HighLight(btns);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
                     }
-                    i++;
-                    return;
-                }
+                    else
+                    {
+                        Sai(btns);
+                    }
+                    break;
+                case Keys.D:
+                    string d = btnd.Text;
+                    if (string.Compare(d, stringlabel, true) == 0)
+                    {
+                        HighLight(btnd);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnd);
+                    }
+                    break;
+                case Keys.F:
+
+                    string f = btnf.Text;
+                    if (string.Compare(f, stringlabel, true) == 0)
+                    {
+                        HighLight(btnf);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnf);
+                    }
+                    break;
+                case Keys.G:
+
+                    string g = btng.Text;
+                    if (string.Compare(g, stringlabel, true) == 0)
+                    {
+                        HighLight(btng);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btng);
+                    }
+                    break;
+                case Keys.H:
+                    string h = btnh.Text;
+                    if (string.Compare(h, stringlabel, true) == 0)
+                    {
+                        HighLight(btnh);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnh);
+                    }
+                    break;
+                case Keys.J:
+                    string j = btnj.Text;
+                    if (string.Compare(j, stringlabel, true) == 0)
+                    {
+                        HighLight(btnj);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnj);
+                    }
+                    break;
+                case Keys.K:
+                    string keyk = btnk.Text;
+                    if (string.Compare(keyk, stringlabel, true) == 0)
+                    {
+                        HighLight(btnk);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnk);
+                    }
+                    break;
+                case Keys.L:
+                    string l = btnl.Text;
+                    if (string.Compare(l, stringlabel, true) == 0)
+                    {
+                        HighLight(btnl);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnl);
+                    }
+                    break;
+                case Keys.Z:
+                    string keyz = btnz.Text;
+                    if (string.Compare(keyz, stringlabel, true) == 0)
+                    {
+                        HighLight(btnz);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnz);
+                    }
+                    break;
+                case Keys.X:
+                    string x = btnx.Text;
+                    if (string.Compare(x, stringlabel, true) == 0)
+                    {
+                        HighLight(btnx);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnx);
+                    }
+                    break;
+                case Keys.C:
+                    string c = btnc.Text;
+                    if (string.Compare(c, stringlabel, true) == 0)
+                    {
+                        HighLight(btnc);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnc);
+                    }
+                    break;
+                case Keys.V:
+                    string v = btnv.Text;
+                    if (string.Compare(v, stringlabel, true) == 0)
+                    {
+                        HighLight(btnv);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnv);
+                    }
+                    break;
+                case Keys.B:
+                    string b = btnb.Text;
+                    if (string.Compare(b, stringlabel, true) == 0)
+                    {
+                        HighLight(btnb);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnb);
+                    }
+                    break;
+                case Keys.N:
+                    string n = btnn.Text;
+                    if (string.Compare(n, stringlabel, true) == 0)
+                    {
+                        HighLight(btnn);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnn);
+                    }
+                    break;
+                case Keys.M:
+                    string m = btnm.Text;
+                    if (string.Compare(m, stringlabel, true) == 0)
+                    {
+                        HighLight(btnf);
+                        z++;
+                        if (k == 0)
+                        {
+                            ColorLabel_True(label);
+                            k++; return;
+                        }
+                        if (k == 1)
+                        {
+                            ColorLabel_True(label1);
+                            k++; return;
+                        }
+                        if (k == 2)
+                        {
+                            ColorLabel_True(label2);
+                            k++; return;
+                        }
+                        if (k == 3)
+                        {
+                            ColorLabel_True(label3);
+                            k++; return;
+                        }
+                        if (k == 4)
+                        {
+                            ColorLabel_True(label4);
+                            k++; return;
+                        }
+                        if (k == 5)
+                        {
+                            ColorLabel_True(label5);
+                            k++; return;
+                        }
+                        if (k == 6)
+                        {
+                            ColorLabel_True(label6);
+                            k++; return;
+                        }
+                        if (k == 7)
+                        {
+                            ColorLabel_True(label7);
+                            k++;
+                            MessageBox.Show("Hoan Thanh");
+                            Application.Exit(); return;
+                        }
+
+                    }
+                    else
+                    {
+                        Sai(btnm);
+                    }
+                    break;
+
+
+
+
 
             }
-
-            if (e.KeyCode == Keys.E)
-            {
-
-                if (string.Compare(keye, b, true) != 0)
-                {
-                    button36.BackColor = Color.Red;
-                    return;
-
-                }
-                else
-                    button36.BackColor = Color.Green;
-
-                if (i == 4)
-                {
-                    MessageBox.Show("Hoan thanh");
-                    Application.Exit();
-                    return;
-                }
-                i++;
-                return;
-            }
-            
         }
+
+        private void Frm_LuyenTap_KeyUp(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+
+                case Keys.Q: Normal(btnq); break;
+                case Keys.W: Normal(btnw); break;
+                case Keys.E: Normal(btne); break;
+                case Keys.R: Normal(btnr); break;
+                case Keys.T: Normal(btnt); break;
+                case Keys.Y: Normal(btny); break;
+                case Keys.U: Normal(btnu); break;
+                case Keys.I: Normal(btni); break;
+                case Keys.O: Normal(btno); break;
+                case Keys.P: Normal(btnp); break;
+                case Keys.A: Normal(btna);
+
+
+                    break;
+
+
+
+                case Keys.S: Normal(btns); break;
+
+                case Keys.D: Normal(btnd); break;
+                case Keys.F: Normal(btnf); break;
+                case Keys.G: Normal(btng); break;
+                case Keys.H: Normal(btnh); break;
+                case Keys.J: Normal(btnj); break;
+                case Keys.K: Normal(btnk); break;
+                case Keys.L: Normal(btnl); break;
+                case Keys.Z: Normal(btnz); break;
+                case Keys.X: Normal(btnx); break;
+                case Keys.C: Normal(btnc); break;
+                case Keys.V: Normal(btnv); break;
+                case Keys.B: Normal(btnb); break;
+                case Keys.N: Normal(btnn); break;
+                case Keys.M: Normal(btnm); break;
+                case Keys.Space: Normal(btnspace); break;
+            }
         }
+
+
     }
-
+}
