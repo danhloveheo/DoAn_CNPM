@@ -106,3 +106,20 @@ E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bi
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache

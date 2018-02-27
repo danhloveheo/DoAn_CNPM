@@ -20,26 +20,15 @@ namespace Project_LTDM
         {
             StringBuilder sb = new StringBuilder();
             char c;
-            int numb, numb1, numb2, numb3, numb4;
+
 
             Random rand = new Random();
 
             int i = 0;
             for (; i < size; i++)
             {
-                c = Convert.ToChar(Convert.ToInt32(rand.Next(65, 87)));
-                numb = rand.Next(0, 9);
-                numb1 = rand.Next(0, 9);
-                numb2 = rand.Next(0, 9);
-                numb3 = rand.Next(0, 9);
-                numb4 = rand.Next(0, 9);
-                if ((i == numb) || (i == numb1) || (i == numb2) || (i == numb3) || (i == numb4))
-                {
-                    string e = c.ToString();
-                    sb.Append(e);
-                }
-                else
-                    sb.Append(c);
+                c = Convert.ToChar(Convert.ToInt32(rand.Next(97, 122)));
+                sb.Append(c);
 
             }
             if (lowerCase)
@@ -83,19 +72,30 @@ namespace Project_LTDM
             label7.Text = a7;
 
             this.KeyPreview = true;
+            Separator_True(Separator);
         }
-        private void HighLight(Button btn)
+        private void Separator_True(Bunifu.Framework.UI.BunifuSeparator sp)
+        {
+            sp.LineColor = Color.LightSeaGreen;
+
+        }
+        private void Separator_Default(Bunifu.Framework.UI.BunifuSeparator sp)
+        {
+            sp.LineColor = Color.LightGray;
+
+        }
+        private void Button_True(Button btn)
         {
             btn.BackColor = Color.LightSeaGreen;
 
         }
 
-        private void Normal(Button btn)
+        private void Button_Default(Button btn)
         {
             btn.UseVisualStyleBackColor = true;
         }
 
-        private void Sai(Button btn)
+        private void Button_False(Button btn)
         {
             btn.BackColor = Color.Red;
         }
@@ -112,7 +112,6 @@ namespace Project_LTDM
         }
 
         int z = 0;
-        int k = 0;
 
         private void Frm_LuyenTap_KeyDown(object sender, KeyEventArgs e)
         {
@@ -133,50 +132,67 @@ namespace Project_LTDM
                     string q = btnq.Text;
                     if (string.Compare(q, stringlabel, true) == 0)
                     {
-                        HighLight(btnq);
-                        z++;
+                        Button_True(btnq);
 
-                        if (k == 0)
+
+                        if (z == 0)
                         {
+
+                            Separator_Default(Separator);
+
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
+
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit();
                             return;
@@ -185,7 +201,7 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnq);
+                        Button_False(btnq);
                     }
                     break;
                 case Keys.W:
@@ -194,56 +210,70 @@ namespace Project_LTDM
                     if (string.Compare(w, stringlabel, true) == 0)
                     {
 
-                        HighLight(btnw);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnw);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
                     }
                     else
                     {
-                        Sai(btnw);
+                        Button_False(btnw);
                     }
                     break;
                 case Keys.E:
@@ -251,56 +281,71 @@ namespace Project_LTDM
 
                     if (string.Compare(keye, stringlabel, true) == 0)
                     {
-                        HighLight(btne);
-                        z++;
-                        if (k == 0)
+                        Button_True(btne);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
+
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
                     }
                     else
                     {
-                        Sai(btne);
+                        Button_False(btne);
                     }
                     break;
                 case Keys.R:
@@ -308,56 +353,70 @@ namespace Project_LTDM
 
                     if (string.Compare(r, stringlabel, true) == 0)
                     {
-                        HighLight(btnr);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnr);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
                     }
                     else
                     {
-                        Sai(btnr);
+                        Button_False(btnr);
                     }
                     break;
                 case Keys.T:
@@ -365,56 +424,70 @@ namespace Project_LTDM
 
                     if (string.Compare(t, stringlabel, true) == 0)
                     {
-                        HighLight(btnt);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnt);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
                     }
                     else
                     {
-                        Sai(btnt);
+                        Button_False(btnt);
                     }
                     break;
                 case Keys.Y:
@@ -422,56 +495,70 @@ namespace Project_LTDM
 
                     if (string.Compare(y, stringlabel, true) == 0)
                     {
-                        HighLight(btny);
-                        z++;
-                        if (k == 0)
+                        Button_True(btny);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
                     }
                     else
                     {
-                        Sai(btny);
+                        Button_False(btny);
                     }
                     break;
                 case Keys.U:
@@ -479,56 +566,70 @@ namespace Project_LTDM
 
                     if (string.Compare(u, stringlabel, true) == 0)
                     {
-                        HighLight(btnu);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnu);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
                     }
                     else
                     {
-                        Sai(btnu);
+                        Button_False(btnu);
                     }
                     break;
                 case Keys.I:
@@ -536,56 +637,70 @@ namespace Project_LTDM
 
                     if (string.Compare(i, stringlabel, true) == 0)
                     {
-                        HighLight(btni);
-                        z++;
-                        if (k == 0)
+                        Button_True(btni);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
                     }
                     else
                     {
-                        Sai(btni);
+                        Button_False(btni);
                     }
 
                     break;
@@ -594,56 +709,70 @@ namespace Project_LTDM
 
                     if (string.Compare(o, stringlabel, true) == 0)
                     {
-                        HighLight(btno);
-                        z++;
-                        if (k == 0)
+                        Button_True(btno);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
                     }
                     else
                     {
-                        Sai(btno);
+                        Button_False(btno);
                     }
                     break;
                 case Keys.P:
@@ -651,105 +780,133 @@ namespace Project_LTDM
 
                     if (string.Compare(p, stringlabel, true) == 0)
                     {
-                        HighLight(btnp);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnp);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++;
+                            z++;
                             return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
                     }
                     else
                     {
-                        Sai(btnp);
+                        Button_False(btnp);
                     }
                     break;
                 case Keys.A:
                     string a = btna.Text;
                     if (string.Compare(a, stringlabel, true) == 0)
                     {
-                        HighLight(btna);
-                        z++;
+                        Button_True(btna);
 
 
-                        if (k == 0)
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -757,7 +914,7 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btna);
+                        Button_False(btna);
                     }
                     break;
                 case Keys.S:
@@ -765,47 +922,61 @@ namespace Project_LTDM
                     string s = btns.Text;
                     if (string.Compare(s, stringlabel, true) == 0)
                     {
-                        HighLight(btns);
-                        z++;
-                        if (k == 0)
+                        Button_True(btns);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -813,54 +984,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btns);
+                        Button_False(btns);
                     }
                     break;
                 case Keys.D:
                     string d = btnd.Text;
                     if (string.Compare(d, stringlabel, true) == 0)
                     {
-                        HighLight(btnd);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnd);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -868,7 +1053,7 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnd);
+                        Button_False(btnd);
                     }
                     break;
                 case Keys.F:
@@ -876,47 +1061,61 @@ namespace Project_LTDM
                     string f = btnf.Text;
                     if (string.Compare(f, stringlabel, true) == 0)
                     {
-                        HighLight(btnf);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnf);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -924,7 +1123,7 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnf);
+                        Button_False(btnf);
                     }
                     break;
                 case Keys.G:
@@ -932,47 +1131,62 @@ namespace Project_LTDM
                     string g = btng.Text;
                     if (string.Compare(g, stringlabel, true) == 0)
                     {
-                        HighLight(btng);
-                        z++;
-                        if (k == 0)
+                        Button_True(btng);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
+
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -980,54 +1194,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btng);
+                        Button_False(btng);
                     }
                     break;
                 case Keys.H:
                     string h = btnh.Text;
                     if (string.Compare(h, stringlabel, true) == 0)
                     {
-                        HighLight(btnh);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnh);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1035,54 +1263,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnh);
+                        Button_False(btnh);
                     }
                     break;
                 case Keys.J:
                     string j = btnj.Text;
                     if (string.Compare(j, stringlabel, true) == 0)
                     {
-                        HighLight(btnj);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnj);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1090,54 +1332,73 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnj);
+                        Button_False(btnj);
                     }
                     break;
                 case Keys.K:
                     string keyk = btnk.Text;
                     if (string.Compare(keyk, stringlabel, true) == 0)
                     {
-                        HighLight(btnk);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnk);
+
+                        if (z == 0)
                         {
+
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
+
+
+                           
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1145,54 +1406,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnk);
+                        Button_False(btnk);
                     }
                     break;
                 case Keys.L:
                     string l = btnl.Text;
                     if (string.Compare(l, stringlabel, true) == 0)
                     {
-                        HighLight(btnl);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnl);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1200,54 +1475,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnl);
+                        Button_False(btnl);
                     }
                     break;
                 case Keys.Z:
                     string keyz = btnz.Text;
                     if (string.Compare(keyz, stringlabel, true) == 0)
                     {
-                        HighLight(btnz);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnz);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1255,54 +1544,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnz);
+                        Button_False(btnz);
                     }
                     break;
                 case Keys.X:
                     string x = btnx.Text;
                     if (string.Compare(x, stringlabel, true) == 0)
                     {
-                        HighLight(btnx);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnx);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1310,54 +1613,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnx);
+                        Button_False(btnx);
                     }
                     break;
                 case Keys.C:
                     string c = btnc.Text;
                     if (string.Compare(c, stringlabel, true) == 0)
                     {
-                        HighLight(btnc);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnc);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1365,54 +1682,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnc);
+                        Button_False(btnc);
                     }
                     break;
                 case Keys.V:
                     string v = btnv.Text;
                     if (string.Compare(v, stringlabel, true) == 0)
                     {
-                        HighLight(btnv);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnv);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1420,54 +1751,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnv);
+                        Button_False(btnv);
                     }
                     break;
                 case Keys.B:
                     string b = btnb.Text;
                     if (string.Compare(b, stringlabel, true) == 0)
                     {
-                        HighLight(btnb);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnb);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1475,54 +1820,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnb);
+                        Button_False(btnb);
                     }
                     break;
                 case Keys.N:
                     string n = btnn.Text;
                     if (string.Compare(n, stringlabel, true) == 0)
                     {
-                        HighLight(btnn);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnn);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1530,54 +1889,68 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnn);
+                        Button_False(btnn);
                     }
                     break;
                 case Keys.M:
                     string m = btnm.Text;
                     if (string.Compare(m, stringlabel, true) == 0)
                     {
-                        HighLight(btnf);
-                        z++;
-                        if (k == 0)
+                        Button_True(btnf);
+
+                        if (z == 0)
                         {
+                            Separator_Default(Separator);
+                            Separator_True(Separator1);
                             ColorLabel_True(label);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 1)
+                        if (z == 1)
                         {
+                            Separator_Default(Separator1);
+                            Separator_True(Separator2);
                             ColorLabel_True(label1);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 2)
+                        if (z == 2)
                         {
+                            Separator_Default(Separator2);
+                            Separator_True(Separator3);
                             ColorLabel_True(label2);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 3)
+                        if (z == 3)
                         {
+                            Separator_Default(Separator3);
+                            Separator_True(Separator4);
                             ColorLabel_True(label3);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 4)
+                        if (z == 4)
                         {
+                            Separator_Default(Separator4);
+                            Separator_True(Separator5);
                             ColorLabel_True(label4);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 5)
+                        if (z == 5)
                         {
+                            Separator_Default(Separator5);
+                            Separator_True(Separator6);
                             ColorLabel_True(label5);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 6)
+                        if (z == 6)
                         {
+                            Separator_Default(Separator6);
+                            Separator_True(Separator7);
                             ColorLabel_True(label6);
-                            k++; return;
+                            z++; return;
                         }
-                        if (k == 7)
+                        if (z == 7)
                         {
                             ColorLabel_True(label7);
-                            k++;
+                            z++;
                             MessageBox.Show("Hoan Thanh");
                             Application.Exit(); return;
                         }
@@ -1585,7 +1958,7 @@ namespace Project_LTDM
                     }
                     else
                     {
-                        Sai(btnm);
+                        Button_False(btnm);
                     }
                     break;
 
@@ -1601,40 +1974,40 @@ namespace Project_LTDM
             switch (e.KeyCode)
             {
 
-                case Keys.Q: Normal(btnq); break;
-                case Keys.W: Normal(btnw); break;
-                case Keys.E: Normal(btne); break;
-                case Keys.R: Normal(btnr); break;
-                case Keys.T: Normal(btnt); break;
-                case Keys.Y: Normal(btny); break;
-                case Keys.U: Normal(btnu); break;
-                case Keys.I: Normal(btni); break;
-                case Keys.O: Normal(btno); break;
-                case Keys.P: Normal(btnp); break;
-                case Keys.A: Normal(btna);
+                case Keys.Q: Button_Default(btnq); break;
+                case Keys.W: Button_Default(btnw); break;
+                case Keys.E: Button_Default(btne); break;
+                case Keys.R: Button_Default(btnr); break;
+                case Keys.T: Button_Default(btnt); break;
+                case Keys.Y: Button_Default(btny); break;
+                case Keys.U: Button_Default(btnu); break;
+                case Keys.I: Button_Default(btni); break;
+                case Keys.O: Button_Default(btno); break;
+                case Keys.P: Button_Default(btnp); break;
+                case Keys.A: Button_Default(btna);
 
 
                     break;
 
 
 
-                case Keys.S: Normal(btns); break;
+                case Keys.S: Button_Default(btns); break;
 
-                case Keys.D: Normal(btnd); break;
-                case Keys.F: Normal(btnf); break;
-                case Keys.G: Normal(btng); break;
-                case Keys.H: Normal(btnh); break;
-                case Keys.J: Normal(btnj); break;
-                case Keys.K: Normal(btnk); break;
-                case Keys.L: Normal(btnl); break;
-                case Keys.Z: Normal(btnz); break;
-                case Keys.X: Normal(btnx); break;
-                case Keys.C: Normal(btnc); break;
-                case Keys.V: Normal(btnv); break;
-                case Keys.B: Normal(btnb); break;
-                case Keys.N: Normal(btnn); break;
-                case Keys.M: Normal(btnm); break;
-                case Keys.Space: Normal(btnspace); break;
+                case Keys.D: Button_Default(btnd); break;
+                case Keys.F: Button_Default(btnf); break;
+                case Keys.G: Button_Default(btng); break;
+                case Keys.H: Button_Default(btnh); break;
+                case Keys.J: Button_Default(btnj); break;
+                case Keys.K: Button_Default(btnk); break;
+                case Keys.L: Button_Default(btnl); break;
+                case Keys.Z: Button_Default(btnz); break;
+                case Keys.X: Button_Default(btnx); break;
+                case Keys.C: Button_Default(btnc); break;
+                case Keys.V: Button_Default(btnv); break;
+                case Keys.B: Button_Default(btnb); break;
+                case Keys.N: Button_Default(btnn); break;
+                case Keys.M: Button_Default(btnm); break;
+                case Keys.Space: Button_Default(btnspace); break;
             }
         }
 

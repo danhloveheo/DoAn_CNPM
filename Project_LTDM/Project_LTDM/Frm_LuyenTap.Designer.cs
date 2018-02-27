@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_LuyenTap));
-            this.button4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labeltyping = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -96,14 +97,21 @@
             this.button46 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Separator7 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Separator6 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Separator5 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Separator4 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Separator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Separator = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Separator2 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Separator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -113,15 +121,17 @@
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button4
+            // label1
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(98, 6);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(39, 36);
-            this.button4.TabIndex = 78;
-            this.button4.Text = "2";
-            this.button4.UseVisualStyleBackColor = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(174, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 75);
+            this.label1.TabIndex = 83;
+            this.label1.Text = "o";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -222,6 +232,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(688, 216);
             this.panel2.TabIndex = 89;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(98, 6);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(39, 36);
+            this.button4.TabIndex = 78;
+            this.button4.Text = "2";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -839,93 +859,17 @@
             this.pictureBox2.TabIndex = 87;
             this.pictureBox2.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(129, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 75);
-            this.label1.TabIndex = 83;
-            this.label1.Text = "o";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.Control;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(689, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 75);
-            this.label7.TabIndex = 83;
-            this.label7.Text = "s";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(601, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 75);
-            this.label6.TabIndex = 83;
-            this.label6.Text = "s";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(507, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 75);
-            this.label5.TabIndex = 83;
-            this.label5.Text = "s";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(408, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 75);
-            this.label4.TabIndex = 83;
-            this.label4.Text = "s";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(309, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 75);
-            this.label3.TabIndex = 83;
-            this.label3.Text = "q";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(227, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 75);
-            this.label2.TabIndex = 83;
-            this.label2.Text = "t";
-            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.Separator7);
+            this.panel4.Controls.Add(this.Separator6);
+            this.panel4.Controls.Add(this.Separator5);
+            this.panel4.Controls.Add(this.Separator4);
+            this.panel4.Controls.Add(this.Separator3);
+            this.panel4.Controls.Add(this.Separator);
+            this.panel4.Controls.Add(this.Separator2);
+            this.panel4.Controls.Add(this.Separator1);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label5);
@@ -934,18 +878,193 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.label);
-            this.panel4.Location = new System.Drawing.Point(119, 150);
+            this.panel4.Location = new System.Drawing.Point(21, 150);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(778, 111);
+            this.panel4.Size = new System.Drawing.Size(964, 148);
             this.panel4.TabIndex = 90;
+            // 
+            // Separator7
+            // 
+            this.Separator7.BackColor = System.Drawing.Color.Transparent;
+            this.Separator7.ForeColor = System.Drawing.Color.Tomato;
+            this.Separator7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.Separator7.LineThickness = 5;
+            this.Separator7.Location = new System.Drawing.Point(835, 112);
+            this.Separator7.Name = "Separator7";
+            this.Separator7.Size = new System.Drawing.Size(94, 10);
+            this.Separator7.TabIndex = 86;
+            this.Separator7.Transparency = 255;
+            this.Separator7.Vertical = false;
+            // 
+            // Separator6
+            // 
+            this.Separator6.BackColor = System.Drawing.Color.Transparent;
+            this.Separator6.ForeColor = System.Drawing.Color.Tomato;
+            this.Separator6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.Separator6.LineThickness = 5;
+            this.Separator6.Location = new System.Drawing.Point(722, 112);
+            this.Separator6.Name = "Separator6";
+            this.Separator6.Size = new System.Drawing.Size(94, 10);
+            this.Separator6.TabIndex = 86;
+            this.Separator6.Transparency = 255;
+            this.Separator6.Vertical = false;
+            // 
+            // Separator5
+            // 
+            this.Separator5.BackColor = System.Drawing.Color.Transparent;
+            this.Separator5.ForeColor = System.Drawing.Color.Tomato;
+            this.Separator5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.Separator5.LineThickness = 5;
+            this.Separator5.Location = new System.Drawing.Point(609, 112);
+            this.Separator5.Name = "Separator5";
+            this.Separator5.Size = new System.Drawing.Size(94, 10);
+            this.Separator5.TabIndex = 86;
+            this.Separator5.Transparency = 255;
+            this.Separator5.Vertical = false;
+            // 
+            // Separator4
+            // 
+            this.Separator4.BackColor = System.Drawing.Color.Transparent;
+            this.Separator4.ForeColor = System.Drawing.Color.Tomato;
+            this.Separator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.Separator4.LineThickness = 5;
+            this.Separator4.Location = new System.Drawing.Point(493, 112);
+            this.Separator4.Name = "Separator4";
+            this.Separator4.Size = new System.Drawing.Size(94, 10);
+            this.Separator4.TabIndex = 86;
+            this.Separator4.Transparency = 255;
+            this.Separator4.Vertical = false;
+            // 
+            // Separator3
+            // 
+            this.Separator3.BackColor = System.Drawing.Color.Transparent;
+            this.Separator3.ForeColor = System.Drawing.Color.Tomato;
+            this.Separator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.Separator3.LineThickness = 5;
+            this.Separator3.Location = new System.Drawing.Point(384, 112);
+            this.Separator3.Name = "Separator3";
+            this.Separator3.Size = new System.Drawing.Size(94, 10);
+            this.Separator3.TabIndex = 86;
+            this.Separator3.Transparency = 255;
+            this.Separator3.Vertical = false;
+            // 
+            // Separator
+            // 
+            this.Separator.BackColor = System.Drawing.Color.Transparent;
+            this.Separator.ForeColor = System.Drawing.Color.Tomato;
+            this.Separator.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.Separator.LineThickness = 5;
+            this.Separator.Location = new System.Drawing.Point(51, 112);
+            this.Separator.Name = "Separator";
+            this.Separator.Size = new System.Drawing.Size(94, 10);
+            this.Separator.TabIndex = 86;
+            this.Separator.Transparency = 255;
+            this.Separator.Vertical = false;
+            // 
+            // Separator2
+            // 
+            this.Separator2.BackColor = System.Drawing.Color.Transparent;
+            this.Separator2.ForeColor = System.Drawing.Color.Tomato;
+            this.Separator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.Separator2.LineThickness = 5;
+            this.Separator2.Location = new System.Drawing.Point(272, 112);
+            this.Separator2.Name = "Separator2";
+            this.Separator2.Size = new System.Drawing.Size(94, 10);
+            this.Separator2.TabIndex = 86;
+            this.Separator2.Transparency = 255;
+            this.Separator2.Vertical = false;
+            // 
+            // Separator1
+            // 
+            this.Separator1.BackColor = System.Drawing.Color.Transparent;
+            this.Separator1.ForeColor = System.Drawing.Color.Tomato;
+            this.Separator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.Separator1.LineThickness = 5;
+            this.Separator1.Location = new System.Drawing.Point(164, 112);
+            this.Separator1.Name = "Separator1";
+            this.Separator1.Size = new System.Drawing.Size(94, 10);
+            this.Separator1.TabIndex = 86;
+            this.Separator1.Transparency = 255;
+            this.Separator1.Vertical = false;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.SystemColors.Control;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(845, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 75);
+            this.label7.TabIndex = 83;
+            this.label7.Text = "s";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.SystemColors.Control;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(732, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 75);
+            this.label6.TabIndex = 83;
+            this.label6.Text = "s";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.SystemColors.Control;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(619, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 75);
+            this.label5.TabIndex = 83;
+            this.label5.Text = "s";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(503, 19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 75);
+            this.label4.TabIndex = 83;
+            this.label4.Text = "s";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(394, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 75);
+            this.label3.TabIndex = 83;
+            this.label3.Text = "q";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(283, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 75);
+            this.label2.TabIndex = 83;
+            this.label2.Text = "t";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label
             // 
-            this.label.AutoSize = true;
             this.label.BackColor = System.Drawing.SystemColors.Control;
             this.label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(29, 19);
+            this.label.Location = new System.Drawing.Point(61, 19);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(71, 75);
             this.label.TabIndex = 83;
@@ -976,18 +1095,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labeltyping;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -1050,15 +1169,23 @@
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
+        private Bunifu.Framework.UI.BunifuSeparator Separator7;
+        private Bunifu.Framework.UI.BunifuSeparator Separator6;
+        private Bunifu.Framework.UI.BunifuSeparator Separator5;
+        private Bunifu.Framework.UI.BunifuSeparator Separator4;
+        private Bunifu.Framework.UI.BunifuSeparator Separator3;
+        private Bunifu.Framework.UI.BunifuSeparator Separator;
+        private Bunifu.Framework.UI.BunifuSeparator Separator2;
+        private Bunifu.Framework.UI.BunifuSeparator Separator1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label;
+
 
     }
 }

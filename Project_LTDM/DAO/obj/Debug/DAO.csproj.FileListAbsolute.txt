@@ -48,3 +48,10 @@ E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\D
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb
