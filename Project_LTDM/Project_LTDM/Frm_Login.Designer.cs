@@ -36,15 +36,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbRegister = new System.Windows.Forms.Label();
-            this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnIn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -120,44 +120,6 @@
             this.lbRegister.Text = "Sign Up";
             this.lbRegister.Click += new System.EventHandler(this.lbRegister_Click);
             // 
-            // btnLogin
-            // 
-            this.btnLogin.ActiveBorderThickness = 1;
-            this.btnLogin.ActiveCornerRadius = 20;
-            this.btnLogin.ActiveFillColor = System.Drawing.Color.White;
-            this.btnLogin.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.btnLogin.ActiveLineColor = System.Drawing.Color.White;
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
-            this.btnLogin.ButtonText = "Login";
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.IdleBorderThickness = 1;
-            this.btnLogin.IdleCornerRadius = 20;
-            this.btnLogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.btnLogin.IdleForecolor = System.Drawing.Color.White;
-            this.btnLogin.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.btnLogin.Location = new System.Drawing.Point(50, 356);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(255, 41);
-            this.btnLogin.TabIndex = 12;
-            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
-            // 
-            // bunifuSeparator4
-            // 
-            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuSeparator4.LineThickness = 2;
-            this.bunifuSeparator4.Location = new System.Drawing.Point(64, 318);
-            this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Size = new System.Drawing.Size(210, 3);
-            this.bunifuSeparator4.TabIndex = 22;
-            this.bunifuSeparator4.Transparency = 100;
-            this.bunifuSeparator4.Vertical = false;
-            // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -174,18 +136,6 @@
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             this.txtPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtPassword_Validating_1);
             this.txtPassword.Validated += new System.EventHandler(this.txtPassword_Validated_1);
-            // 
-            // bunifuSeparator3
-            // 
-            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuSeparator3.LineThickness = 2;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(64, 264);
-            this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(210, 3);
-            this.bunifuSeparator3.TabIndex = 20;
-            this.bunifuSeparator3.Transparency = 100;
-            this.bunifuSeparator3.Vertical = false;
             // 
             // txtUsername
             // 
@@ -219,6 +169,35 @@
             // 
             this.errorProvider4.ContainerControl = this;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel3.Location = new System.Drawing.Point(54, 327);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(210, 3);
+            this.panel3.TabIndex = 89;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel2.Location = new System.Drawing.Point(54, 273);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(210, 3);
+            this.panel2.TabIndex = 88;
+            // 
+            // btnIn
+            // 
+            this.btnIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.btnIn.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btnIn.ForeColor = System.Drawing.Color.White;
+            this.btnIn.Location = new System.Drawing.Point(45, 357);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(249, 37);
+            this.btnIn.TabIndex = 87;
+            this.btnIn.Text = "Login";
+            this.btnIn.UseVisualStyleBackColor = false;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,14 +205,14 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(339, 454);
-            this.Controls.Add(this.bunifuSeparator4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnIn);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.bunifuSeparator3);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbRegister);
-            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -261,15 +240,18 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbRegister;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnLogin;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator4;
+      
+      
         private System.Windows.Forms.TextBox txtPassword;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
+       
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
         private System.Windows.Forms.ErrorProvider errorProvider4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnIn;
 
     }
 }

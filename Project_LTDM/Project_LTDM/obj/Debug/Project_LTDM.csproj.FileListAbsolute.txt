@@ -123,3 +123,7 @@ C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\o
 C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb

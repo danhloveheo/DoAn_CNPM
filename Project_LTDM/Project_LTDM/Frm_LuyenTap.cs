@@ -37,51 +37,44 @@ namespace Project_LTDM
 
         }
         int i = 0;
+        string[] mang = new string[8];
         private void Frm_LuyenTap_Load(object sender, EventArgs e)
         {
-            Frm_LuyenTap p = new Frm_LuyenTap();
-            string a = p.RandomString(1, true);
-            label.Text = a;
 
-            Frm_LuyenTap p1 = new Frm_LuyenTap();
-            string a1 = p1.RandomString(1, true);
-            label1.Text = a1;
+            for (int i = 0; i < 8; i++)
+            {
+                mang[i] = RandomString(1, true);
+                for (int j = 0; j < 3; j++)
+                {
 
-            Frm_LuyenTap p2 = new Frm_LuyenTap();
-            string a2 = p2.RandomString(1, true);
-            label2.Text = a2;
+                    Frm_LuyenTap p = new Frm_LuyenTap();
 
-            Frm_LuyenTap p3 = new Frm_LuyenTap();
-            string a3 = p3.RandomString(1, true);
-            label3.Text = a3;
 
-            Frm_LuyenTap p4 = new Frm_LuyenTap();
-            string a4 = p4.RandomString(1, true);
-            label4.Text = a4;
+                }
 
-            Frm_LuyenTap p5 = new Frm_LuyenTap();
-            string a5 = p5.RandomString(1, true);
-            label5.Text = a5;
+            }
 
-            Frm_LuyenTap p6 = new Frm_LuyenTap();
-            string a6 = p6.RandomString(1, true);
-            label6.Text = a6;
-
-            Frm_LuyenTap p7 = new Frm_LuyenTap();
-            string a7 = p7.RandomString(1, true);
-            label7.Text = a7;
+            label.Text = mang[0];
+            label1.Text = mang[1];
+            label2.Text = mang[2];
+            label3.Text = mang[3];
+            label4.Text = mang[4];
+            label5.Text = mang[5];
+            label6.Text = mang[6];
+            label7.Text = mang[7];
 
             this.KeyPreview = true;
             Separator_True(Separator);
+            Separator.BackColor = Color.LightSeaGreen;
         }
-        private void Separator_True(Bunifu.Framework.UI.BunifuSeparator sp)
+        private void Separator_True(Panel sp)
         {
-            sp.LineColor = Color.LightSeaGreen;
+            sp.BackColor = Color.LightSeaGreen;
 
         }
-        private void Separator_Default(Bunifu.Framework.UI.BunifuSeparator sp)
+        private void Separator_Default(Panel sp)
         {
-            sp.LineColor = Color.LightGray;
+            sp.BackColor = Color.LightGray;
 
         }
         private void Button_True(Button btn)
@@ -97,19 +90,23 @@ namespace Project_LTDM
 
         private void Button_False(Button btn)
         {
-            btn.BackColor = Color.Red;
+            btn.BackColor = Color.PaleVioletRed;
         }
 
         private void ColorLabel_True(Label lb)
         {
             lb.BackColor = Color.LightSeaGreen;
         }
-
+        private void ColorLabel_False(Label lb)
+        {
+            lb.BackColor = Color.PaleVioletRed;
+        }
 
         private void ColorLabel_Default(Label lb)
         {
             lb.BackColor = SystemColors.Control;
         }
+
 
         int z = 0;
 
@@ -202,6 +199,39 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnq);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
+
                     }
                     break;
                 case Keys.W:
@@ -274,6 +304,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnw);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.E:
@@ -346,6 +408,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btne);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.R:
@@ -417,6 +511,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnr);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.T:
@@ -488,6 +614,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnt);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.Y:
@@ -559,6 +717,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btny);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.U:
@@ -630,6 +820,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnu);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.I:
@@ -701,6 +923,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btni);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
 
                     break;
@@ -773,6 +1027,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btno);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.P:
@@ -844,6 +1130,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnp);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.A:
@@ -915,6 +1233,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btna);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.S:
@@ -985,6 +1335,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btns);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.D:
@@ -1054,6 +1436,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnd);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.F:
@@ -1124,6 +1538,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnf);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.G:
@@ -1195,6 +1641,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btng);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.H:
@@ -1264,6 +1742,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnh);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.J:
@@ -1333,6 +1843,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnj);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.K:
@@ -1343,14 +1885,9 @@ namespace Project_LTDM
 
                         if (z == 0)
                         {
-
                             Separator_Default(Separator);
                             Separator_True(Separator1);
                             ColorLabel_True(label);
-                            z++; return;
-
-
-                           
                             z++; return;
                         }
                         if (z == 1)
@@ -1407,6 +1944,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnk);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.L:
@@ -1476,6 +2045,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnl);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.Z:
@@ -1545,6 +2146,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnz);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.X:
@@ -1614,6 +2247,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnx);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.C:
@@ -1683,6 +2348,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnc);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.V:
@@ -1752,6 +2449,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnv);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.B:
@@ -1821,6 +2550,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnb);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.N:
@@ -1890,13 +2651,45 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnn);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
                 case Keys.M:
                     string m = btnm.Text;
                     if (string.Compare(m, stringlabel, true) == 0)
                     {
-                        Button_True(btnf);
+                        Button_True(btnm);
 
                         if (z == 0)
                         {
@@ -1959,6 +2752,38 @@ namespace Project_LTDM
                     else
                     {
                         Button_False(btnm);
+                        if (z == 0)
+                        {
+                            ColorLabel_False(label);
+                        }
+                        if (z == 1)
+                        {
+                            ColorLabel_False(label1);
+                        }
+                        if (z == 2)
+                        {
+                            ColorLabel_False(label2);
+                        }
+                        if (z == 3)
+                        {
+                            ColorLabel_False(label3);
+                        }
+                        if (z == 4)
+                        {
+                            ColorLabel_False(label4);
+                        }
+                        if (z == 5)
+                        {
+                            ColorLabel_False(label5);
+                        }
+                        if (z == 6)
+                        {
+                            ColorLabel_False(label6);
+                        }
+                        if (z == 7)
+                        {
+                            ColorLabel_False(label7);
+                        }
                     }
                     break;
 

@@ -33,16 +33,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
+       
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+        
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lbRegister = new System.Windows.Forms.Label();
-            this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+       
+   
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
+        
             this.txtPasswordConfirm = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
@@ -93,15 +93,7 @@
             // 
             // bunifuSeparator4
             // 
-            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuSeparator4.LineThickness = 2;
-            this.bunifuSeparator4.Location = new System.Drawing.Point(25, 342);
-            this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Size = new System.Drawing.Size(210, 10);
-            this.bunifuSeparator4.TabIndex = 30;
-            this.bunifuSeparator4.Transparency = 100;
-            this.bunifuSeparator4.Vertical = false;
+       
             // 
             // txtPassword
             // 
@@ -122,15 +114,7 @@
             // 
             // bunifuSeparator3
             // 
-            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuSeparator3.LineThickness = 2;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(25, 288);
-            this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(210, 10);
-            this.bunifuSeparator3.TabIndex = 28;
-            this.bunifuSeparator3.Transparency = 100;
-            this.bunifuSeparator3.Vertical = false;
+      
             // 
             // txtUsername
             // 
@@ -173,41 +157,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.ActiveBorderThickness = 1;
-            this.btnLogin.ActiveCornerRadius = 20;
-            this.btnLogin.ActiveFillColor = System.Drawing.Color.White;
-            this.btnLogin.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.btnLogin.ActiveLineColor = System.Drawing.Color.White;
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
-            this.btnLogin.ButtonText = "Register";
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.IdleBorderThickness = 1;
-            this.btnLogin.IdleCornerRadius = 20;
-            this.btnLogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.btnLogin.IdleForecolor = System.Drawing.Color.White;
-            this.btnLogin.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
-            this.btnLogin.Location = new System.Drawing.Point(26, 480);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(209, 41);
-            this.btnLogin.TabIndex = 23;
-            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuSeparator1.LineThickness = 2;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(25, 444);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(210, 10);
-            this.bunifuSeparator1.TabIndex = 34;
-            this.bunifuSeparator1.Transparency = 100;
-            this.bunifuSeparator1.Vertical = false;
+      
             // 
             // txtEmail
             // 
@@ -227,15 +177,7 @@
             // 
             // bunifuSeparator2
             // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuSeparator2.LineThickness = 2;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(25, 390);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(210, 10);
-            this.bunifuSeparator2.TabIndex = 32;
-            this.bunifuSeparator2.Transparency = 100;
-            this.bunifuSeparator2.Vertical = false;
+         
             // 
             // txtPasswordConfirm
             // 
@@ -288,17 +230,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(275, 598);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.bunifuSeparator1);
+         
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.bunifuSeparator2);
+         
             this.Controls.Add(this.txtPasswordConfirm);
-            this.Controls.Add(this.bunifuSeparator4);
+         
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.bunifuSeparator3);
+          
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbRegister);
-            this.Controls.Add(this.btnLogin);
+         
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -321,16 +263,16 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator4;
+      
         private System.Windows.Forms.TextBox txtPassword;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
+      
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbRegister;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnLogin;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+      
+       
         private System.Windows.Forms.TextBox txtEmail;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
+     
         private System.Windows.Forms.TextBox txtPasswordConfirm;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
