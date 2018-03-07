@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Typing));
             this.labeltyping = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RTB_String = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pn_Keys = new System.Windows.Forms.Panel();
@@ -94,25 +95,24 @@
             this.button59 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
-            this.pn_RH = new System.Windows.Forms.Panel();
-            this.btn_Finger5 = new System.Windows.Forms.Button();
-            this.btn_Finger6 = new System.Windows.Forms.Button();
-            this.btn_Finger7 = new System.Windows.Forms.Button();
-            this.btn_Finger9 = new System.Windows.Forms.Button();
-            this.btn_Finger8 = new System.Windows.Forms.Button();
             this.pn_LH = new System.Windows.Forms.Panel();
             this.btn_Finger0 = new System.Windows.Forms.Button();
             this.btn_Finger1 = new System.Windows.Forms.Button();
             this.btn_Finger4 = new System.Windows.Forms.Button();
             this.btn_Finger2 = new System.Windows.Forms.Button();
             this.btn_Finger3 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_Finger8 = new System.Windows.Forms.Button();
+            this.btn_Finger9 = new System.Windows.Forms.Button();
+            this.btn_Finger7 = new System.Windows.Forms.Button();
+            this.btn_Finger6 = new System.Windows.Forms.Button();
+            this.btn_Finger5 = new System.Windows.Forms.Button();
+            this.pn_RH = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pn_Keys.SuspendLayout();
-            this.pn_RH.SuspendLayout();
             this.pn_LH.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pn_RH.SuspendLayout();
             this.SuspendLayout();
             // 
             // labeltyping
@@ -136,6 +136,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1013, 96);
             this.panel1.TabIndex = 95;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(126, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 90);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // RTB_String
             // 
@@ -874,69 +882,6 @@
             this.button46.Text = "+\r\n=\r\n";
             this.button46.UseVisualStyleBackColor = true;
             // 
-            // pn_RH
-            // 
-            this.pn_RH.BackgroundImage = global::Project_LTDM.Properties.Resources.RH_NEW;
-            this.pn_RH.Controls.Add(this.btn_Finger5);
-            this.pn_RH.Controls.Add(this.btn_Finger6);
-            this.pn_RH.Controls.Add(this.btn_Finger7);
-            this.pn_RH.Controls.Add(this.btn_Finger9);
-            this.pn_RH.Controls.Add(this.btn_Finger8);
-            this.pn_RH.Location = new System.Drawing.Point(515, 431);
-            this.pn_RH.Name = "pn_RH";
-            this.pn_RH.Size = new System.Drawing.Size(138, 162);
-            this.pn_RH.TabIndex = 100;
-            // 
-            // btn_Finger5
-            // 
-            this.btn_Finger5.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger5.Location = new System.Drawing.Point(3, 94);
-            this.btn_Finger5.Name = "btn_Finger5";
-            this.btn_Finger5.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger5.TabIndex = 91;
-            this.btn_Finger5.UseVisualStyleBackColor = false;
-            this.btn_Finger5.Visible = false;
-            // 
-            // btn_Finger6
-            // 
-            this.btn_Finger6.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger6.Location = new System.Drawing.Point(30, 27);
-            this.btn_Finger6.Name = "btn_Finger6";
-            this.btn_Finger6.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger6.TabIndex = 91;
-            this.btn_Finger6.UseVisualStyleBackColor = false;
-            this.btn_Finger6.Visible = false;
-            // 
-            // btn_Finger7
-            // 
-            this.btn_Finger7.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger7.Location = new System.Drawing.Point(58, 3);
-            this.btn_Finger7.Name = "btn_Finger7";
-            this.btn_Finger7.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger7.TabIndex = 91;
-            this.btn_Finger7.UseVisualStyleBackColor = false;
-            this.btn_Finger7.Visible = false;
-            // 
-            // btn_Finger9
-            // 
-            this.btn_Finger9.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger9.Location = new System.Drawing.Point(107, 48);
-            this.btn_Finger9.Name = "btn_Finger9";
-            this.btn_Finger9.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger9.TabIndex = 91;
-            this.btn_Finger9.UseVisualStyleBackColor = false;
-            this.btn_Finger9.Visible = false;
-            // 
-            // btn_Finger8
-            // 
-            this.btn_Finger8.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger8.Location = new System.Drawing.Point(83, 18);
-            this.btn_Finger8.Name = "btn_Finger8";
-            this.btn_Finger8.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger8.TabIndex = 91;
-            this.btn_Finger8.UseVisualStyleBackColor = false;
-            this.btn_Finger8.Visible = false;
-            // 
             // pn_LH
             // 
             this.pn_LH.BackgroundImage = global::Project_LTDM.Properties.Resources.LH_NEW1;
@@ -1000,13 +945,68 @@
             this.btn_Finger3.UseVisualStyleBackColor = false;
             this.btn_Finger3.Visible = false;
             // 
-            // pictureBox1
+            // btn_Finger8
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(126, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 90);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.btn_Finger8.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger8.Location = new System.Drawing.Point(83, 18);
+            this.btn_Finger8.Name = "btn_Finger8";
+            this.btn_Finger8.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger8.TabIndex = 91;
+            this.btn_Finger8.UseVisualStyleBackColor = false;
+            this.btn_Finger8.Visible = false;
+            // 
+            // btn_Finger9
+            // 
+            this.btn_Finger9.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger9.Location = new System.Drawing.Point(107, 48);
+            this.btn_Finger9.Name = "btn_Finger9";
+            this.btn_Finger9.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger9.TabIndex = 91;
+            this.btn_Finger9.UseVisualStyleBackColor = false;
+            this.btn_Finger9.Visible = false;
+            // 
+            // btn_Finger7
+            // 
+            this.btn_Finger7.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger7.Location = new System.Drawing.Point(58, 3);
+            this.btn_Finger7.Name = "btn_Finger7";
+            this.btn_Finger7.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger7.TabIndex = 91;
+            this.btn_Finger7.UseVisualStyleBackColor = false;
+            this.btn_Finger7.Visible = false;
+            // 
+            // btn_Finger6
+            // 
+            this.btn_Finger6.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger6.Location = new System.Drawing.Point(30, 27);
+            this.btn_Finger6.Name = "btn_Finger6";
+            this.btn_Finger6.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger6.TabIndex = 91;
+            this.btn_Finger6.UseVisualStyleBackColor = false;
+            this.btn_Finger6.Visible = false;
+            // 
+            // btn_Finger5
+            // 
+            this.btn_Finger5.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger5.Location = new System.Drawing.Point(3, 94);
+            this.btn_Finger5.Name = "btn_Finger5";
+            this.btn_Finger5.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger5.TabIndex = 91;
+            this.btn_Finger5.UseVisualStyleBackColor = false;
+            this.btn_Finger5.Visible = false;
+            // 
+            // pn_RH
+            // 
+            this.pn_RH.BackgroundImage = global::Project_LTDM.Properties.Resources.RH_NEW;
+            this.pn_RH.Controls.Add(this.btn_Finger5);
+            this.pn_RH.Controls.Add(this.btn_Finger6);
+            this.pn_RH.Controls.Add(this.btn_Finger7);
+            this.pn_RH.Controls.Add(this.btn_Finger9);
+            this.pn_RH.Controls.Add(this.btn_Finger8);
+            this.pn_RH.Location = new System.Drawing.Point(515, 431);
+            this.pn_RH.Name = "pn_RH";
+            this.pn_RH.Size = new System.Drawing.Size(138, 162);
+            this.pn_RH.TabIndex = 100;
             // 
             // Frm_Typing
             // 
@@ -1022,11 +1022,11 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Frm_Typing_KeyPress);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.pn_Keys.ResumeLayout(false);
-            this.pn_RH.ResumeLayout(false);
             this.pn_LH.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pn_RH.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1039,12 +1039,6 @@
         private System.Windows.Forms.Button btn_Finger4;
         private System.Windows.Forms.Button btn_Finger2;
         private System.Windows.Forms.Button btn_Finger3;
-        private System.Windows.Forms.Button btn_Finger5;
-        private System.Windows.Forms.Button btn_Finger7;
-        private System.Windows.Forms.Button btn_Finger9;
-        private System.Windows.Forms.Button btn_Finger8;
-        private System.Windows.Forms.Button btn_Finger6;
-        private System.Windows.Forms.Panel pn_RH;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labeltyping;
         private System.Windows.Forms.Panel panel1;
@@ -1111,5 +1105,11 @@
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Panel pn_RH;
+        private System.Windows.Forms.Button btn_Finger5;
+        private System.Windows.Forms.Button btn_Finger6;
+        private System.Windows.Forms.Button btn_Finger7;
+        private System.Windows.Forms.Button btn_Finger9;
+        private System.Windows.Forms.Button btn_Finger8;
     }
 }
