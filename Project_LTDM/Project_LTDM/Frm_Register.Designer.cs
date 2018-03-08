@@ -33,22 +33,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-       
             this.txtPassword = new System.Windows.Forms.TextBox();
-        
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lbRegister = new System.Windows.Forms.Label();
-       
-   
             this.txtEmail = new System.Windows.Forms.TextBox();
-        
             this.txtPasswordConfirm = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -91,10 +91,6 @@
             this.label3.Text = "X";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // bunifuSeparator4
-            // 
-       
-            // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -106,15 +102,12 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(209, 22);
             this.txtPassword.TabIndex = 29;
+            this.txtPassword.TabStop = false;
             this.txtPassword.Text = "Password";
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             this.txtPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtPassword_Validating_1);
             this.txtPassword.Validated += new System.EventHandler(this.txtPassword_Validated_1);
-            // 
-            // bunifuSeparator3
-            // 
-      
             // 
             // txtUsername
             // 
@@ -127,6 +120,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(209, 22);
             this.txtUsername.TabIndex = 27;
+            this.txtUsername.TabStop = false;
             this.txtUsername.Text = "User Name";
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
             this.txtUsername.Validating += new System.ComponentModel.CancelEventHandler(this.txtUsername_Validating_1);
@@ -155,10 +149,6 @@
             this.lbRegister.Text = "Login";
             this.lbRegister.Click += new System.EventHandler(this.lbRegister_Click);
             // 
-            // btnLogin
-            // 
-      
-            // 
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -170,14 +160,11 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(209, 22);
             this.txtEmail.TabIndex = 33;
+            this.txtEmail.TabStop = false;
             this.txtEmail.Text = "Email";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating_1);
             this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated_1);
-            // 
-            // bunifuSeparator2
-            // 
-         
             // 
             // txtPasswordConfirm
             // 
@@ -190,6 +177,7 @@
             this.txtPasswordConfirm.Name = "txtPasswordConfirm";
             this.txtPasswordConfirm.Size = new System.Drawing.Size(209, 22);
             this.txtPasswordConfirm.TabIndex = 31;
+            this.txtPasswordConfirm.TabStop = false;
             this.txtPasswordConfirm.Text = "Re-Password";
             this.txtPasswordConfirm.Click += new System.EventHandler(this.txtPasswordConfirm_Click);
             this.txtPasswordConfirm.TextChanged += new System.EventHandler(this.txtPasswordConfirm_TextChanged);
@@ -222,6 +210,52 @@
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(39)))), ((int)(((byte)(89)))));
+            this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btnRegister.ForeColor = System.Drawing.Color.White;
+            this.btnRegister.Location = new System.Drawing.Point(14, 491);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(249, 37);
+            this.btnRegister.TabIndex = 88;
+            this.btnRegister.TabStop = false;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel2.Location = new System.Drawing.Point(26, 298);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(210, 3);
+            this.panel2.TabIndex = 89;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel3.Location = new System.Drawing.Point(25, 352);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(210, 3);
+            this.panel3.TabIndex = 89;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel4.Location = new System.Drawing.Point(25, 400);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(210, 3);
+            this.panel4.TabIndex = 89;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel5.Location = new System.Drawing.Point(26, 454);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(210, 3);
+            this.panel5.TabIndex = 89;
+            // 
             // Frm_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,18 +263,18 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(275, 598);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.pictureBox1);
-         
             this.Controls.Add(this.txtEmail);
-         
             this.Controls.Add(this.txtPasswordConfirm);
-         
             this.Controls.Add(this.txtPassword);
-          
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbRegister);
-         
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -248,6 +282,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_Register_FormClosing);
+            this.Load += new System.EventHandler(this.Frm_Register_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -281,6 +316,11 @@
         private System.Windows.Forms.ErrorProvider errorProvider3;
         private System.Windows.Forms.ErrorProvider errorProvider4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
 
     }
 }

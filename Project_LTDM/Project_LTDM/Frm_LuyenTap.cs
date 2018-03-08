@@ -16,47 +16,18 @@ namespace Project_LTDM
         Timer aTimer = new Timer();
         string[] Chuoi = new string[11];
         Button btn_oldHighLight = new Button();
+        Button btn_oldHighLight1 = new Button();
+        Panel label_oldDefault = new Panel();
         public Frm_LuyenTap()
         {
             InitializeComponent();
         }
-        private string RandomString_old(int size, bool lowerCase)
-        {
-            StringBuilder sb = new StringBuilder();
-            char c;
-            int numb, numb1, numb2, numb3, numb4;
-
-            Random rand = new Random();
-
-            int i = 0;
-            for (; i < size; i++)
-            {
-                c = Convert.ToChar(Convert.ToInt32(rand.Next(65, 87)));
-                numb = rand.Next(0, 9);
-                numb1 = rand.Next(0, 9);
-                numb2 = rand.Next(0, 9);
-                numb3 = rand.Next(0, 9);
-                numb4 = rand.Next(0, 9);
-                if ((i == numb) || (i == numb1) || (i == numb2) || (i == numb3) || (i == numb4))
-                {
-                    string e = c.ToString();
-                    sb.Append(e);
-                }
-                else
-                    sb.Append(c);
-
-            }
-            if (lowerCase)
-                return sb.ToString().ToLower();
-            return sb.ToString();
-
-        }
+     
 
         private void RandomString()
         {
             Random rnd = new Random();
-            //string txtRand = string.Empty;
-            //for (int i = 0; i < 8; i++) txtRand += ((char)rnd.Next(97, 122)).ToString();
+
             for (int i = 0; i < 11; i++)
             {
                 string name = "label" + i;
@@ -70,26 +41,30 @@ namespace Project_LTDM
             }
         }
 
-        int i = 0;
+     
         private void Frm_LuyenTap_Load(object sender, EventArgs e)
         {
             aTimer.Tick += ATimer_Tick;
             aTimer.Interval = 3000;
-            // danh cho check van ban
-            //richTextBox1.Select(0,1);
-            //richTextBox1.SelectionColor = Color.Green;
-            //richTextBox1.Select(1, 3);
-            //richTextBox1.SelectionColor = Color.Red;
+
             RandomString();
+
+            this.KeyPreview = true;
+            Separator_True(Separator0);
+
+
+         
+
             int iAscii = Chuoi[PositionKey].ToCharArray()[0];
             Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
             if (ctn != null)
             {
                 HighLight((Button)ctn);
             }
+
             if (PositionKey < Chuoi.Length)
                 SetFingerVisible(Chuoi[PositionKey]);
-            this.KeyPreview = true;
+
         }
 
         private void ATimer_Tick(object sender, EventArgs e)
@@ -98,16 +73,42 @@ namespace Project_LTDM
             aTimer.Stop();
         }
 
+       
         private void HighLight(Button btn)
         {
             Normal(btn_oldHighLight);
-            //btn_oldHighLight = btn;
-            //aTimer.Start();
-            btn.BackColor = Color.Green;
+
+            btn.BackColor = Color.LightSeaGreen;
             btn_oldHighLight = btn;
 
         }
+        private void Button_False(Button btn)
+        {
 
+            Normal(btn_oldHighLight1);
+            btn.BackColor = Color.PaleVioletRed;
+
+            btn_oldHighLight1 = btn;
+
+
+        }
+        private void Separator_True(Panel sp)
+        {
+            Separator_Default(label_oldDefault);
+            sp.BackColor = Color.LightSeaGreen;
+            label_oldDefault = sp;
+
+        }
+        private void Separator_Default(Panel sp)
+        {
+            sp.BackColor = Color.LightGray;
+
+        }
+       /* private void ATimer_Tick(object sender, EventArgs e)
+        {
+            btn_oldHighLight.BackColor = Color.Red;
+            aTimer.Stop();
+        }*/
         private void ATimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
             throw new NotImplementedException();
@@ -120,8 +121,8 @@ namespace Project_LTDM
 
         private void WrongKey(Control btn)
         {
-            //btn.BackColor = Color.Red;
-            btn.Font = new Font("Microsoft Sans Serif", 38F, ((System.Drawing.FontStyle)((FontStyle.Bold | FontStyle.Underline))), GraphicsUnit.Point, ((byte)(0)));
+
+            btn.BackColor = Color.PaleVioletRed;
         }
 
         private void ColorLabel_True(Label lb)
@@ -135,8 +136,10 @@ namespace Project_LTDM
             lb.BackColor = SystemColors.Control;
         }
 
+    
         int PositionKey = 0;
-        int k = 0;
+       
+     
 
         private Control FindControl(Control parent, string name)
         {
@@ -190,31 +193,7 @@ namespace Project_LTDM
             // If we still haven't found it, it's not here.
             return null;
         }
-        private void Frm_LuyenTap_KeyDown(object sender, KeyEventArgs e)
-        {
-            //k phai la 2 ky tu va k phai la ky tu dac biet
-            //if (z >= Chuoi.Length)
-            //    return;
-            //string stringlabel = Chuoi[z];
-            //string name = "btn" + e.KeyCode.ToString().ToLower();
-            //Control ctn = FindControl(pn_Keys, name); //.Controls[name];
-            //if( ctn!=null)
-            //{
-            //    //HighLight((Button)ctn);
-            //    ((Button)ctn).Focus();
-            //    if (string.Compare(((Button)ctn).Text, stringlabel, true) == 0)
-            //    {
-            //        Control ctnkey = FindControl(pn_stringKeys, "label" + z);
-            //        ColorLabel_True(((Label)ctnkey));
-            //        z++;
-            //        if (z < Chuoi.Length)
-            //        {
-            //            ctn = FindControl(pn_Keys, "btn" + Chuoi[z]);
-            //            SetFingerVisible(Chuoi[z]);
-            //        }
-            //    }
-            //}
-        }
+      
 
         private void SetFingerVisible(string skey)
         {
@@ -277,97 +256,57 @@ namespace Project_LTDM
 
         }
 
-        private void Frm_LuyenTap_KeyUp(object sender, KeyEventArgs e)
-        {
-            switch (e.KeyCode)
-            {
-
-                case Keys.Q: Normal(btnq); break;
-                case Keys.W: Normal(btnw); break;
-                case Keys.E: Normal(btne); break;
-                case Keys.R: Normal(btnr); break;
-                case Keys.T: Normal(btnt); break;
-                case Keys.Y: Normal(btny); break;
-                case Keys.U: Normal(btnu); break;
-                case Keys.I: Normal(btni); break;
-                case Keys.O: Normal(btno); break;
-                case Keys.P: Normal(btnp); break;
-                case Keys.A: Normal(btna);
-
-
-                    break;
-
-
-
-                case Keys.S: Normal(btns); break;
-
-                case Keys.D: Normal(btnd); break;
-                case Keys.F: Normal(btnf); break;
-                case Keys.G: Normal(btng); break;
-                case Keys.H: Normal(btnh); break;
-                case Keys.J: Normal(btnj); break;
-                case Keys.K: Normal(btnk); break;
-                case Keys.L: Normal(btnl); break;
-                case Keys.Z: Normal(btnz); break;
-                case Keys.X: Normal(btnx); break;
-                case Keys.C: Normal(btnc); break;
-                case Keys.V: Normal(btnv); break;
-                case Keys.B: Normal(btnb); break;
-                case Keys.N: Normal(btnn); break;
-                case Keys.M: Normal(btnm); break;
-                case Keys.Space: Normal(btnspace); break;
-            }
-        }
+      
 
         private void Frm_LuyenTap_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (PositionKey >= Chuoi.Length)
                 return;
-            char keyText = Chuoi[PositionKey].ToCharArray()[0];// Chuoi[z];
+            char keyText = Chuoi[PositionKey].ToCharArray()[0];
             Control ctnkey = FindControl(pn_stringKeys, "label" + PositionKey);
-            if (e.KeyChar > 31 && e.KeyChar < 127)
+
+            if ((e.KeyChar > 31 && e.KeyChar < 127))
             {
-                //char ch = (char)e.KeyChar;
-                //string str = ch.ToString();
                 int iAscii = e.KeyChar;
                 Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
                 if (ctn != null)
                 {
-                    ((Button)ctn).Focus();
-                    //char cKeylabel = stringlabel.ToCharArray()[0];
-                    //char cKeylabel = stringlabel.ToCharArray()[0];
-                    //int iKeylabel = cKeylabel;
 
-                    if (SearchStringInTagControl(ctn, keyText) == true) //if (SearchStringInTagControl(ctn, iKeylabel) == true)
+
+
+                    if (SearchStringInTagControl(ctn, keyText) == true) 
                     {
                         ColorLabel_True(((Label)ctnkey));
                         PositionKey++;
+                      
                         if (PositionKey < Chuoi.Length)
                         {
                             iAscii = Chuoi[PositionKey].ToCharArray()[0];
-                            ctn = FindControlByTag(pn_Keys, iAscii);//FindControl(pn_Keys, "btn" + stringlabel);
-                            //if (ctn != null)
-                            //{
-                            //    HighLight((Button)ctn);
-                            //    SetFingerVisible(RTB_String.Text[z].ToString().ToLower());
-                            //}
+                            ctn = FindControlByTag(pn_Keys, iAscii);
+                            Control ctnspr = FindControl(pn_stringKeys, "Separator" + PositionKey);
+
+
                             while (ctn == null && PositionKey < Chuoi.Length)
                             {
                                 PositionKey++;
                                 iAscii = Chuoi[PositionKey].ToCharArray()[0];
                                 ctn = FindControlByTag(pn_Keys, iAscii);
-                            };
-                            HighLight((Button)ctn);
+                            }
+                                HighLight((Button)ctn);
+                            Normal(btn_oldHighLight1);
+                            Separator_True(((Panel)ctnspr));
+
                             SetFingerVisible(Chuoi[PositionKey].ToLower());
                         }
                     }
                     else
                     {
+                        Button_False((Button)ctn);
                         WrongKey((Label)ctnkey);
                     }
-
                 }
             }
+          
         }
     }
 }

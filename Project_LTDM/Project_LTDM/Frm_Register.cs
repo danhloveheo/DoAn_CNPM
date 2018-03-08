@@ -172,6 +172,39 @@ namespace Project_LTDM
             txtPasswordConfirm.PasswordChar = '*';
         }
 
+        private void Frm_Register_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            string usernameErr = errorProvider1.GetError(txtUsername);
+            string passwordErr = errorProvider2.GetError(txtPassword);
+            string passwordConfimErr = errorProvider3.GetError(txtPasswordConfirm);
+            string emaailErr = errorProvider4.GetError(txtEmail);
+
+            if (usernameErr != "" || passwordErr != "" || passwordConfimErr != "" || emaailErr != "")
+            {
+                MessageBox.Show("Please enter valid information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (txtUsername.Text == "" || txtPassword.Text == "" || txtPasswordConfirm.Text == "" || txtEmail.Text == "")
+            {
+                MessageBox.Show("Please enter all mandatory fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (BUS_User.Register(txtUsername.Text, txtPassword.Text, txtEmail.Text) == 1)
+            {
+                MessageBox.Show("Username already exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Insert user in database success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
        
     }
 }

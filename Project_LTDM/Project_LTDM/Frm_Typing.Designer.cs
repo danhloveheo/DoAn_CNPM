@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Typing));
             this.labeltyping = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RTB_String = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pn_Keys = new System.Windows.Forms.Panel();
@@ -95,24 +94,25 @@
             this.button59 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
+            this.pn_RH = new System.Windows.Forms.Panel();
+            this.btn_Finger5 = new System.Windows.Forms.Button();
+            this.btn_Finger6 = new System.Windows.Forms.Button();
+            this.btn_Finger7 = new System.Windows.Forms.Button();
+            this.btn_Finger9 = new System.Windows.Forms.Button();
+            this.btn_Finger8 = new System.Windows.Forms.Button();
             this.pn_LH = new System.Windows.Forms.Panel();
             this.btn_Finger0 = new System.Windows.Forms.Button();
             this.btn_Finger1 = new System.Windows.Forms.Button();
             this.btn_Finger4 = new System.Windows.Forms.Button();
             this.btn_Finger2 = new System.Windows.Forms.Button();
             this.btn_Finger3 = new System.Windows.Forms.Button();
-            this.btn_Finger8 = new System.Windows.Forms.Button();
-            this.btn_Finger9 = new System.Windows.Forms.Button();
-            this.btn_Finger7 = new System.Windows.Forms.Button();
-            this.btn_Finger6 = new System.Windows.Forms.Button();
-            this.btn_Finger5 = new System.Windows.Forms.Button();
-            this.pn_RH = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pn_Keys.SuspendLayout();
-            this.pn_LH.SuspendLayout();
             this.pn_RH.SuspendLayout();
+            this.pn_LH.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labeltyping
@@ -134,22 +134,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1013, 96);
+            this.panel1.Size = new System.Drawing.Size(916, 96);
             this.panel1.TabIndex = 95;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(126, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 90);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // RTB_String
             // 
             this.RTB_String.Enabled = false;
             this.RTB_String.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.RTB_String.Location = new System.Drawing.Point(132, 19);
+            this.RTB_String.Location = new System.Drawing.Point(39, 19);
             this.RTB_String.Name = "RTB_String";
             this.RTB_String.Size = new System.Drawing.Size(688, 184);
             this.RTB_String.TabIndex = 98;
@@ -163,7 +155,7 @@
             this.groupBox1.Controls.Add(this.pn_LH);
             this.groupBox1.Location = new System.Drawing.Point(87, 102);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(851, 599);
+            this.groupBox1.Size = new System.Drawing.Size(755, 599);
             this.groupBox1.TabIndex = 101;
             this.groupBox1.TabStop = false;
             // 
@@ -230,7 +222,7 @@
             this.pn_Keys.Controls.Add(this.button59);
             this.pn_Keys.Controls.Add(this.button40);
             this.pn_Keys.Controls.Add(this.button46);
-            this.pn_Keys.Location = new System.Drawing.Point(132, 209);
+            this.pn_Keys.Location = new System.Drawing.Point(39, 209);
             this.pn_Keys.Name = "pn_Keys";
             this.pn_Keys.Size = new System.Drawing.Size(688, 216);
             this.pn_Keys.TabIndex = 101;
@@ -882,6 +874,69 @@
             this.button46.Text = "+\r\n=\r\n";
             this.button46.UseVisualStyleBackColor = true;
             // 
+            // pn_RH
+            // 
+            this.pn_RH.BackgroundImage = global::Project_LTDM.Properties.Resources.RH_NEW;
+            this.pn_RH.Controls.Add(this.btn_Finger5);
+            this.pn_RH.Controls.Add(this.btn_Finger6);
+            this.pn_RH.Controls.Add(this.btn_Finger7);
+            this.pn_RH.Controls.Add(this.btn_Finger9);
+            this.pn_RH.Controls.Add(this.btn_Finger8);
+            this.pn_RH.Location = new System.Drawing.Point(477, 431);
+            this.pn_RH.Name = "pn_RH";
+            this.pn_RH.Size = new System.Drawing.Size(138, 162);
+            this.pn_RH.TabIndex = 100;
+            // 
+            // btn_Finger5
+            // 
+            this.btn_Finger5.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger5.Location = new System.Drawing.Point(3, 94);
+            this.btn_Finger5.Name = "btn_Finger5";
+            this.btn_Finger5.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger5.TabIndex = 91;
+            this.btn_Finger5.UseVisualStyleBackColor = false;
+            this.btn_Finger5.Visible = false;
+            // 
+            // btn_Finger6
+            // 
+            this.btn_Finger6.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger6.Location = new System.Drawing.Point(30, 27);
+            this.btn_Finger6.Name = "btn_Finger6";
+            this.btn_Finger6.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger6.TabIndex = 91;
+            this.btn_Finger6.UseVisualStyleBackColor = false;
+            this.btn_Finger6.Visible = false;
+            // 
+            // btn_Finger7
+            // 
+            this.btn_Finger7.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger7.Location = new System.Drawing.Point(58, 3);
+            this.btn_Finger7.Name = "btn_Finger7";
+            this.btn_Finger7.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger7.TabIndex = 91;
+            this.btn_Finger7.UseVisualStyleBackColor = false;
+            this.btn_Finger7.Visible = false;
+            // 
+            // btn_Finger9
+            // 
+            this.btn_Finger9.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger9.Location = new System.Drawing.Point(107, 48);
+            this.btn_Finger9.Name = "btn_Finger9";
+            this.btn_Finger9.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger9.TabIndex = 91;
+            this.btn_Finger9.UseVisualStyleBackColor = false;
+            this.btn_Finger9.Visible = false;
+            // 
+            // btn_Finger8
+            // 
+            this.btn_Finger8.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger8.Location = new System.Drawing.Point(83, 18);
+            this.btn_Finger8.Name = "btn_Finger8";
+            this.btn_Finger8.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger8.TabIndex = 91;
+            this.btn_Finger8.UseVisualStyleBackColor = false;
+            this.btn_Finger8.Visible = false;
+            // 
             // pn_LH
             // 
             this.pn_LH.BackgroundImage = global::Project_LTDM.Properties.Resources.LH_NEW1;
@@ -890,7 +945,7 @@
             this.pn_LH.Controls.Add(this.btn_Finger4);
             this.pn_LH.Controls.Add(this.btn_Finger2);
             this.pn_LH.Controls.Add(this.btn_Finger3);
-            this.pn_LH.Location = new System.Drawing.Point(280, 431);
+            this.pn_LH.Location = new System.Drawing.Point(116, 431);
             this.pn_LH.Name = "pn_LH";
             this.pn_LH.Size = new System.Drawing.Size(155, 162);
             this.pn_LH.TabIndex = 99;
@@ -945,88 +1000,35 @@
             this.btn_Finger3.UseVisualStyleBackColor = false;
             this.btn_Finger3.Visible = false;
             // 
-            // btn_Finger8
+            // pictureBox1
             // 
-            this.btn_Finger8.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger8.Location = new System.Drawing.Point(83, 18);
-            this.btn_Finger8.Name = "btn_Finger8";
-            this.btn_Finger8.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger8.TabIndex = 91;
-            this.btn_Finger8.UseVisualStyleBackColor = false;
-            this.btn_Finger8.Visible = false;
-            // 
-            // btn_Finger9
-            // 
-            this.btn_Finger9.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger9.Location = new System.Drawing.Point(107, 48);
-            this.btn_Finger9.Name = "btn_Finger9";
-            this.btn_Finger9.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger9.TabIndex = 91;
-            this.btn_Finger9.UseVisualStyleBackColor = false;
-            this.btn_Finger9.Visible = false;
-            // 
-            // btn_Finger7
-            // 
-            this.btn_Finger7.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger7.Location = new System.Drawing.Point(58, 3);
-            this.btn_Finger7.Name = "btn_Finger7";
-            this.btn_Finger7.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger7.TabIndex = 91;
-            this.btn_Finger7.UseVisualStyleBackColor = false;
-            this.btn_Finger7.Visible = false;
-            // 
-            // btn_Finger6
-            // 
-            this.btn_Finger6.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger6.Location = new System.Drawing.Point(30, 27);
-            this.btn_Finger6.Name = "btn_Finger6";
-            this.btn_Finger6.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger6.TabIndex = 91;
-            this.btn_Finger6.UseVisualStyleBackColor = false;
-            this.btn_Finger6.Visible = false;
-            // 
-            // btn_Finger5
-            // 
-            this.btn_Finger5.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger5.Location = new System.Drawing.Point(3, 94);
-            this.btn_Finger5.Name = "btn_Finger5";
-            this.btn_Finger5.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger5.TabIndex = 91;
-            this.btn_Finger5.UseVisualStyleBackColor = false;
-            this.btn_Finger5.Visible = false;
-            // 
-            // pn_RH
-            // 
-            this.pn_RH.BackgroundImage = global::Project_LTDM.Properties.Resources.RH_NEW;
-            this.pn_RH.Controls.Add(this.btn_Finger5);
-            this.pn_RH.Controls.Add(this.btn_Finger6);
-            this.pn_RH.Controls.Add(this.btn_Finger7);
-            this.pn_RH.Controls.Add(this.btn_Finger9);
-            this.pn_RH.Controls.Add(this.btn_Finger8);
-            this.pn_RH.Location = new System.Drawing.Point(515, 431);
-            this.pn_RH.Name = "pn_RH";
-            this.pn_RH.Size = new System.Drawing.Size(138, 162);
-            this.pn_RH.TabIndex = 100;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(117, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 90);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_Typing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 700);
+            this.ClientSize = new System.Drawing.Size(916, 700);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_Typing";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Typing";
             this.Load += new System.EventHandler(this.Frm_Typing_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Frm_Typing_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Frm_Typing_KeyPress);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.pn_Keys.ResumeLayout(false);
-            this.pn_LH.ResumeLayout(false);
             this.pn_RH.ResumeLayout(false);
+            this.pn_LH.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1039,7 +1041,6 @@
         private System.Windows.Forms.Button btn_Finger4;
         private System.Windows.Forms.Button btn_Finger2;
         private System.Windows.Forms.Button btn_Finger3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labeltyping;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox RTB_String;
@@ -1111,5 +1112,6 @@
         private System.Windows.Forms.Button btn_Finger7;
         private System.Windows.Forms.Button btn_Finger9;
         private System.Windows.Forms.Button btn_Finger8;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

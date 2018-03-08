@@ -71,3 +71,30 @@ C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\
 C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
 C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.dll
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.pdb
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.dll
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.dll
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.pdb
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.dll
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.pdb
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.dll
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.dll
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.pdb
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb

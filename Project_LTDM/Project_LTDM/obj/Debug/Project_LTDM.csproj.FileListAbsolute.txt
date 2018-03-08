@@ -127,3 +127,57 @@ C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Pro
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
+D:\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
+D:\KhoaHocTN\CongNghePhanMem\Test14_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
