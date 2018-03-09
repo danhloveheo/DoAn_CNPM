@@ -17,14 +17,16 @@ namespace Project_LTDM
             InitializeComponent();
         }
 
-        private void Btn_LuyenTap_Click(object sender, EventArgs e)
+    
+
+        private void button7_Click(object sender, EventArgs e)
         {
             Frm_LuyenTap frm = new Frm_LuyenTap();
             frm.ShowDialog();
 
         }
 
-        private void btn_ThucTap_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)
         {
             Frm_Typing frm = new Frm_Typing();
             frm.ShowDialog();
