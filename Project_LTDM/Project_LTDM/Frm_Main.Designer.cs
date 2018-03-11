@@ -30,14 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Main));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelHeader = new System.Windows.Forms.Panel();
-            this.labeltyping = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labeltyping = new System.Windows.Forms.Label();
+            this.baiTap1 = new Project_LTDM.UserControls.BaiTap();
             this.panel1.SuspendLayout();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,32 +54,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 130);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(176, 476);
+            this.panel1.Size = new System.Drawing.Size(176, 482);
             this.panel1.TabIndex = 6;
-            // 
-            // panelHeader
-            // 
-            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelHeader.Controls.Add(this.button6);
-            this.panelHeader.Controls.Add(this.pictureBox1);
-            this.panelHeader.Controls.Add(this.labeltyping);
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(0, 0);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1134, 130);
-            this.panelHeader.TabIndex = 7;
-            // 
-            // labeltyping
-            // 
-            this.labeltyping.AutoSize = true;
-            this.labeltyping.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeltyping.ForeColor = System.Drawing.Color.White;
-            this.labeltyping.Location = new System.Drawing.Point(381, 29);
-            this.labeltyping.Name = "labeltyping";
-            this.labeltyping.Size = new System.Drawing.Size(516, 73);
-            this.labeltyping.TabIndex = 2;
-            this.labeltyping.Text = "Typing Keyboard";
             // 
             // button8
             // 
@@ -142,6 +119,19 @@
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelHeader.Controls.Add(this.button6);
+            this.panelHeader.Controls.Add(this.pictureBox1);
+            this.panelHeader.Controls.Add(this.labeltyping);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1150, 130);
+            this.panelHeader.TabIndex = 7;
+            // 
             // button6
             // 
             this.button6.FlatAppearance.BorderSize = 0;
@@ -164,11 +154,32 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // labeltyping
+            // 
+            this.labeltyping.AutoSize = true;
+            this.labeltyping.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeltyping.ForeColor = System.Drawing.Color.White;
+            this.labeltyping.Location = new System.Drawing.Point(381, 29);
+            this.labeltyping.Name = "labeltyping";
+            this.labeltyping.Size = new System.Drawing.Size(516, 73);
+            this.labeltyping.TabIndex = 2;
+            this.labeltyping.Text = "Typing Keyboard";
+            // 
+            // baiTap1
+            // 
+            this.baiTap1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(226)))), ((int)(((byte)(255)))));
+            this.baiTap1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.baiTap1.Location = new System.Drawing.Point(176, 130);
+            this.baiTap1.Name = "baiTap1";
+            this.baiTap1.Size = new System.Drawing.Size(974, 482);
+            this.baiTap1.TabIndex = 8;
+            // 
             // Frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 606);
+            this.ClientSize = new System.Drawing.Size(1150, 612);
+            this.Controls.Add(this.baiTap1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -194,6 +205,7 @@
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labeltyping;
+        private UserControls.BaiTap baiTap1;
 
     }
 }
