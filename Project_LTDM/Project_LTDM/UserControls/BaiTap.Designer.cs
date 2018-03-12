@@ -49,11 +49,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Separator0 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnnamngon = new System.Windows.Forms.Button();
+            this.btnbonngon = new System.Windows.Forms.Button();
+            this.btnbangon = new System.Windows.Forms.Button();
+            this.btnhaingon = new System.Windows.Forms.Button();
+            this.btnmotngon = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -278,80 +278,85 @@
             this.Separator0.Size = new System.Drawing.Size(141, 1);
             this.Separator0.TabIndex = 97;
             // 
-            // button5
+            // btnnamngon
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(819, 125);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(141, 132);
-            this.button5.TabIndex = 95;
-            this.button5.Text = "  ";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnnamngon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnnamngon.FlatAppearance.BorderSize = 0;
+            this.btnnamngon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnnamngon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnamngon.ForeColor = System.Drawing.Color.White;
+            this.btnnamngon.Image = ((System.Drawing.Image)(resources.GetObject("btnnamngon.Image")));
+            this.btnnamngon.Location = new System.Drawing.Point(819, 125);
+            this.btnnamngon.Name = "btnnamngon";
+            this.btnnamngon.Size = new System.Drawing.Size(141, 132);
+            this.btnnamngon.TabIndex = 95;
+            this.btnnamngon.Text = "  ";
+            this.btnnamngon.UseVisualStyleBackColor = false;
+            this.btnnamngon.Click += new System.EventHandler(this.btnnamngon_Click);
             // 
-            // button4
+            // btnbonngon
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(618, 125);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 132);
-            this.button4.TabIndex = 94;
-            this.button4.Text = "  ";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnbonngon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnbonngon.FlatAppearance.BorderSize = 0;
+            this.btnbonngon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnbonngon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbonngon.ForeColor = System.Drawing.Color.White;
+            this.btnbonngon.Image = ((System.Drawing.Image)(resources.GetObject("btnbonngon.Image")));
+            this.btnbonngon.Location = new System.Drawing.Point(618, 125);
+            this.btnbonngon.Name = "btnbonngon";
+            this.btnbonngon.Size = new System.Drawing.Size(141, 132);
+            this.btnbonngon.TabIndex = 94;
+            this.btnbonngon.Text = "  ";
+            this.btnbonngon.UseVisualStyleBackColor = false;
+            this.btnbonngon.Click += new System.EventHandler(this.btnbonngon_Click);
             // 
-            // button3
+            // btnbangon
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(417, 125);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 132);
-            this.button3.TabIndex = 93;
-            this.button3.Text = "  ";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnbangon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnbangon.FlatAppearance.BorderSize = 0;
+            this.btnbangon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnbangon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbangon.ForeColor = System.Drawing.Color.White;
+            this.btnbangon.Image = ((System.Drawing.Image)(resources.GetObject("btnbangon.Image")));
+            this.btnbangon.Location = new System.Drawing.Point(417, 125);
+            this.btnbangon.Name = "btnbangon";
+            this.btnbangon.Size = new System.Drawing.Size(141, 132);
+            this.btnbangon.TabIndex = 93;
+            this.btnbangon.Text = "  ";
+            this.btnbangon.UseVisualStyleBackColor = false;
+            this.btnbangon.Click += new System.EventHandler(this.btnbangon_Click);
             // 
-            // button2
+            // btnhaingon
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(210, 125);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 132);
-            this.button2.TabIndex = 96;
-            this.button2.Text = "  ";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnhaingon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnhaingon.FlatAppearance.BorderSize = 0;
+            this.btnhaingon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnhaingon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhaingon.ForeColor = System.Drawing.Color.White;
+            this.btnhaingon.Image = ((System.Drawing.Image)(resources.GetObject("btnhaingon.Image")));
+            this.btnhaingon.Location = new System.Drawing.Point(210, 125);
+            this.btnhaingon.Name = "btnhaingon";
+            this.btnhaingon.Size = new System.Drawing.Size(141, 132);
+            this.btnhaingon.TabIndex = 96;
+            this.btnhaingon.Text = "  ";
+            this.btnhaingon.UseVisualStyleBackColor = false;
+            this.btnhaingon.Click += new System.EventHandler(this.btnhaingon_Click);
             // 
-            // button1
+            // btnmotngon
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(14, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 132);
-            this.button1.TabIndex = 92;
-            this.button1.Text = "  ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnmotngon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnmotngon.FlatAppearance.BorderSize = 0;
+            this.btnmotngon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnmotngon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmotngon.ForeColor = System.Drawing.Color.White;
+            this.btnmotngon.Image = ((System.Drawing.Image)(resources.GetObject("btnmotngon.Image")));
+            this.btnmotngon.Location = new System.Drawing.Point(14, 125);
+            this.btnmotngon.Name = "btnmotngon";
+            this.btnmotngon.Size = new System.Drawing.Size(141, 132);
+            this.btnmotngon.TabIndex = 92;
+            this.btnmotngon.Text = "  ";
+            this.btnmotngon.UseVisualStyleBackColor = false;
+            this.btnmotngon.Click += new System.EventHandler(this.btnmotngon_Click);
             // 
             // BaiTap
             // 
@@ -378,11 +383,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Separator0);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnnamngon);
+            this.Controls.Add(this.btnbonngon);
+            this.Controls.Add(this.btnbangon);
+            this.Controls.Add(this.btnhaingon);
+            this.Controls.Add(this.btnmotngon);
             this.Name = "BaiTap";
             this.Size = new System.Drawing.Size(974, 382);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -417,10 +422,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel Separator0;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnnamngon;
+        private System.Windows.Forms.Button btnbonngon;
+        private System.Windows.Forms.Button btnbangon;
+        private System.Windows.Forms.Button btnhaingon;
+        private System.Windows.Forms.Button btnmotngon;
     }
 }

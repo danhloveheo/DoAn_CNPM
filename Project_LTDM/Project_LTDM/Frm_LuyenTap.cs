@@ -18,13 +18,19 @@ namespace Project_LTDM
         Button btn_oldHighLight = new Button();
         Button btn_oldHighLight1 = new Button();
         Panel label_oldDefault = new Panel();
+        List<string> ListNgon;
         public Frm_LuyenTap()
         {
             InitializeComponent();
         }
-     
 
-        private void RandomString()
+        public Frm_LuyenTap(List<string> listNgon)
+        {
+            InitializeComponent();
+            ListNgon = listNgon;
+            RandomStringFollowList();
+        }
+        /*private void RandomString()
         {
             Random rnd = new Random();
 
@@ -39,15 +45,32 @@ namespace Project_LTDM
                     Chuoi[i] = skeys;
                 }
             }
-        }
+        }*/
 
+        private void RandomStringFollowList()
+        {
+
+            Random rnd = new Random();
+            for (int i = 0; i < 11; i++)
+            {
+                string name = "label" + i;
+                Control ctn = FindControl(pn_stringKeys, name);
+                if (ctn != null)
+                {
+                    string skeys = ListNgon[rnd.Next(ListNgon.Count)];
+
+                    ((Label)ctn).Text = skeys;
+                    Chuoi[i] = skeys;
+                }
+            }
+        }
      
         private void Frm_LuyenTap_Load(object sender, EventArgs e)
         {
             aTimer.Tick += ATimer_Tick;
             aTimer.Interval = 3000;
 
-            RandomString();
+       
 
             this.KeyPreview = true;
             Separator_True(Separator0);

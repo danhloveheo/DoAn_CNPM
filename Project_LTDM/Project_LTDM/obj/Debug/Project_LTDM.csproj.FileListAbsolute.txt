@@ -220,3 +220,4 @@ D:\DoAn_CNPM 3\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Ty
 D:\DoAn_CNPM 3\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
 D:\DoAn_CNPM 3\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.BaiTap.resources
 D:\DoAn_CNPM 3\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 3\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.BaiTap.resources

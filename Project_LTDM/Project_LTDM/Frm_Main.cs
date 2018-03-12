@@ -21,8 +21,8 @@ namespace Project_LTDM
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Frm_LuyenTap frm = new Frm_LuyenTap();
-            frm.ShowDialog();
+            /*Frm_LuyenTap frm = new Frm_LuyenTap();
+            frm.ShowDialog();*/
 
         }
 

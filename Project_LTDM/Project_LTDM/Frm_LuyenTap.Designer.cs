@@ -536,7 +536,7 @@
             this.labeltyping.AutoSize = true;
             this.labeltyping.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeltyping.ForeColor = System.Drawing.Color.White;
-            this.labeltyping.Location = new System.Drawing.Point(309, 9);
+            this.labeltyping.Location = new System.Drawing.Point(327, 9);
             this.labeltyping.Name = "labeltyping";
             this.labeltyping.Size = new System.Drawing.Size(516, 73);
             this.labeltyping.TabIndex = 0;
