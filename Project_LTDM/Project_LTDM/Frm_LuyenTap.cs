@@ -19,6 +19,9 @@ namespace Project_LTDM
         Button btn_oldHighLight1 = new Button();
         Panel label_oldDefault = new Panel();
         List<string> ListNgon;
+        int i;
+        int v = 0;
+        int PositionKey = 0;
         public Frm_LuyenTap()
         {
             InitializeComponent();
@@ -160,7 +163,7 @@ namespace Project_LTDM
         }
 
     
-        int PositionKey = 0;
+       
        
      
 
@@ -283,6 +286,10 @@ namespace Project_LTDM
 
         private void Frm_LuyenTap_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (timer1.Enabled == false)
+            {
+                timer1.Start();
+            }
             if (PositionKey >= Chuoi.Length)
                 return;
             char keyText = Chuoi[PositionKey].ToCharArray()[0];
@@ -327,9 +334,137 @@ namespace Project_LTDM
                         Button_False((Button)ctn);
                         WrongKey((Label)ctnkey);
                     }
+                    if (PositionKey == 11)
+                    {
+
+                        v = 1;
+
+                    }
                 }
             }
           
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (v == 0)
+            {
+                i = Convert.ToInt32(label11.Text);
+                i--;
+                label11.Text = i.ToString();
+
+            }
+            else if (v == 1)
+            {
+
+                if (i < 10)
+                {
+                    pictureBox5.Visible = true;
+
+                    v = 2;
+                    MessageBox.Show("Bạn được 1 sao");
+
+
+                }
+
+                else if (i >= 10 && i < 30)
+                {
+                    if (pictureBox4.Visible == false)
+                    {
+                        pictureBox4.Visible = true;
+
+                        return;
+                    }
+                    else
+                    {
+                        pictureBox2.Visible = true;
+
+                        v = 2;
+                        MessageBox.Show("Bạn được 2 sao");
+                    }
+
+                }
+                else if (i >= 30 && i < 40)
+                {
+                    if (pictureBox4.Visible == false)
+                    {
+                        pictureBox4.Visible = true;
+                        return;
+                    }
+                    else if (pictureBox5.Visible == false)
+                    {
+                        pictureBox5.Visible = true;
+                        return;
+                    }
+                    else
+                    {
+                        pictureBox2.Visible = true;
+
+                        v = 2;
+                        MessageBox.Show("Bạn được 3 sao");
+                    }
+
+                }
+                else if (i >= 40 && i < 50)
+                {
+                    if (pictureBox3.Visible == false)
+                    {
+                        pictureBox3.Visible = true;
+                        return;
+                    }
+                    else if (pictureBox4.Visible == false)
+                    {
+                        pictureBox4.Visible = true;
+                        return;
+                    }
+                    else if (pictureBox5.Visible == false)
+                    {
+                        pictureBox5.Visible = true;
+                        return;
+                    }
+                    else
+                    {
+                        pictureBox2.Visible = true;
+
+                        v = 2;
+                        MessageBox.Show("Bạn được 4 sao");
+                    }
+
+                }
+                else if (i >= 50 && i < 60)
+                {
+                    if (pictureBox3.Visible == false)
+                    {
+                        pictureBox3.Visible = true;
+                        return;
+                    }
+                    else if (pictureBox4.Visible == false)
+                    {
+                        pictureBox4.Visible = true;
+                        return;
+                    }
+                    else if (pictureBox5.Visible == false)
+                    {
+                        pictureBox5.Visible = true;
+                        return;
+                    }
+                    else if (pictureBox2.Visible == false)
+                    {
+                        pictureBox2.Visible = true;
+                        return;
+                    }
+                    else
+                    {
+                        pictureBox6.Visible = true;
+
+                        v = 2;
+                        MessageBox.Show("Bạn được 5 sao");
+                    }
+
+
+                }
+
+            }
         }
     }
 }

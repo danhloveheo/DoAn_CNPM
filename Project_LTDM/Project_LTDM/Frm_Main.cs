@@ -31,5 +31,10 @@ namespace Project_LTDM
             Frm_Typing frm = new Frm_Typing();
             frm.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_LuyenTap));
             this.btn_Finger0 = new System.Windows.Forms.Button();
             this.btn_Finger2 = new System.Windows.Forms.Button();
@@ -129,12 +130,24 @@
             this.button59 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pn_stringKeys.SuspendLayout();
             this.pn_RH.SuspendLayout();
             this.pn_LH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.pn_Keys.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Finger0
@@ -475,7 +488,7 @@
             this.pn_RH.Controls.Add(this.btn_Finger7);
             this.pn_RH.Controls.Add(this.btn_Finger9);
             this.pn_RH.Controls.Add(this.btn_Finger8);
-            this.pn_RH.Location = new System.Drawing.Point(518, 483);
+            this.pn_RH.Location = new System.Drawing.Point(932, 366);
             this.pn_RH.Name = "pn_RH";
             this.pn_RH.Size = new System.Drawing.Size(146, 194);
             this.pn_RH.TabIndex = 100;
@@ -498,7 +511,7 @@
             this.pn_LH.Controls.Add(this.btn_Finger4);
             this.pn_LH.Controls.Add(this.btn_Finger2);
             this.pn_LH.Controls.Add(this.btn_Finger3);
-            this.pn_LH.Location = new System.Drawing.Point(243, 483);
+            this.pn_LH.Location = new System.Drawing.Point(0, 366);
             this.pn_LH.Name = "pn_LH";
             this.pn_LH.Size = new System.Drawing.Size(155, 194);
             this.pn_LH.TabIndex = 99;
@@ -616,7 +629,7 @@
             this.pn_Keys.Controls.Add(this.button59);
             this.pn_Keys.Controls.Add(this.button40);
             this.pn_Keys.Controls.Add(this.button46);
-            this.pn_Keys.Location = new System.Drawing.Point(160, 261);
+            this.pn_Keys.Location = new System.Drawing.Point(198, 355);
             this.pn_Keys.Name = "pn_Keys";
             this.pn_Keys.Size = new System.Drawing.Size(688, 216);
             this.pn_Keys.TabIndex = 97;
@@ -1268,11 +1281,94 @@
             this.button46.Text = "+\r\n=\r\n";
             this.button46.UseVisualStyleBackColor = true;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(295, 259);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(72, 72);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 108;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(593, 260);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(72, 72);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox5.TabIndex = 109;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(966, 274);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(72, 72);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox6.TabIndex = 110;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(779, 265);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(72, 72);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 111;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(80, 274);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(72, 72);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 112;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.SystemColors.Control;
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label11.Font = new System.Drawing.Font("VnTimes", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(439, 258);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(92, 65);
+            this.label11.TabIndex = 113;
+            this.label11.Text = "60";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Frm_LuyenTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1118, 667);
+            this.ClientSize = new System.Drawing.Size(1118, 604);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.pn_Keys);
             this.Controls.Add(this.pn_stringKeys);
             this.Controls.Add(this.pn_RH);
@@ -1292,7 +1388,13 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pn_Keys.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1398,6 +1500,13 @@
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Timer timer1;
 
 
 
