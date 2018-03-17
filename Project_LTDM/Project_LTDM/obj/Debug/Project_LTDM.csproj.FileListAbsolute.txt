@@ -224,3 +224,7 @@ E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 3\DoAn_CNPM\Project_LTDM\Project_LTDM\ob
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Main.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.BaiTap.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Main.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.BaiTap.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_SaveExercise.resources
