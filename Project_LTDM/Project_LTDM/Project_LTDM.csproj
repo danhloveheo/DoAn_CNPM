@@ -70,12 +70,6 @@
     <Compile Include="Frm_Register.Designer.cs">
       <DependentUpon>Frm_Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_SaveExercise.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_SaveExercise.Designer.cs">
-      <DependentUpon>Frm_SaveExercise.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_Typing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,9 +96,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Register.resx">
       <DependentUpon>Frm_Register.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_SaveExercise.resx">
-      <DependentUpon>Frm_SaveExercise.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Typing.resx">
       <DependentUpon>Frm_Typing.cs</DependentUpon>
