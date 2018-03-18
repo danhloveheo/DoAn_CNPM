@@ -135,8 +135,8 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label11 = new System.Windows.Forms.Label();
             this.pn_stringKeys.SuspendLayout();
             this.pn_RH.SuspendLayout();
             this.pn_LH.SuspendLayout();
@@ -1341,34 +1341,33 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Visible = false;
             // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.SystemColors.Control;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label11.Font = new System.Drawing.Font("VnTimes", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(439, 258);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 65);
-            this.label11.TabIndex = 113;
-            this.label11.Text = "60";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.SystemColors.Control;
+            this.label11.Font = new System.Drawing.Font("Vinhan", 36F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(452, 258);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 87);
+            this.label11.TabIndex = 113;
+            this.label11.Text = "60";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Frm_LuyenTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1118, 604);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.pn_Keys);
             this.Controls.Add(this.pn_stringKeys);
             this.Controls.Add(this.pn_RH);
@@ -1505,8 +1504,8 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label11;
 
 
 
