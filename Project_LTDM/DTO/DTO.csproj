@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO_Exercise.cs" />
+    <Compile Include="DTO_Lesson.cs" />
+    <Compile Include="DTO_LessonSection.cs" />
     <Compile Include="DTO_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

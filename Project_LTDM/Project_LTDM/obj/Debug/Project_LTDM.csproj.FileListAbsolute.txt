@@ -225,7 +225,6 @@ C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Pro
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Main.resources
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.BaiTap.resources
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_SaveExercise.resources
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 4\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 4\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
@@ -263,3 +262,9 @@ C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Pro
 D:\KhoaHocTN\CongNghePhanMem\Test15-Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
 D:\KhoaHocTN\CongNghePhanMem\Test15-Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
 D:\KhoaHocTN\CongNghePhanMem\Test15-Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.Information.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.KhoaHoc.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenTap.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.TaoBaiTap.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources

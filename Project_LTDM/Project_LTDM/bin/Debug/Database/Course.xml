@@ -1,0 +1,107 @@
+<CourseDetails>
+	<Course Id="1">
+		<Lesson Name="The Home Row">
+			<Intro></Intro>
+			<Section Name = "New keys: Home row">
+				<Type>Key</Type>
+				<Detail>uk7qwert01031key2.txt</Detail>
+			</Section>
+			<Section Name = "Word drill">
+				<Type>Word</Type>
+				<Detail>uk7qwert01031word2.txt</Detail>
+			</Section>
+			<Section Name = "Paragraph drill">
+				<Type>Paragraph</Type>
+				<Detail>uk7qwert01052text2.txt</Detail>
+			</Section>
+		</Lesson>
+		<Lesson Name="Key E and I">
+			<Intro></Intro>
+			<Section Name = "New keys: E and I">
+				<Type>Key</Type>
+				<Detail>uk7qwert02012key2.txt</Detail>
+			</Section>
+			<Section Name = "Word drill">
+				<Type>Word</Type>
+				<Detail>uk7qwert02021word2.txt</Detail>
+			</Section>
+			<Section Name = "Sentence drill">
+				<Type>Sentence</Type>
+				<Detail>uk7qwert02041sentence2.txt</Detail>
+			</Section>
+			<Section Name = "Paragraph drill">
+				<Type>Paragraph</Type>
+				<Detail>uk7qwert02051paragraph2.txt</Detail>
+			</Section>
+		</Lesson>
+	</Course>
+	<Course Id="2">
+		<Lesson Name="Focus on the home row">
+			<Intro></Intro>
+			<Section Name = "Review the home row">
+				<Type>Key</Type>
+				<Detail>uk7qwert01031key2.txt</Detail>
+			</Section>
+			<Section Name = "Fun phrases with A F J">
+				<Type>Sentence</Type>
+				<Detail>uk7speed01021sentence2.txt</Detail>
+			</Section>
+			<Section Name = "Fun phrases with D K">
+				<Type>Sentence</Type>
+				<Detail>uk7speed01031sentence2.txt</Detail>
+			</Section>
+			<Section Name = "Fun phrases with S L">
+				<Type>Sentence</Type>
+				<Detail>uk7speed01041sentence2.txt</Detail>
+			</Section>
+		</Lesson>
+		<Lesson Name="Focus on the index finger keys">
+			<Intro></Intro>
+			<Section Name = "Review index finger keys">
+				<Type>Key</Type>
+				<Detail>uk7speed02011key2.txt</Detail>
+			</Section>
+			<Section Name = "Fun phrases with R T Y U">
+				<Type>Sentence</Type>
+				<Detail>uk7speed02031sentence2.txt</Detail>
+			</Section>
+			<Section Name = "Fun phrases with G H">
+				<Type>Sentence</Type>
+				<Detail>uk7speed02041sentence2.txt</Detail>
+			</Section>
+			<Section Name = "Fun phrases with V B N M">
+				<Type>Sentence</Type>
+				<Detail>uk7speed02051sentence2.txt</Detail>
+			</Section>
+			<Section Name = "Text drill, all letters">
+				<Type>Key</Type>
+				<Detail>uk7speed02021key2.txt</Detail>
+			</Section>
+		</Lesson>
+	</Course>
+	<Course Id="3">
+		<Lesson Name="Lesson 1: Numbers 3, 4, 5, 6, 7 and 8">
+			<Intro></Intro>
+			<Section Name = "Numbers 4 5 6 7">
+				<Type>Key</Type>
+				<Detail>uk7numrow0012key2.txt</Detail>
+			</Section>
+			<Section Name = "Word drill">
+				<Type>Word</Type>
+				<Detail>uk7numrow0021word2.txt</Detail>
+			</Section>
+			<Section Name = "Number 3 and 8">
+				<Type>Key</Type>
+				<Detail>uk7numrow1023key2.txt</Detail>
+			</Section>
+			<Section Name = "Sentence drill">
+				<Type>Sentence</Type>
+				<Detail>uk7numrow1041sentence2.txt</Detail>
+			</Section>
+			<Section Name = "Paragraph drill">
+				<Type>Paragraph</Type>
+				<Detail>uk7numrow1051paragraph2.txt</Detail>
+			</Section>
+		</Lesson>
+	</Course>
+</CourseDetails>	   
