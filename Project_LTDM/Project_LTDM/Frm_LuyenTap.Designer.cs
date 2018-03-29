@@ -153,7 +153,7 @@
             // btn_Finger0
             // 
             this.btn_Finger0.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger0.Location = new System.Drawing.Point(22, 81);
+            this.btn_Finger0.Location = new System.Drawing.Point(22, 52);
             this.btn_Finger0.Name = "btn_Finger0";
             this.btn_Finger0.Size = new System.Drawing.Size(22, 20);
             this.btn_Finger0.TabIndex = 91;
@@ -163,7 +163,7 @@
             // btn_Finger2
             // 
             this.btn_Finger2.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger2.Location = new System.Drawing.Point(78, 38);
+            this.btn_Finger2.Location = new System.Drawing.Point(71, 10);
             this.btn_Finger2.Name = "btn_Finger2";
             this.btn_Finger2.Size = new System.Drawing.Size(20, 20);
             this.btn_Finger2.TabIndex = 91;
@@ -173,7 +173,7 @@
             // btn_Finger7
             // 
             this.btn_Finger7.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger7.Location = new System.Drawing.Point(58, 36);
+            this.btn_Finger7.Location = new System.Drawing.Point(58, 5);
             this.btn_Finger7.Name = "btn_Finger7";
             this.btn_Finger7.Size = new System.Drawing.Size(18, 20);
             this.btn_Finger7.TabIndex = 91;
@@ -183,7 +183,7 @@
             // btn_Finger9
             // 
             this.btn_Finger9.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger9.Location = new System.Drawing.Point(107, 79);
+            this.btn_Finger9.Location = new System.Drawing.Point(106, 49);
             this.btn_Finger9.Name = "btn_Finger9";
             this.btn_Finger9.Size = new System.Drawing.Size(18, 20);
             this.btn_Finger9.TabIndex = 91;
@@ -193,7 +193,7 @@
             // btn_Finger8
             // 
             this.btn_Finger8.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger8.Location = new System.Drawing.Point(84, 48);
+            this.btn_Finger8.Location = new System.Drawing.Point(82, 15);
             this.btn_Finger8.Name = "btn_Finger8";
             this.btn_Finger8.Size = new System.Drawing.Size(18, 20);
             this.btn_Finger8.TabIndex = 91;
@@ -227,7 +227,7 @@
             // btn_Finger5
             // 
             this.btn_Finger5.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger5.Location = new System.Drawing.Point(5, 119);
+            this.btn_Finger5.Location = new System.Drawing.Point(1, 90);
             this.btn_Finger5.Name = "btn_Finger5";
             this.btn_Finger5.Size = new System.Drawing.Size(18, 20);
             this.btn_Finger5.TabIndex = 91;
@@ -237,7 +237,7 @@
             // btn_Finger1
             // 
             this.btn_Finger1.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger1.Location = new System.Drawing.Point(50, 54);
+            this.btn_Finger1.Location = new System.Drawing.Point(48, 23);
             this.btn_Finger1.Name = "btn_Finger1";
             this.btn_Finger1.Size = new System.Drawing.Size(20, 20);
             this.btn_Finger1.TabIndex = 91;
@@ -431,7 +431,7 @@
             // btn_Finger4
             // 
             this.btn_Finger4.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger4.Location = new System.Drawing.Point(129, 126);
+            this.btn_Finger4.Location = new System.Drawing.Point(131, 94);
             this.btn_Finger4.Name = "btn_Finger4";
             this.btn_Finger4.Size = new System.Drawing.Size(18, 20);
             this.btn_Finger4.TabIndex = 91;
@@ -490,13 +490,13 @@
             this.pn_RH.Controls.Add(this.btn_Finger8);
             this.pn_RH.Location = new System.Drawing.Point(932, 366);
             this.pn_RH.Name = "pn_RH";
-            this.pn_RH.Size = new System.Drawing.Size(146, 194);
+            this.pn_RH.Size = new System.Drawing.Size(146, 157);
             this.pn_RH.TabIndex = 100;
             // 
             // btn_Finger6
             // 
             this.btn_Finger6.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger6.Location = new System.Drawing.Point(30, 57);
+            this.btn_Finger6.Location = new System.Drawing.Point(25, 24);
             this.btn_Finger6.Name = "btn_Finger6";
             this.btn_Finger6.Size = new System.Drawing.Size(18, 20);
             this.btn_Finger6.TabIndex = 91;
@@ -513,13 +513,13 @@
             this.pn_LH.Controls.Add(this.btn_Finger3);
             this.pn_LH.Location = new System.Drawing.Point(0, 366);
             this.pn_LH.Name = "pn_LH";
-            this.pn_LH.Size = new System.Drawing.Size(155, 194);
+            this.pn_LH.Size = new System.Drawing.Size(155, 157);
             this.pn_LH.TabIndex = 99;
             // 
             // btn_Finger3
             // 
             this.btn_Finger3.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger3.Location = new System.Drawing.Point(107, 57);
+            this.btn_Finger3.Location = new System.Drawing.Point(103, 27);
             this.btn_Finger3.Name = "btn_Finger3";
             this.btn_Finger3.Size = new System.Drawing.Size(18, 20);
             this.btn_Finger3.TabIndex = 91;
@@ -1350,7 +1350,7 @@
             // 
             this.label11.BackColor = System.Drawing.SystemColors.Control;
             this.label11.Font = new System.Drawing.Font("Vinhan", 36F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(452, 258);
+            this.label11.Location = new System.Drawing.Point(463, 258);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(94, 87);
             this.label11.TabIndex = 113;

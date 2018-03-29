@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Typing));
             this.labeltyping = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RTB_String = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pn_Keys = new System.Windows.Forms.Panel();
@@ -106,13 +107,12 @@
             this.btn_Finger4 = new System.Windows.Forms.Button();
             this.btn_Finger2 = new System.Windows.Forms.Button();
             this.btn_Finger3 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pn_Keys.SuspendLayout();
             this.pn_RH.SuspendLayout();
             this.pn_LH.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labeltyping
@@ -136,6 +136,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(916, 96);
             this.panel1.TabIndex = 95;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(117, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 90);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // RTB_String
             // 
@@ -876,7 +885,7 @@
             // 
             // pn_RH
             // 
-            this.pn_RH.BackgroundImage = global::Project_LTDM.Properties.Resources.RH_NEW;
+            this.pn_RH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pn_RH.BackgroundImage")));
             this.pn_RH.Controls.Add(this.btn_Finger5);
             this.pn_RH.Controls.Add(this.btn_Finger6);
             this.pn_RH.Controls.Add(this.btn_Finger7);
@@ -890,7 +899,7 @@
             // btn_Finger5
             // 
             this.btn_Finger5.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger5.Location = new System.Drawing.Point(3, 94);
+            this.btn_Finger5.Location = new System.Drawing.Point(0, 91);
             this.btn_Finger5.Name = "btn_Finger5";
             this.btn_Finger5.Size = new System.Drawing.Size(18, 20);
             this.btn_Finger5.TabIndex = 91;
@@ -939,7 +948,7 @@
             // 
             // pn_LH
             // 
-            this.pn_LH.BackgroundImage = global::Project_LTDM.Properties.Resources.LH_NEW1;
+            this.pn_LH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pn_LH.BackgroundImage")));
             this.pn_LH.Controls.Add(this.btn_Finger0);
             this.pn_LH.Controls.Add(this.btn_Finger1);
             this.pn_LH.Controls.Add(this.btn_Finger4);
@@ -1000,15 +1009,6 @@
             this.btn_Finger3.UseVisualStyleBackColor = false;
             this.btn_Finger3.Visible = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(117, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 90);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // Frm_Typing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1024,11 +1024,11 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Frm_Typing_KeyPress);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.pn_Keys.ResumeLayout(false);
             this.pn_RH.ResumeLayout(false);
             this.pn_LH.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

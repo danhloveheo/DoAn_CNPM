@@ -19,7 +19,7 @@ namespace Project_LTDM
         Button btn_oldHighLight1 = new Button();
         Panel label_oldDefault = new Panel();
         List<string> ListNgon;
-        int i;
+     
         int v = 0;
         int PositionKey = 0;
         public Frm_LuyenTap()
@@ -347,11 +347,31 @@ namespace Project_LTDM
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            int i = Convert.ToInt32(label11.Text);
             if (v == 0)
             {
-                i = Convert.ToInt32(label11.Text);
-                i--;
-                label11.Text = i.ToString();
+                if (i != 0)
+                {
+                    i = Convert.ToInt32(label11.Text);
+                    i--;
+                    label11.Text = i.ToString();
+                }
+                else
+                {
+                    if (pictureBox4.Visible == false)
+                    {
+                        pictureBox4.Visible = true;
+
+                        return;
+                    }
+                    else
+                    {
+                        pictureBox5.Visible = true;
+
+                        v = 2;
+                        MessageBox.Show("Ban duoc 2 sao va 0 giay");
+                    }
+                }
 
             }
             else if (v == 1)
@@ -362,7 +382,7 @@ namespace Project_LTDM
                     pictureBox5.Visible = true;
 
                     v = 2;
-                    MessageBox.Show("Bạn được 1 sao");
+                    MessageBox.Show("Ban duoc 1 sao");
 
 
                 }
@@ -380,7 +400,7 @@ namespace Project_LTDM
                         pictureBox2.Visible = true;
 
                         v = 2;
-                        MessageBox.Show("Bạn được 2 sao");
+                        MessageBox.Show("Ban duoc 2 sao");
                     }
 
                 }
@@ -401,7 +421,7 @@ namespace Project_LTDM
                         pictureBox2.Visible = true;
 
                         v = 2;
-                        MessageBox.Show("Bạn được 3 sao");
+                        MessageBox.Show("Ban duoc 3 sao");
                     }
 
                 }
@@ -427,7 +447,7 @@ namespace Project_LTDM
                         pictureBox2.Visible = true;
 
                         v = 2;
-                        MessageBox.Show("Bạn được 4 sao");
+                        MessageBox.Show("Ban duoc 4 sao");
                     }
 
                 }
@@ -458,7 +478,7 @@ namespace Project_LTDM
                         pictureBox6.Visible = true;
 
                         v = 2;
-                        MessageBox.Show("Bạn được 5 sao");
+                        MessageBox.Show("Ban duoc 5 sao");
                     }
 
 
