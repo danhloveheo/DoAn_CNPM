@@ -268,3 +268,4 @@ C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Pr
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.TaoBaiTap.resources
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LessonList.resources
