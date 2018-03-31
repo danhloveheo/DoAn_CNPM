@@ -95,7 +95,7 @@ namespace Project_LTDM
                 }
             }
 
-            /*if (name == "LessonSections")
+            if (name == "LessonSections")
             {
                 foreach (Control c in this.Controls)
                 {
@@ -104,7 +104,7 @@ namespace Project_LTDM
                         itemsToRemove.Add(c);
                     }
                 }
-            }*/
+            }
 
             foreach (Control c in itemsToRemove)
             {
@@ -146,7 +146,7 @@ namespace Project_LTDM
                 lbLesson.Tag = lessonTag;
                 lbLesson.Location = new Point(15, repetition * 25);
                 lbLesson.AutoSize = true;
-                //lbLesson.Click += new EventHandler(ShowLessonSections);
+                lbLesson.Click += new EventHandler(ShowLessonSections);
 
                 lessonList.PnLessons.Controls.AddRange(new Control[] { lbLessonCnt, lbLesson });
                 if (repetition == 1)
@@ -200,7 +200,7 @@ namespace Project_LTDM
                 lbLesson.Tag = lessonTag;
                 lbLesson.Location = new Point(15, repetition * 25);
                 lbLesson.AutoSize = true;
-                //lbLesson.Click += new EventHandler(ShowLessonSections);
+                lbLesson.Click += new EventHandler(ShowLessonSections);
 
                 lessonList.PnLessons.Controls.AddRange(new Control[] { lbLessonCnt, lbLesson });
                 repetition++;
@@ -240,7 +240,7 @@ namespace Project_LTDM
                 lbLesson.Tag = lessonTag;
                 lbLesson.Location = new Point(15, repetition * 25);
                 lbLesson.AutoSize = true;
-                //lbLesson.Click += new EventHandler(ShowLessonSections);
+                lbLesson.Click += new EventHandler(ShowLessonSections);
 
                 lessonList.PnLessons.Controls.AddRange(new Control[] { lbLessonCnt, lbLesson });
                 repetition++;
@@ -248,6 +248,88 @@ namespace Project_LTDM
 
             this.Controls.Add(lessonList);
             lessonList.BringToFront(); //Add LessonList nới tạo vào form
+        }
+
+        private void ShowLessonSections(object sender, EventArgs e)
+        {
+            disposeControls("LessonSections"); //Xoá các LessonSections không còn dùng
+
+            UserControls.LessonSections lessonSections = new UserControls.LessonSections(); //Tạo LessonSection mới
+            lessonSections.Dock = DockStyle.Fill;
+
+            Label lb = (Label)sender;
+            LessonTag lessonTag = (LessonTag)lb.Tag; //Ép kiểu thuộc tính Tag sang LessonTag
+            int courseId = lessonTag.courseId;
+
+            switch (courseId)
+            {
+                case 1:
+                    lessonSections.LbCourse.Text = "Touch Typing Course";
+                    break;
+                case 2:
+                    lessonSections.LbCourse.Text = "Speed Building Course";
+                    break;
+                case 3:
+                    lessonSections.LbCourse.Text = "Number, Special Marks and 10-Key Pad Courses";
+                    break;
+                default:
+                    lessonSections.LbCourse.Text = "";
+                    break;
+            }
+
+            List<DTO_Lesson> lessons = DAO_Lesson.SearchLessons(courseId);
+
+            //Tạo label chứa số thứ tự các bài học
+            int repetition = 1;
+            foreach (DTO_Lesson lesson in lessons)
+            {
+                //Tạo tag cho các label
+                LessonTag lessonCntTag = new LessonTag();
+                lessonCntTag.courseId = courseId;
+                lessonCntTag.lessonNumber = repetition;
+                lessonCntTag.lesson = lesson;
+
+                Label lbLessonCnt = new Label();
+                lbLessonCnt.Text = repetition.ToString();
+                lbLessonCnt.Tag = lessonCntTag;
+                lbLessonCnt.Location = new Point((repetition - 1) * 30, 0);
+                lbLessonCnt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                lbLessonCnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                lbLessonCnt.AutoSize = true;
+                lbLessonCnt.Click += new EventHandler(ShowLessonSections);
+
+                lessonSections.PnLessonList.Controls.Add(lbLessonCnt);
+                repetition++;
+            }
+
+            //Tạo lbLessonName chứa tên bài học
+            Label lbLessonName = new Label();
+            lbLessonName.AutoSize = true;
+            lbLessonName.Font = new System.Drawing.Font("Franklin Gothic Medium", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lbLessonName.Text = "Lesson " + lessonTag.lessonNumber + " : " + lessonTag.lesson.Name;
+            lbLessonName.Anchor = AnchorStyles.None;
+            lessonSections.TpnLessonName.Controls.Add(lbLessonName);
+
+            List<DTO_LessonSection> sections = lessonTag.lesson.Sections;
+
+            repetition = 1;
+            foreach (DTO_LessonSection section in sections)
+            {
+                Label lbSectionCnt = new Label();
+                lbSectionCnt.Text = courseId + ". " + repetition;
+                lbSectionCnt.Location = new Point(0, repetition * 25);
+                lbSectionCnt.AutoSize = true;
+
+                Label lbSection = new Label();
+                lbSection.Text = section.Name;
+                lbSection.Location = new Point(25, repetition * 25);
+                lbSection.AutoSize = true;
+
+                lessonSections.PnSections.Controls.AddRange(new Control[] { lbSectionCnt, lbSection });
+                repetition++;
+            }
+            this.Controls.Add(lessonSections);
+            lessonSections.BringToFront();
         }
     }
 
