@@ -43,18 +43,7 @@ namespace Project_LTDM.UserControls
             }
         }
 
-        public TableLayoutPanel TpnLessonName
-        {
-            get
-            {
-                return tpnLessonName;
-            }
-
-            set
-            {
-                tpnLessonName = value;
-            }
-        }
+     
 
         public Panel PnSections
         {

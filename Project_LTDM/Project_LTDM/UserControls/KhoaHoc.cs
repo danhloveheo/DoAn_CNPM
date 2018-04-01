@@ -57,5 +57,41 @@ namespace Project_LTDM.UserControls
                 this.btnC4Click(this, e);
             }
         }
+
+        private void btnC1_Click_1(object sender, EventArgs e)
+        {
+            //Bubble the event up to the parent
+            if (this.btnC1Click != null) //Null check makes sure the main page is attached to the event
+            {
+                this.btnC1Click(this, e);
+            }
+        }
+
+        private void btnC2_Click_1(object sender, EventArgs e)
+        {
+            //Bubble the event up to the parent
+            if (this.btnC2Click != null) //Null check makes sure the main page is attached to the event
+            {
+                this.btnC2Click(this, e);
+            }
+        }
+
+        private void btnC3_Click_1(object sender, EventArgs e)
+        {
+            //Bubble the event up to the parent
+            if (this.btnC3Click != null) //Null check makes sure the main page is attached to the event
+            {
+                this.btnC3Click(this, e);
+            }
+        }
+
+        private void btnC4_Click_1(object sender, EventArgs e)
+        {
+            //Bubble the event up to the parent
+            if (this.btnC4Click != null) //Null check makes sure the main page is attached to the event
+            {
+                this.btnC4Click(this, e);
+            }
+        }
     }
 }

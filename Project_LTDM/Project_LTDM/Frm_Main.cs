@@ -172,7 +172,7 @@ namespace Project_LTDM
 
         private void khoaHoc_btnC3Click(object sender, EventArgs e)
         {
-            disposeControls("LessonList"); //Xoá các LessonList không còn dùng
+           /* disposeControls("LessonList"); //Xoá các LessonList không còn dùng
 
             UserControls.LessonList lessonList = new UserControls.LessonList(); //Tạo LessonList mới
             lessonList.Dock = DockStyle.Fill;
@@ -207,12 +207,12 @@ namespace Project_LTDM
             }
 
             this.Controls.Add(lessonList);
-            lessonList.BringToFront(); //Add LessonList nới tạo vào form
+            lessonList.BringToFront(); //Add LessonList nới tạo vào form*/
         }
 
         private void khoaHoc_btnC4Click(object sender, EventArgs e)
         {
-            disposeControls("LessonList"); //Xoá các LessonList không còn dùng
+            /*disposeControls("LessonList"); //Xoá các LessonList không còn dùng
 
             UserControls.LessonList lessonList = new UserControls.LessonList(); //Tạo LessonList mới
             lessonList.Dock = DockStyle.Fill;
@@ -247,7 +247,7 @@ namespace Project_LTDM
             }
 
             this.Controls.Add(lessonList);
-            lessonList.BringToFront(); //Add LessonList nới tạo vào form
+            lessonList.BringToFront(); //Add LessonList nới tạo vào form*/
         }
 
         private void ShowLessonSections(object sender, EventArgs e)
@@ -257,7 +257,7 @@ namespace Project_LTDM
             UserControls.LessonSections lessonSections = new UserControls.LessonSections(); //Tạo LessonSection mới
             lessonSections.Dock = DockStyle.Fill;
 
-            Label lb = (Label)sender;
+           /* Label lb = (Label)sender;
             LessonTag lessonTag = (LessonTag)lb.Tag; //Ép kiểu thuộc tính Tag sang LessonTag
             int courseId = lessonTag.courseId;
 
@@ -308,7 +308,7 @@ namespace Project_LTDM
             lbLessonName.Font = new System.Drawing.Font("Franklin Gothic Medium", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lbLessonName.Text = "Lesson " + lessonTag.lessonNumber + " : " + lessonTag.lesson.Name;
             lbLessonName.Anchor = AnchorStyles.None;
-            lessonSections.TpnLessonName.Controls.Add(lbLessonName);
+        
 
             List<DTO_LessonSection> sections = lessonTag.lesson.Sections;
 
@@ -327,9 +327,19 @@ namespace Project_LTDM
 
                 lessonSections.PnSections.Controls.AddRange(new Control[] { lbSectionCnt, lbSection });
                 repetition++;
-            }
+            }*/
             this.Controls.Add(lessonSections);
             lessonSections.BringToFront();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 

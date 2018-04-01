@@ -65,7 +65,6 @@
             this.btn_Finger6 = new System.Windows.Forms.Button();
             this.pn_LH = new System.Windows.Forms.Panel();
             this.btn_Finger3 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labeltyping = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -137,6 +136,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label11 = new System.Windows.Forms.Label();
+            this.picwatch = new System.Windows.Forms.PictureBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pn_stringKeys.SuspendLayout();
             this.pn_RH.SuspendLayout();
             this.pn_LH.SuspendLayout();
@@ -148,6 +149,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picwatch)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Finger0
@@ -440,6 +442,7 @@
             // 
             // pn_stringKeys
             // 
+            this.pn_stringKeys.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pn_stringKeys.BackgroundImage")));
             this.pn_stringKeys.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pn_stringKeys.Controls.Add(this.Separator6);
             this.pn_stringKeys.Controls.Add(this.Separator10);
@@ -463,7 +466,7 @@
             this.pn_stringKeys.Controls.Add(this.label2);
             this.pn_stringKeys.Controls.Add(this.label1);
             this.pn_stringKeys.Controls.Add(this.label0);
-            this.pn_stringKeys.Location = new System.Drawing.Point(12, 107);
+            this.pn_stringKeys.Location = new System.Drawing.Point(12, 117);
             this.pn_stringKeys.Name = "pn_stringKeys";
             this.pn_stringKeys.Size = new System.Drawing.Size(1076, 148);
             this.pn_stringKeys.TabIndex = 101;
@@ -488,7 +491,7 @@
             this.pn_RH.Controls.Add(this.btn_Finger7);
             this.pn_RH.Controls.Add(this.btn_Finger9);
             this.pn_RH.Controls.Add(this.btn_Finger8);
-            this.pn_RH.Location = new System.Drawing.Point(932, 366);
+            this.pn_RH.Location = new System.Drawing.Point(932, 408);
             this.pn_RH.Name = "pn_RH";
             this.pn_RH.Size = new System.Drawing.Size(146, 157);
             this.pn_RH.TabIndex = 100;
@@ -511,7 +514,7 @@
             this.pn_LH.Controls.Add(this.btn_Finger4);
             this.pn_LH.Controls.Add(this.btn_Finger2);
             this.pn_LH.Controls.Add(this.btn_Finger3);
-            this.pn_LH.Location = new System.Drawing.Point(0, 366);
+            this.pn_LH.Location = new System.Drawing.Point(0, 408);
             this.pn_LH.Name = "pn_LH";
             this.pn_LH.Size = new System.Drawing.Size(155, 157);
             this.pn_LH.TabIndex = 99;
@@ -525,15 +528,6 @@
             this.btn_Finger3.TabIndex = 91;
             this.btn_Finger3.UseVisualStyleBackColor = false;
             this.btn_Finger3.Visible = false;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(945, 92);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(18, 30);
-            this.richTextBox1.TabIndex = 98;
-            this.richTextBox1.Text = "Nguyen Khanh Minh";
-            this.richTextBox1.Visible = false;
             // 
             // pictureBox1
             // 
@@ -563,7 +557,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1118, 96);
+            this.panel1.Size = new System.Drawing.Size(1098, 96);
             this.panel1.TabIndex = 96;
             // 
             // pn_Keys
@@ -629,7 +623,7 @@
             this.pn_Keys.Controls.Add(this.button59);
             this.pn_Keys.Controls.Add(this.button40);
             this.pn_Keys.Controls.Add(this.button46);
-            this.pn_Keys.Location = new System.Drawing.Point(198, 355);
+            this.pn_Keys.Location = new System.Drawing.Point(198, 397);
             this.pn_Keys.Name = "pn_Keys";
             this.pn_Keys.Size = new System.Drawing.Size(688, 216);
             this.pn_Keys.TabIndex = 97;
@@ -1285,7 +1279,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(295, 259);
+            this.pictureBox4.Location = new System.Drawing.Point(311, 287);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(72, 72);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1297,7 +1291,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(593, 260);
+            this.pictureBox5.Location = new System.Drawing.Point(642, 288);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(72, 72);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1309,7 +1303,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(966, 274);
+            this.pictureBox6.Location = new System.Drawing.Point(1015, 302);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(72, 72);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1321,7 +1315,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(779, 265);
+            this.pictureBox2.Location = new System.Drawing.Point(828, 293);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(72, 72);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1333,7 +1327,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(80, 274);
+            this.pictureBox3.Location = new System.Drawing.Point(80, 302);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(72, 72);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1348,21 +1342,41 @@
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.SystemColors.Control;
-            this.label11.Font = new System.Drawing.Font("Vinhan", 36F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(463, 258);
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Vinhan", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(510, 314);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(94, 87);
-            this.label11.TabIndex = 113;
+            this.label11.Size = new System.Drawing.Size(47, 51);
+            this.label11.TabIndex = 115;
             this.label11.Text = "60";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picwatch
+            // 
+            this.picwatch.Image = ((System.Drawing.Image)(resources.GetObject("picwatch.Image")));
+            this.picwatch.Location = new System.Drawing.Point(484, 283);
+            this.picwatch.Name = "picwatch";
+            this.picwatch.Size = new System.Drawing.Size(96, 96);
+            this.picwatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picwatch.TabIndex = 116;
+            this.picwatch.TabStop = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(945, 92);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(18, 30);
+            this.richTextBox1.TabIndex = 98;
+            this.richTextBox1.Text = "Nguyen Khanh Minh";
+            this.richTextBox1.Visible = false;
             // 
             // Frm_LuyenTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1118, 604);
+            this.ClientSize = new System.Drawing.Size(1098, 625);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.picwatch);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
@@ -1392,6 +1406,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picwatch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1434,7 +1449,6 @@
         private System.Windows.Forms.Button btn_Finger6;
         private System.Windows.Forms.Panel pn_LH;
         private System.Windows.Forms.Button btn_Finger3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labeltyping;
         private System.Windows.Forms.Panel panel1;
@@ -1506,6 +1520,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox picwatch;
+        private System.Windows.Forms.RichTextBox richTextBox1;
 
 
 

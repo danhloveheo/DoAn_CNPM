@@ -344,7 +344,7 @@ namespace Project_LTDM
             }
           
         }
-
+        int dongho = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
             int i = Convert.ToInt32(label11.Text);
@@ -355,6 +355,17 @@ namespace Project_LTDM
                     i = Convert.ToInt32(label11.Text);
                     i--;
                     label11.Text = i.ToString();
+                    picwatch.Image = null;
+                    if (dongho == 0)
+                    {
+                        picwatch.Image = Image.FromFile("xoaytrai.png");
+                        dongho = 1;
+                    }
+                    else
+                    {
+                        picwatch.Image = Image.FromFile("xoayphai.png");
+                        dongho = 0;
+                    }
                 }
                 else
                 {

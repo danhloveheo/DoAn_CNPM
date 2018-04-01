@@ -80,6 +80,11 @@ namespace Project_LTDM.UserControls
             frm.ShowDialog();
         }
 
+        private void LuyenTap_Load(object sender, EventArgs e)
+        {
+
+        }
+
        
     }
 }
