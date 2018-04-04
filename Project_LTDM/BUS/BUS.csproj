@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,10 +44,15 @@
     <Compile Include="BUS_Exercise.cs" />
     <Compile Include="BUS_LessonTag.cs" />
     <Compile Include="BUS_User.cs" />
+    <Compile Include="BUS_UserControls.cs" />
     <Compile Include="BUS_Validation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{6248dd46-cde0-4ec8-b098-76d7463b10f2}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAO\DAO.csproj">
       <Project>{33b39ef0-6642-4b74-8f5c-56f146e3f5fc}</Project>
       <Name>DAO</Name>

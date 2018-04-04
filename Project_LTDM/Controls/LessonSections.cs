@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project_LTDM.UserControls
+namespace Controls
 {
     public partial class LessonSections : UserControl
     {
+        public event EventHandler btnChangeCourseClick;
+
         public LessonSections()
         {
             InitializeComponent();
@@ -43,7 +45,18 @@ namespace Project_LTDM.UserControls
             }
         }
 
-     
+        public TableLayoutPanel TpnLessonName
+        {
+            get
+            {
+                return tpnLessonName;
+            }
+
+            set
+            {
+                tpnLessonName = value;
+            }
+        }
 
         public Panel PnSections
         {
@@ -55,6 +68,15 @@ namespace Project_LTDM.UserControls
             set
             {
                 this.pnSections = value;
+            }
+        }
+
+        private void btnChangeCourse_Click(object sender, EventArgs e)
+        {
+            //Bubble the event up to the parent
+            if (this.btnChangeCourseClick != null) //Null check makes sure the main page is attached to the event
+            {
+                this.btnChangeCourseClick(this, e);
             }
         }
     }

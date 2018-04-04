@@ -1,0 +1,9 @@
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Controls\bin\Debug\Controls.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Controls\bin\Debug\Controls.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Controls\obj\Debug\Controls.KhoaHoc.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Controls\obj\Debug\Controls.LessonList.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Controls\obj\Debug\Controls.LessonSections.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Controls\obj\Debug\Controls.csproj.GenerateResource.Cache
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Controls\obj\Debug\Controls.csproj.CoreCompileInputs.cache
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Controls\obj\Debug\Controls.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Controls\obj\Debug\Controls.pdb

@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project_LTDM.UserControls
+namespace Controls
 {
     public partial class LessonList : UserControl
     {
+        public event EventHandler btnChangeCourseClick;
+
         public LessonList()
         {
             InitializeComponent();
@@ -40,6 +42,15 @@ namespace Project_LTDM.UserControls
             set
             {
                 lbCourse = value;
+            }
+        }
+
+        private void btnChangeCourse_Click(object sender, EventArgs e)
+        {
+            //Bubble the event up to the parent
+            if (this.btnChangeCourseClick != null) //Null check makes sure the main page is attached to the event
+            {
+                this.btnChangeCourseClick(this, e);
             }
         }
     }

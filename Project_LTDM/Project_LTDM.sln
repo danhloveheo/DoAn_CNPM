@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_LTDM", "Project_LTDM\Project_LTDM.csproj", "{3AE82671-492A-4B8D-BAC6-438B42E1495E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{FA7F1B61-1D75-4270-AA85-92F716BE328F}"
@@ -8,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{33B39EF0-6642-4B74-8F5C-56F146E3F5FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS", "BUS\BUS.csproj", "{2D329E2C-633A-4FBF-BB08-AEB4749CC6C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Controls\Controls.csproj", "{6248DD46-CDE0-4EC8-B098-76D7463B10F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,8 +35,15 @@ Global
 		{2D329E2C-633A-4FBF-BB08-AEB4749CC6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D329E2C-633A-4FBF-BB08-AEB4749CC6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D329E2C-633A-4FBF-BB08-AEB4749CC6C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6248DD46-CDE0-4EC8-B098-76D7463B10F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6248DD46-CDE0-4EC8-B098-76D7463B10F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6248DD46-CDE0-4EC8-B098-76D7463B10F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6248DD46-CDE0-4EC8-B098-76D7463B10F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {559ACC56-42AA-4450-8511-E6D5AEFCFF62}
 	EndGlobalSection
 EndGlobal
