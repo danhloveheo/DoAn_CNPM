@@ -18,6 +18,13 @@ namespace Project_LTDM.UserControls
             InitializeComponent();
         }
 
+       
+
+        private void LuyenTap_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnmotngon_Click(object sender, EventArgs e)
         {
             Frm_LuyenTap frm = new Frm_LuyenTap(Finger.NgonTro);
@@ -48,42 +55,25 @@ namespace Project_LTDM.UserControls
             frm.ShowDialog();
         }
 
-        private void btnmotngon_Click_1(object sender, EventArgs e)
+        private void radRandom_CheckedChanged(object sender, EventArgs e)
         {
-            Frm_LuyenTap frm = new Frm_LuyenTap(Finger.NgonTro);
-            frm.ShowDialog();
-        }
-
-        private void btnhaingon_Click_1(object sender, EventArgs e)
-        {
-            Frm_LuyenTap frm = new Frm_LuyenTap(Finger.NgonTro_NgonGiua);
-            frm.ShowDialog();
-        }
-
-        private void btnbangon_Click_1(object sender, EventArgs e)
-        {
-            Frm_LuyenTap frm = new Frm_LuyenTap(Finger.NgonTro_NgonGiua_ApUt);
-            frm.ShowDialog();
+            if (radRandom.Checked == true)
+            {
+                grbrandom.Enabled = true;
+                grbfinger.Enabled = false;
+            }
+            else
+            {
+                grbrandom.Enabled = false;
+                grbfinger.Enabled = true;
+            }
         }
 
       
 
-        private void btnbonngon_Click_1(object sender, EventArgs e)
-        {
-            Frm_LuyenTap frm = new Frm_LuyenTap(Finger.NgonTro_NgonGiua_ApUt_Ut);
-            frm.ShowDialog();
-        }
+       
 
-        private void btnnamngon_Click_1(object sender, EventArgs e)
-        {
-            Frm_LuyenTap frm = new Frm_LuyenTap(Finger.NgonTro_NgonGiua_ApUt_Ut_Cai);
-            frm.ShowDialog();
-        }
-
-        private void LuyenTap_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
        
     }
