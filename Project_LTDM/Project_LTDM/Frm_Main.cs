@@ -46,12 +46,10 @@ namespace Project_LTDM
         private void button5_Click(object sender, EventArgs e)
         {
             khoaHoc1.BringToFront();
+           
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            taoBaiTap1.BringToFront();
-        }
+       
 
         private void button7_Click_1(object sender, EventArgs e)
         {
@@ -106,6 +104,8 @@ namespace Project_LTDM
         {
             Application.Exit();
         }
+
+       
     }
 
 }

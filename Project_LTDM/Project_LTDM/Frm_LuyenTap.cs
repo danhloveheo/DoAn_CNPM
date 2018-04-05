@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Media;
 namespace Project_LTDM
 {
     public partial class Frm_LuyenTap : Form
@@ -304,11 +304,41 @@ namespace Project_LTDM
 
 
 
-                    if (SearchStringInTagControl(ctn, keyText) == true) 
+                    if (SearchStringInTagControl(ctn, keyText) == true)
                     {
+                        if (e.KeyChar.ToString() == @"\")
+                        {
+                            SoundPlayer sn1 = new SoundPlayer(@"sound\secphai.wav");
+                            sn1.Play();
+                        }
+                        else if (e.KeyChar.ToString() == @"/")
+                        {
+                            SoundPlayer sn1 = new SoundPlayer(@"sound\sectrai.wav");
+                            sn1.Play();
+                        }
+                        else if (e.KeyChar.ToString() == ".")
+                        {
+                            SoundPlayer sn1 = new SoundPlayer(@"sound\cham.wav");
+                            sn1.Play();
+                        }
+                        else if (e.KeyChar.ToString() == " ")
+                        {
+                            SoundPlayer sn1 = new SoundPlayer(@"sound\space.wav");
+                            sn1.Play();
+                        }
+                        else if (e.KeyChar.ToString() == "[" || e.KeyChar.ToString() == "]")
+                        {
+                            SoundPlayer sn1 = new SoundPlayer(@"sound\[].wav");
+                            sn1.Play();
+                        }
+                        else
+                        {
+                            SoundPlayer sn = new SoundPlayer(@"sound\" + e.KeyChar.ToString() + ".wav");
+                            sn.Play();
+                        }
                         ColorLabel_True(((Label)ctnkey));
                         PositionKey++;
-                      
+
                         if (PositionKey < Chuoi.Length)
                         {
                             iAscii = Chuoi[PositionKey].ToCharArray()[0];
@@ -322,7 +352,7 @@ namespace Project_LTDM
                                 iAscii = Chuoi[PositionKey].ToCharArray()[0];
                                 ctn = FindControlByTag(pn_Keys, iAscii);
                             }
-                                HighLight((Button)ctn);
+                            HighLight((Button)ctn);
                             Normal(btn_oldHighLight1);
                             Separator_True(((Panel)ctnspr));
 
@@ -331,6 +361,8 @@ namespace Project_LTDM
                     }
                     else
                     {
+                        SoundPlayer sn1 = new SoundPlayer(@"sound\wrong.wav");
+                        sn1.Play();
                         Button_False((Button)ctn);
                         WrongKey((Label)ctnkey);
                     }
@@ -347,6 +379,7 @@ namespace Project_LTDM
         int dongho = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
+            SoundPlayer spwinner = new SoundPlayer(@"sound\winner.wav");
             int i = Convert.ToInt32(label11.Text);
             if (v == 0)
             {
@@ -394,7 +427,7 @@ namespace Project_LTDM
 
                     v = 2;
                     MessageBox.Show("Ban duoc 1 sao");
-
+                    spwinner.Play();
 
                 }
 
@@ -403,7 +436,7 @@ namespace Project_LTDM
                     if (pictureBox4.Visible == false)
                     {
                         pictureBox4.Visible = true;
-
+                        spwinner.Play();
                         return;
                     }
                     else
@@ -420,6 +453,7 @@ namespace Project_LTDM
                     if (pictureBox4.Visible == false)
                     {
                         pictureBox4.Visible = true;
+                        spwinner.Play();
                         return;
                     }
                     else if (pictureBox5.Visible == false)
@@ -441,6 +475,7 @@ namespace Project_LTDM
                     if (pictureBox3.Visible == false)
                     {
                         pictureBox3.Visible = true;
+                        spwinner.Play();
                         return;
                     }
                     else if (pictureBox4.Visible == false)
@@ -467,6 +502,7 @@ namespace Project_LTDM
                     if (pictureBox3.Visible == false)
                     {
                         pictureBox3.Visible = true;
+                        spwinner.Play();
                         return;
                     }
                     else if (pictureBox4.Visible == false)
