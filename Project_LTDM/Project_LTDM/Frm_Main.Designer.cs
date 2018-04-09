@@ -45,7 +45,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labeltyping = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.khoaHoc1 = new Controls.KhoaHoc();
+            this.khoaHoc1 = new Project_LTDM.UserControls.KhoaHoc();
             this.thongKe1 = new Project_LTDM.UserControls.ThongKe();
             this.taoBaiTap1 = new Project_LTDM.UserControls.TaoBaiTap();
             this.luyenText1 = new Project_LTDM.UserControls.LuyenText();
@@ -369,6 +369,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button5;
-        private Controls.KhoaHoc khoaHoc1;
+        private UserControls.KhoaHoc khoaHoc1;
     }
 }

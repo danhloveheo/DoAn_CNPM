@@ -14,12 +14,47 @@ namespace Project_LTDM
     public partial class Frm_Typing : Form
     {
         Timer aTimer = new Timer();
-        string[] Chuoi = new string[11];
+        //string[] Chuoi = new string[11];
         Button btn_oldHighLight = new Button();
         int PositionKey = 0;
+
+        List<string> exerciseText = new List<string>();
+        int location = 0;
+
         public Frm_Typing()
         {
             InitializeComponent();
+            /*exerciseText.Add("frfv frfv ftfb ftfb ");
+            exerciseText.Add("ff rr ff vv ");
+            exerciseText.Add("AbcDefGhiJkl<mn45613");
+            exerciseText.Add("frfv frfv ftfb ftfb ");*/
+            exerciseText.Add("21");
+            exerciseText.Add("22");
+            exerciseText.Add("23");
+            exerciseText.Add("24");
+            exerciseText.Add("25");
+            exerciseText.Add("26");
+            exerciseText.Add("27");
+            exerciseText.Add("28");
+            RTB_String.Lines = exerciseText.ToArray();
+
+            //Căn lề cho văn bản trong RTB_String
+            /*RTB_String.SelectAll();
+            RTB_String.SelectionAlignment = HorizontalAlignment.Center;
+            RTB_String.DeselectAll();*/
+
+            //Tìm index ký tự cuối cùng được hiển thị để scroll
+            location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
+        }
+
+        public Frm_Typing(List<string> text)
+        {
+            InitializeComponent();
+            exerciseText = text;
+            RTB_String.Lines = exerciseText.ToArray();
+
+            //Tìm index ký tự cuối cùng được hiển thị để scroll
+            location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
         }
 
         private void Frm_Typing_Load(object sender, EventArgs e)
@@ -237,6 +272,17 @@ namespace Project_LTDM
 
         private void Frm_Typing_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Tự động scroll văn bản trong RTB_String khi đánh đến dòng cuối đang được hiển thị
+            if (PositionKey == location - 1 && location != RTB_String.Text.Length - 1)
+            {
+                //Xác định vị trí cần scroll
+                RTB_String.SelectionStart = location;
+                RTB_String.ScrollToCaret();
+
+                //Tìm index ký tự cuối cùng được hiển thị để scroll lần sau
+                location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
+            }
+
             if (PositionKey >= RTB_String.Text.Length)
                 return;
             char keyText = RTB_String.Text[PositionKey];// Chuoi[z];

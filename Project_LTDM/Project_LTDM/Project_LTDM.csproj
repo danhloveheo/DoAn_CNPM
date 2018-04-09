@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_FingerExercise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FingerExercise.designer.cs">
+      <DependentUpon>Frm_FingerExercise.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,24 @@
     <Compile Include="UserControls\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\KhoaHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\KhoaHoc.designer.cs">
+      <DependentUpon>KhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LessonList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LessonList.designer.cs">
+      <DependentUpon>LessonList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LessonSections.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LessonSections.designer.cs">
+      <DependentUpon>LessonSections.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\LuyenTap.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,6 +139,9 @@
     <Compile Include="UserControls\ThongKe.Designer.cs">
       <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Frm_FingerExercise.resx">
+      <DependentUpon>Frm_FingerExercise.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +173,15 @@
     <EmbeddedResource Include="UserControls\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KhoaHoc.resx">
+      <DependentUpon>KhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LessonList.resx">
+      <DependentUpon>LessonList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LessonSections.resx">
+      <DependentUpon>LessonSections.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\LuyenTap.resx">
       <DependentUpon>LuyenTap.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,10 +211,6 @@
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{2d329e2c-633a-4fbf-bb08-aeb4749cc6c9}</Project>
       <Name>BUS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Controls\Controls.csproj">
-      <Project>{6248dd46-cde0-4ec8-b098-76d7463b10f2}</Project>
-      <Name>Controls</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

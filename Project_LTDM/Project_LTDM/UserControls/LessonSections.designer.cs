@@ -1,4 +1,4 @@
-﻿namespace Controls
+﻿namespace Project_LTDM.UserControls
 {
     partial class LessonSections
     {
@@ -35,6 +35,8 @@
             this.pnSections = new System.Windows.Forms.Panel();
             this.pnLessonList = new System.Windows.Forms.Panel();
             this.tpnLessonName = new System.Windows.Forms.TableLayoutPanel();
+            this.lbLessonName = new System.Windows.Forms.Label();
+            this.tpnLessonName.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbCourse
@@ -94,6 +96,7 @@
             this.tpnLessonName.ColumnCount = 1;
             this.tpnLessonName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tpnLessonName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tpnLessonName.Controls.Add(this.lbLessonName, 0, 0);
             this.tpnLessonName.Location = new System.Drawing.Point(13, 154);
             this.tpnLessonName.Name = "tpnLessonName";
             this.tpnLessonName.RowCount = 1;
@@ -101,6 +104,17 @@
             this.tpnLessonName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tpnLessonName.Size = new System.Drawing.Size(1197, 52);
             this.tpnLessonName.TabIndex = 113;
+            // 
+            // lbLessonName
+            // 
+            this.lbLessonName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbLessonName.AutoSize = true;
+            this.lbLessonName.Font = new System.Drawing.Font("Vinhan", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLessonName.Location = new System.Drawing.Point(540, 5);
+            this.lbLessonName.Name = "lbLessonName";
+            this.lbLessonName.Size = new System.Drawing.Size(117, 42);
+            this.lbLessonName.TabIndex = 0;
+            this.lbLessonName.Text = "Lesson ";
             // 
             // LessonSections
             // 
@@ -115,6 +129,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LessonSections";
             this.Size = new System.Drawing.Size(1232, 668);
+            this.tpnLessonName.ResumeLayout(false);
+            this.tpnLessonName.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,5 +144,6 @@
         private System.Windows.Forms.Panel pnSections;
         private System.Windows.Forms.Panel pnLessonList;
         private System.Windows.Forms.TableLayoutPanel tpnLessonName;
+        private System.Windows.Forms.Label lbLessonName;
     }
 }

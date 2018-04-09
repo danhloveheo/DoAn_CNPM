@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAO;
 using DTO;
-using Controls;
 
 namespace BUS
 {
@@ -33,30 +32,10 @@ namespace BUS
             }
         }
 
-        static public void ShowLessonList(Form form, object sender)
+        static public List<Label> SearchLessonsList(int courseId)
         {
-            DisposeControls<Controls.LessonList>(form); //Xoá các LessonList không còn dùng
-
-            Controls.LessonList lessonList = new Controls.LessonList(); //Tạo LessonList mới
-            lessonList.Dock = DockStyle.Fill;
-
-            int courseId = (int)((Control)sender).Tag; //Lấy courseId từ tag của button gọi hàm
-            string courseName = "";
-            switch (courseId)
-            {
-                case 1:
-                    courseName = "Touch Typing Course";
-                    break;
-                case 2:
-                    courseName = "Speed Building Course";
-                    break;
-                case 3:
-                    courseName = "Number, Special Marks and 10-Key Pad Courses";
-                    break;
-            }
-            lessonList.LbCourse.Text = courseName;
-
             List<DTO_Lesson> lessons = DAO_Lesson.SearchLessons(courseId); // Tạo list chứa các lesson dựa vào courseId
+            List<Label> labels = new List<Label>();
             int repetition = 1;
 
             foreach (DTO_Lesson lesson in lessons)
@@ -83,49 +62,19 @@ namespace BUS
                 lbLesson.Cursor = System.Windows.Forms.Cursors.Hand;
                 lbLesson.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 lbLesson.ForeColor = Color.Black;
-                //lbLesson.ForeColor = System.Drawing.Color.Blue;
                 lbLesson.MouseEnter += new EventHandler(ChangeColor);
                 lbLesson.MouseLeave += new EventHandler(ChangeColor);
-                lbLesson.Click += new EventHandler(ShowLessonSections);
 
-                lessonList.PnLessons.Controls.AddRange(new Control[] { lbLessonCnt, lbLesson });
+                labels.AddRange(new List<Label> { lbLessonCnt, lbLesson });
                 repetition++;
             }
 
-            form.Controls.Add(lessonList);
-            lessonList.btnChangeCourseClick += new EventHandler(ShowCourse);
-            lessonList.BringToFront(); //Add LessonList nới tạo vào form
+            return labels;
         }
 
-        static public void ShowLessonSections(object sender, EventArgs e)
+        static public List<Label> SearchLessonSections(LessonTag tag, object sender, ref List<Label> buttons)
         {
-            Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
-            DisposeControls<LessonSections>(form); //Xoá các LessonSections không còn dùng
-
-            LessonSections lessonSections = new LessonSections(); //Tạo LessonSection mới
-            lessonSections.Dock = DockStyle.Fill;
-
-            Label lb = (Label)sender;
-            LessonTag lessonTag = (LessonTag)lb.Tag; //Ép kiểu thuộc tính Tag sang LessonTag
-            int courseId = lessonTag.courseId;
-
-            switch (courseId)
-            {
-                case 1:
-                    lessonSections.LbCourse.Text = "Touch Typing Course";
-                    break;
-                case 2:
-                    lessonSections.LbCourse.Text = "Speed Building Course";
-                    break;
-                case 3:
-                    lessonSections.LbCourse.Text = "Number, Special Marks and 10-Key Pad Courses";
-                    break;
-                default:
-                    lessonSections.LbCourse.Text = "";
-                    break;
-            }
-
-            List<DTO_Lesson> lessons = DAO_Lesson.SearchLessons(courseId);
+            List<DTO_Lesson> lessons = DAO_Lesson.SearchLessons(tag.courseId);
 
             //Tạo label chứa số thứ tự các bài học
             int repetition = 1;
@@ -133,10 +82,11 @@ namespace BUS
             {
                 //Tạo tag cho các label
                 LessonTag lessonCntTag = new LessonTag();
-                lessonCntTag.courseId = courseId;
+                lessonCntTag.courseId = tag.courseId;
                 lessonCntTag.lessonNumber = repetition;
                 lessonCntTag.lesson = lesson;
 
+                //Tạo các nút bấm để di chuyển giữa các bài học
                 Label lbLessonCnt = new Label();
                 lbLessonCnt.Text = repetition.ToString();
                 lbLessonCnt.Tag = lessonCntTag;
@@ -147,27 +97,19 @@ namespace BUS
                 lbLessonCnt.Location = new System.Drawing.Point((repetition - 1)*65 +25, 6);
                 lbLessonCnt.Size = new System.Drawing.Size(33, 23);
                 lbLessonCnt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                lbLessonCnt.Click += new EventHandler(ShowLessonSections);
 
-                lessonSections.PnLessonList.Controls.Add(lbLessonCnt);
+                buttons.Add(lbLessonCnt);
                 repetition++;
             }
 
-            //Tạo lbLessonName chứa tên bài học
-            Label lbLessonName = new Label();
-            lbLessonName.AutoSize = true;
-            lbLessonName.Text = "Lesson " + lessonTag.lessonNumber + " : " + lessonTag.lesson.Name;
-            lbLessonName.Anchor = AnchorStyles.None;
-            lbLessonName.Font = new System.Drawing.Font("Vinhan", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lessonSections.TpnLessonName.Controls.Add(lbLessonName);
-
-            List<DTO_LessonSection> sections = lessonTag.lesson.Sections;
+            List<DTO_LessonSection> sections = tag.lesson.Sections;
+            List<Label> labels = new List<Label>();
 
             repetition = 1;
             foreach (DTO_LessonSection section in sections)
             {
                 Label lbSectionCnt = new Label();
-                lbSectionCnt.Text = courseId + ". " + repetition;
+                lbSectionCnt.Text = tag.courseId + ". " + repetition;
                 lbSectionCnt.Location = new Point(40, (repetition - 1) * 60 + 10);
                 lbSectionCnt.AutoSize = true;
                 lbSectionCnt.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold);
@@ -181,27 +123,30 @@ namespace BUS
                 lbSection.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 lbSection.ForeColor = System.Drawing.Color.Black;
                 lbSection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+                lbSection.Tag = DAO_Practice.CreatePractice(section);
                 lbSection.MouseEnter += new EventHandler(ChangeColor);
                 lbSection.MouseLeave += new EventHandler(ChangeColor);
 
-                lessonSections.PnSections.Controls.AddRange(new Control[] { lbSectionCnt, lbSection });
+                labels.AddRange(new List<Label> { lbSectionCnt, lbSection });
                 repetition++;
             }
-            form.Controls.Add(lessonSections);
-            lessonSections.btnChangeCourseClick += new EventHandler(ShowCourse);
-            lessonSections.BringToFront();
+
+            return labels;
         }
 
-        public static void ShowCourse (object sender, EventArgs e)
+        public static string ReadNameFromTag (LessonTag tag)
         {
-            Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
-            foreach (Control c in form.Controls)
-            {
-                if (c is KhoaHoc)
-                {
-                    c.BringToFront();
-                }
-            }
+            return tag.lesson.Name;
+        }
+
+        public static List<string> SearchTypingInfo (object sender, ref string practiceType)
+        {
+            DTO_Practice practice = (DTO_Practice)(((Control)sender).Tag); //Lấy đối tượng DTO_Practice đc lưu trong tag của label đã nhấn vào
+
+            practiceType = practice.PracticeType;
+            List<string> practiceText = practice.PracticeText;
+
+            return practiceText;
         }
 
         static void ChangeColor(object sender, EventArgs e)

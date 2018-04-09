@@ -16,10 +16,6 @@ namespace DAO
         //Tìm danh sách các bài luyện tập của 1 bài học dựa vào course id và tên bài học
         public static List<DTO_LessonSection> SearchSections (XmlDocument xd, int courseId, string lessonName)
         {
-            /*XmlDocument xd = new XmlDocument();
-            FileStream rfile = new FileStream(courseXmlFilePath, FileMode.Open);
-            xd.Load(rfile);*/
-
             List<DTO_LessonSection> sections = new List<DTO_LessonSection>();
 
             //TODO: Chuyển sang dùng id
@@ -50,5 +46,28 @@ namespace DAO
 
             return sections;
         }
+
+        public static List<string> ReadPracticeDetailFromSection (DTO_LessonSection section) //Đọc nội dung file text trong detail
+        {
+            string practiceFilePath = Path.Combine(Environment.CurrentDirectory, "Database", section.Detail);
+
+            List<string> detail = new List<string>();
+            string line = "";
+
+            StreamReader reader = new StreamReader(practiceFilePath);
+
+            while (reader.Peek() >= 0) //Read to End-of-file
+            {
+                line = reader.ReadLine();
+
+                if (line != "")
+                {
+                    detail.Add(line);
+                }
+            }
+
+            reader.Close();
+            return detail;
+    }
     } 
 }

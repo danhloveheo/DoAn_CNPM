@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Controls
+namespace Project_LTDM.UserControls
 {
     public partial class KhoaHoc : UserControl
     {
@@ -58,6 +58,19 @@ namespace Controls
             {
                 this.Tag = 3;
                 this.btnC4Click(this, e);
+            }
+        }
+
+        public static void ReturnToCourse(object sender, EventArgs e)
+        {
+            Form form = (Form)(((Control)sender).TopLevelControl);
+
+            foreach (Control c in form.Controls)
+            {
+                if (c is KhoaHoc)
+                {
+                    c.BringToFront();
+                }
             }
         }
     }

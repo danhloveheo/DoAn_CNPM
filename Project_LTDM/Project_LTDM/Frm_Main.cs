@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project_LTDM.UserControls;
 using BUS;
-using Controls;
 
 namespace Project_LTDM
 {
@@ -78,7 +78,7 @@ namespace Project_LTDM
 
         private void khoaHoc_btnC1Click(object sender, EventArgs e)
         {
-            BUS_UserControls.ShowLessonList(this, sender);
+            ShowLessonList(sender, e);
         }
 
         private void khoaHoc_btnC2Click(object sender, EventArgs e)
@@ -87,12 +87,12 @@ namespace Project_LTDM
 
         private void khoaHoc_btnC3Click(object sender, EventArgs e)
         {
-            BUS_UserControls.ShowLessonList(this, sender);
+            ShowLessonList(sender, e);
         }
 
         private void khoaHoc_btnC4Click(object sender, EventArgs e)
         {
-            BUS_UserControls.ShowLessonList(this, sender);
+            ShowLessonList(sender, e);
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -105,7 +105,21 @@ namespace Project_LTDM
             Application.Exit();
         }
 
-       
+        private void ShowLessonList(object sender, EventArgs e)
+        {
+            BUS_UserControls.DisposeControls<LessonList>(this); //Xoá các LessonList không còn dùng           
+
+            int courseId = (int)((Control)sender).Tag; //Lấy courseId từ tag của button gọi hàm
+
+            List<Label> labels = BUS_UserControls.SearchLessonsList(courseId);
+
+            LessonList lessonList = new LessonList(courseId, labels);
+            lessonList.Dock = DockStyle.Fill;
+            //lessonList.btnChangeCourseClick += new EventHandler(BUS_UserControls.ShowCourse);            
+            this.Controls.Add(lessonList); //Add LessonList nới tạo vào form
+
+            lessonList.BringToFront();
+        }
     }
 
 }

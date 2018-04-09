@@ -1,4 +1,4 @@
-﻿namespace Controls
+﻿namespace Project_LTDM.UserControls
 {
     partial class LessonList
     {
