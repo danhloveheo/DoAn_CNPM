@@ -69,6 +69,27 @@ namespace Project_LTDM.UserControls
             }
         }
 
+        private void btnstart_Click(object sender, EventArgs e)
+        {
+            if (txtrandomkeys.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập kí tự ");
+                txtrandomkeys.Select();
+            }
+            else
+            {
+                string chuoi = txtrandomkeys.Text;
+                for (int i = 0; i < chuoi.Length; i++)
+                {
+                    Finger.listrandomkeys.Add(chuoi.Substring(i, 1));
+
+                }
+                Frm_LuyenTap frm = new Frm_LuyenTap(Finger.listrandomkeys);
+                frm.Show();
+                Finger.listrandomkeys.Clear();
+            }
+        }
+
       
 
        

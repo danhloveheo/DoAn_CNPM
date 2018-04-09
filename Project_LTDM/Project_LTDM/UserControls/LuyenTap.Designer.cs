@@ -75,6 +75,7 @@
             this.btnhaingon = new System.Windows.Forms.Button();
             this.btnbangon = new System.Windows.Forms.Button();
             this.btnbonngon = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
             this.grbrandom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -116,6 +117,7 @@
             this.btnstart.Text = "             Start ";
             this.btnstart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnstart.UseVisualStyleBackColor = false;
+            this.btnstart.Click += new System.EventHandler(this.btnstart_Click);
             // 
             // txtrandomkeys
             // 
@@ -162,6 +164,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.pictureBox6);
@@ -179,11 +182,11 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(48, 270);
+            this.label12.Location = new System.Drawing.Point(48, 246);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(290, 30);
+            this.label12.Size = new System.Drawing.Size(290, 50);
             this.label12.TabIndex = 104;
-            this.label12.Text = "The whole course takes 3:10 - 5:20 hours";
+            this.label12.Text = "2 . Practice with finger or finger clamp of your choice";
             // 
             // label13
             // 
@@ -192,12 +195,12 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(290, 46);
             this.label13.TabIndex = 103;
-            this.label13.Text = "Each lesson will take 15 - 25 minutes depending on your progress";
+            this.label13.Text = "1 . Practice followed by the characters entered into the textbox";
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(4, 270);
+            this.pictureBox6.Location = new System.Drawing.Point(4, 246);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(24, 24);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -238,10 +241,9 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(5, 68);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(333, 75);
+            this.label15.Size = new System.Drawing.Size(333, 111);
             this.label15.TabIndex = 98;
-            this.label15.Text = "During this course the duration of each exercise will be optimal based on your pr" +
-    "ogress . This will save you time while guaranteeing good learning results";
+            this.label15.Text = resources.GetString("label15.Text");
             // 
             // panel6
             // 
@@ -637,6 +639,15 @@
             this.btnbonngon.UseVisualStyleBackColor = false;
             this.btnbonngon.Click += new System.EventHandler(this.btnbonngon_Click);
             // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(10, 293);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(320, 39);
+            this.label16.TabIndex = 105;
+            this.label16.Text = "Time to complete the assignment depends on your level";
+            // 
             // LuyenTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -718,6 +729,7 @@
         private System.Windows.Forms.Button btnhaingon;
         private System.Windows.Forms.Button btnbangon;
         private System.Windows.Forms.Button btnbonngon;
+        private System.Windows.Forms.Label label16;
 
 
     }

@@ -63,7 +63,8 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(344, 59);
             this.label6.TabIndex = 97;
-            this.label6.Text = "You can open a paragraph for practice to get better results";
+            this.label6.Text = "This is a practice session on the paragraph. Contains many paragraph. You can ope" +
+    "n or delete a paragraph for practice to get better results";
             // 
             // label5
             // 

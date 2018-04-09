@@ -19,7 +19,7 @@ namespace Project_LTDM.Global
         public static List<string> Right_NgonGiua = new List<string> { "*", "8", "i", "k", ",","<" };
         public static List<string> Right_NgonTro = new List<string> { "^", "&", "6", "7", "y", "u", "h", "j", "n", "m" };
 
-
+        public static List<string> listrandomkeys = new List<string>();
         public static List<string> NgonTro = new List<string> { "4", "5", "r", "t", "f", "g", "v", "b", "6", "7", "y", "u", "h", "j", "n", "m" };
         public static List<string> NgonTro_NgonGiua = new List<string> { "4", "e", "d", "c", "8", "i", "k", ",", "5", "r", "t", "f", "g", "v", "b", "6", "7", "y", "u", "h", "j", "n", "m", "3" };
         public static List<string> NgonTro_NgonGiua_ApUt = new List<string> { "4", "5", "r", "t", "f", "g", "v", "b", "6", "7", "y", "u", "h", "j", "n", "m", "3", "e", "d", "c", "8", "i", "k", ",", "2", "w", "s", "x", "9", "o", "l", "." };

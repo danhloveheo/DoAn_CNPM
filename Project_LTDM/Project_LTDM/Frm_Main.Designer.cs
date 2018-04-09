@@ -47,7 +47,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.khoaHoc1 = new Project_LTDM.UserControls.KhoaHoc();
             this.thongKe1 = new Project_LTDM.UserControls.ThongKe();
-            this.taoBaiTap1 = new Project_LTDM.UserControls.TaoBaiTap();
+          
             this.luyenText1 = new Project_LTDM.UserControls.LuyenText();
             this.information1 = new Project_LTDM.UserControls.Information();
             this.luyenTap1 = new Project_LTDM.UserControls.LuyenTap();
@@ -73,7 +73,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(176, 543);
             this.panel1.TabIndex = 6;
-         
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
@@ -97,7 +97,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(175, 1);
             this.panel4.TabIndex = 90;
-          
             // 
             // panel2
             // 
@@ -106,7 +105,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(175, 1);
             this.panel2.TabIndex = 90;
-          
             // 
             // button1
             // 
@@ -243,11 +241,11 @@
             // labeltyping
             // 
             this.labeltyping.AutoSize = true;
-            this.labeltyping.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeltyping.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold);
             this.labeltyping.ForeColor = System.Drawing.Color.White;
             this.labeltyping.Location = new System.Drawing.Point(371, 29);
             this.labeltyping.Name = "labeltyping";
-            this.labeltyping.Size = new System.Drawing.Size(533, 73);
+            this.labeltyping.Size = new System.Drawing.Size(516, 73);
             this.labeltyping.TabIndex = 2;
             this.labeltyping.Text = "Typing Keyboard";
             // 
@@ -285,12 +283,7 @@
             // 
             // taoBaiTap1
             // 
-            this.taoBaiTap1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.taoBaiTap1.Location = new System.Drawing.Point(176, 130);
-            this.taoBaiTap1.Margin = new System.Windows.Forms.Padding(4);
-            this.taoBaiTap1.Name = "taoBaiTap1";
-            this.taoBaiTap1.Size = new System.Drawing.Size(919, 543);
-            this.taoBaiTap1.TabIndex = 13;
+         
             // 
             // luyenText1
             // 
@@ -327,7 +320,7 @@
             this.ClientSize = new System.Drawing.Size(1095, 673);
             this.Controls.Add(this.khoaHoc1);
             this.Controls.Add(this.thongKe1);
-            this.Controls.Add(this.taoBaiTap1);
+        
             this.Controls.Add(this.luyenText1);
             this.Controls.Add(this.information1);
             this.Controls.Add(this.luyenTap1);
@@ -360,7 +353,7 @@
         private UserControls.LuyenTap luyenTap1;
         private UserControls.Information information1;
         private UserControls.LuyenText luyenText1;
-        private UserControls.TaoBaiTap taoBaiTap1;
+     
         private UserControls.ThongKe thongKe1;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;

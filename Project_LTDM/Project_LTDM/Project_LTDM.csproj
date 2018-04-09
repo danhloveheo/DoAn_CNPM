@@ -127,12 +127,6 @@
     <Compile Include="UserControls\LuyenText.Designer.cs">
       <DependentUpon>LuyenText.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\TaoBaiTap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\TaoBaiTap.Designer.cs">
-      <DependentUpon>TaoBaiTap.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\ThongKe.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -187,9 +181,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\LuyenText.resx">
       <DependentUpon>LuyenText.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\TaoBaiTap.resx">
-      <DependentUpon>TaoBaiTap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ThongKe.resx">
       <DependentUpon>ThongKe.cs</DependentUpon>
