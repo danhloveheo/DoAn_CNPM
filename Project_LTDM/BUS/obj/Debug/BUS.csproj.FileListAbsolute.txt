@@ -156,3 +156,12 @@ E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\D
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.dll
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.pdb
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.dll
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.dll
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.pdb
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb

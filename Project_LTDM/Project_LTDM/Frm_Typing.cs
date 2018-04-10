@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Media;
 namespace Project_LTDM
 {
     public partial class Frm_Typing : Form
@@ -16,6 +16,7 @@ namespace Project_LTDM
         Timer aTimer = new Timer();
         //string[] Chuoi = new string[11];
         Button btn_oldHighLight = new Button();
+        Button btn_oldHighLight1 = new Button();
         int PositionKey = 0;
 
         List<string> exerciseText = new List<string>();
@@ -77,7 +78,16 @@ namespace Project_LTDM
                 SetFingerVisible(RTB_String.Text[PositionKey].ToString().ToLower());
             this.KeyPreview = true;
         }
+        private void Button_False(Button btn)
+        {
 
+            Normal(btn_oldHighLight1);
+            btn.BackColor = Color.PaleVioletRed;
+
+            btn_oldHighLight1 = btn;
+
+
+        }
         private void ATimer_Tick(object sender, EventArgs e)
         {
             btn_oldHighLight.BackColor = Color.Red;
@@ -302,9 +312,39 @@ namespace Project_LTDM
 
                     if (SearchStringInTagControl(ctn, keyText) == true) //if (SearchStringInTagControl(ctn, iKeylabel) == true)
                     {
+                        if (e.KeyChar.ToString() == @"\")
+                        {
+                            SoundPlayer sn1 = new SoundPlayer(@"sound\secphai.wav");
+                            sn1.Play();
+                        }
+                        else if (e.KeyChar.ToString() == @"/")
+                        {
+                            SoundPlayer sn1 = new SoundPlayer(@"sound\sectrai.wav");
+                            sn1.Play();
+                        }
+                        else if (e.KeyChar.ToString() == ".")
+                        {
+                            SoundPlayer sn1 = new SoundPlayer(@"sound\cham.wav");
+                            sn1.Play();
+                        }
+                        else if (e.KeyChar.ToString() == " ")
+                        {
+                            SoundPlayer sn1 = new SoundPlayer(@"sound\space.wav");
+                            sn1.Play();
+                        }
+                        else if (e.KeyChar.ToString() == "[" || e.KeyChar.ToString() == "]")
+                        {
+                            SoundPlayer sn1 = new SoundPlayer(@"sound\[].wav");
+                            sn1.Play();
+                        }
+                        else
+                        {
+                            SoundPlayer sn = new SoundPlayer(@"sound\" + e.KeyChar.ToString() + ".wav");
+                            sn.Play();
+                        }
                         RTB_String.Select(PositionKey, 1);
                         RTB_String.SelectionColor = Color.Green;
-
+                        RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 36.5F, System.Drawing.FontStyle.Underline);
                         PositionKey++;
                         if (PositionKey < RTB_String.Text.Length)
                         {
@@ -322,13 +362,19 @@ namespace Project_LTDM
                                 ctn = FindControlByTag(pn_Keys, iAscii);
                             };
                             HighLight((Button)ctn);
+                            Normal(btn_oldHighLight1);
                             SetFingerVisible(RTB_String.Text[PositionKey].ToString().ToLower());
+
                         }
                     }
                     else
                     {
+                        SoundPlayer sn1 = new SoundPlayer(@"sound\wrong.wav");
+                        sn1.Play();
                         RTB_String.Select(PositionKey, 1);
-                        RTB_String.SelectionColor = Color.Red;
+                        RTB_String.SelectionColor = Color.PaleVioletRed;
+                        RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Underline);
+                        Button_False((Button)ctn);
                     }
 
                 }

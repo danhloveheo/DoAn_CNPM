@@ -14,7 +14,7 @@ namespace Project_LTDM
     public partial class Frm_LuyenTap : Form
     {
         Timer aTimer = new Timer();
-        string[] Chuoi = new string[11];
+        string[] Chuoi = new string[22];
         Button btn_oldHighLight = new Button();
         Button btn_oldHighLight1 = new Button();
         Panel label_oldDefault = new Panel();
@@ -54,7 +54,7 @@ namespace Project_LTDM
         {
 
             Random rnd = new Random();
-            for (int i = 0; i < 11; i++)
+            for (int i = 0; i < 22; i++)
             {
                 string name = "label" + i;
                 Control ctn = FindControl(pn_stringKeys, name);
@@ -366,7 +366,7 @@ namespace Project_LTDM
                         Button_False((Button)ctn);
                         WrongKey((Label)ctnkey);
                     }
-                    if (PositionKey == 11)
+                    if (PositionKey == 22)
                     {
 
                         v = 1;
@@ -380,14 +380,14 @@ namespace Project_LTDM
         private void timer1_Tick(object sender, EventArgs e)
         {
             SoundPlayer spwinner = new SoundPlayer(@"sound\winner.wav");
-            int i = Convert.ToInt32(label11.Text);
+            int i = Convert.ToInt32(labeltimer.Text);
             if (v == 0)
             {
                 if (i != 0)
                 {
-                    i = Convert.ToInt32(label11.Text);
+                    i = Convert.ToInt32(labeltimer.Text);
                     i--;
-                    label11.Text = i.ToString();
+                    labeltimer.Text = i.ToString();
                     picwatch.Image = null;
                     if (dongho == 0)
                     {

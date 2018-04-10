@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Typing));
-            this.labeltyping = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.RTB_String = new System.Windows.Forms.RichTextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pn_Keys = new System.Windows.Forms.Panel();
+            this.btn_Finger2 = new System.Windows.Forms.Button();
+            this.pn_RH = new System.Windows.Forms.Panel();
+            this.btn_Finger5 = new System.Windows.Forms.Button();
+            this.btn_Finger6 = new System.Windows.Forms.Button();
+            this.btn_Finger7 = new System.Windows.Forms.Button();
+            this.btn_Finger9 = new System.Windows.Forms.Button();
+            this.btn_Finger8 = new System.Windows.Forms.Button();
+            this.btn_Finger3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -50,13 +52,20 @@
             this.button74 = new System.Windows.Forms.Button();
             this.btnq = new System.Windows.Forms.Button();
             this.button81 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.btna = new System.Windows.Forms.Button();
             this.button56 = new System.Windows.Forms.Button();
             this.btnw = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
+            this.btn_Finger1 = new System.Windows.Forms.Button();
+            this.btn_Finger4 = new System.Windows.Forms.Button();
+            this.button57 = new System.Windows.Forms.Button();
+            this.pn_LH = new System.Windows.Forms.Panel();
+            this.btn_Finger0 = new System.Windows.Forms.Button();
             this.button82 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labeltyping = new System.Windows.Forms.Label();
             this.button30 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.btns = new System.Windows.Forms.Button();
@@ -71,6 +80,8 @@
             this.btnd = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.btnl = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pn_Keys = new System.Windows.Forms.Panel();
             this.btnx = new System.Windows.Forms.Button();
             this.btnk = new System.Windows.Forms.Button();
             this.btnr = new System.Windows.Forms.Button();
@@ -95,146 +106,97 @@
             this.button59 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
-            this.pn_RH = new System.Windows.Forms.Panel();
-            this.btn_Finger5 = new System.Windows.Forms.Button();
-            this.btn_Finger6 = new System.Windows.Forms.Button();
-            this.btn_Finger7 = new System.Windows.Forms.Button();
-            this.btn_Finger9 = new System.Windows.Forms.Button();
-            this.btn_Finger8 = new System.Windows.Forms.Button();
-            this.pn_LH = new System.Windows.Forms.Panel();
-            this.btn_Finger0 = new System.Windows.Forms.Button();
-            this.btn_Finger1 = new System.Windows.Forms.Button();
-            this.btn_Finger4 = new System.Windows.Forms.Button();
-            this.btn_Finger2 = new System.Windows.Forms.Button();
-            this.btn_Finger3 = new System.Windows.Forms.Button();
+            this.RTB_String = new System.Windows.Forms.RichTextBox();
+            this.pn_RH.SuspendLayout();
+            this.pn_LH.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pn_Keys.SuspendLayout();
-            this.pn_RH.SuspendLayout();
-            this.pn_LH.SuspendLayout();
             this.SuspendLayout();
             // 
-            // labeltyping
+            // btn_Finger2
             // 
-            this.labeltyping.AutoSize = true;
-            this.labeltyping.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeltyping.ForeColor = System.Drawing.Color.White;
-            this.labeltyping.Location = new System.Drawing.Point(309, 9);
-            this.labeltyping.Name = "labeltyping";
-            this.labeltyping.Size = new System.Drawing.Size(516, 73);
-            this.labeltyping.TabIndex = 0;
-            this.labeltyping.Text = "Typing Keyboard";
+            this.btn_Finger2.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger2.Location = new System.Drawing.Point(72, 3);
+            this.btn_Finger2.Name = "btn_Finger2";
+            this.btn_Finger2.Size = new System.Drawing.Size(20, 20);
+            this.btn_Finger2.TabIndex = 91;
+            this.btn_Finger2.UseVisualStyleBackColor = false;
+            this.btn_Finger2.Visible = false;
             // 
-            // panel1
+            // pn_RH
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.labeltyping);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(916, 96);
-            this.panel1.TabIndex = 95;
+            this.pn_RH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pn_RH.BackgroundImage")));
+            this.pn_RH.Controls.Add(this.btn_Finger5);
+            this.pn_RH.Controls.Add(this.btn_Finger6);
+            this.pn_RH.Controls.Add(this.btn_Finger7);
+            this.pn_RH.Controls.Add(this.btn_Finger9);
+            this.pn_RH.Controls.Add(this.btn_Finger8);
+            this.pn_RH.Location = new System.Drawing.Point(912, 324);
+            this.pn_RH.Name = "pn_RH";
+            this.pn_RH.Size = new System.Drawing.Size(138, 162);
+            this.pn_RH.TabIndex = 100;
             // 
-            // pictureBox1
+            // btn_Finger5
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(117, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 90);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.btn_Finger5.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger5.Location = new System.Drawing.Point(0, 91);
+            this.btn_Finger5.Name = "btn_Finger5";
+            this.btn_Finger5.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger5.TabIndex = 91;
+            this.btn_Finger5.UseVisualStyleBackColor = false;
+            this.btn_Finger5.Visible = false;
             // 
-            // RTB_String
+            // btn_Finger6
             // 
-            this.RTB_String.Enabled = false;
-            this.RTB_String.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.RTB_String.Location = new System.Drawing.Point(39, 19);
-            this.RTB_String.Name = "RTB_String";
-            this.RTB_String.Size = new System.Drawing.Size(688, 184);
-            this.RTB_String.TabIndex = 98;
-            this.RTB_String.Text = resources.GetString("RTB_String.Text");
+            this.btn_Finger6.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger6.Location = new System.Drawing.Point(30, 27);
+            this.btn_Finger6.Name = "btn_Finger6";
+            this.btn_Finger6.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger6.TabIndex = 91;
+            this.btn_Finger6.UseVisualStyleBackColor = false;
+            this.btn_Finger6.Visible = false;
             // 
-            // groupBox1
+            // btn_Finger7
             // 
-            this.groupBox1.Controls.Add(this.pn_Keys);
-            this.groupBox1.Controls.Add(this.RTB_String);
-            this.groupBox1.Controls.Add(this.pn_RH);
-            this.groupBox1.Controls.Add(this.pn_LH);
-            this.groupBox1.Location = new System.Drawing.Point(87, 102);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(755, 599);
-            this.groupBox1.TabIndex = 101;
-            this.groupBox1.TabStop = false;
+            this.btn_Finger7.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger7.Location = new System.Drawing.Point(58, 3);
+            this.btn_Finger7.Name = "btn_Finger7";
+            this.btn_Finger7.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger7.TabIndex = 91;
+            this.btn_Finger7.UseVisualStyleBackColor = false;
+            this.btn_Finger7.Visible = false;
             // 
-            // pn_Keys
+            // btn_Finger9
             // 
-            this.pn_Keys.BackColor = System.Drawing.Color.Silver;
-            this.pn_Keys.Controls.Add(this.button4);
-            this.pn_Keys.Controls.Add(this.button3);
-            this.pn_Keys.Controls.Add(this.button2);
-            this.pn_Keys.Controls.Add(this.button1);
-            this.pn_Keys.Controls.Add(this.btn6);
-            this.pn_Keys.Controls.Add(this.btng);
-            this.pn_Keys.Controls.Add(this.button8);
-            this.pn_Keys.Controls.Add(this.button17);
-            this.pn_Keys.Controls.Add(this.button33);
-            this.pn_Keys.Controls.Add(this.button18);
-            this.pn_Keys.Controls.Add(this.button49);
-            this.pn_Keys.Controls.Add(this.button65);
-            this.pn_Keys.Controls.Add(this.button74);
-            this.pn_Keys.Controls.Add(this.btnq);
-            this.pn_Keys.Controls.Add(this.button81);
-            this.pn_Keys.Controls.Add(this.button57);
-            this.pn_Keys.Controls.Add(this.button44);
-            this.pn_Keys.Controls.Add(this.btna);
-            this.pn_Keys.Controls.Add(this.button56);
-            this.pn_Keys.Controls.Add(this.btnw);
-            this.pn_Keys.Controls.Add(this.button43);
-            this.pn_Keys.Controls.Add(this.button82);
-            this.pn_Keys.Controls.Add(this.button30);
-            this.pn_Keys.Controls.Add(this.button24);
-            this.pn_Keys.Controls.Add(this.btns);
-            this.pn_Keys.Controls.Add(this.btnm);
-            this.pn_Keys.Controls.Add(this.btnz);
-            this.pn_Keys.Controls.Add(this.btnn);
-            this.pn_Keys.Controls.Add(this.btne);
-            this.pn_Keys.Controls.Add(this.btnb);
-            this.pn_Keys.Controls.Add(this.button83);
-            this.pn_Keys.Controls.Add(this.button48);
-            this.pn_Keys.Controls.Add(this.button42);
-            this.pn_Keys.Controls.Add(this.btnd);
-            this.pn_Keys.Controls.Add(this.button29);
-            this.pn_Keys.Controls.Add(this.btnl);
-            this.pn_Keys.Controls.Add(this.btnx);
-            this.pn_Keys.Controls.Add(this.btnk);
-            this.pn_Keys.Controls.Add(this.btnr);
-            this.pn_Keys.Controls.Add(this.btnj);
-            this.pn_Keys.Controls.Add(this.btnspace);
-            this.pn_Keys.Controls.Add(this.btnh);
-            this.pn_Keys.Controls.Add(this.btnt);
-            this.pn_Keys.Controls.Add(this.button60);
-            this.pn_Keys.Controls.Add(this.btnf);
-            this.pn_Keys.Controls.Add(this.button47);
-            this.pn_Keys.Controls.Add(this.button41);
-            this.pn_Keys.Controls.Add(this.btnc);
-            this.pn_Keys.Controls.Add(this.btnp);
-            this.pn_Keys.Controls.Add(this.btnv);
-            this.pn_Keys.Controls.Add(this.btno);
-            this.pn_Keys.Controls.Add(this.btni);
-            this.pn_Keys.Controls.Add(this.button98);
-            this.pn_Keys.Controls.Add(this.btnu);
-            this.pn_Keys.Controls.Add(this.button14);
-            this.pn_Keys.Controls.Add(this.btny);
-            this.pn_Keys.Controls.Add(this.button27);
-            this.pn_Keys.Controls.Add(this.button59);
-            this.pn_Keys.Controls.Add(this.button40);
-            this.pn_Keys.Controls.Add(this.button46);
-            this.pn_Keys.Location = new System.Drawing.Point(39, 209);
-            this.pn_Keys.Name = "pn_Keys";
-            this.pn_Keys.Size = new System.Drawing.Size(688, 216);
-            this.pn_Keys.TabIndex = 101;
+            this.btn_Finger9.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger9.Location = new System.Drawing.Point(107, 48);
+            this.btn_Finger9.Name = "btn_Finger9";
+            this.btn_Finger9.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger9.TabIndex = 91;
+            this.btn_Finger9.UseVisualStyleBackColor = false;
+            this.btn_Finger9.Visible = false;
+            // 
+            // btn_Finger8
+            // 
+            this.btn_Finger8.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger8.Location = new System.Drawing.Point(83, 18);
+            this.btn_Finger8.Name = "btn_Finger8";
+            this.btn_Finger8.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger8.TabIndex = 91;
+            this.btn_Finger8.UseVisualStyleBackColor = false;
+            this.btn_Finger8.Visible = false;
+            // 
+            // btn_Finger3
+            // 
+            this.btn_Finger3.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger3.Location = new System.Drawing.Point(106, 27);
+            this.btn_Finger3.Name = "btn_Finger3";
+            this.btn_Finger3.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger3.TabIndex = 91;
+            this.btn_Finger3.UseVisualStyleBackColor = false;
+            this.btn_Finger3.Visible = false;
             // 
             // button4
             // 
@@ -396,15 +358,6 @@
             this.button81.Text = "Ctrl ";
             this.button81.UseVisualStyleBackColor = true;
             // 
-            // button57
-            // 
-            this.button57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button57.Location = new System.Drawing.Point(576, 174);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(43, 36);
-            this.button57.TabIndex = 54;
-            this.button57.UseVisualStyleBackColor = true;
-            // 
             // button44
             // 
             this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -458,6 +411,58 @@
             this.button43.Text = "?\r\n/";
             this.button43.UseVisualStyleBackColor = true;
             // 
+            // btn_Finger1
+            // 
+            this.btn_Finger1.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger1.Location = new System.Drawing.Point(46, 18);
+            this.btn_Finger1.Name = "btn_Finger1";
+            this.btn_Finger1.Size = new System.Drawing.Size(20, 20);
+            this.btn_Finger1.TabIndex = 91;
+            this.btn_Finger1.UseVisualStyleBackColor = false;
+            this.btn_Finger1.Visible = false;
+            // 
+            // btn_Finger4
+            // 
+            this.btn_Finger4.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger4.Location = new System.Drawing.Point(130, 94);
+            this.btn_Finger4.Name = "btn_Finger4";
+            this.btn_Finger4.Size = new System.Drawing.Size(18, 20);
+            this.btn_Finger4.TabIndex = 91;
+            this.btn_Finger4.UseVisualStyleBackColor = false;
+            this.btn_Finger4.Visible = false;
+            // 
+            // button57
+            // 
+            this.button57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button57.Location = new System.Drawing.Point(576, 174);
+            this.button57.Name = "button57";
+            this.button57.Size = new System.Drawing.Size(43, 36);
+            this.button57.TabIndex = 54;
+            this.button57.UseVisualStyleBackColor = true;
+            // 
+            // pn_LH
+            // 
+            this.pn_LH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pn_LH.BackgroundImage")));
+            this.pn_LH.Controls.Add(this.btn_Finger0);
+            this.pn_LH.Controls.Add(this.btn_Finger1);
+            this.pn_LH.Controls.Add(this.btn_Finger4);
+            this.pn_LH.Controls.Add(this.btn_Finger2);
+            this.pn_LH.Controls.Add(this.btn_Finger3);
+            this.pn_LH.Location = new System.Drawing.Point(13, 306);
+            this.pn_LH.Name = "pn_LH";
+            this.pn_LH.Size = new System.Drawing.Size(155, 162);
+            this.pn_LH.TabIndex = 99;
+            // 
+            // btn_Finger0
+            // 
+            this.btn_Finger0.BackColor = System.Drawing.Color.Red;
+            this.btn_Finger0.Location = new System.Drawing.Point(22, 48);
+            this.btn_Finger0.Name = "btn_Finger0";
+            this.btn_Finger0.Size = new System.Drawing.Size(22, 20);
+            this.btn_Finger0.TabIndex = 91;
+            this.btn_Finger0.UseVisualStyleBackColor = false;
+            this.btn_Finger0.Visible = false;
+            // 
             // button82
             // 
             this.button82.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -466,6 +471,37 @@
             this.button82.Size = new System.Drawing.Size(49, 36);
             this.button82.TabIndex = 1;
             this.button82.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.labeltyping);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1083, 96);
+            this.panel1.TabIndex = 102;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(117, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 90);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labeltyping
+            // 
+            this.labeltyping.AutoSize = true;
+            this.labeltyping.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold);
+            this.labeltyping.ForeColor = System.Drawing.Color.White;
+            this.labeltyping.Location = new System.Drawing.Point(309, 9);
+            this.labeltyping.Name = "labeltyping";
+            this.labeltyping.Size = new System.Drawing.Size(516, 73);
+            this.labeltyping.TabIndex = 0;
+            this.labeltyping.Text = "Typing Keyboard";
             // 
             // button30
             // 
@@ -618,6 +654,86 @@
             this.btnl.Tag = "76,108";
             this.btnl.Text = "l";
             this.btnl.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pn_Keys);
+            this.groupBox1.Controls.Add(this.RTB_String);
+            this.groupBox1.Controls.Add(this.pn_LH);
+            this.groupBox1.Controls.Add(this.pn_RH);
+            this.groupBox1.Location = new System.Drawing.Point(9, 96);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1076, 535);
+            this.groupBox1.TabIndex = 103;
+            this.groupBox1.TabStop = false;
+            // 
+            // pn_Keys
+            // 
+            this.pn_Keys.BackColor = System.Drawing.Color.Silver;
+            this.pn_Keys.Controls.Add(this.button4);
+            this.pn_Keys.Controls.Add(this.button3);
+            this.pn_Keys.Controls.Add(this.button2);
+            this.pn_Keys.Controls.Add(this.button1);
+            this.pn_Keys.Controls.Add(this.btn6);
+            this.pn_Keys.Controls.Add(this.btng);
+            this.pn_Keys.Controls.Add(this.button8);
+            this.pn_Keys.Controls.Add(this.button17);
+            this.pn_Keys.Controls.Add(this.button33);
+            this.pn_Keys.Controls.Add(this.button18);
+            this.pn_Keys.Controls.Add(this.button49);
+            this.pn_Keys.Controls.Add(this.button65);
+            this.pn_Keys.Controls.Add(this.button74);
+            this.pn_Keys.Controls.Add(this.btnq);
+            this.pn_Keys.Controls.Add(this.button81);
+            this.pn_Keys.Controls.Add(this.button57);
+            this.pn_Keys.Controls.Add(this.button44);
+            this.pn_Keys.Controls.Add(this.btna);
+            this.pn_Keys.Controls.Add(this.button56);
+            this.pn_Keys.Controls.Add(this.btnw);
+            this.pn_Keys.Controls.Add(this.button43);
+            this.pn_Keys.Controls.Add(this.button82);
+            this.pn_Keys.Controls.Add(this.button30);
+            this.pn_Keys.Controls.Add(this.button24);
+            this.pn_Keys.Controls.Add(this.btns);
+            this.pn_Keys.Controls.Add(this.btnm);
+            this.pn_Keys.Controls.Add(this.btnz);
+            this.pn_Keys.Controls.Add(this.btnn);
+            this.pn_Keys.Controls.Add(this.btne);
+            this.pn_Keys.Controls.Add(this.btnb);
+            this.pn_Keys.Controls.Add(this.button83);
+            this.pn_Keys.Controls.Add(this.button48);
+            this.pn_Keys.Controls.Add(this.button42);
+            this.pn_Keys.Controls.Add(this.btnd);
+            this.pn_Keys.Controls.Add(this.button29);
+            this.pn_Keys.Controls.Add(this.btnl);
+            this.pn_Keys.Controls.Add(this.btnx);
+            this.pn_Keys.Controls.Add(this.btnk);
+            this.pn_Keys.Controls.Add(this.btnr);
+            this.pn_Keys.Controls.Add(this.btnj);
+            this.pn_Keys.Controls.Add(this.btnspace);
+            this.pn_Keys.Controls.Add(this.btnh);
+            this.pn_Keys.Controls.Add(this.btnt);
+            this.pn_Keys.Controls.Add(this.button60);
+            this.pn_Keys.Controls.Add(this.btnf);
+            this.pn_Keys.Controls.Add(this.button47);
+            this.pn_Keys.Controls.Add(this.button41);
+            this.pn_Keys.Controls.Add(this.btnc);
+            this.pn_Keys.Controls.Add(this.btnp);
+            this.pn_Keys.Controls.Add(this.btnv);
+            this.pn_Keys.Controls.Add(this.btno);
+            this.pn_Keys.Controls.Add(this.btni);
+            this.pn_Keys.Controls.Add(this.button98);
+            this.pn_Keys.Controls.Add(this.btnu);
+            this.pn_Keys.Controls.Add(this.button14);
+            this.pn_Keys.Controls.Add(this.btny);
+            this.pn_Keys.Controls.Add(this.button27);
+            this.pn_Keys.Controls.Add(this.button59);
+            this.pn_Keys.Controls.Add(this.button40);
+            this.pn_Keys.Controls.Add(this.button46);
+            this.pn_Keys.Location = new System.Drawing.Point(181, 291);
+            this.pn_Keys.Name = "pn_Keys";
+            this.pn_Keys.Size = new System.Drawing.Size(688, 216);
+            this.pn_Keys.TabIndex = 101;
             // 
             // btnx
             // 
@@ -883,169 +999,50 @@
             this.button46.Text = "+\r\n=\r\n";
             this.button46.UseVisualStyleBackColor = true;
             // 
-            // pn_RH
+            // RTB_String
             // 
-            this.pn_RH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pn_RH.BackgroundImage")));
-            this.pn_RH.Controls.Add(this.btn_Finger5);
-            this.pn_RH.Controls.Add(this.btn_Finger6);
-            this.pn_RH.Controls.Add(this.btn_Finger7);
-            this.pn_RH.Controls.Add(this.btn_Finger9);
-            this.pn_RH.Controls.Add(this.btn_Finger8);
-            this.pn_RH.Location = new System.Drawing.Point(477, 431);
-            this.pn_RH.Name = "pn_RH";
-            this.pn_RH.Size = new System.Drawing.Size(138, 162);
-            this.pn_RH.TabIndex = 100;
-            // 
-            // btn_Finger5
-            // 
-            this.btn_Finger5.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger5.Location = new System.Drawing.Point(0, 91);
-            this.btn_Finger5.Name = "btn_Finger5";
-            this.btn_Finger5.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger5.TabIndex = 91;
-            this.btn_Finger5.UseVisualStyleBackColor = false;
-            this.btn_Finger5.Visible = false;
-            // 
-            // btn_Finger6
-            // 
-            this.btn_Finger6.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger6.Location = new System.Drawing.Point(30, 27);
-            this.btn_Finger6.Name = "btn_Finger6";
-            this.btn_Finger6.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger6.TabIndex = 91;
-            this.btn_Finger6.UseVisualStyleBackColor = false;
-            this.btn_Finger6.Visible = false;
-            // 
-            // btn_Finger7
-            // 
-            this.btn_Finger7.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger7.Location = new System.Drawing.Point(58, 3);
-            this.btn_Finger7.Name = "btn_Finger7";
-            this.btn_Finger7.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger7.TabIndex = 91;
-            this.btn_Finger7.UseVisualStyleBackColor = false;
-            this.btn_Finger7.Visible = false;
-            // 
-            // btn_Finger9
-            // 
-            this.btn_Finger9.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger9.Location = new System.Drawing.Point(107, 48);
-            this.btn_Finger9.Name = "btn_Finger9";
-            this.btn_Finger9.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger9.TabIndex = 91;
-            this.btn_Finger9.UseVisualStyleBackColor = false;
-            this.btn_Finger9.Visible = false;
-            // 
-            // btn_Finger8
-            // 
-            this.btn_Finger8.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger8.Location = new System.Drawing.Point(83, 18);
-            this.btn_Finger8.Name = "btn_Finger8";
-            this.btn_Finger8.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger8.TabIndex = 91;
-            this.btn_Finger8.UseVisualStyleBackColor = false;
-            this.btn_Finger8.Visible = false;
-            // 
-            // pn_LH
-            // 
-            this.pn_LH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pn_LH.BackgroundImage")));
-            this.pn_LH.Controls.Add(this.btn_Finger0);
-            this.pn_LH.Controls.Add(this.btn_Finger1);
-            this.pn_LH.Controls.Add(this.btn_Finger4);
-            this.pn_LH.Controls.Add(this.btn_Finger2);
-            this.pn_LH.Controls.Add(this.btn_Finger3);
-            this.pn_LH.Location = new System.Drawing.Point(116, 431);
-            this.pn_LH.Name = "pn_LH";
-            this.pn_LH.Size = new System.Drawing.Size(155, 162);
-            this.pn_LH.TabIndex = 99;
-            // 
-            // btn_Finger0
-            // 
-            this.btn_Finger0.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger0.Location = new System.Drawing.Point(22, 48);
-            this.btn_Finger0.Name = "btn_Finger0";
-            this.btn_Finger0.Size = new System.Drawing.Size(22, 20);
-            this.btn_Finger0.TabIndex = 91;
-            this.btn_Finger0.UseVisualStyleBackColor = false;
-            this.btn_Finger0.Visible = false;
-            // 
-            // btn_Finger1
-            // 
-            this.btn_Finger1.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger1.Location = new System.Drawing.Point(46, 18);
-            this.btn_Finger1.Name = "btn_Finger1";
-            this.btn_Finger1.Size = new System.Drawing.Size(20, 20);
-            this.btn_Finger1.TabIndex = 91;
-            this.btn_Finger1.UseVisualStyleBackColor = false;
-            this.btn_Finger1.Visible = false;
-            // 
-            // btn_Finger4
-            // 
-            this.btn_Finger4.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger4.Location = new System.Drawing.Point(130, 94);
-            this.btn_Finger4.Name = "btn_Finger4";
-            this.btn_Finger4.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger4.TabIndex = 91;
-            this.btn_Finger4.UseVisualStyleBackColor = false;
-            this.btn_Finger4.Visible = false;
-            // 
-            // btn_Finger2
-            // 
-            this.btn_Finger2.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger2.Location = new System.Drawing.Point(72, 3);
-            this.btn_Finger2.Name = "btn_Finger2";
-            this.btn_Finger2.Size = new System.Drawing.Size(20, 20);
-            this.btn_Finger2.TabIndex = 91;
-            this.btn_Finger2.UseVisualStyleBackColor = false;
-            this.btn_Finger2.Visible = false;
-            // 
-            // btn_Finger3
-            // 
-            this.btn_Finger3.BackColor = System.Drawing.Color.Red;
-            this.btn_Finger3.Location = new System.Drawing.Point(106, 27);
-            this.btn_Finger3.Name = "btn_Finger3";
-            this.btn_Finger3.Size = new System.Drawing.Size(18, 20);
-            this.btn_Finger3.TabIndex = 91;
-            this.btn_Finger3.UseVisualStyleBackColor = false;
-            this.btn_Finger3.Visible = false;
+            this.RTB_String.Enabled = false;
+            this.RTB_String.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RTB_String.Location = new System.Drawing.Point(180, 27);
+            this.RTB_String.Name = "RTB_String";
+            this.RTB_String.Size = new System.Drawing.Size(688, 169);
+            this.RTB_String.TabIndex = 98;
+            this.RTB_String.Text = resources.GetString("RTB_String.Text");
             // 
             // Frm_Typing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 700);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(1083, 625);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.groupBox1);
             this.Name = "Frm_Typing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Typing";
             this.Load += new System.EventHandler(this.Frm_Typing_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Frm_Typing_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Frm_Typing_KeyPress);
+            this.pn_RH.ResumeLayout(false);
+            this.pn_LH.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.pn_Keys.ResumeLayout(false);
-            this.pn_RH.ResumeLayout(false);
-            this.pn_LH.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pn_LH;
-        private System.Windows.Forms.Button btn_Finger0;
-        private System.Windows.Forms.Button btn_Finger1;
-        private System.Windows.Forms.Button btn_Finger4;
         private System.Windows.Forms.Button btn_Finger2;
+        private System.Windows.Forms.Panel pn_RH;
+        private System.Windows.Forms.Button btn_Finger5;
+        private System.Windows.Forms.Button btn_Finger6;
+        private System.Windows.Forms.Button btn_Finger7;
+        private System.Windows.Forms.Button btn_Finger9;
+        private System.Windows.Forms.Button btn_Finger8;
         private System.Windows.Forms.Button btn_Finger3;
-        private System.Windows.Forms.Label labeltyping;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RichTextBox RTB_String;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Panel pn_Keys;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -1061,13 +1058,20 @@
         private System.Windows.Forms.Button button74;
         private System.Windows.Forms.Button btnq;
         private System.Windows.Forms.Button button81;
-        private System.Windows.Forms.Button button57;
         private System.Windows.Forms.Button button44;
         private System.Windows.Forms.Button btna;
         private System.Windows.Forms.Button button56;
         private System.Windows.Forms.Button btnw;
         private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Button btn_Finger1;
+        private System.Windows.Forms.Button btn_Finger4;
+        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Panel pn_LH;
+        private System.Windows.Forms.Button btn_Finger0;
         private System.Windows.Forms.Button button82;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labeltyping;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button btns;
@@ -1082,6 +1086,8 @@
         private System.Windows.Forms.Button btnd;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button btnl;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel pn_Keys;
         private System.Windows.Forms.Button btnx;
         private System.Windows.Forms.Button btnk;
         private System.Windows.Forms.Button btnr;
@@ -1106,12 +1112,7 @@
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button button46;
-        private System.Windows.Forms.Panel pn_RH;
-        private System.Windows.Forms.Button btn_Finger5;
-        private System.Windows.Forms.Button btn_Finger6;
-        private System.Windows.Forms.Button btn_Finger7;
-        private System.Windows.Forms.Button btn_Finger9;
-        private System.Windows.Forms.Button btn_Finger8;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RichTextBox RTB_String;
+
     }
 }

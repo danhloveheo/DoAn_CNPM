@@ -355,3 +355,31 @@ E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\ob
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_FingerExercise.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Main.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_SaveExercise.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.Information.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.KhoaHoc.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LessonList.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LessonSections.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenTap.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
+D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
