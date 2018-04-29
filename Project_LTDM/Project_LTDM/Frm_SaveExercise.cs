@@ -20,32 +20,9 @@ namespace Project_LTDM
 
         private void Frm_SaveExercise_Load(object sender, EventArgs e)
         {
-            rbtnFP.Checked = true;
-            rbtnThumb.Checked = true;
+
         }
         
-        private void rbtnFP_CheckedChanged(object sender, EventArgs e)
-        {
-            CheckType();
-        }
-
-        private void rbtnTP_CheckedChanged(object sender, EventArgs e)
-        {
-            CheckType();
-        }
-
-        public void CheckType() //Kiểm tra kiểu bài tập, nếu là bài tập viết đoạn văn thì hide Finger GroupBox
-        {
-            if (rbtnFP.Checked == true)
-            {
-                gbxFinger.Show();
-            }
-            else
-            {
-                gbxFinger.Hide();
-            }
-        }
-
         private void Frm_SaveExercise_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = false;
@@ -118,46 +95,18 @@ namespace Project_LTDM
                 MessageBox.Show("Please enter all mandatory fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            /*if (BUS_User.Register(txtUsername.Text, txtPassword.Text, txtEmail.Text) == 1)
+            if (BUS_Exercise.IsExist(txtName.Text))
             {
-                MessageBox.Show("Username already exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Exercise with this name has already exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtName.Clear();
+                txtName.Focus();
             }
             else
             {
-                MessageBox.Show("Insert user in database success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }*/
-
-            int finger = 0;
-            foreach (Control control in gbxFinger.Controls)
-            {
-                if (control is RadioButton)
-                {
-                    RadioButton radio = control as RadioButton;
-                    if (radio.Checked)
-                    {
-                        finger = int.Parse(radio.Tag.ToString());
-                    }
-                }
+                BUS_Exercise.AddExercise(txtName.Text, rtxtText.Lines);
+                MessageBox.Show("Insert Exercise in database success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
             }
-
-            if (rbtnFP.Checked)
-            {
-                BUS_Exercise.SaveExercise(1, finger, txtName.Text, txtTime.Text, rtxtText.Lines);
-                MessageBox.Show("Insert Finger Practice Exercise in database success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                BUS_Exercise.SaveExercise(2, finger, txtName.Text, txtTime.Text, rtxtText.Lines);
-                MessageBox.Show("Insert Text Practice in database success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            
-            foreach (Control ctrl in this.Controls)
-            {
-                if (ctrl is TextBox)
-                    ((TextBox)ctrl).Clear();
-            }
-            rtxtText.Clear();
-            txtName.Focus();
         }
     }
 }

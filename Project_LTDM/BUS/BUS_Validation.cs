@@ -67,12 +67,12 @@ namespace BUS
                 return false;
             }
 
-            Regex rgx = new Regex(@"^[a-zA-Z0-9]*$");
+            /*Regex rgx = new Regex(@"^[a-zA-Z0-9()""]*$");
             if (!rgx.IsMatch(text))
             {
                 errorMessage += " must contain only letter and number.";
                 return false;
-            }
+            }*/
 
             errorMessage = "";
             return true;

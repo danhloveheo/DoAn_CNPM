@@ -42,7 +42,6 @@
     <Compile Include="DAO_Exercise.cs" />
     <Compile Include="DAO_Lesson.cs" />
     <Compile Include="DAO_LessonSection.cs" />
-    <Compile Include="DAO_Practice.cs" />
     <Compile Include="DAO_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

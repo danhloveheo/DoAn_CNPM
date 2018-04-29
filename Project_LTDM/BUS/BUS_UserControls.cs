@@ -123,7 +123,7 @@ namespace BUS
                 lbSection.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 lbSection.ForeColor = System.Drawing.Color.Black;
                 lbSection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-                lbSection.Tag = DAO_Practice.CreatePractice(section);
+                lbSection.Tag = DAO_Exercise.CreateExercise(section);
                 lbSection.MouseEnter += new EventHandler(ChangeColor);
                 lbSection.MouseLeave += new EventHandler(ChangeColor);
 
@@ -139,14 +139,14 @@ namespace BUS
             return tag.lesson.Name;
         }
 
-        public static List<string> SearchTypingInfo (object sender, ref string practiceType)
+        public static List<string> SearchTypingInfo (object sender, ref string exerciseType)
         {
-            DTO_Practice practice = (DTO_Practice)(((Control)sender).Tag); //Lấy đối tượng DTO_Practice đc lưu trong tag của label đã nhấn vào
+            DTO_Exercise exercise = (DTO_Exercise)(((Control)sender).Tag); //Lấy đối tượng DTO_Exercise đc lưu trong tag của label đã nhấn vào
 
-            practiceType = practice.PracticeType;
-            List<string> practiceText = practice.PracticeText;
+            exerciseType = exercise.ExerciseType;
+            List<string> exerciseText = exercise.ExerciseText;
 
-            return practiceText;
+            return exerciseText;
         }
 
         static void ChangeColor(object sender, EventArgs e)

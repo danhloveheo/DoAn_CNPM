@@ -11,7 +11,7 @@ namespace DAO
 {
     public class DAO_Lesson
     {
-        private static string courseXmlFilePath = Path.Combine(Environment.CurrentDirectory, "Database", "Course.xml");
+        private static string courseXmlFilePath = Path.Combine(Environment.CurrentDirectory, "Database", "Lessons", "Course.xml");
 
         //Tìm danh sách các bài học của 1 khoá học dựa vào courseId
         public static List<DTO_Lesson> SearchLessons (int courseId)

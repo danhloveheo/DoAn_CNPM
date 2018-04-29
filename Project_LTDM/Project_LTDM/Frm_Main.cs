@@ -58,6 +58,10 @@ namespace Project_LTDM
 
         private void button8_Click_1(object sender, EventArgs e)
         {
+            LuyenText luyenText1 = new LuyenText();
+            luyenText1.Dock = DockStyle.Fill;
+
+            this.Controls.Add(luyenText1);
             luyenText1.BringToFront();
         }
 

@@ -8,13 +8,27 @@ namespace DTO
 {
     public class DTO_Exercise
     {
-        private int _exerciseType; // 1 là Finger Exercise, 2 là Text Exervise;
-        private int _finger; // 0 là TP, 1 là Thumb, 2 là Index, 3 là Middle, 4 là Ring, 5 là Pinky
-        private int _time;
-        private string _name;
-        private string[] _lines;
+        private string _exerciseType; // Gồm Key, Word, Sentence, Paragraph
 
-        public int ExerciseType
+        //TODO : Thêm trường time vào file
+        private int _time = 0;
+        private string _name;
+        private List<string> _exerciseText = new List<string>();
+
+        public DTO_Exercise()
+        {
+
+        }
+
+        public DTO_Exercise (string type, int time, string name, List<string> text)
+        {
+            this._exerciseType = type;
+            this._time = time;
+            this._name = name;
+            this._exerciseText = text;
+        }
+
+        public string ExerciseType
         {
             get
             {
@@ -23,18 +37,6 @@ namespace DTO
             set
             {
                 this._exerciseType = value;
-            }
-        }
-
-        public int Finger
-        {
-            get
-            {
-                return this._finger;
-            }
-            set
-            {
-                this._finger = value;
             }
         }
 
@@ -62,16 +64,21 @@ namespace DTO
             }
         }
 
-        public string[] Lines
+        public List<string> ExerciseText
         {
             get
             {
-                return this._lines;
+                return this._exerciseText;
             }
             set
             {
-                this._lines = value;
+                this._exerciseText = value;
             }
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

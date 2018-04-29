@@ -1,0 +1,38 @@
+<ExerciseDetails>
+  <Exercise>
+    <Title>Astronauts</Title>
+    <FileName>astronauts.txt</FileName>
+  </Exercise>
+  <Exercise>
+    <Title>Observations of the "Father of Computing" (1791-1871)"</Title>
+    <FileName>babbage.txt</FileName>
+  </Exercise>
+  <Exercise>
+    <Title>Rules of Baseball (from 1889)</Title>
+    <FileName>baseball.txt</FileName>
+  </Exercise>
+  <Exercise>
+    <Title>What is a cast?</Title>
+    <FileName>cast.txt</FileName>
+  </Exercise>
+  <Exercise>
+    <Title>Behind the scene: Movie credits</Title>
+    <FileName>credits.txt</FileName>
+  </Exercise>
+  <Exercise>
+    <Title>DNA Research -- the Human Genome Project</Title>
+    <FileName>dna.txt</FileName>
+  </Exercise>
+  <Exercise>
+    <Title>Aeshop's fables</Title>
+    <FileName>fables.txt</FileName>
+  </Exercise>
+  <Exercise>
+    <Title>123</Title>
+    <FileName>49af3bff-b174-4108-a00c-94b9103c3318.txt</FileName>
+  </Exercise>
+  <Exercise>
+    <Title>1123</Title>
+    <FileName>359d7c32-b8fe-4581-8882-dce0e4b40a8f.txt</FileName>
+  </Exercise>
+</ExerciseDetails>

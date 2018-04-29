@@ -16,7 +16,7 @@ keel keel keel
 
 life life life 
 
-$loop$ellis isle 
+ellis isle 
 ellis isle 
 
 field file 

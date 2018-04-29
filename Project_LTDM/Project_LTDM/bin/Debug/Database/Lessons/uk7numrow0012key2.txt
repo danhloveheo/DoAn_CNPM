@@ -6,7 +6,7 @@ f5 f5 f5 f5
 ft5f ft5f ft5f ft5f 
 j6 j6 j6 j6 
 jy6j jy6j jy6j jy6j 
-$loop$f4j7 f4j7 f4j7 f4j7 
+f4j7 f4j7 f4j7 f4j7 
 f5j6 f5j6 f5j6 f5j6 
 f4f5 f4f5 f4f5 f4f5 
 j6j7 j6j7 j6j7 j6j7 

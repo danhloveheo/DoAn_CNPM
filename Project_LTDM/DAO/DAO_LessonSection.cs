@@ -11,7 +11,7 @@ namespace DAO
 {
     public class DAO_LessonSection
     {
-        private static string courseXmlFilePath = Path.Combine(Environment.CurrentDirectory, "Database", "Course.xml");
+        private static string courseXmlFilePath = Path.Combine(Environment.CurrentDirectory, "Database", "Lessons", "Course.xml");
 
         //Tìm danh sách các bài luyện tập của 1 bài học dựa vào course id và tên bài học
         public static List<DTO_LessonSection> SearchSections (XmlDocument xd, int courseId, string lessonName)
@@ -47,14 +47,14 @@ namespace DAO
             return sections;
         }
 
-        public static List<string> ReadPracticeDetailFromSection (DTO_LessonSection section) //Đọc nội dung file text trong detail
+        public static List<string> ReadExerciseDetailFromSection (DTO_LessonSection section) //Đọc nội dung file text trong detail
         {
-            string practiceFilePath = Path.Combine(Environment.CurrentDirectory, "Database", section.Detail);
+            string exerciseFilePath = Path.Combine(Environment.CurrentDirectory, "Database", "Lessons", section.Detail);
 
             List<string> detail = new List<string>();
             string line = "";
 
-            StreamReader reader = new StreamReader(practiceFilePath);
+            StreamReader reader = new StreamReader(exerciseFilePath);
 
             while (reader.Peek() >= 0) //Read to End-of-file
             {

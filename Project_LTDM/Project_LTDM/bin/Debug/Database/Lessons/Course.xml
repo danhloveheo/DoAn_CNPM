@@ -74,7 +74,7 @@
 				<Detail>uk7speed02051sentence2.txt</Detail>
 			</Section>
 			<Section Name = "Text drill, all letters">
-				<Type>Key</Type>
+				<Type>Sentence</Type>
 				<Detail>uk7speed02021key2.txt</Detail>
 			</Section>
 		</Lesson>

@@ -11,102 +11,150 @@ namespace DAO
 {
     public class DAO_Exercise
     {
-        private static string exerciseXmlFilePath = Path.Combine(Environment.CurrentDirectory, "Exercise.xml");
-
-        private static void CreateXML()
+        #region Section
+        static public DTO_Exercise CreateExercise(DTO_LessonSection section)
         {
-            if(File.Exists(exerciseXmlFilePath))
+            DTO_Exercise exercise = new DTO_Exercise();
+
+            exercise.Name = section.Name;
+
+            if (section.Type == "Key")
             {
-                return;
+                exercise.ExerciseType = "Key";
             }
             else
             {
-                XmlTextWriter xtw = new XmlTextWriter(exerciseXmlFilePath, Encoding.UTF8);
-                xtw.WriteStartDocument();
-                xtw.WriteStartElement("ExerciseDetail");
-                xtw.WriteEndElement();
-                xtw.Close();
+                exercise.ExerciseType = "Text";
             }
+
+            exercise.ExerciseText = DAO_LessonSection.ReadExerciseDetailFromSection(section);
+
+            return exercise;
+        }
+        #endregion
+
+        #region Exercise
+        private static string exerciseXmlFilePath = Path.Combine(Environment.CurrentDirectory, "Database", "Exercises", "Exercises.xml");
+
+
+        static public List<DTO_Exercise> FindAllExercise() //Tìm tất cả bài tập trong file Exercise.xml
+        { 
+            XmlDocument xd = new XmlDocument();
+            FileStream rfile = new FileStream(exerciseXmlFilePath, FileMode.Open);
+            xd.Load(rfile);
+
+            List<DTO_Exercise> exercises = new List<DTO_Exercise>();
+            XmlNodeList exerciseNodeList = xd.GetElementsByTagName("Exercise"); // Tìm danh sách các bài tập
+
+            string name;
+            int time;
+            List<string> text;
+
+            foreach (XmlElement exerciseNode in exerciseNodeList)
+            {
+                name = exerciseNode.GetElementsByTagName("Title")[0].InnerText;
+
+                //TODO: Thêm thuộc tính time vào file Exercise.xml
+                time = 0;
+                text = ReadTextFromTxt(exerciseNode.GetElementsByTagName("FileName")[0].InnerText);
+
+                DTO_Exercise exercise = new DTO_Exercise("Paragraph", time, name, text);
+                exercises.Add(exercise);
+            }
+
+            rfile.Close();
+            return exercises;
         }
 
-        public static void InsertExercise(DTO_Exercise exercise) //Type 1 là FP, 2 là TP
+        static private List<string> ReadTextFromTxt(string fileName)
         {
-            CreateXML();
+            List<string> text = new List<string>();
+            string line = "";
+
+            StreamReader reader = new StreamReader(Path.Combine(Environment.CurrentDirectory, "Database", "Exercises", fileName));
+
+            while (reader.Peek() >= 0) //Read to End-of-file
+            {
+                line = reader.ReadLine();
+
+                if (line != "")
+                {
+                    text.Add(line);
+                }
+            }
+
+            reader.Close();
+            return text;
+        }
+
+        static private void CreateTxt (string fileName, string[] lines)
+        {
+            StreamWriter writer = new StreamWriter(Path.Combine(Environment.CurrentDirectory, "Database", "Exercises", fileName));
+
+            foreach (string line in lines)
+            {
+                string trim = line.Trim();
+                if (!string.IsNullOrEmpty(trim))
+                {
+                    writer.WriteLine(trim + " ");
+                }
+            }
+
+            writer.Close();
+        }
+
+        static public void AddExercise (DTO_Exercise exercise)
+        {
             XmlDocument xd = new XmlDocument();
             FileStream lfile = new FileStream(exerciseXmlFilePath, FileMode.Open);
             xd.Load(lfile);
 
-            XmlElement exNode;
-            switch (exercise.ExerciseType)
-            {
-                case 1:
-                    string finger;
-                    switch (exercise.Finger)
-                    {
-                        case 1: finger = "Thumb"; break;
-                        case 2: finger = "Index"; break;
-                        case 3: finger = "Middle"; break;
-                        case 4: finger = "Ring"; break;
-                        case 5: finger = "Pinky"; break;
-                        default: finger = ""; break;
-                    }
-                    exNode = xd.CreateElement("FingerExercise");
-                    exNode.SetAttribute("Type", finger);
-                    break;
-                case 2:
-                    exNode = xd.CreateElement("TextExercise");
-                    break;
-                default:
-                    exNode = xd.CreateElement("Invalid");
-                    break;
-            }
+            XmlElement exerciseNode = xd.CreateElement("Exercise");
 
-            XmlElement nameNode = xd.CreateElement("Name");
-            XmlText nameText = xd.CreateTextNode(exercise.Name);
-            XmlElement timeNode = xd.CreateElement("Time");
-            XmlText timeText = xd.CreateTextNode(exercise.Time.ToString());
+            XmlElement titleNode = xd.CreateElement("Title");
+            XmlText titleText = xd.CreateTextNode(exercise.Name);
 
-            StringBuilder text = new StringBuilder();
-            switch (exercise.ExerciseType)
-            {  
-                case 1:
-                    foreach (string line in exercise.Lines)
-                    {
-                        foreach (char ch in line)
-                        {
-                            text.Append(ch);
-                            text.Append(",");
-                        }
-                    }
-                    text.Length--;
-                    break;
-                case 2:
-                    foreach (string line in exercise.Lines)
-                    {
-                        text.Append(line);
-                        //text.Append(Environment.NewLine);
-                    }
-                    //text.Length--;
-                    break;
-            }
+            XmlElement fileNameNode = xd.CreateElement("FileName");
+            string fileName = Guid.NewGuid().ToString() + ".txt";
+            XmlText fileNameText = xd.CreateTextNode(fileName);
 
-            XmlElement textNode = xd.CreateElement("Text");
-            XmlText textText = xd.CreateTextNode(text.ToString());
+            titleNode.AppendChild(titleText);
+            fileNameNode.AppendChild(fileNameText);
 
-            nameNode.AppendChild(nameText);
-            timeNode.AppendChild(timeText);
-            textNode.AppendChild(textText);
+            exerciseNode.AppendChild(titleNode);
+            exerciseNode.AppendChild(fileNameNode);
 
-            exNode.AppendChild(nameNode);
-            exNode.AppendChild(timeNode);
-            exNode.AppendChild(textNode);
-
-            //Thêm node vào cuối danh sách các node cùng loại bài tập
-            XmlNodeList list = xd.GetElementsByTagName(exercise.ExerciseType == 1 ? "FingerExercise" : "TextExercise");
-            xd.DocumentElement.InsertAfter(exNode, list[list.Count - 1]);
+            xd.DocumentElement.AppendChild(exerciseNode);
 
             lfile.Close();
             xd.Save(exerciseXmlFilePath);
+
+            CreateTxt(fileName, exercise.ExerciseText.ToArray());
         }
+
+        static public bool IsExist (string title)
+        {
+            XmlDocument xd = new XmlDocument();
+            FileStream rfile = new FileStream(exerciseXmlFilePath, FileMode.Open);
+            xd.Load(rfile);
+
+            DTO_Exercise user = new DTO_Exercise();
+            XmlNodeList list = xd.GetElementsByTagName("Exercise");
+            foreach (XmlElement e in list)
+            {
+                XmlElement titleNode = (XmlElement)e.GetElementsByTagName("Title")[0];
+
+                if (titleNode.InnerText == title)
+                {
+                    rfile.Close();
+                    return true;
+                }
+            }
+
+            rfile.Close();
+            return false;
+        }
+
+        #endregion
     }
 }

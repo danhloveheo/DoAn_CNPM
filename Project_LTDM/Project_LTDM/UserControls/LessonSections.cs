@@ -82,21 +82,21 @@ namespace Project_LTDM.UserControls
 
         public static void ShowTypingForm (object sender, EventArgs e)
         {
-            string practiceType = "";
-            List<string> practiceText = BUS_UserControls.SearchTypingInfo(sender, ref practiceType);
+            string exerciseType = "";
+            List<string> exerciseText = BUS_UserControls.SearchTypingInfo(sender, ref exerciseType);
 
             Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
 
-            if (practiceType == "Key")
+            if (exerciseType == "Key")
             {
-                Frm_FingerExercise practice = new Frm_FingerExercise(practiceText);
-                practice.ShowDialog(form);
+                Frm_FingerExercise exercise = new Frm_FingerExercise(exerciseText);
+                exercise.ShowDialog(form);
 
             }
             else
             {
-                Frm_Typing practice = new Frm_Typing(practiceText);
-                practice.ShowDialog(form);
+                Frm_Typing exercise = new Frm_Typing(exerciseText);
+                exercise.ShowDialog(form);
             }
         }
     }

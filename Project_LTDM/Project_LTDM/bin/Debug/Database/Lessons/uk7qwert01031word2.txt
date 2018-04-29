@@ -16,7 +16,7 @@ flask flask flask
 
 lads lads lads 
 
-$loop$dada dada dada 
+dada dada dada 
 
 alas alas alas 
 

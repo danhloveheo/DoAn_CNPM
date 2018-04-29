@@ -25,19 +25,6 @@ namespace Project_LTDM
         public Frm_Typing()
         {
             InitializeComponent();
-            /*exerciseText.Add("frfv frfv ftfb ftfb ");
-            exerciseText.Add("ff rr ff vv ");
-            exerciseText.Add("AbcDefGhiJkl<mn45613");
-            exerciseText.Add("frfv frfv ftfb ftfb ");*/
-            exerciseText.Add("21");
-            exerciseText.Add("22");
-            exerciseText.Add("23");
-            exerciseText.Add("24");
-            exerciseText.Add("25");
-            exerciseText.Add("26");
-            exerciseText.Add("27");
-            exerciseText.Add("28");
-            RTB_String.Lines = exerciseText.ToArray();
 
             //Căn lề cho văn bản trong RTB_String
             /*RTB_String.SelectAll();
@@ -50,6 +37,8 @@ namespace Project_LTDM
 
         public Frm_Typing(List<string> text)
         {
+            //TODO: Thay đổi kích thước font chữ trong RTB_String theo từng loại
+
             InitializeComponent();
             exerciseText = text;
             RTB_String.Lines = exerciseText.ToArray();
@@ -336,6 +325,10 @@ namespace Project_LTDM
                         {
                             SoundPlayer sn1 = new SoundPlayer(@"sound\[].wav");
                             sn1.Play();
+                        }
+                        else if (e.KeyChar.ToString() == "(" || e.KeyChar.ToString() == ")")
+                        {
+                            //TODO:Thêm âm thanh
                         }
                         else
                         {
