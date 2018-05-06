@@ -16,14 +16,9 @@ namespace Project_LTDM
         public Frm_Login()
         {
             InitializeComponent();
+            txtDummy.TabStop = true;
+            txtDummy.Select();
         }
-
-     
-
-      
-    
-      
-      
 
         private void Frm_Login_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -31,45 +26,11 @@ namespace Project_LTDM
             Application.Exit();
         }
 
-       
-
-       
-
         private void lbRegister_Click(object sender, EventArgs e)
         {
-            Frm_Register fRegister = new Frm_Register();
-            fRegister.Show();
+            Frm_Register reg = new Frm_Register();
             this.Hide();
-        }
-
-        private void btnLogin_Click_1(object sender, EventArgs e)
-        {
-            string usernameErr = errorProvider1.GetError(txtUsername);
-            string passwordErr = errorProvider2.GetError(txtPassword);
-
-            if (usernameErr != "" || passwordErr != "")
-            {
-                MessageBox.Show("Please enter valid information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (txtUsername.Text == "" || txtPassword.Text == "")
-            {
-                MessageBox.Show("Please enter all mandatory fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if (BUS_User.Login(txtUsername.Text, txtPassword.Text) == 1)
-            {
-                MessageBox.Show("Account does not exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (BUS_User.Login(txtUsername.Text, txtPassword.Text) == 2)
-            {
-                MessageBox.Show("Incorrect password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                MessageBox.Show("Login success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            reg.ShowDialog();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -107,16 +68,6 @@ namespace Project_LTDM
             }
         }
 
-        private void txtUsername_Click(object sender, EventArgs e)
-        {
-            txtUsername.Clear();
-        }
-
-        private void txtPassword_Click(object sender, EventArgs e)
-        {
-            txtPassword.Clear();
-        }
-
         private void label4_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
@@ -138,21 +89,55 @@ namespace Project_LTDM
                 MessageBox.Show("Please enter all mandatory fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            if (txtUsername.Text == "User Name" || txtPassword.Text == "Password")
+            {
+                MessageBox.Show("Please enter all mandatory fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (BUS_User.Login(txtUsername.Text, txtPassword.Text) == 1)
             {
                 MessageBox.Show("Account does not exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
             else if (BUS_User.Login(txtUsername.Text, txtPassword.Text) == 2)
             {
                 MessageBox.Show("Incorrect password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Login success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Frm_Main main = new Frm_Main();
+                this.Hide();
+                main.ShowDialog();
+                // MessageBox.Show("Login success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void txtUsername_Enter(object sender, EventArgs e)
+        {
+            BUS_Placeholder.NormalTxtEnter((TextBox)sender, "User Name");
         }
 
-        
+        private void txtUsername_Leave(object sender, EventArgs e)
+        {
+            BUS_Placeholder.NormalTxtLeave((TextBox)sender, "User Name");
+        }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            BUS_Placeholder.PasswordTxtEnter((TextBox)sender, "Password");
+        }
+
+        private void txtPassword_Leave(object sender, EventArgs e)
+        {
+            BUS_Placeholder.PasswordTxtLeave((TextBox)sender, "Password");
+        }
+
+        private void txtDummy_Leave(object sender, EventArgs e)
+        {
+            ((TextBox)sender).TabStop = false;
+        }
     }
+}
 

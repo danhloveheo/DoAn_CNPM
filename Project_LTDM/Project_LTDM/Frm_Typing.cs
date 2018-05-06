@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Text.RegularExpressions;
 namespace Project_LTDM
 {
     public partial class Frm_Typing : Form
@@ -303,38 +304,40 @@ namespace Project_LTDM
                     {
                         if (e.KeyChar.ToString() == @"\")
                         {
-                            SoundPlayer sn1 = new SoundPlayer(@"sound\secphai.wav");
-                            sn1.Play();
+                            SoundPlayer sn = new SoundPlayer(@"sound\secphai.wav");
+                            sn.Play();
                         }
                         else if (e.KeyChar.ToString() == @"/")
                         {
-                            SoundPlayer sn1 = new SoundPlayer(@"sound\sectrai.wav");
-                            sn1.Play();
+                            SoundPlayer sn = new SoundPlayer(@"sound\sectrai.wav");
+                            sn.Play();
                         }
                         else if (e.KeyChar.ToString() == ".")
                         {
-                            SoundPlayer sn1 = new SoundPlayer(@"sound\cham.wav");
-                            sn1.Play();
+                            SoundPlayer sn = new SoundPlayer(@"sound\cham.wav");
+                            sn.Play();
                         }
                         else if (e.KeyChar.ToString() == " ")
                         {
-                            SoundPlayer sn1 = new SoundPlayer(@"sound\space.wav");
-                            sn1.Play();
+                            SoundPlayer sn = new SoundPlayer(@"sound\space.wav");
+                            sn.Play();
                         }
                         else if (e.KeyChar.ToString() == "[" || e.KeyChar.ToString() == "]")
                         {
-                            SoundPlayer sn1 = new SoundPlayer(@"sound\[].wav");
-                            sn1.Play();
+                            SoundPlayer sn = new SoundPlayer(@"sound\[].wav");
+                            sn.Play();
                         }
-                        else if (e.KeyChar.ToString() == "(" || e.KeyChar.ToString() == ")")
+                        else if (Regex.Match(e.KeyChar.ToString(), "[A-Za-z0-9]").Length != 0)
                         {
-                            //TODO:Thêm âm thanh
+                            SoundPlayer sn = new SoundPlayer(@"sound\" + e.KeyChar.ToString().ToLower() + ".wav");
+                            sn.Play();
                         }
                         else
                         {
-                            SoundPlayer sn = new SoundPlayer(@"sound\" + e.KeyChar.ToString() + ".wav");
+                            SoundPlayer sn = new SoundPlayer(@"sound\shift-key.wav");
                             sn.Play();
                         }
+
                         RTB_String.Select(PositionKey, 1);
                         RTB_String.SelectionColor = Color.Green;
                         RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 36.5F, System.Drawing.FontStyle.Underline);

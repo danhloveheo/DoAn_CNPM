@@ -17,7 +17,16 @@ namespace BUS
         static public List<Object> FindAllExercise () //Tìm toàn bộ bài tập trong file Exercise.Xml
         {
             List<Object> objects = new List<Object>();
-            objects.AddRange(DAO_Exercise.FindAllExercise());
+            List<string> warningTitles = new List<string>();
+
+            objects.AddRange(DAO_Exercise.FindAllExercise(ref warningTitles));
+
+            //Hiển thị thông báo các bài tập bị lỗi
+            foreach (string title in warningTitles)
+            {
+                MessageBox.Show("Exercise \"" + title + "\" has been corrupted or deleted. It will be removed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                DeleteExercise(title);
+            }
 
             return objects;
         }
@@ -32,7 +41,7 @@ namespace BUS
             return null;
         }
 
-        static public void AddExercise (string tittle, string[] lines)
+        static public void AddExercise (string title, string[] lines)
         {
             List<string> text = new List<string>();
             foreach (string s in lines)
@@ -40,13 +49,23 @@ namespace BUS
                 text.Add(s);
             }
 
-            DTO_Exercise exercise = new DTO_Exercise("Paragraph", 0, tittle, text);
+            DTO_Exercise exercise = new DTO_Exercise("Paragraph", 0, title, text);
             DAO_Exercise.AddExercise(exercise);
+        }
+
+        static public void DeleteExercise (string title)
+        {
+            DAO_Exercise.DeleteExercise(title);
         }
 
         static public bool IsExist (string title)
         {
             return DAO_Exercise.IsExist(title);
+        }
+
+        static public bool FileTxtExist (string fileName)
+        {
+            return DAO_Exercise.FileTxtExist(fileName);
         }
     }
 }

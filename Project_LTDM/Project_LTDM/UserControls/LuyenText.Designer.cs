@@ -211,7 +211,6 @@
             // 
             this.lbDelete.AutoSize = true;
             this.lbDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbDelete.Enabled = false;
             this.lbDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDelete.ForeColor = System.Drawing.Color.Blue;
             this.lbDelete.Location = new System.Drawing.Point(607, 150);
@@ -220,6 +219,7 @@
             this.lbDelete.Size = new System.Drawing.Size(68, 25);
             this.lbDelete.TabIndex = 122;
             this.lbDelete.Text = "Delete";
+            this.lbDelete.Click += new System.EventHandler(this.lbDelete_Click);
             // 
             // lbAdd
             // 

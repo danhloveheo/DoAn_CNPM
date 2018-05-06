@@ -9,6 +9,24 @@ using DAO;
 
 namespace BUS
 {
+    public static class CurrentUser
+    {
+        private static string _username = null;
+
+        public static string Username
+        {
+            get
+            {
+                return _username;
+            }
+
+            set
+            {
+                _username = value;
+            }
+        }
+    }
+
     public class BUS_User
     {
         // 0: Tạo mới thành công
@@ -45,6 +63,7 @@ namespace BUS
                 return 2;
             }
 
+            CurrentUser.Username = userName;
             return 0;
         }
 

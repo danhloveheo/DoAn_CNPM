@@ -17,6 +17,12 @@ namespace Project_LTDM
         public Frm_Main()
         {
             InitializeComponent();
+            lbCurrentUser.Text = "Hello, " + BUS.CurrentUser.Username;
+
+            Int32 x = lbLogOut.Location.X - lbCurrentUser.Size.Width - 5;
+            Int32 y = lbLogOut.Location.Y;
+            lbCurrentUser.Location = new Point(x, y);
+
             this.khoaHoc1.btnC1Click += new EventHandler(khoaHoc_btnC1Click);
             this.khoaHoc1.btnC2Click += new EventHandler(khoaHoc_btnC2Click);
             this.khoaHoc1.btnC3Click += new EventHandler(khoaHoc_btnC3Click);
@@ -123,6 +129,24 @@ namespace Project_LTDM
             this.Controls.Add(lessonList); //Add LessonList nới tạo vào form
 
             lessonList.BringToFront();
+        }
+
+        private void lbLogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Are you sure you want to quit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            
+            if (dr == DialogResult.Yes)
+            {
+                CurrentUser.Username = null;
+                Frm_Login lg = new Frm_Login();
+                this.Hide();
+                lg.ShowDialog();
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            lbLogOut_Click(sender, e);
         }
     }
 

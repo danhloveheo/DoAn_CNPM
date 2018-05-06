@@ -16,19 +16,10 @@ namespace Project_LTDM
         public Frm_Register()
         {
             InitializeComponent();
+            txtDummy.TabStop = true;
+            txtDummy.Select();
         }
-
-      
-      
-      
-
         
-      
-
-
-       
-      
-
         private void Frm_Register_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = false;
@@ -40,8 +31,8 @@ namespace Project_LTDM
         private void lbRegister_Click(object sender, EventArgs e)
         {
             Frm_Login fLogin = new Frm_Login();
-            fLogin.Show();
             this.Hide();
+            fLogin.ShowDialog();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -142,36 +133,6 @@ namespace Project_LTDM
             WindowState = FormWindowState.Minimized;
         }
 
-        private void txtUsername_Click(object sender, EventArgs e)
-        {
-            txtUsername.Clear();
-        }
-
-        private void txtPassword_Click(object sender, EventArgs e)
-        {
-            txtPassword.Clear();
-        }
-
-        private void txtPasswordConfirm_Click(object sender, EventArgs e)
-        {
-            txtPasswordConfirm.Clear();
-        }
-
-        private void txtEmail_Click(object sender, EventArgs e)
-        {
-            txtEmail.Clear();
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-            txtPassword.PasswordChar = '*';
-        }
-
-        private void txtPasswordConfirm_TextChanged(object sender, EventArgs e)
-        {
-            txtPasswordConfirm.PasswordChar = '*';
-        }
-
         private void Frm_Register_Load(object sender, EventArgs e)
         {
 
@@ -195,6 +156,13 @@ namespace Project_LTDM
                 MessageBox.Show("Please enter all mandatory fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            if (txtUsername.Text == "User Name" || txtPassword.Text == "Password" || txtPasswordConfirm.Text == "Password" || txtEmail.Text == "Email")
+            {
+                MessageBox.Show("Please enter all mandatory fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (BUS_User.Register(txtUsername.Text, txtPassword.Text, txtEmail.Text) == 1)
             {
                 MessageBox.Show("Username already exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -202,9 +170,55 @@ namespace Project_LTDM
             else
             {
                 MessageBox.Show("Insert user in database success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Frm_Login login = new Frm_Login();
+                this.Hide();
+                login.ShowDialog();
             }
         }
 
-       
+        private void txtUsername_Enter(object sender, EventArgs e)
+        {
+            BUS_Placeholder.NormalTxtEnter((TextBox)sender, "User Name");
+        }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            BUS_Placeholder.PasswordTxtEnter((TextBox)sender, "Password");
+        }
+
+        private void txtPasswordConfirm_Enter(object sender, EventArgs e)
+        {
+            BUS_Placeholder.PasswordTxtEnter((TextBox)sender, "Re-Password");
+        }
+
+        private void txtEmail_Enter(object sender, EventArgs e)
+        {
+            BUS_Placeholder.NormalTxtEnter((TextBox)sender, "Email");
+        }
+
+        private void txtUsername_Leave(object sender, EventArgs e)
+        {
+            BUS_Placeholder.NormalTxtLeave((TextBox)sender, "User Name");
+        }
+
+        private void txtPassword_Leave(object sender, EventArgs e)
+        {
+            BUS_Placeholder.PasswordTxtLeave((TextBox)sender, "Password");
+        }
+
+        private void txtPasswordConfirm_Leave(object sender, EventArgs e)
+        {
+            BUS_Placeholder.PasswordTxtLeave((TextBox)sender, "Re-Password");
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            BUS_Placeholder.NormalTxtLeave((TextBox)sender, "Email");
+        }
+
+        private void txtDummy_Leave(object sender, EventArgs e)
+        {
+            ((TextBox)sender).TabStop = false;
+        }
     }
 }

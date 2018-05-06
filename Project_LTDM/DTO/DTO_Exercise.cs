@@ -12,7 +12,7 @@ namespace DTO
 
         //TODO : Thêm trường time vào file
         private int _time = 0;
-        private string _name;
+        private string _title;
         private List<string> _exerciseText = new List<string>();
 
         public DTO_Exercise()
@@ -20,11 +20,11 @@ namespace DTO
 
         }
 
-        public DTO_Exercise (string type, int time, string name, List<string> text)
+        public DTO_Exercise (string type, int time, string title, List<string> text)
         {
             this._exerciseType = type;
             this._time = time;
-            this._name = name;
+            this._title = title;
             this._exerciseText = text;
         }
 
@@ -52,15 +52,15 @@ namespace DTO
             }
         }
 
-        public string Name
+        public string Title
         {
             get
             {
-                return this._name;
+                return this._title;
             }
             set
             {
-                this._name = value;
+                this._title = value;
             }
         }
 
@@ -78,7 +78,7 @@ namespace DTO
 
         public override string ToString()
         {
-            return Name;
+            return Title;
         }
     }
 }

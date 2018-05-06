@@ -8,4 +8,16 @@
     <Password>f6f984b024bde46d54d2e7a9d01597e2</Password>
     <Email>dawdaw</Email>
   </User>
+  <User Username="phuongnam">
+    <Password>25f9e794323b453885f5181f1b624d0b</Password>
+    <Email>a@nb.com</Email>
+  </User>
+  <User Username="Azure020890">
+    <Password>bdd24d0f9882d8a1b7c7ef45ba005239</Password>
+    <Email>Azr@gmail.com</Email>
+  </User>
+  <User Username="test123456789123456789">
+    <Password>25f9e794323b453885f5181f1b624d0b</Password>
+    <Email>a@bs.com</Email>
+  </User>
 </UserDetails>

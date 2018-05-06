@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Text.RegularExpressions;
+
 namespace Project_LTDM
 {
     public partial class Frm_LuyenTap : Form
@@ -331,11 +333,17 @@ namespace Project_LTDM
                             SoundPlayer sn1 = new SoundPlayer(@"sound\[].wav");
                             sn1.Play();
                         }
-                        else
+                        else if (Regex.Match(e.KeyChar.ToString(), "[A-Za-z0-9]").Length != 0)
                         {
-                            SoundPlayer sn = new SoundPlayer(@"sound\" + e.KeyChar.ToString() + ".wav");
+                            SoundPlayer sn = new SoundPlayer(@"sound\" + e.KeyChar.ToString().ToLower() + ".wav");
                             sn.Play();
                         }
+                        else
+                        {
+                            SoundPlayer sn = new SoundPlayer(@"sound\shift-key.wav");
+                            sn.Play();
+                        }
+
                         ColorLabel_True(((Label)ctnkey));
                         PositionKey++;
 

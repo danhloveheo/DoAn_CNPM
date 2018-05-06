@@ -24,14 +24,15 @@ namespace Project_LTDM.UserControls
                 lbxExerciseList.Items.Add(o);
             }
 
-            lbxExerciseList.Sorted = true; 
+            lbxExerciseList.Sorted = true;
+            lbxExerciseList.SelectedIndex = 0;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
-            Frm_Typing exercise = new Frm_Typing(BUS_Exercise.FindContent(lbxExerciseList.SelectedItem));
-            exercise.ShowDialog(form);
+                Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
+                Frm_Typing exercise = new Frm_Typing(BUS_Exercise.FindContent(lbxExerciseList.SelectedItem));
+                exercise.ShowDialog(form);
         }
 
         private void lbAdd_Click(object sender, EventArgs e)
@@ -52,6 +53,29 @@ namespace Project_LTDM.UserControls
 
             lbxExerciseList.SelectedIndex = exerciseList.Count - 1;
             lbxExerciseList.Sorted = true;
+        }
+
+        private void lbDelete_Click(object sender, EventArgs e)
+        {
+            string title = lbxExerciseList.SelectedItem.ToString();
+            DialogResult dr = MessageBox.Show("Are you sure you want to delete \"" + title +"\" exercise?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (dr == DialogResult.Yes)
+            {
+                BUS_Exercise.DeleteExercise(title);
+
+                //Refresh ListBox
+                lbxExerciseList.Items.Clear();
+
+                List<Object> exerciseList = BUS_Exercise.FindAllExercise();
+                foreach (Object o in exerciseList)
+                {
+                    lbxExerciseList.Items.Add(o);
+                }
+
+                lbxExerciseList.Sorted = true;
+                lbxExerciseList.SelectedIndex = 0;
+            }
         }
     }
 }

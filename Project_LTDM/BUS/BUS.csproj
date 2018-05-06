@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BUS_Exercise.cs" />
     <Compile Include="BUS_LessonTag.cs" />
+    <Compile Include="BUS_PlaceHolder.cs" />
     <Compile Include="BUS_User.cs" />
     <Compile Include="BUS_UserControls.cs" />
     <Compile Include="BUS_Validation.cs" />
