@@ -37,6 +37,7 @@ namespace Project_LTDM.UserControls
             //Bubble the event up to the parent
             if (this.btnC2Click != null) //Null check makes sure the main page is attached to the event
             {
+                this.Tag = 2;
                 this.btnC2Click(this, e);
             }
         }
@@ -46,7 +47,7 @@ namespace Project_LTDM.UserControls
             //Bubble the event up to the parent
             if (this.btnC3Click != null) //Null check makes sure the main page is attached to the event
             {
-                this.Tag = 2;
+                this.Tag = 3;
                 this.btnC3Click(this, e);
             }
         }
@@ -56,7 +57,7 @@ namespace Project_LTDM.UserControls
             //Bubble the event up to the parent
             if (this.btnC4Click != null) //Null check makes sure the main page is attached to the event
             {
-                this.Tag = 3;
+                this.Tag = 4;
                 this.btnC4Click(this, e);
             }
         }

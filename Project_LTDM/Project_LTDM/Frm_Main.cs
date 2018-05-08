@@ -93,6 +93,7 @@ namespace Project_LTDM
 
         private void khoaHoc_btnC2Click(object sender, EventArgs e)
         {
+            ShowLessonList(sender, e);
         }
 
         private void khoaHoc_btnC3Click(object sender, EventArgs e)

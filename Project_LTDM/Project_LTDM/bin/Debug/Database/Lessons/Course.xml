@@ -35,7 +35,84 @@
 			</Section>
 		</Lesson>
 	</Course>
-	<Course Id="2">
+	<Course Id = "2">
+		<Lesson Name="Animal">
+			<Intro></Intro>
+			<Section Name = "Keywords">
+				<Type>Key</Type>
+				<Detail>c20101.txt</Detail>
+			</Section>
+			<Section Name = "Sentence Drill">
+				<Type>Sentence</Type>
+				<Detail>c20102.txt</Detail>
+			</Section>
+			<Section Name = "Paragraph Drill">
+				<Type>Paragraph</Type>
+				<Detail>c20103.txt</Detail>
+			</Section>
+		</Lesson>
+		<Lesson Name="Traffic">
+			<Intro></Intro>
+			<Section Name = "Keywords">
+				<Type>Key</Type>
+				<Detail>c20201.txt</Detail>
+			</Section>
+			<Section Name = "Sentence Drill">
+				<Type>Sentence</Type>
+				<Detail>c20202.txt</Detail>
+			</Section>
+			<Section Name = "Paragraph Drill">
+				<Type>Paragraph</Type>
+				<Detail>c20203.txt</Detail>
+			</Section>
+		</Lesson>
+		<Lesson Name="Plant">
+			<Intro></Intro>
+			<Section Name = "Keywords">
+				<Type>Key</Type>
+				<Detail>c20301.txt</Detail>
+			</Section>
+			<Section Name = "Sentence Drill">
+				<Type>Sentence</Type>
+				<Detail>c20302.txt</Detail>
+			</Section>
+			<Section Name = "Paragraph Drill">
+				<Type>Paragraph</Type>
+				<Detail>c20303.txt</Detail>
+			</Section>
+		</Lesson>
+		<Lesson Name="Flower">
+			<Intro></Intro>
+			<Section Name = "Keywords">
+				<Type>Key</Type>
+				<Detail>c20401.txt</Detail>
+			</Section>
+			<Section Name = "Sentence Drill">
+				<Type>Sentence</Type>
+				<Detail>c20402.txt</Detail>
+			</Section>
+			<Section Name = "Paragraph Drill">
+				<Type>Paragraph</Type>
+				<Detail>c20403.txt</Detail>
+			</Section>
+		</Lesson>
+		<Lesson Name="Fish">
+			<Intro></Intro>
+			<Section Name = "Keywords">
+				<Type>Key</Type>
+				<Detail>c20501.txt</Detail>
+			</Section>
+			<Section Name = "Sentence Drill">
+				<Type>Sentence</Type>
+				<Detail>c20502.txt</Detail>
+			</Section>
+			<Section Name = "Paragraph Drill">
+				<Type>Paragraph</Type>
+				<Detail>c20503.txt</Detail>
+			</Section>
+		</Lesson>
+	</Course>
+	<Course Id="3">
 		<Lesson Name="Focus on the home row">
 			<Intro></Intro>
 			<Section Name = "Review the home row">
@@ -79,7 +156,7 @@
 			</Section>
 		</Lesson>
 	</Course>
-	<Course Id="3">
+	<Course Id="4">
 		<Lesson Name="Lesson 1: Numbers 3, 4, 5, 6, 7 and 8">
 			<Intro></Intro>
 			<Section Name = "Numbers 4 5 6 7">
