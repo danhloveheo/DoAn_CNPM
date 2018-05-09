@@ -58,7 +58,7 @@
             this.button33 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
-            this.button65 = new System.Windows.Forms.Button();
+            this.btnShift = new System.Windows.Forms.Button();
             this.button74 = new System.Windows.Forms.Button();
             this.btnq = new System.Windows.Forms.Button();
             this.button81 = new System.Windows.Forms.Button();
@@ -327,7 +327,7 @@
             this.pn_Keys.Controls.Add(this.button33);
             this.pn_Keys.Controls.Add(this.button18);
             this.pn_Keys.Controls.Add(this.button49);
-            this.pn_Keys.Controls.Add(this.button65);
+            this.pn_Keys.Controls.Add(this.btnShift);
             this.pn_Keys.Controls.Add(this.button74);
             this.pn_Keys.Controls.Add(this.btnq);
             this.pn_Keys.Controls.Add(this.button81);
@@ -512,16 +512,16 @@
             this.button49.Text = "Caps";
             this.button49.UseVisualStyleBackColor = true;
             // 
-            // button65
+            // btnShift
             // 
-            this.button65.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button65.Location = new System.Drawing.Point(11, 162);
-            this.button65.Margin = new System.Windows.Forms.Padding(4);
-            this.button65.Name = "button65";
-            this.button65.Size = new System.Drawing.Size(172, 44);
-            this.button65.TabIndex = 29;
-            this.button65.Text = "Shift";
-            this.button65.UseVisualStyleBackColor = true;
+            this.btnShift.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShift.Location = new System.Drawing.Point(11, 162);
+            this.btnShift.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShift.Name = "btnShift";
+            this.btnShift.Size = new System.Drawing.Size(172, 44);
+            this.btnShift.TabIndex = 29;
+            this.btnShift.Text = "Shift";
+            this.btnShift.UseVisualStyleBackColor = true;
             // 
             // button74
             // 
@@ -1265,7 +1265,7 @@
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button49;
-        private System.Windows.Forms.Button button65;
+        private System.Windows.Forms.Button btnShift;
         private System.Windows.Forms.Button button74;
         private System.Windows.Forms.Button btnq;
         private System.Windows.Forms.Button button81;

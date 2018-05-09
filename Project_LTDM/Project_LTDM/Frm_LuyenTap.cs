@@ -88,6 +88,7 @@ namespace Project_LTDM
             if (ctn != null)
             {
                 HighLight((Button)ctn);
+                HighLightShift(Chuoi[PositionKey].ToCharArray()[0]);
             }
 
             if (PositionKey < Chuoi.Length)
@@ -284,7 +285,36 @@ namespace Project_LTDM
 
         }
 
-      
+        //Kiểm tra ký tự xem có phải nhấn shift khi nhập không, nếu phải thì hightlight phím shift
+        private void HighLightShift(char c)
+        {
+            Regex shift = new Regex("^[A-Z~!@#\\$%\\^\\\\*&()_\\+\\{\\}\\|:\"\\<\\>\\?]$");
+            if (shift.IsMatch(c.ToString()))
+            {
+                btnShift.BackColor = Color.LightSeaGreen;
+            }
+            else
+            {
+                Normal(btnShift);
+            }
+        }
+
+        private void Button_FalseShift(char c, char k)
+        {
+            Regex shift = new Regex("^[A-Z~!@#\\$%\\^\\\\*&()_\\+\\{\\}\\|:\"\\<\\>\\?]$");
+            if (shift.IsMatch(c.ToString()))
+            {
+                btnShift.BackColor = Color.PaleVioletRed;
+            }
+            else if (shift.IsMatch(k.ToString()))
+            {
+                btnShift.BackColor = Color.LightSeaGreen;
+            }
+            else
+            {
+                Normal(btnShift);
+            }
+        }
 
         private void Frm_LuyenTap_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -295,6 +325,7 @@ namespace Project_LTDM
             if (PositionKey >= Chuoi.Length)
                 return;
             char keyText = Chuoi[PositionKey].ToCharArray()[0];
+            int compare = keyText;
             Control ctnkey = FindControl(pn_stringKeys, "label" + PositionKey);
 
             if ((e.KeyChar > 31 && e.KeyChar < 127))
@@ -303,10 +334,8 @@ namespace Project_LTDM
                 Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
                 if (ctn != null)
                 {
-
-
-
-                    if (SearchStringInTagControl(ctn, keyText) == true)
+                    //if (SearchStringInTagControl(ctn, keyText) == true)
+                    if (iAscii == compare)                  
                     {
                         if (e.KeyChar.ToString() == @"\")
                         {
@@ -361,6 +390,7 @@ namespace Project_LTDM
                                 ctn = FindControlByTag(pn_Keys, iAscii);
                             }
                             HighLight((Button)ctn);
+                            HighLightShift(Chuoi[PositionKey].ToCharArray()[0]);
                             Normal(btn_oldHighLight1);
                             Separator_True(((Panel)ctnspr));
 
@@ -372,6 +402,7 @@ namespace Project_LTDM
                         SoundPlayer sn1 = new SoundPlayer(@"sound\wrong.wav");
                         sn1.Play();
                         Button_False((Button)ctn);
+                        Button_FalseShift((char)e.KeyChar, Chuoi[PositionKey].ToCharArray()[0]);
                         WrongKey((Label)ctnkey);
                     }
                     if (PositionKey == 22)

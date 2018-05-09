@@ -18,6 +18,8 @@ namespace Project_LTDM
         //string[] Chuoi = new string[11];
         Button btn_oldHighLight = new Button();
         Button btn_oldHighLight1 = new Button();
+
+        int v = 0;
         int PositionKey = 0;
 
         List<string> exerciseText = new List<string>();
@@ -63,6 +65,7 @@ namespace Project_LTDM
             if (ctn != null)
             {
                 HighLight((Button)ctn);
+                HighLightShift(RTB_String.Text[PositionKey]);
             }
             if (PositionKey < RTB_String.Text.Length)
                 SetFingerVisible(RTB_String.Text[PositionKey].ToString().ToLower());
@@ -258,6 +261,37 @@ namespace Project_LTDM
 
         }
 
+        //Kiểm tra ký tự xem có phải nhấn shift khi nhập không, nếu phải thì hightlight phím shift
+        private void HighLightShift(char c)
+        {
+            Regex shift = new Regex("^[A-Z~!@#\\$%\\^\\\\*&()_\\+\\{\\}\\|:\"\\<\\>\\?]$");
+            if (shift.IsMatch(c.ToString()))
+            {
+                btnShift.BackColor = Color.Green;
+            }
+            else
+            {
+                Normal(btnShift);
+            }
+        }
+
+        private void Button_FalseShift(char c, char k)
+        {
+            Regex shift = new Regex("^[A-Z~!@#\\$%\\^\\\\*&()_\\+\\{\\}\\|:\"\\<\\>\\?]$");
+            if (shift.IsMatch(c.ToString()))
+            {
+                btnShift.BackColor = Color.PaleVioletRed;
+            }
+            else if (shift.IsMatch(k.ToString()))
+            {
+                btnShift.BackColor = Color.Green;
+            }
+            else
+            {
+                Normal(btnShift);
+            }
+        }
+
         private void Frm_Typing_KeyUp(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
@@ -283,9 +317,15 @@ namespace Project_LTDM
                 location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
             }
 
+            if (timer1.Enabled == false)
+            {
+                timer1.Start();
+            }
+
             if (PositionKey >= RTB_String.Text.Length)
                 return;
             char keyText = RTB_String.Text[PositionKey];// Chuoi[z];
+            int compare = keyText;
             //string stringlabel = key.ToString().ToLower();
             if (e.KeyChar > 31 && e.KeyChar < 127)
             {
@@ -300,7 +340,8 @@ namespace Project_LTDM
                     //char cKeylabel = stringlabel.ToCharArray()[0];
                     //int iKeylabel = cKeylabel;
 
-                    if (SearchStringInTagControl(ctn, keyText) == true) //if (SearchStringInTagControl(ctn, iKeylabel) == true)
+                    //if (SearchStringInTagControl(ctn, keyText) == true) //if (SearchStringInTagControl(ctn, iKeylabel) == true)
+                    if (iAscii == compare)
                     {
                         if (e.KeyChar.ToString() == @"\")
                         {
@@ -358,6 +399,7 @@ namespace Project_LTDM
                                 ctn = FindControlByTag(pn_Keys, iAscii);
                             };
                             HighLight((Button)ctn);
+                            HighLightShift(RTB_String.Text[PositionKey]);
                             Normal(btn_oldHighLight1);
                             SetFingerVisible(RTB_String.Text[PositionKey].ToString().ToLower());
 
@@ -370,10 +412,173 @@ namespace Project_LTDM
                         RTB_String.Select(PositionKey, 1);
                         RTB_String.SelectionColor = Color.PaleVioletRed;
                         RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Underline);
+                        Button_FalseShift((char)e.KeyChar, RTB_String.Text[PositionKey]);
                         Button_False((Button)ctn);
                     }
 
+                    if (PositionKey == RTB_String.Text.Length)
+                    {
+                        v = 1;
+                    }
                 }
+            }
+        }
+
+        int dongho = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            SoundPlayer spwinner = new SoundPlayer(@"sound\winner.wav");
+            int i = Convert.ToInt32(label11.Text);
+            if (v == 0)
+            {
+                if (i != 0)
+                {
+                    i = Convert.ToInt32(label11.Text);
+                    i--;
+                    label11.Text = i.ToString();
+                    picwatch.Image = null;
+                    if (dongho == 0)
+                    {
+                        picwatch.Image = Image.FromFile("xoaytrai.png");
+                        dongho = 1;
+                    }
+                    else
+                    {
+                        picwatch.Image = Image.FromFile("xoayphai.png");
+                        dongho = 0;
+                    }
+                }
+                else
+                {
+                    if (pictureBox4.Visible == false)
+                    {
+                        pictureBox4.Visible = true;
+
+                        return;
+                    }
+                    else
+                    {
+                        pictureBox5.Visible = true;
+
+                        v = 2;
+                        MessageBox.Show("Ban duoc 2 sao va 0 giay");
+                    }
+                }
+
+            }
+            else if (v == 1)
+            {
+
+                if (i < 10)
+                {
+                    pictureBox5.Visible = true;
+
+                    v = 2;
+                    MessageBox.Show("Ban duoc 1 sao");
+                    spwinner.Play();
+
+                }
+
+                else if (i >= 10 && i < 30)
+                {
+                    if (pictureBox4.Visible == false)
+                    {
+                        pictureBox4.Visible = true;
+                        spwinner.Play();
+                        return;
+                    }
+                    else
+                    {
+                        pictureBox2.Visible = true;
+
+                        v = 2;
+                        MessageBox.Show("Ban duoc 2 sao");
+                    }
+
+                }
+                else if (i >= 30 && i < 40)
+                {
+                    if (pictureBox4.Visible == false)
+                    {
+                        pictureBox4.Visible = true;
+                        spwinner.Play();
+                        return;
+                    }
+                    else if (pictureBox5.Visible == false)
+                    {
+                        pictureBox5.Visible = true;
+                        return;
+                    }
+                    else
+                    {
+                        pictureBox2.Visible = true;
+
+                        v = 2;
+                        MessageBox.Show("Ban duoc 3 sao");
+                    }
+
+                }
+                else if (i >= 40 && i < 50)
+                {
+                    if (pictureBox3.Visible == false)
+                    {
+                        pictureBox3.Visible = true;
+                        spwinner.Play();
+                        return;
+                    }
+                    else if (pictureBox4.Visible == false)
+                    {
+                        pictureBox4.Visible = true;
+                        return;
+                    }
+                    else if (pictureBox5.Visible == false)
+                    {
+                        pictureBox5.Visible = true;
+                        return;
+                    }
+                    else
+                    {
+                        pictureBox2.Visible = true;
+
+                        v = 2;
+                        MessageBox.Show("Ban duoc 4 sao");
+                    }
+
+                }
+                else if (i >= 50 && i < 60)
+                {
+                    if (pictureBox3.Visible == false)
+                    {
+                        pictureBox3.Visible = true;
+                        spwinner.Play();
+                        return;
+                    }
+                    else if (pictureBox4.Visible == false)
+                    {
+                        pictureBox4.Visible = true;
+                        return;
+                    }
+                    else if (pictureBox5.Visible == false)
+                    {
+                        pictureBox5.Visible = true;
+                        return;
+                    }
+                    else if (pictureBox2.Visible == false)
+                    {
+                        pictureBox2.Visible = true;
+                        return;
+                    }
+                    else
+                    {
+                        pictureBox6.Visible = true;
+
+                        v = 2;
+                        MessageBox.Show("Ban duoc 5 sao");
+                    }
+
+
+                }
+
             }
         }
     }

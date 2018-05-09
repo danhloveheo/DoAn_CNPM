@@ -57,6 +57,7 @@ namespace Project_LTDM
                     lbKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
                     lbKey.Name = "label" + i;
                     lbKey.Size = new System.Drawing.Size(60, 60);
+                    lbKey.UseMnemonic = false;
                     lbKey.Text = text[i].ToString();
                     lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
@@ -80,6 +81,7 @@ namespace Project_LTDM
                     lbKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
                     lbKey.Name = "label" + i;
                     lbKey.Size = new System.Drawing.Size(60, 60);
+                    lbKey.UseMnemonic = false;
                     lbKey.Text = text[i].ToString();
                     lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
@@ -106,6 +108,7 @@ namespace Project_LTDM
                     lbKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
                     lbKey.Name = "label" + i;
                     lbKey.Size = new System.Drawing.Size(60, 60);
+                    lbKey.UseMnemonic = false;
                     lbKey.Text = text[i].ToString();
                     lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
@@ -129,6 +132,7 @@ namespace Project_LTDM
                     lbKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
                     lbKey.Name = "label" + i;
                     lbKey.Size = new System.Drawing.Size(60, 60);
+                    lbKey.UseMnemonic = false;
                     lbKey.Text = text[i].ToString();
                     lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
@@ -148,6 +152,7 @@ namespace Project_LTDM
             if (ctn != null)
             {
                 HighLight((Button)ctn);
+                HighLightShift(text[0]);
             }
 
             if (PositionKey < text.Length)
@@ -191,7 +196,7 @@ namespace Project_LTDM
      
         private void Frm_LuyenTap_Load(object sender, EventArgs e)
         {
-            StopFocus(this);
+            //StopFocus(this);
             aTimer.Tick += ATimer_Tick;
             aTimer.Interval = 3000;
       
@@ -292,10 +297,13 @@ namespace Project_LTDM
                 {
                     string[] str = new string[5];
                     str = Ctr.Tag.ToString().Split(',');
+
                     foreach (string item in str)
                     {
                         if (int.Parse(item) == Tag)
+                        {
                             return true;
+                        }
                     }
                 }
             }
@@ -303,7 +311,7 @@ namespace Project_LTDM
             { }
             return false;
         }
-
+        
         private Control FindControlByTag(Control parent, int Tagname)
         {
             if (SearchStringInTagControl(parent, Tagname) == true)
@@ -383,7 +391,39 @@ namespace Project_LTDM
 
         }
 
+        //Kiểm tra ký tự xem có phải nhấn shift khi nhập không, nếu phải thì hightlight phím shift
+        private void HighLightShift (char c)
+        {
+            Regex shift = new Regex("^[A-Z~!@#\\$%\\^\\\\*&()_\\+\\{\\}\\|:\"\\<\\>\\?]$");
+            if (shift.IsMatch(c.ToString()))
+            {
+                btnShift.BackColor = Color.LightSeaGreen;
+            }
+            else
+            {
+                Normal(btnShift);
+            }
+        }
+
+        private void Button_FalseShift(char c, char k)
+        {
+            Regex shift = new Regex("^[A-Z~!@#\\$%\\^\\\\*&()_\\+\\{\\}\\|:\"\\<\\>\\?]$");
+            if (shift.IsMatch(c.ToString()))
+            {
+                btnShift.BackColor = Color.PaleVioletRed;
+            }
+            else if (shift.IsMatch(k.ToString()))
+            {
+                btnShift.BackColor = Color.LightSeaGreen;
+            }
+            else
+            {
+                Normal(btnShift);
+            }
+        }
+
         int currentLine = 0;
+
         private void Frm_LuyenTap_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (timer1.Enabled == false)
@@ -394,9 +434,10 @@ namespace Project_LTDM
             {
                 return;
             }
-
-
+            
             char keyText = text[PositionKey];
+            int compare = keyText;
+
             Control ctnkey = FindControl(pn_stringKeys, "label" + PositionKey);
 
             if ((e.KeyChar > 31 && e.KeyChar < 127))
@@ -405,7 +446,8 @@ namespace Project_LTDM
                 Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
                 if (ctn != null)
                 {
-                    if (SearchStringInTagControl(ctn, keyText) == true)
+                    //if (SearchStringInTagControl(ctn, keyText) == true)
+                    if (iAscii == compare)
                     {
                         if (e.KeyChar.ToString() == @"\")
                         {
@@ -460,6 +502,7 @@ namespace Project_LTDM
                             }
 
                             HighLight((Button)ctn);
+                            HighLightShift(text[PositionKey]);
                             Normal(btn_oldHighLight1);
                             Separator_True(((Panel)ctnspr));
 
@@ -471,6 +514,7 @@ namespace Project_LTDM
                         SoundPlayer sn1 = new SoundPlayer(@"sound\wrong.wav");
                         sn1.Play();
                         Button_False((Button)ctn);
+                        Button_FalseShift((char)e.KeyChar, text[PositionKey]);
                         WrongKey((Label)ctnkey);
                     }
                     if (PositionKey == text.Length) 
@@ -652,7 +696,7 @@ namespace Project_LTDM
             }
         }
 
-        public void StopFocus (Control parent)
+        /*public void StopFocus (Control parent)
         {
             foreach (Control c in parent.Controls)
             {
@@ -662,6 +706,6 @@ namespace Project_LTDM
                 }
                 c.TabStop = false;
             }
-        }
+        }*/
     }
 }

@@ -10,19 +10,6 @@ E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
 E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
 E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
 E:\BaiTap\KHTN\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
 D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
 D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
 D:\KhoaHocTN\CongNghePhanMem\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
@@ -105,10 +92,6 @@ C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\o
 C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM 1\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 2\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
@@ -203,8 +186,6 @@ D:\DoAn_CNPM 3\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Proper
 D:\DoAn_CNPM 3\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.BaiTap.resources
 D:\DoAn_CNPM 3\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 3\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.BaiTap.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Main.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 4\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 4\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 4\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
@@ -231,12 +212,6 @@ E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 4\DoAn_CNPM\Project_LTDM\Project_LTDM\ob
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 4\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 4\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.TaoBaiTap.resources
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 4\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_SaveExercise.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.Information.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenTap.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.TaoBaiTap.resources
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
 D:\KhoaHocTN\CongNghePhanMem\Test15-Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
 D:\KhoaHocTN\CongNghePhanMem\Test15-Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
 D:\KhoaHocTN\CongNghePhanMem\Test15-Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
@@ -295,8 +270,6 @@ E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 6\DoAn_CNPM\Project_LTDM\Project_LTDM\ob
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 6\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.TaoBaiTap.resources
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 6\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 6\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Controls.dll
-C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Controls.pdb
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
@@ -410,3 +383,34 @@ E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 8\DoAn_CNPM\Project_LTDM\Project_LTDM\ob
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 8\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 8\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 8\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_FingerExercise.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Main.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_SaveExercise.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.Information.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.KhoaHoc.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LessonList.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LessonSections.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenTap.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
+D:\KhoaHocTN\CongNghePhanMem\Test16_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+D:\KhoaHocTN\CongNghePhanMem\Test16_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+D:\KhoaHocTN\CongNghePhanMem\Test16_Baiup\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
