@@ -415,10 +415,12 @@ namespace Project_LTDM
             }
           
         }
-        int dongho = 0;
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             SoundPlayer spwinner = new SoundPlayer(@"sound\winner.wav");
+
+            int dongho = 0;
             int i = Convert.ToInt32(labeltimer.Text);
             if (v == 0)
             {
@@ -441,135 +443,61 @@ namespace Project_LTDM
                 }
                 else
                 {
-                    if (pictureBox4.Visible == false)
-                    {
-                        pictureBox4.Visible = true;
+                    timer1.Stop();
+                    spwinner.Play();
 
-                        return;
-                    }
-                    else
-                    {
-                        pictureBox5.Visible = true;
+                    Frm_Rating rating = new Frm_Rating(1);
+                    rating.ShowDialog(this);
 
-                        v = 2;
-                        MessageBox.Show("Ban duoc 2 sao va 0 giay");
-                    }
+                    this.Close();
                 }
 
             }
             else if (v == 1)
             {
+                timer1.Stop();
 
                 if (i < 10)
                 {
-                    pictureBox5.Visible = true;
-
-                    v = 2;
-                    MessageBox.Show("Ban duoc 1 sao");
                     spwinner.Play();
 
+                    Frm_Rating rating = new Frm_Rating(1);
+                    rating.ShowDialog(this);
                 }
 
                 else if (i >= 10 && i < 30)
                 {
-                    if (pictureBox4.Visible == false)
-                    {
-                        pictureBox4.Visible = true;
-                        spwinner.Play();
-                        return;
-                    }
-                    else
-                    {
-                        pictureBox2.Visible = true;
+                    spwinner.Play();
 
-                        v = 2;
-                        MessageBox.Show("Ban duoc 2 sao");
-                    }
-
+                    Frm_Rating rating = new Frm_Rating(2);
+                    rating.ShowDialog(this);
                 }
+
                 else if (i >= 30 && i < 40)
                 {
-                    if (pictureBox4.Visible == false)
-                    {
-                        pictureBox4.Visible = true;
-                        spwinner.Play();
-                        return;
-                    }
-                    else if (pictureBox5.Visible == false)
-                    {
-                        pictureBox5.Visible = true;
-                        return;
-                    }
-                    else
-                    {
-                        pictureBox2.Visible = true;
+                    spwinner.Play();
 
-                        v = 2;
-                        MessageBox.Show("Ban duoc 3 sao");
-                    }
-
+                    Frm_Rating rating = new Frm_Rating(3);
+                    rating.ShowDialog(this);
                 }
-                else if (i >= 40 && i < 50)
+
+                else if (i >= 10 && i < 50)
                 {
-                    if (pictureBox3.Visible == false)
-                    {
-                        pictureBox3.Visible = true;
-                        spwinner.Play();
-                        return;
-                    }
-                    else if (pictureBox4.Visible == false)
-                    {
-                        pictureBox4.Visible = true;
-                        return;
-                    }
-                    else if (pictureBox5.Visible == false)
-                    {
-                        pictureBox5.Visible = true;
-                        return;
-                    }
-                    else
-                    {
-                        pictureBox2.Visible = true;
+                    spwinner.Play();
 
-                        v = 2;
-                        MessageBox.Show("Ban duoc 4 sao");
-                    }
-
+                    Frm_Rating rating = new Frm_Rating(4);
+                    rating.ShowDialog(this);
                 }
+
                 else if (i >= 50 && i < 60)
                 {
-                    if (pictureBox3.Visible == false)
-                    {
-                        pictureBox3.Visible = true;
-                        spwinner.Play();
-                        return;
-                    }
-                    else if (pictureBox4.Visible == false)
-                    {
-                        pictureBox4.Visible = true;
-                        return;
-                    }
-                    else if (pictureBox5.Visible == false)
-                    {
-                        pictureBox5.Visible = true;
-                        return;
-                    }
-                    else if (pictureBox2.Visible == false)
-                    {
-                        pictureBox2.Visible = true;
-                        return;
-                    }
-                    else
-                    {
-                        pictureBox6.Visible = true;
+                    spwinner.Play();
 
-                        v = 2;
-                        MessageBox.Show("Ban duoc 5 sao");
-                    }
-
-
+                    Frm_Rating rating = new Frm_Rating(5);
+                    rating.ShowDialog(this);
                 }
 
+                this.Close();
             }
         }
     }

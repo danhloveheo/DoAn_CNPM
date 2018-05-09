@@ -117,64 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnC3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnChangeCourse.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAe1JREFUaEPt
-        WGtOwzAM3n+OwVV3DS43WNUKBntUSHR9MFezZLK0thsXtZIrIRCxP9tfHNvJZmP4ZcXHvq7rtmma6A+s
-        gYyhSRsocLi7f5q/bawnoPxUVe82Ot22bXc8XdohyPOl7ECGBgkYCS5MVw3TRIuUqq+190eesp4EdFOm
-        WHmeP6Xisfq4/XAgWWGhAGDhGRKqTBPDbbd0Hj2h1Wuad4wWPbCzGCDpNMvBlmzxW1ZsX/fFS0qAmKIp
-        GA+66Dz8HgNG49X1Ork00hJrFgTmPgdoVRql9jh/+nVo/cA8NCBOIdaFy/Kb1QtxwRZ8JmMHlrjTuWQd
-        GRsjuODpOnRs+EyqnWY7h4Y4/P/74UvcOzR2R8nRVAXJIHcrkaIgsENrdi4qax2AFM80ADAqYYJLIbrO
-        4XkKIUPSLQd57gwcPo9sJUO7ZimEQ9bYRYUGO5RGXMrQdbAFOCZldPWNDJiRDHKxFNrtimcN8zR9uLlL
-        hSutHignrfUxJ6S2VAFId6Efp7MFjtMQwOovNJjjZtUhyIHZr5RhXzApcXfQf7vUx+q9+jAFCrMdWs6x
-        sOty8uE6vaZKZy2tDVZe+7QIl6LFPC3S6LgZiL6+Wb7qsQxrBVb7vK4N1OWdAWfAGXAGnAFnwBlwBpwB
-        Z2ARDPwC4H3jyeyV3IcAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAK7SURBVFhHxZfBahRBEIbzBLnta4Tc8xAinhUMAW96iHqWoOvJJB4UCSReZCE+gCdBD9nDggEF
+        DV6CaLJrliSYgy66cWnr63SNPTPdOzNmZRaKHabrr//v6urqnqmpkr8LlxcbYgtiLbEdsYGYccYz7xjD
+        p1EybLGbBJsV2xQbeoRKHPvHF8xsMUPEQ8DTYmtiowrEWUFgiTFdSYgAZsR2z0GcFUKsmVIixHFO7GSC
+        5CqGmHNjRbiZ/w9yX0Q4E27NJ5n2WIHCka8JVyxF1T2p8bXUUritFqz2+6tPTXNlozIxmKZgI7UE198t
+        6vZs0LndeWd+j0bmweNnpUXgCwbsmGLetFmga8WajAYy8isrogKGZtVAAK0zp9QPhIAyIv4Bs4AA+ndK
+        QDbQ8PTUrufr9nY0E4rBB18wJYS3EMAhkggg0H6vb27deWh6B4c20N3ldTt+8cpN8+Hjbk6EkjOGD75g
+        wBKDWMQM1NEOApJTTcnnry/ZIPM3llIgHd/qvE1EKDnvsiSMEcPGkpgBEQMEWIdLV2+bn7+GVq2+e/Gy
+        bWcA2BfHLHU5KE6eeeeT8AyWGBrv0fpzs9ftp5Y7EYBTQiKqAerv6PjEqtfM4LvypJWM86wkKgKM/oh1
+        b3nDfO0fmWuLzZwA/2JhRXz/MUjAPGgWlMQvuFBh6uz9IIfH33LkLH+uCDUTpLaInLT7y+EXmS8iQk4m
+        bBHmtqGK+PS5m0q7P3Otdt0dsUx0tt+HZq7LYLdhsBHFeoMWXHY8lokxrRgRthFFW3Fozf2Zn1PEWSt2
+        5wEXyODBEUt7zL9CJs4OIyeAm2/wOP7SPTCvtt4kHa4gpUnHBAM24p8+jp0Ibq85AA2qDGlFbPpC4gRw
+        Da/vSuZEcB2v51Lq1UN913JPRH0fJp6I+j7N/Cuz1EQ9H6fZTyjXMSf+ef4H4KnW+2aIwGwAAAAASUVO
+        RK5CYII=
 </value>
-  </data>
-  <data name="btnC4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAe1JREFUaEPt
-        WGtOwzAM3n+OwVV3DS43WNUKBntUSHR9MFezZLK0thsXtZIrIRCxP9tfHNvJZmP4ZcXHvq7rtmma6A+s
-        gYyhSRsocLi7f5q/bawnoPxUVe82Ot22bXc8XdohyPOl7ECGBgkYCS5MVw3TRIuUqq+190eesp4EdFOm
-        WHmeP6Xisfq4/XAgWWGhAGDhGRKqTBPDbbd0Hj2h1Wuad4wWPbCzGCDpNMvBlmzxW1ZsX/fFS0qAmKIp
-        GA+66Dz8HgNG49X1Ork00hJrFgTmPgdoVRql9jh/+nVo/cA8NCBOIdaFy/Kb1QtxwRZ8JmMHlrjTuWQd
-        GRsjuODpOnRs+EyqnWY7h4Y4/P/74UvcOzR2R8nRVAXJIHcrkaIgsENrdi4qax2AFM80ADAqYYJLIbrO
-        4XkKIUPSLQd57gwcPo9sJUO7ZimEQ9bYRYUGO5RGXMrQdbAFOCZldPWNDJiRDHKxFNrtimcN8zR9uLlL
-        hSutHignrfUxJ6S2VAFId6Efp7MFjtMQwOovNJjjZtUhyIHZr5RhXzApcXfQf7vUx+q9+jAFCrMdWs6x
-        sOty8uE6vaZKZy2tDVZe+7QIl6LFPC3S6LgZiL6+Wb7qsQxrBVb7vK4N1OWdAWfAGXAGnAFnwBlwBpwB
-        Z2ARDPwC4H3jyeyV3IcAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnC2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAe1JREFUaEPt
-        WGtOwzAM3n+OwVV3DS43WNUKBntUSHR9MFezZLK0thsXtZIrIRCxP9tfHNvJZmP4ZcXHvq7rtmma6A+s
-        gYyhSRsocLi7f5q/bawnoPxUVe82Ot22bXc8XdohyPOl7ECGBgkYCS5MVw3TRIuUqq+190eesp4EdFOm
-        WHmeP6Xisfq4/XAgWWGhAGDhGRKqTBPDbbd0Hj2h1Wuad4wWPbCzGCDpNMvBlmzxW1ZsX/fFS0qAmKIp
-        GA+66Dz8HgNG49X1Ork00hJrFgTmPgdoVRql9jh/+nVo/cA8NCBOIdaFy/Kb1QtxwRZ8JmMHlrjTuWQd
-        GRsjuODpOnRs+EyqnWY7h4Y4/P/74UvcOzR2R8nRVAXJIHcrkaIgsENrdi4qax2AFM80ADAqYYJLIbrO
-        4XkKIUPSLQd57gwcPo9sJUO7ZimEQ9bYRYUGO5RGXMrQdbAFOCZldPWNDJiRDHKxFNrtimcN8zR9uLlL
-        hSutHignrfUxJ6S2VAFId6Efp7MFjtMQwOovNJjjZtUhyIHZr5RhXzApcXfQf7vUx+q9+jAFCrMdWs6x
-        sOty8uE6vaZKZy2tDVZe+7QIl6LFPC3S6LgZiL6+Wb7qsQxrBVb7vK4N1OWdAWfAGXAGnAFnwBlwBpwB
-        Z2ARDPwC4H3jyeyV3IcAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnC1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAe1JREFUaEPt
-        WGtOwzAM3n+OwVV3DS43WNUKBntUSHR9MFezZLK0thsXtZIrIRCxP9tfHNvJZmP4ZcXHvq7rtmma6A+s
-        gYyhSRsocLi7f5q/bawnoPxUVe82Ot22bXc8XdohyPOl7ECGBgkYCS5MVw3TRIuUqq+190eesp4EdFOm
-        WHmeP6Xisfq4/XAgWWGhAGDhGRKqTBPDbbd0Hj2h1Wuad4wWPbCzGCDpNMvBlmzxW1ZsX/fFS0qAmKIp
-        GA+66Dz8HgNG49X1Ork00hJrFgTmPgdoVRql9jh/+nVo/cA8NCBOIdaFy/Kb1QtxwRZ8JmMHlrjTuWQd
-        GRsjuODpOnRs+EyqnWY7h4Y4/P/74UvcOzR2R8nRVAXJIHcrkaIgsENrdi4qax2AFM80ADAqYYJLIbrO
-        4XkKIUPSLQd57gwcPo9sJUO7ZimEQ9bYRYUGO5RGXMrQdbAFOCZldPWNDJiRDHKxFNrtimcN8zR9uLlL
-        hSutHignrfUxJ6S2VAFId6Efp7MFjtMQwOovNJjjZtUhyIHZr5RhXzApcXfQf7vUx+q9+jAFCrMdWs6x
-        sOty8uE6vaZKZy2tDVZe+7QIl6LFPC3S6LgZiL6+Wb7qsQxrBVb7vK4N1OWdAWfAGXAGnAFnwBlwBpwB
-        Z2ARDPwC4H3jyeyV3IcAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>In this course , you will learn the positions of the letter keys and common punctuation by heart. After completing the course you will be able to type with all ten fingers without looing at the keyboard.</value>
   </data>
 </root>

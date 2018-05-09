@@ -132,3 +132,10 @@ C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.pdb
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb

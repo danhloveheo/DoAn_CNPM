@@ -92,3 +92,7 @@ C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DTO\bin\Debug\DTO.pdb
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DTO\obj\Debug\DTO.dll
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\DTO\obj\Debug\DTO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DTO\bin\Debug\DTO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DTO\bin\Debug\DTO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DTO\obj\Debug\DTO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\DTO\obj\Debug\DTO.pdb

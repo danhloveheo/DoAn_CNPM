@@ -172,3 +172,12 @@ C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
 C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
