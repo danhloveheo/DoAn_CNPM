@@ -326,35 +326,6 @@ D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserCo
 D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
 D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
 D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_FingerExercise.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Main.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_SaveExercise.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.Information.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.KhoaHoc.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LessonList.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LessonSections.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenTap.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.CoreCompileInputs.cache
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 8\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 8\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 8\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
@@ -472,3 +443,33 @@ C:\Users\Administrator\Desktop\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\Project_LTDM\o
 C:\Users\Administrator\Desktop\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
 C:\Users\Administrator\Desktop\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csprojResolveAssemblyReference.cache
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_FingerExercise.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Login.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_LuyenTap.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Main.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Rating.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Register.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_SaveExercise.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Typing.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Properties.Resources.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.Information.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.KhoaHoc.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LessonList.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LessonSections.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenTap.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.LuyenText.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.UserControls.ThongKe.resources
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.GenerateResource.Cache
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.csproj.CoreCompileInputs.cache
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe.config
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.exe
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\Project_LTDM.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\BUS.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DTO.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb

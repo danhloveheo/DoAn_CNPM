@@ -17,6 +17,7 @@ namespace DAO
             DTO_Exercise exercise = new DTO_Exercise();
 
             exercise.Title = section.Name;
+            exercise.Time = section.Time;
 
             if (section.Type == "Key")
             {
@@ -53,9 +54,7 @@ namespace DAO
             foreach (XmlElement exerciseNode in exerciseNodeList)
             {
                 title = exerciseNode.GetElementsByTagName("Title")[0].InnerText;
-
-                //TODO: Thêm thuộc tính time vào file Exercise.xml
-                time = 0;
+                time = int.Parse(exerciseNode.GetElementsByTagName("Time")[0].InnerText);
 
                 string fileName = exerciseNode.GetElementsByTagName("FileName")[0].InnerText;
                 if (FileTxtExist(fileName)) //Nếu file chứa nội dung có tồn tại thì thêm vào danh sách, còn nếu không thì thêm thông tin title của bài tập vào danh sách warningTitles
@@ -124,14 +123,19 @@ namespace DAO
             XmlElement titleNode = xd.CreateElement("Title");
             XmlText titleText = xd.CreateTextNode(exercise.Title);
 
+            XmlElement timeNode = xd.CreateElement("Time");
+            XmlText timeText = xd.CreateTextNode(exercise.Time.ToString());
+
             XmlElement fileNameNode = xd.CreateElement("FileName");
             string fileName = Guid.NewGuid().ToString() + ".txt";
             XmlText fileNameText = xd.CreateTextNode(fileName);
 
             titleNode.AppendChild(titleText);
             fileNameNode.AppendChild(fileNameText);
+            timeNode.AppendChild(timeText);
 
             exerciseNode.AppendChild(titleNode);
+            exerciseNode.AppendChild(timeNode);
             exerciseNode.AppendChild(fileNameNode);
 
             xd.DocumentElement.AppendChild(exerciseNode);

@@ -91,12 +91,22 @@ namespace BUS
 
             if (int.TryParse(text,out time))
             {
-                errorMessage = "";
-                return true;
+                if (time > 36000)
+                {
+                    errorMessage += " number too large. Please enter a number smaller than 36000";
+                    return false;
+                }
+                else
+                {
+                    errorMessage = "";
+                    return true;
+                }
             }
-
-            errorMessage += " must contain only number";
-            return false;
+            else
+            {
+                errorMessage += " must contain only number";
+                return false;
+            }
         }
 
         //Nội dung bài tập phải có ít nhất 1 ký tự

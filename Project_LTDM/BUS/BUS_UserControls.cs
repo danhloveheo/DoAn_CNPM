@@ -139,11 +139,12 @@ namespace BUS
             return tag.lesson.Name;
         }
 
-        public static List<string> SearchTypingInfo (object sender, ref string exerciseType)
+        public static List<string> SearchTypingInfo (object sender, ref string exerciseType, ref int time)
         {
             DTO_Exercise exercise = (DTO_Exercise)(((Control)sender).Tag); //Lấy đối tượng DTO_Exercise đc lưu trong tag của label đã nhấn vào
 
             exerciseType = exercise.ExerciseType;
+            time = exercise.Time;
             List<string> exerciseText = exercise.ExerciseText;
 
             return exerciseText;

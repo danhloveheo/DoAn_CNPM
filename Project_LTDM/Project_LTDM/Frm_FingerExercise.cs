@@ -16,12 +16,13 @@ namespace Project_LTDM
     public partial class Frm_FingerExercise : Form
     {
         Timer aTimer = new Timer();
-        //string[] Chuoi = new string[11];
+
         Button btn_oldHighLight = new Button();
         Button btn_oldHighLight1 = new Button();
         Panel label_oldDefault = new Panel();
-        //List<string> ListNgon;
 
+        int time = 0; //Chứ thời gian bài tập
+        int timeLeft = 0;
         List<string> exerciseText = new List<string>(); //Chứa nội dung bài tập đánh máy
         string text = ""; //Chứa dòng đang xét
 
@@ -32,10 +33,13 @@ namespace Project_LTDM
             InitializeComponent();
         }
 
-        public Frm_FingerExercise(List<string> text)
+        public Frm_FingerExercise(List<string> text, int t)
         {
             InitializeComponent();
             exerciseText = text;
+            time = t;
+            timeLeft = t;
+            lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
             //RandomStringFollowList();
         }
 
@@ -332,6 +336,7 @@ namespace Project_LTDM
       
         private void SetFingerVisible(string skey)
         {
+            skey = skey.ToLower();
             //string result = Finger.Left_NgonUt.Single(s => s == skey);
             int idex = -2;
             if (Finger.Left_NgonUt.FindIndex(s => s == skey) != -1)
@@ -537,20 +542,19 @@ namespace Project_LTDM
                 }
             }
         }
-   
+
+        int dongho = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
             SoundPlayer spwinner = new SoundPlayer(@"sound\winner.wav");
 
-            int dongho = 0;
-            int i = Convert.ToInt32(label11.Text);
             if (v == 0)
             {
-                if (i != 0)
+                if (timeLeft != 0)
                 {
-                    i = Convert.ToInt32(label11.Text);
-                    i--;
-                    label11.Text = i.ToString();
+                    timeLeft--;
+                    lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
+
                     picwatch.Image = null;
                     if (dongho == 0)
                     {
@@ -579,7 +583,7 @@ namespace Project_LTDM
             {
                 timer1.Stop();
 
-                if (i < 10)
+                if (timeLeft < time * 0.3)
                 {
                     spwinner.Play();
 
@@ -587,7 +591,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 10 && i < 30)
+                else if (timeLeft >= time * 0.3 && timeLeft < time * 0.5)
                 {
                     spwinner.Play();
 
@@ -595,7 +599,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 30 && i < 40)
+                else if (timeLeft >= time * 0.5 && timeLeft < time * 0.7)
                 {
                     spwinner.Play();
 
@@ -603,7 +607,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 10 && i < 50 )
+                else if (timeLeft >= time * 0.7 && timeLeft < time * 0.9)
                 {
                     spwinner.Play();
 
@@ -611,7 +615,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 50 && i < 60)
+                else if (timeLeft > time * 0.9)
                 {
                     spwinner.Play();
 
@@ -621,6 +625,11 @@ namespace Project_LTDM
 
                 this.Close();
             }
+        }
+
+        private void lbTimer_Click(object sender, EventArgs e)
+        {
+
         }
 
         /*public void StopFocus (Control parent)

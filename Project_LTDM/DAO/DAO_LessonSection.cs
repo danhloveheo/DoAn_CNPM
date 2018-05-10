@@ -36,6 +36,7 @@ namespace DAO
 
                                 section.Name = sectionNode.GetAttribute("Name");
                                 section.Type = sectionNode.GetElementsByTagName("Type")[0].InnerText;
+                                section.Time = int.Parse(sectionNode.GetElementsByTagName("Time")[0].InnerText);
                                 section.Detail = sectionNode.GetElementsByTagName("Detail")[0].InnerText;
                                 sections.Add(section);
                             }

@@ -103,7 +103,7 @@ namespace Project_LTDM
             }
             else
             {
-                BUS_Exercise.AddExercise(txtName.Text, rtxtText.Lines);
+                BUS_Exercise.AddExercise(txtName.Text, int.Parse(txtTime.Text), rtxtText.Lines);
                 MessageBox.Show("Insert Exercise in database success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }

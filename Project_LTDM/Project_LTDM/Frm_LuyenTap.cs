@@ -24,14 +24,18 @@ namespace Project_LTDM
      
         int v = 0;
         int PositionKey = 0;
+        int time = 300;
+        int timeLeft = 300;
         public Frm_LuyenTap()
         {
             InitializeComponent();
+            lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
         }
 
         public Frm_LuyenTap(List<string> listNgon)
         {
             InitializeComponent();
+            lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
             ListNgon = listNgon;
             RandomStringFollowList();
         }
@@ -226,6 +230,7 @@ namespace Project_LTDM
 
         private void SetFingerVisible(string skey)
         {
+            skey = skey.ToLower();
             //string result = Finger.Left_NgonUt.Single(s => s == skey);
             int idex = -2;
             if (Finger.Left_NgonUt.FindIndex(s => s == skey) != -1)
@@ -416,19 +421,18 @@ namespace Project_LTDM
           
         }
 
+        int dongho = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
             SoundPlayer spwinner = new SoundPlayer(@"sound\winner.wav");
 
-            int dongho = 0;
-            int i = Convert.ToInt32(labeltimer.Text);
             if (v == 0)
             {
-                if (i != 0)
+                if (timeLeft != 0)
                 {
-                    i = Convert.ToInt32(labeltimer.Text);
-                    i--;
-                    labeltimer.Text = i.ToString();
+                    timeLeft--;
+                    lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
+
                     picwatch.Image = null;
                     if (dongho == 0)
                     {
@@ -457,7 +461,7 @@ namespace Project_LTDM
             {
                 timer1.Stop();
 
-                if (i < 10)
+                if (timeLeft < time * 0.3)
                 {
                     spwinner.Play();
 
@@ -465,7 +469,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 10 && i < 30)
+                else if (timeLeft >= time * 0.3 && timeLeft < time * 0.5)
                 {
                     spwinner.Play();
 
@@ -473,7 +477,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 30 && i < 40)
+                else if (timeLeft >= time * 0.5 && timeLeft < time * 0.7)
                 {
                     spwinner.Play();
 
@@ -481,7 +485,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 10 && i < 50)
+                else if (timeLeft >= time * 0.7 && timeLeft < time * 0.9)
                 {
                     spwinner.Play();
 
@@ -489,7 +493,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 50 && i < 60)
+                else if (timeLeft > time * 0.9)
                 {
                     spwinner.Play();
 

@@ -31,17 +31,18 @@ namespace BUS
             return objects;
         }
 
-        static public List<String> FindContent (Object o) //Tìm nội dung bài tập trong o
+        static public List<String> FindContent (Object o, ref int time) //Tìm nội dung bài tập trong
         {
             if (o is DTO_Exercise)
             {
+                time = ((DTO_Exercise)o).Time;
                 return ((DTO_Exercise)o).ExerciseText;
             }
 
             return null;
         }
 
-        static public void AddExercise (string title, string[] lines)
+        static public void AddExercise (string title, int time, string[] lines)
         {
             List<string> text = new List<string>();
             foreach (string s in lines)
@@ -49,7 +50,7 @@ namespace BUS
                 text.Add(s);
             }
 
-            DTO_Exercise exercise = new DTO_Exercise("Paragraph", 0, title, text);
+            DTO_Exercise exercise = new DTO_Exercise("Paragraph", time, title, text);
             DAO_Exercise.AddExercise(exercise);
         }
 

@@ -4,14 +4,17 @@
 			<Intro></Intro>
 			<Section Name = "New keys: Home row">
 				<Type>Key</Type>
+				<Time>300</Time>
 				<Detail>uk7qwert01031key2.txt</Detail>
 			</Section>
 			<Section Name = "Word drill">
 				<Type>Word</Type>
+				<Time>300</Time>
 				<Detail>uk7qwert01031word2.txt</Detail>
 			</Section>
 			<Section Name = "Paragraph drill">
 				<Type>Paragraph</Type>
+				<Time>900</Time>
 				<Detail>uk7qwert01052text2.txt</Detail>
 			</Section>
 		</Lesson>
@@ -19,18 +22,22 @@
 			<Intro></Intro>
 			<Section Name = "New keys: E and I">
 				<Type>Key</Type>
+				<Time>900</Time>
 				<Detail>uk7qwert02012key2.txt</Detail>
 			</Section>
 			<Section Name = "Word drill">
 				<Type>Word</Type>
+				<Time>900</Time>
 				<Detail>uk7qwert02021word2.txt</Detail>
 			</Section>
 			<Section Name = "Sentence drill">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>uk7qwert02041sentence2.txt</Detail>
 			</Section>
 			<Section Name = "Paragraph drill">
 				<Type>Paragraph</Type>
+				<Time>1800</Time>
 				<Detail>uk7qwert02051paragraph2.txt</Detail>
 			</Section>
 		</Lesson>
@@ -40,14 +47,17 @@
 			<Intro></Intro>
 			<Section Name = "Keywords">
 				<Type>Key</Type>
+				<Time>900</Time>
 				<Detail>c20101.txt</Detail>
 			</Section>
 			<Section Name = "Sentence Drill">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>c20102.txt</Detail>
 			</Section>
 			<Section Name = "Paragraph Drill">
 				<Type>Paragraph</Type>
+				<Time>1800</Time>
 				<Detail>c20103.txt</Detail>
 			</Section>
 		</Lesson>
@@ -55,14 +65,17 @@
 			<Intro></Intro>
 			<Section Name = "Keywords">
 				<Type>Key</Type>
+				<Time>900</Time>
 				<Detail>c20201.txt</Detail>
 			</Section>
 			<Section Name = "Sentence Drill">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>c20202.txt</Detail>
 			</Section>
 			<Section Name = "Paragraph Drill">
 				<Type>Paragraph</Type>
+				<Time>1800</Time>
 				<Detail>c20203.txt</Detail>
 			</Section>
 		</Lesson>
@@ -70,14 +83,17 @@
 			<Intro></Intro>
 			<Section Name = "Keywords">
 				<Type>Key</Type>
+				<Time>900</Time>
 				<Detail>c20301.txt</Detail>
 			</Section>
 			<Section Name = "Sentence Drill">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>c20302.txt</Detail>
 			</Section>
 			<Section Name = "Paragraph Drill">
 				<Type>Paragraph</Type>
+				<Time>1800</Time>
 				<Detail>c20303.txt</Detail>
 			</Section>
 		</Lesson>
@@ -85,14 +101,17 @@
 			<Intro></Intro>
 			<Section Name = "Keywords">
 				<Type>Key</Type>
+				<Time>900</Time>
 				<Detail>c20401.txt</Detail>
 			</Section>
 			<Section Name = "Sentence Drill">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>c20402.txt</Detail>
 			</Section>
 			<Section Name = "Paragraph Drill">
 				<Type>Paragraph</Type>
+				<Time>1800</Time>
 				<Detail>c20403.txt</Detail>
 			</Section>
 		</Lesson>
@@ -100,14 +119,17 @@
 			<Intro></Intro>
 			<Section Name = "Keywords">
 				<Type>Key</Type>
+				<Time>900</Time>
 				<Detail>c20501.txt</Detail>
 			</Section>
 			<Section Name = "Sentence Drill">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>c20502.txt</Detail>
 			</Section>
 			<Section Name = "Paragraph Drill">
 				<Type>Paragraph</Type>
+				<Time>1800</Time>
 				<Detail>c20503.txt</Detail>
 			</Section>
 		</Lesson>
@@ -117,18 +139,22 @@
 			<Intro></Intro>
 			<Section Name = "Review the home row">
 				<Type>Key</Type>
+				<Time>900</Time>
 				<Detail>uk7qwert01031key2.txt</Detail>
 			</Section>
 			<Section Name = "Fun phrases with A F J">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>uk7speed01021sentence2.txt</Detail>
 			</Section>
 			<Section Name = "Fun phrases with D K">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>uk7speed01031sentence2.txt</Detail>
 			</Section>
 			<Section Name = "Fun phrases with S L">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>uk7speed01041sentence2.txt</Detail>
 			</Section>
 		</Lesson>
@@ -136,22 +162,27 @@
 			<Intro></Intro>
 			<Section Name = "Review index finger keys">
 				<Type>Key</Type>
+				<Time>900</Time>
 				<Detail>uk7speed02011key2.txt</Detail>
 			</Section>
 			<Section Name = "Fun phrases with R T Y U">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>uk7speed02031sentence2.txt</Detail>
 			</Section>
 			<Section Name = "Fun phrases with G H">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>uk7speed02041sentence2.txt</Detail>
 			</Section>
 			<Section Name = "Fun phrases with V B N M">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>uk7speed02051sentence2.txt</Detail>
 			</Section>
 			<Section Name = "Text drill, all letters">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>uk7speed02021key2.txt</Detail>
 			</Section>
 		</Lesson>
@@ -161,22 +192,27 @@
 			<Intro></Intro>
 			<Section Name = "Numbers 4 5 6 7">
 				<Type>Key</Type>
+				<Time>900</Time>
 				<Detail>uk7numrow0012key2.txt</Detail>
 			</Section>
 			<Section Name = "Word drill">
 				<Type>Word</Type>
+				<Time>900</Time>
 				<Detail>uk7numrow0021word2.txt</Detail>
 			</Section>
 			<Section Name = "Number 3 and 8">
 				<Type>Key</Type>
+				<Time>900</Time>
 				<Detail>uk7numrow1023key2.txt</Detail>
 			</Section>
 			<Section Name = "Sentence drill">
 				<Type>Sentence</Type>
+				<Time>900</Time>
 				<Detail>uk7numrow1041sentence2.txt</Detail>
 			</Section>
 			<Section Name = "Paragraph drill">
 				<Type>Paragraph</Type>
+				<Time>1800</Time>
 				<Detail>uk7numrow1051paragraph2.txt</Detail>
 			</Section>
 		</Lesson>

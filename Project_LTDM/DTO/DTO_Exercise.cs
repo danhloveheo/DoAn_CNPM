@@ -10,8 +10,7 @@ namespace DTO
     {
         private string _exerciseType; // Gồm Key, Word, Sentence, Paragraph
 
-        //TODO : Thêm trường time vào file
-        private int _time = 0;
+        private int _time;
         private string _title;
         private List<string> _exerciseText = new List<string>();
 

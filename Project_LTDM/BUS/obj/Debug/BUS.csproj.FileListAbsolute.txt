@@ -144,16 +144,6 @@ D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
 D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
 D:\DoAn_CNPM 7\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.dll
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.pdb
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.dll
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.dll
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.pdb
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
-C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 8\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.dll
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 8\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.pdb
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 8\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.dll
@@ -181,3 +171,13 @@ E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\D
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
 E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 9\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\BUS.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DAO.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\bin\Debug\DTO.pdb
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.dll
+C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\BUS\obj\Debug\BUS.pdb

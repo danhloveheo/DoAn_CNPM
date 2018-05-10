@@ -29,21 +29,6 @@ namespace Project_LTDM
             this.khoaHoc1.btnC4Click += new EventHandler(khoaHoc_btnC4Click);
         }
 
-
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            /*Frm_LuyenTap frm = new Frm_LuyenTap();
-            frm.ShowDialog();*/
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            Frm_Typing frm = new Frm_Typing();
-            frm.ShowDialog();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();

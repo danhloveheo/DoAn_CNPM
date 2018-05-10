@@ -1,34 +1,42 @@
 <ExerciseDetails>
   <Exercise>
     <Title>Astronauts</Title>
+    <Time>1800</Time>
     <FileName>astronauts.txt</FileName>
   </Exercise>
   <Exercise>
     <Title>Observations of the "Father of Computing" (1791-1871)"</Title>
+    <Time>1800</Time>
     <FileName>babbage.txt</FileName>
   </Exercise>
   <Exercise>
     <Title>Rules of Baseball (from 1889)</Title>
+    <Time>1800</Time>
     <FileName>baseball.txt</FileName>
   </Exercise>
   <Exercise>
     <Title>What is a cast?</Title>
+    <Time>1800</Time>
     <FileName>cast.txt</FileName>
   </Exercise>
   <Exercise>
     <Title>Behind the scene: Movie credits</Title>
+    <Time>1800</Time>
     <FileName>credits.txt</FileName>
   </Exercise>
   <Exercise>
     <Title>DNA Research -- the Human Genome Project</Title>
+    <Time>1800</Time>
     <FileName>dna.txt</FileName>
   </Exercise>
   <Exercise>
     <Title>Aeshop's fables</Title>
+    <Time>1800</Time>
     <FileName>fables.txt</FileName>
   </Exercise>
   <Exercise>
-    <Title>asdsad</Title>
-    <FileName>827fc60c-3c9a-42f9-bd7c-e78f4ba5a40f.txt</FileName>
+    <Title>123</Title>
+    <Time>12400</Time>
+    <FileName>9be05846-7fe2-4d7b-9e09-d3354d59c69d.txt</FileName>
   </Exercise>
 </ExerciseDetails>

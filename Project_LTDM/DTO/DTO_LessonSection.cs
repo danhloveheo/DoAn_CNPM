@@ -10,6 +10,7 @@ namespace DTO
     {
         private string _name;
         private string _type;
+        private int _time;
         private string _detail;
 
         public string Name
@@ -35,6 +36,19 @@ namespace DTO
             set
             {
                 this._type = value;
+            }
+        }
+
+        public int Time
+        {
+            get
+            {
+                return this._time;
+            }
+
+            set
+            {
+                this._time = value;
             }
         }
 

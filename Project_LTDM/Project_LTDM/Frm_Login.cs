@@ -13,13 +13,11 @@ namespace Project_LTDM
 {
     public partial class Frm_Login : Form
     {
-          
         public Frm_Login()
         {
             InitializeComponent();
             txtDummy.TabStop = true;
             txtDummy.Select();
-            this.AcceptButton = btnLogin ;
         }
 
         private void Frm_Login_FormClosing(object sender, FormClosingEventArgs e)
@@ -139,11 +137,6 @@ namespace Project_LTDM
         private void txtDummy_Leave(object sender, EventArgs e)
         {
             ((TextBox)sender).TabStop = false;
-        }
-
-        private void Frm_Login_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

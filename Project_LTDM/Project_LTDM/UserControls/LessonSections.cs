@@ -86,19 +86,20 @@ namespace Project_LTDM.UserControls
         public static void ShowTypingForm (object sender, EventArgs e)
         {
             string exerciseType = "";
-            List<string> exerciseText = BUS_UserControls.SearchTypingInfo(sender, ref exerciseType);
+            int time = 0;
+            List<string> exerciseText = BUS_UserControls.SearchTypingInfo(sender, ref exerciseType, ref time);
 
             Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
 
             if (exerciseType == "Key")
             {
-                Frm_FingerExercise exercise = new Frm_FingerExercise(exerciseText);
+                Frm_FingerExercise exercise = new Frm_FingerExercise(exerciseText, time);
                 exercise.ShowDialog(form);
 
             }
             else
             {
-                Frm_Typing exercise = new Frm_Typing(exerciseText);
+                Frm_Typing exercise = new Frm_Typing(exerciseText, time);
                 exercise.ShowDialog(form);
             }
         }

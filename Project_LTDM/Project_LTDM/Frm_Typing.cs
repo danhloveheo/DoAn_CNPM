@@ -22,6 +22,8 @@ namespace Project_LTDM
         int v = 0;
         int PositionKey = 0;
 
+        int time;
+        int timeLeft;
         List<string> exerciseText = new List<string>();
         int location = 0;
 
@@ -38,12 +40,22 @@ namespace Project_LTDM
             location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
         }
 
-        public Frm_Typing(List<string> text)
+        public Frm_Typing(List<string> text, int t)
         {
             //TODO: Thay đổi kích thước font chữ trong RTB_String theo từng loại
 
             InitializeComponent();
+            time = t;
+            timeLeft = t;
             exerciseText = text;
+            if (time < 3600)
+            {
+                lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
+            }
+            else
+            {
+                lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"hh\:mm\:ss");
+            }
             RTB_String.Lines = exerciseText.ToArray();
 
             //Tìm index ký tự cuối cùng được hiển thị để scroll
@@ -202,6 +214,7 @@ namespace Project_LTDM
 
         private void SetFingerVisible(string skey)
         {
+            skey = skey.ToLower();
             //string result = Finger.Left_NgonUt.Single(s => s == skey);
             int idex = -2;
             if (Finger.Left_NgonUt.FindIndex(s => s == skey) != -1)
@@ -424,20 +437,26 @@ namespace Project_LTDM
             }
         }
 
+        int dongho = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
             SoundPlayer spwinner = new SoundPlayer(@"sound\winner.wav");
 
-            int dongho = 0;
-            int i = Convert.ToInt32(label11.Text);
             if (v == 0)
             {
-                if (i != 0)
+                if (timeLeft != 0)
                 {
-                    i = Convert.ToInt32(label11.Text);
-                    i--;
-                    label11.Text = i.ToString();
+                    timeLeft--;
+                    if (timeLeft < 3600)
+                    {
+                        lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
+                    }
+                    else
+                    {
+                        lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"hh\:mm\:ss");
+                    }
                     picwatch.Image = null;
+
                     if (dongho == 0)
                     {
                         picwatch.Image = Image.FromFile("xoaytrai.png");
@@ -465,7 +484,7 @@ namespace Project_LTDM
             {
                 timer1.Stop();
 
-                if (i < 10)
+                if (timeLeft < time * 0.3)
                 {
                     spwinner.Play();
 
@@ -473,7 +492,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 10 && i < 30)
+                else if (timeLeft >= time * 0.3 && timeLeft < time * 0.5)
                 {
                     spwinner.Play();
 
@@ -481,7 +500,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 30 && i < 40)
+                else if (timeLeft >= time * 0.5 && timeLeft < time * 0.7)
                 {
                     spwinner.Play();
 
@@ -489,7 +508,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 10 && i < 50)
+                else if (timeLeft >= time * 0.7 && timeLeft < time * 0.9)
                 {
                     spwinner.Play();
 
@@ -497,7 +516,7 @@ namespace Project_LTDM
                     rating.ShowDialog(this);
                 }
 
-                else if (i >= 50 && i < 60)
+                else if (timeLeft > time * 0.9)
                 {
                     spwinner.Play();
 

@@ -151,16 +151,18 @@
             this.button59 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.labeltimer = new System.Windows.Forms.Label();
-            this.picwatch = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.lbTimer = new System.Windows.Forms.Label();
+            this.picwatch = new System.Windows.Forms.PictureBox();
             this.pn_stringKeys.SuspendLayout();
             this.pn_RH.SuspendLayout();
             this.pn_LH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.pn_Keys.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picwatch)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1551,31 +1553,22 @@
             this.button46.Text = "+\r\n=\r\n";
             this.button46.UseVisualStyleBackColor = true;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(1010, 321);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(72, 72);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox6.TabIndex = 110;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // labeltimer
-            // 
-            this.labeltimer.BackColor = System.Drawing.Color.Transparent;
-            this.labeltimer.Font = new System.Drawing.Font("Vinhan", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeltimer.Location = new System.Drawing.Point(505, 333);
-            this.labeltimer.Name = "labeltimer";
-            this.labeltimer.Size = new System.Drawing.Size(47, 51);
-            this.labeltimer.TabIndex = 115;
-            this.labeltimer.Text = "60";
-            this.labeltimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picwatch
-            // 
-            this.picwatch.Image = ((System.Drawing.Image)(resources.GetObject("picwatch.Image")));
-            this.picwatch.Location = new System.Drawing.Point(479, 302);
-            this.picwatch.Name = "picwatch";
-            this.picwatch.Size = new System.Drawing.Size(96, 96);
-            this.picwatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picwatch.TabIndex = 116;
-            this.picwatch.TabStop = false;
             // 
             // richTextBox1
             // 
@@ -1586,13 +1579,36 @@
             this.richTextBox1.Text = "Nguyen Khanh Minh";
             this.richTextBox1.Visible = false;
             // 
+            // lbTimer
+            // 
+            this.lbTimer.AutoSize = true;
+            this.lbTimer.BackColor = System.Drawing.Color.Transparent;
+            this.lbTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTimer.Location = new System.Drawing.Point(503, 347);
+            this.lbTimer.Name = "lbTimer";
+            this.lbTimer.Size = new System.Drawing.Size(38, 25);
+            this.lbTimer.TabIndex = 119;
+            this.lbTimer.Text = "60";
+            this.lbTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picwatch
+            // 
+            this.picwatch.Image = ((System.Drawing.Image)(resources.GetObject("picwatch.Image")));
+            this.picwatch.Location = new System.Drawing.Point(486, 297);
+            this.picwatch.Name = "picwatch";
+            this.picwatch.Size = new System.Drawing.Size(106, 107);
+            this.picwatch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picwatch.TabIndex = 120;
+            this.picwatch.TabStop = false;
+            // 
             // Frm_LuyenTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1083, 634);
-            this.Controls.Add(this.labeltimer);
+            this.Controls.Add(this.lbTimer);
             this.Controls.Add(this.picwatch);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pn_Keys);
             this.Controls.Add(this.pn_stringKeys);
             this.Controls.Add(this.pn_RH);
@@ -1612,6 +1628,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pn_Keys.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picwatch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1719,9 +1736,8 @@
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label labeltimer;
-        private System.Windows.Forms.PictureBox picwatch;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Panel Separator17;
         private System.Windows.Forms.Panel Separator21;
@@ -1745,10 +1761,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-
-
-
-
-
+        private System.Windows.Forms.Label lbTimer;
+        private System.Windows.Forms.PictureBox picwatch;
     }
 }

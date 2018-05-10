@@ -30,9 +30,10 @@ namespace Project_LTDM.UserControls
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-                Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
-                Frm_Typing exercise = new Frm_Typing(BUS_Exercise.FindContent(lbxExerciseList.SelectedItem));
-                exercise.ShowDialog(form);
+            Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
+            int time = 0;
+            Frm_Typing exercise = new Frm_Typing(BUS_Exercise.FindContent(lbxExerciseList.SelectedItem, ref time), time);
+            exercise.ShowDialog(form);
         }
 
         private void lbAdd_Click(object sender, EventArgs e)
@@ -76,6 +77,11 @@ namespace Project_LTDM.UserControls
                 lbxExerciseList.Sorted = true;
                 lbxExerciseList.SelectedIndex = 0;
             }
+        }
+
+        private void LuyenText_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -18,7 +18,6 @@ namespace Project_LTDM
             InitializeComponent();
             txtDummy.TabStop = true;
             txtDummy.Select();
-            this.AcceptButton = btnRegister;
         }
         
         private void Frm_Register_FormClosing(object sender, FormClosingEventArgs e)
