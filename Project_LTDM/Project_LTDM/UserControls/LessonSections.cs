@@ -99,7 +99,7 @@ namespace Project_LTDM.UserControls
             }
             else
             {
-                Frm_Typing exercise = new Frm_Typing(exerciseText, time);
+                Frm_Typing exercise = new Frm_Typing(exerciseText, exerciseType, time);
                 exercise.ShowDialog(form);
             }
         }

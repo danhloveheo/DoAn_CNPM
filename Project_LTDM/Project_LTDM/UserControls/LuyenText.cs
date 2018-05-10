@@ -32,7 +32,7 @@ namespace Project_LTDM.UserControls
         {
             Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
             int time = 0;
-            Frm_Typing exercise = new Frm_Typing(BUS_Exercise.FindContent(lbxExerciseList.SelectedItem, ref time), time);
+            Frm_Typing exercise = new Frm_Typing(BUS_Exercise.FindContent(lbxExerciseList.SelectedItem, ref time), "Paragraph", time);
             exercise.ShowDialog(form);
         }
 

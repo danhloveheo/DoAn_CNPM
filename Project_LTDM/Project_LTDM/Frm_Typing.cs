@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Text.RegularExpressions;
+using BUS;
+
 namespace Project_LTDM
 {
     public partial class Frm_Typing : Form
@@ -22,6 +24,7 @@ namespace Project_LTDM
         int v = 0;
         int PositionKey = 0;
 
+        string type;
         int time;
         int timeLeft;
         List<string> exerciseText = new List<string>();
@@ -40,14 +43,37 @@ namespace Project_LTDM
             location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
         }
 
-        public Frm_Typing(List<string> text, int t)
+        public Frm_Typing(List<string> text, string type, int t)
         {
-            //TODO: Thay đổi kích thước font chữ trong RTB_String theo từng loại
-
             InitializeComponent();
             time = t;
             timeLeft = t;
-            exerciseText = text;
+            this.type = type;
+            //Thay đổi kích thước font chữ trong RTB_String theo từng loại
+
+            switch (type)
+            {
+                case "Word":
+                    RTB_String.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+                    break;
+                case "Sentence":
+                    RTB_String.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.5F);
+                    break;
+                case "Paragraph":
+                    RTB_String.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+                    break;
+            }
+
+            //Xoá các ký tự trằng đầu và cuối dòng
+            foreach (string line in text)
+            {
+                if (line.Trim() !="")
+                {
+                    exerciseText.Add(line.Trim() + "↵");
+                }
+
+            }
+
             if (time < 3600)
             {
                 lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
@@ -73,6 +99,7 @@ namespace Project_LTDM
             //richTextBox1.SelectionColor = Color.Red;
             //RandomString();
             int iAscii = RTB_String.Text[PositionKey];
+            BUS_Typing.StopFocus(this);
             Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
             if (ctn != null)
             {
@@ -339,16 +366,29 @@ namespace Project_LTDM
                 return;
             char keyText = RTB_String.Text[PositionKey];// Chuoi[z];
             int compare = keyText;
+
+            if (keyText == '↵')
+            {
+                compare = 8629;    
+            }
+            
             //string stringlabel = key.ToString().ToLower();
-            if (e.KeyChar > 31 && e.KeyChar < 127)
+            if (e.KeyChar > 31 && e.KeyChar < 127 || e.KeyChar == 13)
             {
                 //char ch = (char)e.KeyChar;
                 //string str = ch.ToString();
                 int iAscii = e.KeyChar;
+
+                //8629 là mà Ascii của "↵"
+                if (e.KeyChar == 13)
+                {
+                    iAscii = 8629;
+                }
+
                 Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
                 if (ctn != null)
                 {
-                    ((Button)ctn).Focus();
+                    //((Button)ctn).Focus();
                     //char cKeylabel = stringlabel.ToCharArray()[0];
                     //char cKeylabel = stringlabel.ToCharArray()[0];
                     //int iKeylabel = cKeylabel;
@@ -394,7 +434,20 @@ namespace Project_LTDM
 
                         RTB_String.Select(PositionKey, 1);
                         RTB_String.SelectionColor = Color.Green;
-                        RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 36.5F, System.Drawing.FontStyle.Underline);
+
+                        switch (type)
+                        {
+                            case "Word":
+                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 36.5F, System.Drawing.FontStyle.Underline);
+                                break;
+                            case "Sentence":
+                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 28.5F, System.Drawing.FontStyle.Underline);
+                                break;
+                            case "Paragraph":
+                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 14.5F, System.Drawing.FontStyle.Underline);
+                                break;
+                        }
+
                         PositionKey++;
                         if (PositionKey < RTB_String.Text.Length)
                         {
@@ -404,7 +457,8 @@ namespace Project_LTDM
                             //{
                             //    HighLight((Button)ctn);
                             //    SetFingerVisible(RTB_String.Text[z].ToString().ToLower());
-                            //}
+                            //
+
                             while (ctn == null && PositionKey < RTB_String.Text.Length)
                             {
                                 PositionKey++;
@@ -424,7 +478,20 @@ namespace Project_LTDM
                         sn1.Play();
                         RTB_String.Select(PositionKey, 1);
                         RTB_String.SelectionColor = Color.PaleVioletRed;
-                        RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Underline);
+
+                        switch (type)
+                        {
+                            case "Word":
+                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 36.5F, System.Drawing.FontStyle.Underline);
+                                break;
+                            case "Sentence":
+                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 28.5F, System.Drawing.FontStyle.Underline);
+                                break;
+                            case "Paragraph":
+                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 14.5F, System.Drawing.FontStyle.Underline);
+                                break;
+                        }
+
                         Button_FalseShift((char)e.KeyChar, RTB_String.Text[PositionKey]);
                         Button_False((Button)ctn);
                     }

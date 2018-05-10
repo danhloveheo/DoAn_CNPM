@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Text.RegularExpressions;
+using BUS;
 
 namespace Project_LTDM
 {
@@ -40,12 +41,11 @@ namespace Project_LTDM
             time = t;
             timeLeft = t;
             lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
-            //RandomStringFollowList();
         }
 
         public void ShowKeys (int line) //Chuyển dòng trong file bài tập sang các label trên pn_stringKeys  
         {
-            text = exerciseText[line]; // Lấy dòng đang xét
+            text = (exerciseText[line]).Trim() + (char)13; // Lấy dòng đang xét
             int count = text.Count(); //Lấy số phần tử trong dòng được xét
 
             //Căn lại các label cho cân với pn_stringKeys
@@ -62,7 +62,14 @@ namespace Project_LTDM
                     lbKey.Name = "label" + i;
                     lbKey.Size = new System.Drawing.Size(60, 60);
                     lbKey.UseMnemonic = false;
-                    lbKey.Text = text[i].ToString();
+                    if (text[i] == 13)
+                    {
+                        lbKey.Text = "⏎";
+                    }
+                    else
+                    {
+                        lbKey.Text = text[i].ToString();
+                    }
                     lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
                     Panel separator = new Panel();
@@ -86,7 +93,14 @@ namespace Project_LTDM
                     lbKey.Name = "label" + i;
                     lbKey.Size = new System.Drawing.Size(60, 60);
                     lbKey.UseMnemonic = false;
-                    lbKey.Text = text[i].ToString();
+                    if (text[i] == 13)
+                    {
+                        lbKey.Text = "⏎";
+                    }
+                    else
+                    {
+                        lbKey.Text = text[i].ToString();
+                    }
                     lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
                     Panel separator = new Panel();
@@ -113,7 +127,14 @@ namespace Project_LTDM
                     lbKey.Name = "label" + i;
                     lbKey.Size = new System.Drawing.Size(60, 60);
                     lbKey.UseMnemonic = false;
-                    lbKey.Text = text[i].ToString();
+                    if (text[i] == 13)
+                    {
+                        lbKey.Text = "⏎";
+                    }
+                    else
+                    {
+                        lbKey.Text = text[i].ToString();
+                    }
                     lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
                     Panel separator = new Panel();
@@ -137,7 +158,14 @@ namespace Project_LTDM
                     lbKey.Name = "label" + i;
                     lbKey.Size = new System.Drawing.Size(60, 60);
                     lbKey.UseMnemonic = false;
-                    lbKey.Text = text[i].ToString();
+                    if (text[i] == 13)
+                    {
+                        lbKey.Text = "⏎";
+                    }
+                    else
+                    {
+                        lbKey.Text = text[i].ToString();
+                    }
                     lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
                     Panel separator = new Panel();
@@ -162,48 +190,13 @@ namespace Project_LTDM
             if (PositionKey < text.Length)
                 SetFingerVisible(text[PositionKey].ToString());
         }
-
-        /*private void RandomString()
-        {
-            Random rnd = new Random();
-
-            for (int i = 0; i < 11; i++)
-            {
-                string name = "label" + i;
-                Control ctn = FindControl(pn_stringKeys, name); //.Controls[name];
-                if (ctn != null)
-                {
-                    string skeys = ((char)rnd.Next(97, 122)).ToString();
-                    ((Label)ctn).Text = skeys;
-                    Chuoi[i] = skeys;
-                }
-            }
-        }*/
-
-        /*private void RandomStringFollowList()
-        {
-
-            Random rnd = new Random();
-            for (int i = 0; i < 11; i++)
-            {
-                string name = "label" + i;
-                Control ctn = FindControl(pn_stringKeys, name);
-                if (ctn != null)
-                {
-                    string skeys = ListNgon[rnd.Next(ListNgon.Count)];
-
-                    ((Label)ctn).Text = skeys;
-                    Chuoi[i] = skeys;
-                }
-            }
-        }*/
      
         private void Frm_LuyenTap_Load(object sender, EventArgs e)
         {
-            //StopFocus(this);
             aTimer.Tick += ATimer_Tick;
             aTimer.Interval = 3000;
-      
+
+            BUS_Typing.StopFocus(this);
             this.KeyPreview = true;
             ShowKeys(0);                 
         }
@@ -245,11 +238,7 @@ namespace Project_LTDM
             sp.BackColor = Color.LightGray;
 
         }
-       /* private void ATimer_Tick(object sender, EventArgs e)
-        {
-            btn_oldHighLight.BackColor = Color.Red;
-            aTimer.Stop();
-        }*/
+
         private void ATimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
             throw new NotImplementedException();
@@ -337,7 +326,6 @@ namespace Project_LTDM
         private void SetFingerVisible(string skey)
         {
             skey = skey.ToLower();
-            //string result = Finger.Left_NgonUt.Single(s => s == skey);
             int idex = -2;
             if (Finger.Left_NgonUt.FindIndex(s => s == skey) != -1)
                 idex = 0;
@@ -349,8 +337,7 @@ namespace Project_LTDM
                 idex = 3;
             else if (Finger.NgonCai.FindIndex(s => s == skey) != -1)
                 idex = 4;
-            //else if (Finger.NgonCai.FindIndex(s => s == skey) != -1)
-            //{ MessageBox.Show("5"); }
+
             else if (Finger.Right_NgonTro.FindIndex(s => s == skey) != -1)
                 idex = 6;
             else if (Finger.Right_NgonGiua.FindIndex(s => s == skey) != -1)
@@ -445,13 +432,12 @@ namespace Project_LTDM
 
             Control ctnkey = FindControl(pn_stringKeys, "label" + PositionKey);
 
-            if ((e.KeyChar > 31 && e.KeyChar < 127))
+            if ((e.KeyChar > 31 && e.KeyChar < 127) || e.KeyChar == 13)
             {
                 int iAscii = e.KeyChar;
                 Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
                 if (ctn != null)
                 {
-                    //if (SearchStringInTagControl(ctn, keyText) == true)
                     if (iAscii == compare)
                     {
                         if (e.KeyChar.ToString() == @"\")
@@ -499,12 +485,12 @@ namespace Project_LTDM
                             ctn = FindControlByTag(pn_Keys, iAscii);
                             Control ctnspr = FindControl(pn_stringKeys, "Separator" + PositionKey);
 
-                            while (ctn == null && PositionKey < text.Length)
+                            /*while (ctn == null && PositionKey < text.Length)
                             {
                                 PositionKey++;
                                 iAscii = text[PositionKey];
                                 ctn = FindControlByTag(pn_Keys, iAscii);
-                            }
+                            }*/
 
                             HighLight((Button)ctn);
                             HighLightShift(text[PositionKey]);
@@ -631,17 +617,5 @@ namespace Project_LTDM
         {
 
         }
-
-        /*public void StopFocus (Control parent)
-        {
-            foreach (Control c in parent.Controls)
-            {
-                if (c.Controls != null)
-                {
-                    StopFocus(c);
-                }
-                c.TabStop = false;
-            }
-        }*/
     }
 }

@@ -138,11 +138,10 @@
             this.btnChangeCourse.ForeColor = System.Drawing.Color.Black;
             this.btnChangeCourse.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeCourse.Image")));
             this.btnChangeCourse.Location = new System.Drawing.Point(240, 199);
-            this.btnChangeCourse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChangeCourse.Margin = new System.Windows.Forms.Padding(4);
             this.btnChangeCourse.Name = "btnChangeCourse";
             this.btnChangeCourse.Size = new System.Drawing.Size(167, 55);
             this.btnChangeCourse.TabIndex = 112;
-            this.btnChangeCourse.TabStop = false;
             this.btnChangeCourse.Text = "        OK";
             this.btnChangeCourse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnChangeCourse.UseVisualStyleBackColor = false;

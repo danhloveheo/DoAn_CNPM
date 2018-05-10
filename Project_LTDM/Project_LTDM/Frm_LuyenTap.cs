@@ -10,18 +10,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Text.RegularExpressions;
+using BUS;
 
 namespace Project_LTDM
 {
     public partial class Frm_LuyenTap : Form
     {
         Timer aTimer = new Timer();
-        string[] Chuoi = new string[22];
         Button btn_oldHighLight = new Button();
         Button btn_oldHighLight1 = new Button();
         Panel label_oldDefault = new Panel();
-        List<string> ListNgon;
-     
+
+        List<string> exerciseText = new List<string>(); //Chứa nội dung bài tập đánh máy
+        string text = ""; ////Chứa dòng đang xét
         int v = 0;
         int PositionKey = 0;
         int time = 300;
@@ -32,72 +33,187 @@ namespace Project_LTDM
             lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
         }
 
-        public Frm_LuyenTap(List<string> listNgon)
+        public Frm_LuyenTap(string listKeys)
         {
             InitializeComponent();
             lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
-            ListNgon = listNgon;
-            RandomStringFollowList();
-        }
-        /*private void RandomString()
-        {
-            Random rnd = new Random();
-
-            for (int i = 0; i < 11; i++)
+            
+            for (int i = 0; i < 3; i++)
             {
-                string name = "label" + i;
-                Control ctn = FindControl(pn_stringKeys, name); //.Controls[name];
-                if (ctn != null)
-                {
-                    string skeys = ((char)rnd.Next(97, 122)).ToString();
-                    ((Label)ctn).Text = skeys;
-                    Chuoi[i] = skeys;
-                }
-            }
-        }*/
-
-        private void RandomStringFollowList()
-        {
-
-            Random rnd = new Random();
-            for (int i = 0; i < 22; i++)
-            {
-                string name = "label" + i;
-                Control ctn = FindControl(pn_stringKeys, name);
-                if (ctn != null)
-                {
-                    string skeys = ListNgon[rnd.Next(ListNgon.Count)];
-
-                    ((Label)ctn).Text = skeys;
-                    Chuoi[i] = skeys;
-                }
+                exerciseText.Add(RandomStringFollowList(listKeys));
             }
         }
-     
-        private void Frm_LuyenTap_Load(object sender, EventArgs e)
+
+        Random rnd = new Random();
+        private string RandomStringFollowList(string listKeys)
         {
-            aTimer.Tick += ATimer_Tick;
-            aTimer.Interval = 3000;
+            string text = "";
+            for (int i = 0; i < 19; i++)
+            {
+                char key = listKeys[rnd.Next(listKeys.Count())];
+                text += key;
+            }
+            return text;
+        }
 
-       
+        public void ShowKeys(int line) //Chuyển dòng trong file bài tập sang các label trên pn_stringKeys  
+        {
+            //text = exerciseText[line];
+            text = exerciseText[line] + (char)13; // Lấy dòng đang xét
+            int count = text.Count(); //Lấy số phần tử trong dòng được xét
 
-            this.KeyPreview = true;
-            Separator_True(Separator0);
+            //Căn lại các label cho cân với pn_stringKeys
+            if (count > 12)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    Label lbKey = new Label();
+                    lbKey.BackColor = System.Drawing.SystemColors.Control;
+                    lbKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                    lbKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    lbKey.Location = new System.Drawing.Point(40 + (i * 105), 10);
+                    lbKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+                    lbKey.Name = "label" + i;
+                    lbKey.Size = new System.Drawing.Size(60, 60);
+                    lbKey.UseMnemonic = false;
+                    if (text[i] == 13)
+                    {
+                        lbKey.Text = "⏎";
+                    }
+                    else
+                    {
+                        lbKey.Text = text[i].ToString();
+                    }
+                    lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
+                    Panel separator = new Panel();
+                    separator.BackColor = System.Drawing.Color.LightGray;
+                    separator.Location = new System.Drawing.Point(40 + (i * 105), 75);
+                    separator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+                    separator.Name = "Separator" + i;
+                    separator.Size = new System.Drawing.Size(60, 5);
 
-         
+                    pn_stringKeys.Controls.AddRange(new Control[] { lbKey, separator });
+                }
 
-            int iAscii = Chuoi[PositionKey].ToCharArray()[0];
+                for (int i = 10; i < count; i++)
+                {
+                    Label lbKey = new Label();
+                    lbKey.BackColor = System.Drawing.SystemColors.Control;
+                    lbKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                    lbKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    lbKey.Location = new System.Drawing.Point(40 + ((i - 10) * 105), 95);
+                    lbKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+                    lbKey.Name = "label" + i;
+                    lbKey.Size = new System.Drawing.Size(60, 60);
+                    lbKey.UseMnemonic = false;
+                    if (text[i] == 13)
+                    {
+                        lbKey.Text = "⏎";
+                    }
+                    else
+                    {
+                        lbKey.Text = text[i].ToString();
+                    }
+                    lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                    Panel separator = new Panel();
+                    separator.BackColor = System.Drawing.Color.LightGray;
+                    separator.Location = new System.Drawing.Point(40 + ((i - 10) * 105), 160);
+                    separator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+                    separator.Name = "Separator" + i;
+                    separator.Size = new System.Drawing.Size(60, 5);
+
+                    pn_stringKeys.Controls.AddRange(new Control[] { lbKey, separator });
+                }
+            }
+
+            if (count <= 12)
+            {
+                for (int i = 0; i < 6; i++)
+                {
+                    Label lbKey = new Label();
+                    lbKey.BackColor = System.Drawing.SystemColors.Control;
+                    lbKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                    lbKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    lbKey.Location = new System.Drawing.Point(250 + (i * 105), 10);
+                    lbKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+                    lbKey.Name = "label" + i;
+                    lbKey.Size = new System.Drawing.Size(60, 60);
+                    lbKey.UseMnemonic = false;
+                    if (text[i] == 13)
+                    {
+                        lbKey.Text = "⏎";
+                    }
+                    else
+                    {
+                        lbKey.Text = text[i].ToString();
+                    }
+                    lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                    Panel separator = new Panel();
+                    separator.BackColor = System.Drawing.Color.LightGray;
+                    separator.Location = new System.Drawing.Point(250 + (i * 105), 75);
+                    separator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+                    separator.Name = "Separator" + i;
+                    separator.Size = new System.Drawing.Size(60, 5);
+
+                    pn_stringKeys.Controls.AddRange(new Control[] { lbKey, separator });
+                }
+
+                for (int i = 6; i < count; i++)
+                {
+                    Label lbKey = new Label();
+                    lbKey.BackColor = System.Drawing.SystemColors.Control;
+                    lbKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                    lbKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    lbKey.Location = new System.Drawing.Point(250 + ((i - 6) * 105), 95);
+                    lbKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+                    lbKey.Name = "label" + i;
+                    lbKey.Size = new System.Drawing.Size(60, 60);
+                    lbKey.UseMnemonic = false;
+                    if (text[i] == 13)
+                    {
+                        lbKey.Text = "⏎";
+                    }
+                    else
+                    {
+                        lbKey.Text = text[i].ToString();
+                    }
+                    lbKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                    Panel separator = new Panel();
+                    separator.BackColor = System.Drawing.Color.LightGray;
+                    separator.Location = new System.Drawing.Point(250 + ((i - 6) * 105), 160);
+                    separator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+                    separator.Name = "Separator" + i;
+                    separator.Size = new System.Drawing.Size(60, 5);
+
+                    pn_stringKeys.Controls.AddRange(new Control[] { lbKey, separator });
+                }
+            }
+            Separator_True((Panel)pn_stringKeys.Controls[1]); //Chuyển màu separator đầu tiên
+            int iAscii = text[0];
             Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
             if (ctn != null)
             {
                 HighLight((Button)ctn);
-                HighLightShift(Chuoi[PositionKey].ToCharArray()[0]);
+                HighLightShift(text[0]);
             }
 
-            if (PositionKey < Chuoi.Length)
-                SetFingerVisible(Chuoi[PositionKey]);
+            if (PositionKey < text.Length)
+                SetFingerVisible(text[PositionKey].ToString());
+        }
 
+        private void Frm_LuyenTap_Load(object sender, EventArgs e)
+        {
+            text = exerciseText[0];
+            aTimer.Tick += ATimer_Tick;
+            aTimer.Interval = 3000;
+
+            BUS_Typing.StopFocus(this);
+            this.KeyPreview = true;
+            ShowKeys(0);
         }
 
         private void ATimer_Tick(object sender, EventArgs e)
@@ -137,11 +253,7 @@ namespace Project_LTDM
             sp.BackColor = Color.LightGray;
 
         }
-       /* private void ATimer_Tick(object sender, EventArgs e)
-        {
-            btn_oldHighLight.BackColor = Color.Red;
-            aTimer.Stop();
-        }*/
+
         private void ATimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
             throw new NotImplementedException();
@@ -168,12 +280,7 @@ namespace Project_LTDM
         {
             lb.BackColor = SystemColors.Control;
         }
-
-    
-       
-       
      
-
         private Control FindControl(Control parent, string name)
         {
             // Check the parent.
@@ -321,26 +428,30 @@ namespace Project_LTDM
             }
         }
 
+        int currentLine = 0;
         private void Frm_LuyenTap_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (timer1.Enabled == false)
             {
                 timer1.Start();
             }
-            if (PositionKey >= Chuoi.Length)
+            if (PositionKey >= text.Length)
+            {
                 return;
-            char keyText = Chuoi[PositionKey].ToCharArray()[0];
+            }
+
+            char keyText = text[PositionKey];
             int compare = keyText;
+
             Control ctnkey = FindControl(pn_stringKeys, "label" + PositionKey);
 
-            if ((e.KeyChar > 31 && e.KeyChar < 127))
+            if ((e.KeyChar > 31 && e.KeyChar < 127) || e.KeyChar == 13)
             {
                 int iAscii = e.KeyChar;
                 Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
                 if (ctn != null)
                 {
-                    //if (SearchStringInTagControl(ctn, keyText) == true)
-                    if (iAscii == compare)                  
+                    if (iAscii == compare)
                     {
                         if (e.KeyChar.ToString() == @"\")
                         {
@@ -381,25 +492,25 @@ namespace Project_LTDM
                         ColorLabel_True(((Label)ctnkey));
                         PositionKey++;
 
-                        if (PositionKey < Chuoi.Length)
+                        if (PositionKey < text.Length)
                         {
-                            iAscii = Chuoi[PositionKey].ToCharArray()[0];
+                            iAscii = text[PositionKey];
                             ctn = FindControlByTag(pn_Keys, iAscii);
                             Control ctnspr = FindControl(pn_stringKeys, "Separator" + PositionKey);
 
-
-                            while (ctn == null && PositionKey < Chuoi.Length)
+                            /*while (ctn == null && PositionKey < text.Length)
                             {
                                 PositionKey++;
-                                iAscii = Chuoi[PositionKey].ToCharArray()[0];
+                                iAscii = text[PositionKey];
                                 ctn = FindControlByTag(pn_Keys, iAscii);
-                            }
+                            }*/
+
                             HighLight((Button)ctn);
-                            HighLightShift(Chuoi[PositionKey].ToCharArray()[0]);
+                            HighLightShift(text[PositionKey]);
                             Normal(btn_oldHighLight1);
                             Separator_True(((Panel)ctnspr));
 
-                            SetFingerVisible(Chuoi[PositionKey].ToLower());
+                            SetFingerVisible(text[PositionKey].ToString().ToLower());
                         }
                     }
                     else
@@ -407,18 +518,28 @@ namespace Project_LTDM
                         SoundPlayer sn1 = new SoundPlayer(@"sound\wrong.wav");
                         sn1.Play();
                         Button_False((Button)ctn);
-                        Button_FalseShift((char)e.KeyChar, Chuoi[PositionKey].ToCharArray()[0]);
+                        Button_FalseShift((char)e.KeyChar, text[PositionKey]);
                         WrongKey((Label)ctnkey);
                     }
-                    if (PositionKey == 22)
+                    if (PositionKey == text.Length)
                     {
-
-                        v = 1;
-
+                        /*Nếu PositionKey đã ở cuối dòng nhưng vẫn còn dòng trong bài tập
+                         * thì xoá toàn bộ control trong pn_stringKeys, sau đó hiển thị các
+                         * control mới, trả PositionKey về vị trí đầu dòng mới  */
+                        if (currentLine < exerciseText.Count - 1)
+                        {
+                            currentLine++;
+                            pn_stringKeys.Controls.Clear();
+                            ShowKeys(currentLine);
+                            PositionKey = 0;
+                        }
+                        else
+                        {
+                            v = 1;
+                        }
                     }
                 }
             }
-          
         }
 
         int dongho = 0;

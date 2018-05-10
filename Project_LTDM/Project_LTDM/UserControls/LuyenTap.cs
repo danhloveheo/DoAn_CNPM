@@ -78,24 +78,9 @@ namespace Project_LTDM.UserControls
             }
             else
             {
-                string chuoi = txtrandomkeys.Text;
-                for (int i = 0; i < chuoi.Length; i++)
-                {
-                    Finger.listrandomkeys.Add(chuoi.Substring(i, 1));
-
-                }
-                Frm_LuyenTap frm = new Frm_LuyenTap(Finger.listrandomkeys);
+                Frm_LuyenTap frm = new Frm_LuyenTap(txtrandomkeys.Text);
                 frm.Show();
-                Finger.listrandomkeys.Clear();
             }
-        }
-
-      
-
-       
-
-       
-
-       
+        }       
     }
 }

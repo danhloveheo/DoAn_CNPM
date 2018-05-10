@@ -19,11 +19,11 @@ namespace Project_LTDM.Global
         public static List<string> Right_NgonGiua = new List<string> { "*", "8", "i", "k", ",","<" };
         public static List<string> Right_NgonTro = new List<string> { "^", "&", "6", "7", "y", "u", "h", "j", "n", "m" };
 
-        public static List<string> listrandomkeys = new List<string>();
-        public static List<string> NgonTro = new List<string> { "4", "5", "r", "t", "f", "g", "v", "b", "6", "7", "y", "u", "h", "j", "n", "m" };
-        public static List<string> NgonTro_NgonGiua = new List<string> { "4", "e", "d", "c", "8", "i", "k", ",", "5", "r", "t", "f", "g", "v", "b", "6", "7", "y", "u", "h", "j", "n", "m", "3" };
-        public static List<string> NgonTro_NgonGiua_ApUt = new List<string> { "4", "5", "r", "t", "f", "g", "v", "b", "6", "7", "y", "u", "h", "j", "n", "m", "3", "e", "d", "c", "8", "i", "k", ",", "2", "w", "s", "x", "9", "o", "l", "." };
-        public static List<string> NgonTro_NgonGiua_ApUt_Ut = new List<string> { "4", "5", "r", "t", "f", "g", "v", "b", "6", "7", "y", "u", "h", "j", "n", "m", "3", "e", "d", "c", "8", "i", "k", ",", "2", "w", "s", "x", "9", "o", "l", ".", "1", "q", "a", "z", "0", "-", "=", "p", "[", "]", ";", "'", "/" };
-        public static List<string> NgonTro_NgonGiua_ApUt_Ut_Cai = new List<string> { "4", "5", "r", "t", "f", "g", "v", "b", "6", "7", "y", "u", "h", "j", "n", "m", "3", "e", "d", "c", "8", "i", "k", ",", "2", "w", "s", "x", "9", "o", "l", ".", "1", "q", "a", "z", "0", "-", "=", "p", "[", "]", ";", "'", "/", " " };
+        //public static List<string> listrandomkeys = new List<string>();
+        public static string NgonTro = "45rtfgvb67yuhjnm";
+        public static string NgonTro_NgonGiua = "4edc8ik5rtfgvb67yuhjnm3";
+        public static string NgonTro_NgonGiua_ApUt = "45rtfgvb67yuhjnm3edc8ik,2wsx9ol.";
+        public static string NgonTro_NgonGiua_ApUt_Ut =  "45rtfgvb67yuhjnm3edc8ik,2wsx9ol.1qaz0-=p[];'/";
+        public static string NgonTro_NgonGiua_ApUt_Ut_Cai = "45rtfgvb67yuhjnm3edc8ik,2wsx9ol.1qaz0-=p[];'/ ";
     }
 }

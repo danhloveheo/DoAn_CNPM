@@ -18,15 +18,16 @@ namespace DAO
 
             exercise.Title = section.Name;
             exercise.Time = section.Time;
+            exercise.ExerciseType = section.Type;
 
-            if (section.Type == "Key")
+            /*if (section.Type == "Key")
             {
                 exercise.ExerciseType = "Key";
             }
-            else
+            else if 
             {
                 exercise.ExerciseType = "Text";
-            }
+            }*/
 
             exercise.ExerciseText = DAO_LessonSection.ReadExerciseDetailFromSection(section);
 
@@ -105,7 +106,7 @@ namespace DAO
                 string trim = line.Trim();
                 if (!string.IsNullOrEmpty(trim))
                 {
-                    writer.WriteLine(trim + " ");
+                    writer.WriteLine(trim);
                 }
             }
 

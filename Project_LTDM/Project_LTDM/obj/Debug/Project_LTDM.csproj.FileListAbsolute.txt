@@ -473,3 +473,4 @@ C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DT
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\bin\Debug\DAO.pdb
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.exe
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.pdb
+C:\Users\Administrator\Desktop\DoAn_CNPM\Project_LTDM\Project_LTDM\obj\Debug\Project_LTDM.Frm_Rating.resources
