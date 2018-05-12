@@ -14,12 +14,12 @@ namespace BUS
 {
     public class BUS_Exercise
     {
-        static public List<Object> FindAllExercise () //Tìm toàn bộ bài tập trong file Exercise.Xml
+        static public List<DTO_Exercise> FindAllExercise () //Tìm toàn bộ bài tập trong file Exercise.Xml
         {
-            List<Object> objects = new List<Object>();
+            List<DTO_Exercise> objects = new List<DTO_Exercise>();
             List<string> warningTitles = new List<string>();
 
-            objects.AddRange(DAO_Exercise.FindAllExercise(ref warningTitles));
+            objects = DAO_Exercise.FindAllExercise(ref warningTitles);
 
             //Hiển thị thông báo các bài tập bị lỗi
             foreach (string title in warningTitles)
@@ -29,6 +29,10 @@ namespace BUS
             }
 
             return objects;
+        }
+        static public bool UpdateExercise(DTO_Exercise ob)
+        {
+            return DAO_Exercise.UpdateExercise(ob);
         }
 
         static public List<String> FindContent (Object o, ref int time) //Tìm nội dung bài tập trong
@@ -41,6 +45,16 @@ namespace BUS
 
             return null;
         }
+        static public Object FindContent(Object o) //Tìm nội dung bài tập trong
+        {
+            //if (o is DTO_Exercise)
+            //{
+            //    time = ((DTO_Exercise)o).Time;
+            //    return ((DTO_Exercise)o).ExerciseText;
+            //}
+
+            return null;
+        }
 
         static public void AddExercise (string title, int time, string[] lines)
         {
@@ -49,8 +63,7 @@ namespace BUS
             {
                 text.Add(s);
             }
-
-            DTO_Exercise exercise = new DTO_Exercise("Paragraph", time, title, text);
+            DTO_Exercise exercise = new DTO_Exercise("Paragraph", time, title, text, getFileName(), time, 0, 0);
             DAO_Exercise.AddExercise(exercise);
         }
 
@@ -67,6 +80,11 @@ namespace BUS
         static public bool FileTxtExist (string fileName)
         {
             return DAO_Exercise.FileTxtExist(fileName);
+        }
+
+        public static string getFileName()
+        {
+            return Guid.NewGuid().ToString() + ".txt";
         }
     }
 }

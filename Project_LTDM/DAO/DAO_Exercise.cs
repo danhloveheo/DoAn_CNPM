@@ -19,15 +19,8 @@ namespace DAO
             exercise.Title = section.Name;
             exercise.Time = section.Time;
             exercise.ExerciseType = section.Type;
-
-            /*if (section.Type == "Key")
-            {
-                exercise.ExerciseType = "Key";
-            }
-            else if 
-            {
-                exercise.ExerciseType = "Text";
-            }*/
+            exercise.Timeleft = section.Time;
+            exercise.IsLesson = true;
 
             exercise.ExerciseText = DAO_LessonSection.ReadExerciseDetailFromSection(section);
 
@@ -58,10 +51,14 @@ namespace DAO
                 time = int.Parse(exerciseNode.GetElementsByTagName("Time")[0].InnerText);
 
                 string fileName = exerciseNode.GetElementsByTagName("FileName")[0].InnerText;
+
+                string Timeleft = exerciseNode.GetElementsByTagName("Timeleft")[0].InnerText;
+                string Star = exerciseNode.GetElementsByTagName("Star")[0].InnerText;
+                string Position = exerciseNode.GetElementsByTagName("Position")[0].InnerText;
                 if (FileTxtExist(fileName)) //Nếu file chứa nội dung có tồn tại thì thêm vào danh sách, còn nếu không thì thêm thông tin title của bài tập vào danh sách warningTitles
                 {
                     text = ReadTextFromTxt(fileName);
-                    DTO_Exercise exercise = new DTO_Exercise("Paragraph", time, title, text);
+                    DTO_Exercise exercise = new DTO_Exercise("Paragraph", time, title, text, fileName, int.Parse(Timeleft), int.Parse(Position), int.Parse(Star));
                     exercises.Add(exercise);
                 }
                 else
@@ -127,17 +124,33 @@ namespace DAO
             XmlElement timeNode = xd.CreateElement("Time");
             XmlText timeText = xd.CreateTextNode(exercise.Time.ToString());
 
+            XmlElement TimeleftNode = xd.CreateElement("Timeleft");
+            XmlText TimeleftText = xd.CreateTextNode(exercise.Timeleft.ToString());
+            XmlElement StarNode = xd.CreateElement("Star");
+            XmlText StarText = xd.CreateTextNode(exercise.Star.ToString());
+            XmlElement PositionNode = xd.CreateElement("Position");
+            XmlText PositionText = xd.CreateTextNode(exercise.Position.ToString());
+
+
             XmlElement fileNameNode = xd.CreateElement("FileName");
-            string fileName = Guid.NewGuid().ToString() + ".txt";
-            XmlText fileNameText = xd.CreateTextNode(fileName);
+            //string fileName = Guid.NewGuid().ToString() + ".txt";
+            XmlText fileNameText = xd.CreateTextNode(exercise.FileName);
 
             titleNode.AppendChild(titleText);
             fileNameNode.AppendChild(fileNameText);
             timeNode.AppendChild(timeText);
 
+            TimeleftNode.AppendChild(TimeleftText);
+            StarNode.AppendChild(StarText);
+            PositionNode.AppendChild(PositionText);
+
             exerciseNode.AppendChild(titleNode);
             exerciseNode.AppendChild(timeNode);
             exerciseNode.AppendChild(fileNameNode);
+
+            exerciseNode.AppendChild(TimeleftNode);
+            exerciseNode.AppendChild(StarNode);
+            exerciseNode.AppendChild(PositionNode);
 
             xd.DocumentElement.AppendChild(exerciseNode);
 
@@ -145,7 +158,48 @@ namespace DAO
             xd.Save(exerciseXmlFilePath);
 
             //Tạo file chứa nội dung bài tập
-            CreateTxtFile(fileName, exercise.ExerciseText.ToArray());
+            CreateTxtFile(exercise.FileName, exercise.ExerciseText.ToArray());
+        }
+        static public bool UpdateExercise(DTO_Exercise exercise)
+        {
+            bool result = false;
+            try
+            {
+                XmlDocument xd = new XmlDocument();
+                FileStream rfile = new FileStream(exerciseXmlFilePath, FileMode.Open);
+                xd.Load(rfile);
+
+                List<DTO_Exercise> exercises = new List<DTO_Exercise>();
+                XmlNodeList exerciseNodeList = xd.GetElementsByTagName("Exercise"); // Tìm danh sách các bài tập
+
+                string title;
+                int time;
+                List<string> text;
+
+                foreach (XmlElement exerciseNode in exerciseNodeList)
+                {
+                    if(exerciseNode.GetElementsByTagName("FileName")[0].InnerText == exercise.FileName)
+                    {
+                        exerciseNode.GetElementsByTagName("Title")[0].InnerText = exercise.Title;
+                        exerciseNode.GetElementsByTagName("Time")[0].InnerText = exercise.Time.ToString();
+                        exerciseNode.GetElementsByTagName("Timeleft")[0].InnerText = exercise.Timeleft.ToString();
+                        exerciseNode.GetElementsByTagName("Star")[0].InnerText = exercise.Star.ToString();
+                        exerciseNode.GetElementsByTagName("Position")[0].InnerText = exercise.Position.ToString();
+                    }
+                    
+
+                }
+
+                rfile.Close();
+                xd.Save(exerciseXmlFilePath);
+                result = true;
+            }
+            catch (Exception ex)
+            {
+                result = true;
+            }
+            
+            return result;
         }
 
         static public void DeleteExercise (string title)

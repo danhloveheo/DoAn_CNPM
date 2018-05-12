@@ -27,6 +27,7 @@ namespace Project_LTDM
             this.khoaHoc1.btnC2Click += new EventHandler(khoaHoc_btnC2Click);
             this.khoaHoc1.btnC3Click += new EventHandler(khoaHoc_btnC3Click);
             this.khoaHoc1.btnC4Click += new EventHandler(khoaHoc_btnC4Click);
+            Global.Global.ExerciseList = BUS_Exercise.FindAllExercise();
         }
 
         private void button2_Click(object sender, EventArgs e)

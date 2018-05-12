@@ -139,15 +139,10 @@ namespace BUS
             return tag.lesson.Name;
         }
 
-        public static List<string> SearchTypingInfo (object sender, ref string exerciseType, ref int time)
+        public static DTO_Exercise SearchTypingInfo(object sender)
         {
             DTO_Exercise exercise = (DTO_Exercise)(((Control)sender).Tag); //Lấy đối tượng DTO_Exercise đc lưu trong tag của label đã nhấn vào
-
-            exerciseType = exercise.ExerciseType;
-            time = exercise.Time;
-            List<string> exerciseText = exercise.ExerciseText;
-
-            return exerciseText;
+            return exercise;
         }
 
         static void ChangeColor(object sender, EventArgs e)

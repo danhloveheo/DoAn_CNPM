@@ -107,17 +107,18 @@
             this.button59 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.lbTimer = new System.Windows.Forms.Label();
             this.picwatch = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbStatus = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.pn_RH.SuspendLayout();
             this.pn_LH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.pn_Keys.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picwatch)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,6 +132,7 @@
             this.btn_Finger0.TabIndex = 91;
             this.btn_Finger0.UseVisualStyleBackColor = false;
             this.btn_Finger0.Visible = false;
+            this.btn_Finger0.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btn_Finger2
             // 
@@ -142,6 +144,7 @@
             this.btn_Finger2.TabIndex = 91;
             this.btn_Finger2.UseVisualStyleBackColor = false;
             this.btn_Finger2.Visible = false;
+            this.btn_Finger2.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btn_Finger7
             // 
@@ -153,6 +156,7 @@
             this.btn_Finger7.TabIndex = 91;
             this.btn_Finger7.UseVisualStyleBackColor = false;
             this.btn_Finger7.Visible = false;
+            this.btn_Finger7.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btn_Finger9
             // 
@@ -164,6 +168,7 @@
             this.btn_Finger9.TabIndex = 91;
             this.btn_Finger9.UseVisualStyleBackColor = false;
             this.btn_Finger9.Visible = false;
+            this.btn_Finger9.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btn_Finger8
             // 
@@ -175,6 +180,7 @@
             this.btn_Finger8.TabIndex = 91;
             this.btn_Finger8.UseVisualStyleBackColor = false;
             this.btn_Finger8.Visible = false;
+            this.btn_Finger8.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btn_Finger5
             // 
@@ -186,6 +192,7 @@
             this.btn_Finger5.TabIndex = 91;
             this.btn_Finger5.UseVisualStyleBackColor = false;
             this.btn_Finger5.Visible = false;
+            this.btn_Finger5.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btn_Finger1
             // 
@@ -197,6 +204,7 @@
             this.btn_Finger1.TabIndex = 91;
             this.btn_Finger1.UseVisualStyleBackColor = false;
             this.btn_Finger1.Visible = false;
+            this.btn_Finger1.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btn_Finger4
             // 
@@ -208,6 +216,7 @@
             this.btn_Finger4.TabIndex = 91;
             this.btn_Finger4.UseVisualStyleBackColor = false;
             this.btn_Finger4.Visible = false;
+            this.btn_Finger4.Click += new System.EventHandler(this.DismissFocus);
             // 
             // pn_stringKeys
             // 
@@ -243,6 +252,7 @@
             this.btn_Finger6.TabIndex = 91;
             this.btn_Finger6.UseVisualStyleBackColor = false;
             this.btn_Finger6.Visible = false;
+            this.btn_Finger6.Click += new System.EventHandler(this.DismissFocus);
             // 
             // pn_LH
             // 
@@ -268,6 +278,7 @@
             this.btn_Finger3.TabIndex = 91;
             this.btn_Finger3.UseVisualStyleBackColor = false;
             this.btn_Finger3.Visible = false;
+            this.btn_Finger3.Click += new System.EventHandler(this.DismissFocus);
             // 
             // pictureBox1
             // 
@@ -383,6 +394,7 @@
             this.button4.Tag = "64,50";
             this.button4.Text = "@\r\n2";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button3
             // 
@@ -395,6 +407,7 @@
             this.button3.Tag = "35,51";
             this.button3.Text = "#\r\n3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button2
             // 
@@ -407,6 +420,7 @@
             this.button2.Tag = "36,52";
             this.button2.Text = "$\r\n4";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button1
             // 
@@ -419,6 +433,7 @@
             this.button1.Tag = "37,53";
             this.button1.Text = "%\r\n5";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btn6
             // 
@@ -431,6 +446,7 @@
             this.btn6.Tag = "94,54";
             this.btn6.Text = "^\r\n6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btng
             // 
@@ -443,6 +459,7 @@
             this.btng.Tag = "71,103";
             this.btng.Text = "g";
             this.btng.UseVisualStyleBackColor = true;
+            this.btng.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button8
             // 
@@ -455,6 +472,7 @@
             this.button8.Tag = "42,56";
             this.button8.Text = "*\r\n8";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button17
             // 
@@ -467,6 +485,7 @@
             this.button17.Tag = "96,126";
             this.button17.Text = "~\r\n`";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button33
             // 
@@ -478,6 +497,7 @@
             this.button33.TabIndex = 25;
             this.button33.Text = "Tab";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button18
             // 
@@ -490,6 +510,7 @@
             this.button18.Tag = "33,49";
             this.button18.Text = "!\r\n1";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button49
             // 
@@ -501,6 +522,7 @@
             this.button49.TabIndex = 27;
             this.button49.Text = "Caps";
             this.button49.UseVisualStyleBackColor = true;
+            this.button49.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnShift
             // 
@@ -512,6 +534,7 @@
             this.btnShift.TabIndex = 29;
             this.btnShift.Text = "Shift";
             this.btnShift.UseVisualStyleBackColor = true;
+            this.btnShift.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button74
             // 
@@ -523,6 +546,7 @@
             this.button74.TabIndex = 100;
             this.button74.Text = "Ctrl";
             this.button74.UseVisualStyleBackColor = true;
+            this.button74.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnq
             // 
@@ -535,6 +559,7 @@
             this.btnq.Tag = "81,113";
             this.btnq.Text = "q";
             this.btnq.UseVisualStyleBackColor = true;
+            this.btnq.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button81
             // 
@@ -546,6 +571,7 @@
             this.button81.TabIndex = 31;
             this.button81.Text = "Ctrl ";
             this.button81.UseVisualStyleBackColor = true;
+            this.button81.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button57
             // 
@@ -556,6 +582,7 @@
             this.button57.Size = new System.Drawing.Size(57, 44);
             this.button57.TabIndex = 54;
             this.button57.UseVisualStyleBackColor = true;
+            this.button57.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button44
             // 
@@ -567,6 +594,7 @@
             this.button44.TabIndex = 53;
             this.button44.Text = "Alt";
             this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btna
             // 
@@ -579,6 +607,7 @@
             this.btna.Tag = "65,97";
             this.btna.Text = "a";
             this.btna.UseVisualStyleBackColor = true;
+            this.btna.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button56
             // 
@@ -590,6 +619,7 @@
             this.button56.TabIndex = 52;
             this.button56.Text = "Shift";
             this.button56.UseVisualStyleBackColor = true;
+            this.button56.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnw
             // 
@@ -602,6 +632,7 @@
             this.btnw.Tag = "87,119";
             this.btnw.Text = "w";
             this.btnw.UseVisualStyleBackColor = true;
+            this.btnw.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button43
             // 
@@ -614,6 +645,7 @@
             this.button43.Tag = "47,63";
             this.button43.Text = "?\r\n/";
             this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button82
             // 
@@ -624,6 +656,7 @@
             this.button82.Size = new System.Drawing.Size(65, 44);
             this.button82.TabIndex = 1;
             this.button82.UseVisualStyleBackColor = true;
+            this.button82.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button30
             // 
@@ -636,6 +669,7 @@
             this.button30.Tag = "46,62";
             this.button30.Text = ">\r\n.";
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button24
             // 
@@ -648,6 +682,7 @@
             this.button24.Tag = "44,60";
             this.button24.Text = "<\r\n,";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btns
             // 
@@ -660,6 +695,7 @@
             this.btns.Tag = "83,115";
             this.btns.Text = "s";
             this.btns.UseVisualStyleBackColor = true;
+            this.btns.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnm
             // 
@@ -672,6 +708,7 @@
             this.btnm.Tag = "77,109";
             this.btnm.Text = "m";
             this.btnm.UseVisualStyleBackColor = true;
+            this.btnm.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnz
             // 
@@ -684,6 +721,7 @@
             this.btnz.Tag = "90,122";
             this.btnz.Text = "z";
             this.btnz.UseVisualStyleBackColor = true;
+            this.btnz.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnn
             // 
@@ -696,6 +734,7 @@
             this.btnn.Tag = "78,110";
             this.btnn.Text = "n";
             this.btnn.UseVisualStyleBackColor = true;
+            this.btnn.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btne
             // 
@@ -708,6 +747,7 @@
             this.btne.Tag = "69,101";
             this.btne.Text = "e";
             this.btne.UseVisualStyleBackColor = true;
+            this.btne.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnb
             // 
@@ -720,6 +760,7 @@
             this.btnb.Tag = "66,98";
             this.btnb.Text = "b";
             this.btnb.UseVisualStyleBackColor = true;
+            this.btnb.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button83
             // 
@@ -731,6 +772,7 @@
             this.button83.TabIndex = 11;
             this.button83.Text = "Alt";
             this.button83.UseVisualStyleBackColor = true;
+            this.button83.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button48
             // 
@@ -743,6 +785,7 @@
             this.button48.Tag = "13";
             this.button48.Text = "Enter";
             this.button48.UseVisualStyleBackColor = true;
+            this.button48.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button42
             // 
@@ -755,6 +798,7 @@
             this.button42.Tag = "39,34";
             this.button42.Text = "\"\r\n\'";
             this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnd
             // 
@@ -767,6 +811,7 @@
             this.btnd.Tag = "68,100";
             this.btnd.Text = "d";
             this.btnd.UseVisualStyleBackColor = true;
+            this.btnd.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button29
             // 
@@ -779,6 +824,7 @@
             this.button29.Tag = "59,58";
             this.button29.Text = ":\r\n;";
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnl
             // 
@@ -791,6 +837,7 @@
             this.btnl.Tag = "76,108";
             this.btnl.Text = "l";
             this.btnl.UseVisualStyleBackColor = true;
+            this.btnl.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnx
             // 
@@ -803,6 +850,7 @@
             this.btnx.Tag = "88,120";
             this.btnx.Text = "x";
             this.btnx.UseVisualStyleBackColor = true;
+            this.btnx.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnk
             // 
@@ -815,6 +863,7 @@
             this.btnk.Tag = "75,107";
             this.btnk.Text = "k";
             this.btnk.UseVisualStyleBackColor = true;
+            this.btnk.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnr
             // 
@@ -827,6 +876,7 @@
             this.btnr.Tag = "82,114";
             this.btnr.Text = "r";
             this.btnr.UseVisualStyleBackColor = true;
+            this.btnr.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnj
             // 
@@ -839,6 +889,7 @@
             this.btnj.Tag = "74,106";
             this.btnj.Text = "j";
             this.btnj.UseVisualStyleBackColor = true;
+            this.btnj.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnspace
             // 
@@ -851,6 +902,7 @@
             this.btnspace.Tag = "32";
             this.btnspace.Text = "____________";
             this.btnspace.UseVisualStyleBackColor = true;
+            this.btnspace.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnh
             // 
@@ -863,6 +915,7 @@
             this.btnh.Tag = "72,104";
             this.btnh.Text = "h";
             this.btnh.UseVisualStyleBackColor = true;
+            this.btnh.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnt
             // 
@@ -875,6 +928,7 @@
             this.btnt.Tag = "84,116";
             this.btnt.Text = "t";
             this.btnt.UseVisualStyleBackColor = true;
+            this.btnt.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button60
             // 
@@ -887,6 +941,7 @@
             this.button60.Tag = "92,124";
             this.button60.Text = "|\r\n\\";
             this.button60.UseVisualStyleBackColor = true;
+            this.button60.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnf
             // 
@@ -899,6 +954,7 @@
             this.btnf.Tag = "70,102";
             this.btnf.Text = "f";
             this.btnf.UseVisualStyleBackColor = true;
+            this.btnf.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button47
             // 
@@ -911,6 +967,7 @@
             this.button47.Tag = "93,125";
             this.button47.Text = "}\r\n]";
             this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button41
             // 
@@ -923,6 +980,7 @@
             this.button41.Tag = "91,123";
             this.button41.Text = "{\r\n[";
             this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnc
             // 
@@ -935,6 +993,7 @@
             this.btnc.Tag = "67,99";
             this.btnc.Text = "c";
             this.btnc.UseVisualStyleBackColor = true;
+            this.btnc.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnp
             // 
@@ -947,6 +1006,7 @@
             this.btnp.Tag = "80,112";
             this.btnp.Text = "p";
             this.btnp.UseVisualStyleBackColor = true;
+            this.btnp.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnv
             // 
@@ -959,6 +1019,7 @@
             this.btnv.Tag = "86,118";
             this.btnv.Text = "v";
             this.btnv.UseVisualStyleBackColor = true;
+            this.btnv.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btno
             // 
@@ -971,6 +1032,7 @@
             this.btno.Tag = "79,111";
             this.btno.Text = "o";
             this.btno.UseVisualStyleBackColor = true;
+            this.btno.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btni
             // 
@@ -983,6 +1045,7 @@
             this.btni.Tag = "73,105";
             this.btni.Text = "i";
             this.btni.UseVisualStyleBackColor = true;
+            this.btni.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button98
             // 
@@ -995,6 +1058,7 @@
             this.button98.Tag = "38,55";
             this.button98.Text = "&&\r\n7";
             this.button98.UseVisualStyleBackColor = true;
+            this.button98.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btnu
             // 
@@ -1007,6 +1071,7 @@
             this.btnu.Tag = "85,117";
             this.btnu.Text = "u";
             this.btnu.UseVisualStyleBackColor = true;
+            this.btnu.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button14
             // 
@@ -1019,6 +1084,7 @@
             this.button14.Tag = "40,57";
             this.button14.Text = "(\r\n9";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.DismissFocus);
             // 
             // btny
             // 
@@ -1031,6 +1097,7 @@
             this.btny.Tag = "89,121";
             this.btny.Text = "y";
             this.btny.UseVisualStyleBackColor = true;
+            this.btny.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button27
             // 
@@ -1043,6 +1110,7 @@
             this.button27.Tag = "41,48";
             this.button27.Text = ")\r\n0";
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button59
             // 
@@ -1055,6 +1123,7 @@
             this.button59.Tag = "8";
             this.button59.Text = "<-";
             this.button59.UseVisualStyleBackColor = true;
+            this.button59.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button40
             // 
@@ -1067,6 +1136,7 @@
             this.button40.Tag = "45,95";
             this.button40.Text = "__\r\n-";
             this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.DismissFocus);
             // 
             // button46
             // 
@@ -1079,19 +1149,7 @@
             this.button46.Tag = "61,43";
             this.button46.Text = "+\r\n=\r\n";
             this.button46.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1347, 395);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(72, 72);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox6.TabIndex = 110;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Visible = false;
+            this.button46.Click += new System.EventHandler(this.DismissFocus);
             // 
             // timer1
             // 
@@ -1132,20 +1190,47 @@
             this.picwatch.TabIndex = 120;
             this.picwatch.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(701, 410);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 121;
+            this.label1.Text = "label1";
+            // 
+            // lbStatus
+            // 
+            this.lbStatus.AutoSize = true;
+            this.lbStatus.Location = new System.Drawing.Point(266, 402);
+            this.lbStatus.Name = "lbStatus";
+            this.lbStatus.Size = new System.Drawing.Size(48, 17);
+            this.lbStatus.TabIndex = 126;
+            this.lbStatus.Text = "Status";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(264, 427);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(336, 41);
+            this.progressBar1.TabIndex = 125;
+            // 
             // Frm_LuyenTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 780);
+            this.Controls.Add(this.lbStatus);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.lbTimer);
             this.Controls.Add(this.picwatch);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pn_Keys);
             this.Controls.Add(this.pn_stringKeys);
             this.Controls.Add(this.pn_RH);
             this.Controls.Add(this.pn_LH);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_LuyenTap";
@@ -1159,7 +1244,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pn_Keys.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picwatch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1245,10 +1329,12 @@
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button button46;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label lbTimer;
         private System.Windows.Forms.PictureBox picwatch;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbStatus;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

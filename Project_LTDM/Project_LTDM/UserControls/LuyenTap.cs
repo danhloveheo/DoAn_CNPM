@@ -81,6 +81,6 @@ namespace Project_LTDM.UserControls
                 Frm_LuyenTap frm = new Frm_LuyenTap(txtrandomkeys.Text);
                 frm.Show();
             }
-        }       
+        }      
     }
 }

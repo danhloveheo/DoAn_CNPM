@@ -10,25 +10,34 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Text.RegularExpressions;
+using DTO;
 using BUS;
 
 namespace Project_LTDM
 {
     public partial class Frm_Typing : Form
     {
+        bool pause = false;
         Timer aTimer = new Timer();
         //string[] Chuoi = new string[11];
         Button btn_oldHighLight = new Button();
         Button btn_oldHighLight1 = new Button();
-
-        int v = 0;
+        DTO_Exercise objectmodel;
+        bool finished = false;
         int PositionKey = 0;
+
+        //Dùng cho ProgressBar
+        int numSentence = 0; //Số câu trong đoạn văn.
+        int curSentence = 0; //Stt câu hiện tại.
 
         string type;
         int time;
         int timeLeft;
-        List<string> exerciseText = new List<string>();
         int location = 0;
+        string NameFile;
+        string Title;
+        List<string> exerciseText = new List<string>();
+        
 
         public Frm_Typing()
         {
@@ -43,14 +52,39 @@ namespace Project_LTDM
             location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
         }
 
-        public Frm_Typing(List<string> text, string type, int t)
+        //public Frm_Typing(List<string> text, int t)
+        //{
+        //    //TODO: Thay đổi kích thước font chữ trong RTB_String theo từng loại
+
+        //    InitializeComponent();
+        //    time = t;
+        //    timeLeft = t;
+        //    exerciseText = text;
+        //    if (time < 3600)
+        //    {
+        //        lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
+        //    }
+        //    else
+        //    {
+        //        lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"hh\:mm\:ss");
+        //    }
+        //    RTB_String.Lines = exerciseText.ToArray();
+
+        //    //Tìm index ký tự cuối cùng được hiển thị để scroll
+        //    location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
+        //}
+        public Frm_Typing(DTO_Exercise ob)
         {
             InitializeComponent();
-            time = t;
-            timeLeft = t;
-            this.type = type;
+            objectmodel = ob;
+            time = objectmodel.Timeleft;
+            Title = objectmodel.Title;
+            NameFile = objectmodel.FileName;
+            //exerciseText = objectmodel.ExerciseText;
+            //BUS.BUS_Typing.FindContent(ob, ref time, ref Title, ref NameFile,ref exerciseText);
+            this.type = objectmodel.ExerciseType;
+            
             //Thay đổi kích thước font chữ trong RTB_String theo từng loại
-
             switch (type)
             {
                 case "Word":
@@ -64,16 +98,17 @@ namespace Project_LTDM
                     break;
             }
 
-            //Xoá các ký tự trằng đầu và cuối dòng
-            foreach (string line in text)
+            //Xoá các ký tự trằng đầu và cuối đoạn văn, thêm ký hiệu "↵" vào cuối đoạn.
+            foreach (string line in objectmodel.ExerciseText)
             {
-                if (line.Trim() !="")
+                if (line.Trim() != "")
                 {
                     exerciseText.Add(line.Trim() + "↵");
                 }
 
             }
 
+            timeLeft = time;
             if (time < 3600)
             {
                 lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
@@ -83,13 +118,57 @@ namespace Project_LTDM
                 lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"hh\:mm\:ss");
             }
             RTB_String.Lines = exerciseText.ToArray();
+            PositionKey = ob.Position;
+
+            //Đếm số câu trong bài, dùng cho ProgressBar
+            if (objectmodel.IsLesson == false)
+            {
+                for (int i = 0; i < RTB_String.Text.Length; i++)
+                {
+                    if (RTB_String.Text[i] == '.')
+                    {
+                        numSentence++;
+                        if (i < PositionKey)
+                        {
+                            curSentence++;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < RTB_String.Text.Length; i++)
+                {
+                    if (RTB_String.Text[i] == '↵')
+                    {
+                        numSentence++;
+                    }
+                }
+            }
+
+
+            //Cập nhật ProgressBar
+            progressBar1.Maximum = numSentence;
+            lbStatus.Text = "Progress: " + curSentence + "/" + numSentence + " sentence.";
+
+            //Nếu form dùng hiển thị bài học thì ẩn nút save
+            if (objectmodel.IsLesson == true)
+            {
+                btn_save.Hide();
+            }
 
             //Tìm index ký tự cuối cùng được hiển thị để scroll
             location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
+            LoadKeyPressed();
+            ScrollText();
         }
-
+        
         private void Frm_Typing_Load(object sender, EventArgs e)
         {
+            // Start the BackgroundWorker.
+            backgroundWorker1.RunWorkerAsync();
+
+            finished = false;
             aTimer.Tick += ATimer_Tick;
             aTimer.Interval = 3000;
             // danh cho check van ban
@@ -125,7 +204,11 @@ namespace Project_LTDM
             btn_oldHighLight.BackColor = Color.Red;
             aTimer.Stop();
         }
-
+        void LoadKeyPressed()
+        {
+            RTB_String.Select(0, PositionKey);
+            RTB_String.SelectionColor = Color.Green;
+        }
         private void HighLight(Button btn)
         {
             Normal(btn_oldHighLight);
@@ -346,16 +429,7 @@ namespace Project_LTDM
 
         private void Frm_Typing_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //Tự động scroll văn bản trong RTB_String khi đánh đến dòng cuối đang được hiển thị
-            if (PositionKey == location - 1 && location != RTB_String.Text.Length - 1)
-            {
-                //Xác định vị trí cần scroll
-                RTB_String.SelectionStart = location;
-                RTB_String.ScrollToCaret();
-
-                //Tìm index ký tự cuối cùng được hiển thị để scroll lần sau
-                location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
-            }
+            ScrollText();
 
             if (timer1.Enabled == false)
             {
@@ -369,9 +443,9 @@ namespace Project_LTDM
 
             if (keyText == '↵')
             {
-                compare = 8629;    
+                compare = 8629;
             }
-            
+
             //string stringlabel = key.ToString().ToLower();
             if (e.KeyChar > 31 && e.KeyChar < 127 || e.KeyChar == 13)
             {
@@ -435,6 +509,11 @@ namespace Project_LTDM
                         RTB_String.Select(PositionKey, 1);
                         RTB_String.SelectionColor = Color.Green;
 
+                        if ((objectmodel.IsLesson == true &&  keyText == '↵') || (objectmodel.IsLesson == false && keyText == '.')) //Nếu cuối câu.
+                        {
+                            ChangeInfo();
+                        }
+
                         switch (type)
                         {
                             case "Word":
@@ -457,8 +536,7 @@ namespace Project_LTDM
                             //{
                             //    HighLight((Button)ctn);
                             //    SetFingerVisible(RTB_String.Text[z].ToString().ToLower());
-                            //
-
+                            //}
                             while (ctn == null && PositionKey < RTB_String.Text.Length)
                             {
                                 PositionKey++;
@@ -498,18 +576,30 @@ namespace Project_LTDM
 
                     if (PositionKey == RTB_String.Text.Length)
                     {
-                        v = 1;
+                        finished = true;
                     }
                 }
+            }
+        }
+
+        private void ScrollText()
+        {
+            //Tự động scroll văn bản trong RTB_String khi đánh đến dòng cuối đang được hiển thị
+            if (PositionKey == location - 1 && location != RTB_String.Text.Length - 1)
+            {
+                //Xác định vị trí cần scroll
+                RTB_String.SelectionStart = location;
+                RTB_String.ScrollToCaret();
+
+                //Tìm index ký tự cuối cùng được hiển thị để scroll lần sau
+                location = RTB_String.GetCharIndexFromPosition(new Point(RTB_String.ClientSize.Width, RTB_String.ClientSize.Height));
             }
         }
 
         int dongho = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            SoundPlayer spwinner = new SoundPlayer(@"sound\winner.wav");
-
-            if (v == 0)
+            if (finished == false)
             {
                 if (timeLeft != 0)
                 {
@@ -537,62 +627,118 @@ namespace Project_LTDM
                 }
                 else
                 {
-                    timer1.Stop();
-                    spwinner.Play();
-
-                    Frm_Rating rating = new Frm_Rating(1);
-                    rating.ShowDialog(this);
-
-                    this.Close();
+                    FinishTyping(1);
                 }
 
             }
-            else if (v == 1)
+            else if (finished == true)
             {
-                timer1.Stop();
-
                 if (timeLeft < time * 0.3)
                 {
-                    spwinner.Play();
-
-                    Frm_Rating rating = new Frm_Rating(1);
-                    rating.ShowDialog(this);
+                    FinishTyping(1);
                 }
 
                 else if (timeLeft >= time * 0.3 && timeLeft < time * 0.5)
                 {
-                    spwinner.Play();
-
-                    Frm_Rating rating = new Frm_Rating(2);
-                    rating.ShowDialog(this);
+                    FinishTyping(2);
                 }
 
                 else if (timeLeft >= time * 0.5 && timeLeft < time * 0.7)
                 {
-                    spwinner.Play();
-
-                    Frm_Rating rating = new Frm_Rating(3);
-                    rating.ShowDialog(this);
+                    FinishTyping(3);
                 }
 
                 else if (timeLeft >= time * 0.7 && timeLeft < time * 0.9)
                 {
-                    spwinner.Play();
-
-                    Frm_Rating rating = new Frm_Rating(4);
-                    rating.ShowDialog(this);
+                    FinishTyping(4);
                 }
 
                 else if (timeLeft > time * 0.9)
                 {
-                    spwinner.Play();
-
-                    Frm_Rating rating = new Frm_Rating(5);
-                    rating.ShowDialog(this);
+                    FinishTyping(5);
                 }
+            }
+        }
 
+        private void FinishTyping(int star)
+        {
+            timer1.Stop();
+            SoundPlayer spwinner = new SoundPlayer(@"sound\winner.wav");
+            spwinner.Play();
+
+            Frm_Rating rating = new Frm_Rating(star);
+            rating.ShowDialog(this);
+
+            if (BUS.BUS_Typing.SaveDataPause(objectmodel, timeLeft, PositionKey, star) == true)
+            {
+                MessageBox.Show("Save successful");
                 this.Close();
             }
+            else
+            {
+                MessageBox.Show("Save Fail");
+            }
+
+            this.Close();
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            if(BUS.BUS_Typing.SaveDataPause(objectmodel, timeLeft, PositionKey, 0)==true)
+            {
+                MessageBox.Show("Save successful");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Save Fail");
+            }
+            label1.Focus();
+        }
+
+        private void btnPause_Continue_Click(object sender, EventArgs e)
+        {
+            if(pause==false)//pause
+            {
+                pause = true;
+                btnPause_Continue.Text = "Continue";
+                timer1.Stop();
+                pn_Keys.Enabled = false;
+            }
+            else
+            {
+                pause = false;
+                btnPause_Continue.Text = "Pause";
+                timer1.Start();
+                pn_Keys.Enabled = true;
+            }
+            label1.Focus();
+        }
+
+        //Xoá Focus để nhận phím Enter
+        private void DismissFocus (object sender, EventArgs e)
+        {
+            label1.Focus();
+        }
+
+        //Thay đổi thông báo số dòng còn lại
+        private void ChangeInfo ()
+        {
+            progressBar1.Increment(1);
+            lbStatus.Text = "Progress: " + progressBar1.Value + "/" + numSentence + " sentence.";
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            // set the progress bar value and report it to the main UI
+            int i = curSentence; // value between 0~100
+            backgroundWorker1.ReportProgress(i);
+        }
+
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            // Change the value of the ProgressBar to the BackgroundWorker progress.
+            progressBar1.Value = e.ProgressPercentage;
         }
     }
 }

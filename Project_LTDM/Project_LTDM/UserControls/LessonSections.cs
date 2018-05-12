@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
+using DTO;
 
 namespace Project_LTDM.UserControls
 {
@@ -85,21 +86,20 @@ namespace Project_LTDM.UserControls
 
         public static void ShowTypingForm (object sender, EventArgs e)
         {
-            string exerciseType = "";
-            int time = 0;
-            List<string> exerciseText = BUS_UserControls.SearchTypingInfo(sender, ref exerciseType, ref time);
+            
+            DTO_Exercise exerciseText = BUS_UserControls.SearchTypingInfo(sender);
 
             Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
 
-            if (exerciseType == "Key")
+            if (exerciseText.ExerciseType == "Key")
             {
-                Frm_FingerExercise exercise = new Frm_FingerExercise(exerciseText, time);
+                Frm_FingerExercise exercise = new Frm_FingerExercise(exerciseText);
                 exercise.ShowDialog(form);
 
             }
             else
             {
-                Frm_Typing exercise = new Frm_Typing(exerciseText, exerciseType, time);
+                Frm_Typing exercise = new Frm_Typing(exerciseText);
                 exercise.ShowDialog(form);
             }
         }

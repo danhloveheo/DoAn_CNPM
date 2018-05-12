@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Text.RegularExpressions;
+using DTO;
 using BUS;
 
 namespace Project_LTDM
@@ -27,6 +28,9 @@ namespace Project_LTDM
         List<string> exerciseText = new List<string>(); //Chứa nội dung bài tập đánh máy
         string text = ""; //Chứa dòng đang xét
 
+        //Dùng cho ProgressBar
+        int numSentence = 0; //Số câu trong đoạn văn.
+
         int v = 0;
         int PositionKey = 0;
         public Frm_FingerExercise()
@@ -41,6 +45,22 @@ namespace Project_LTDM
             time = t;
             timeLeft = t;
             lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
+        }
+
+        public Frm_FingerExercise(DTO_Exercise ob)
+        {
+            InitializeComponent();
+            exerciseText = ob.ExerciseText;
+            time = ob.Time;
+            timeLeft = time;
+            lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
+            
+            //Đếm số câu trong bài, dùng cho ProgressBar
+            numSentence = exerciseText.Count;
+
+            //Cập nhật ProgressBar
+            progressBar1.Maximum = numSentence;
+            lbStatus.Text = "Progress: 0/" + numSentence + " sentence.";
         }
 
         public void ShowKeys (int line) //Chuyển dòng trong file bài tập sang các label trên pn_stringKeys  
@@ -326,6 +346,7 @@ namespace Project_LTDM
         private void SetFingerVisible(string skey)
         {
             skey = skey.ToLower();
+            
             int idex = -2;
             if (Finger.Left_NgonUt.FindIndex(s => s == skey) != -1)
                 idex = 0;
@@ -437,7 +458,7 @@ namespace Project_LTDM
                 int iAscii = e.KeyChar;
                 Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
                 if (ctn != null)
-                {
+                {                 
                     if (iAscii == compare)
                     {
                         if (e.KeyChar.ToString() == @"\")
@@ -485,12 +506,12 @@ namespace Project_LTDM
                             ctn = FindControlByTag(pn_Keys, iAscii);
                             Control ctnspr = FindControl(pn_stringKeys, "Separator" + PositionKey);
 
-                            /*while (ctn == null && PositionKey < text.Length)
+                            while (ctn == null && PositionKey < text.Length)
                             {
                                 PositionKey++;
                                 iAscii = text[PositionKey];
                                 ctn = FindControlByTag(pn_Keys, iAscii);
-                            }*/
+                            }
 
                             HighLight((Button)ctn);
                             HighLightShift(text[PositionKey]);
@@ -510,6 +531,7 @@ namespace Project_LTDM
                     }
                     if (PositionKey == text.Length) 
                     {
+                        ChangeInfo();
                         /*Nếu PositionKey đã ở cuối dòng nhưng vẫn còn dòng trong bài tập
                          * thì xoá toàn bộ control trong pn_stringKeys, sau đó hiển thị các
                          * control mới, trả PositionKey về vị trí đầu dòng mới  */
@@ -613,9 +635,16 @@ namespace Project_LTDM
             }
         }
 
-        private void lbTimer_Click(object sender, EventArgs e)
+        private void DismissFocus(object sender, EventArgs e)
         {
+            label1.Focus();
+        }
 
+        //Thay đổi thông báo số dòng còn lại
+        private void ChangeInfo()
+        {
+            progressBar1.Increment(1);
+            lbStatus.Text = "Progress: " + progressBar1.Value + "/" + numSentence + " sentence.";
         }
     }
 }

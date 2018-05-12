@@ -21,6 +21,9 @@ namespace Project_LTDM
         Button btn_oldHighLight1 = new Button();
         Panel label_oldDefault = new Panel();
 
+        //Dùng cho ProgressBar
+        int numSentence = 0; //Số câu trong đoạn văn.
+
         List<string> exerciseText = new List<string>(); //Chứa nội dung bài tập đánh máy
         string text = ""; ////Chứa dòng đang xét
         int v = 0;
@@ -36,12 +39,20 @@ namespace Project_LTDM
         public Frm_LuyenTap(string listKeys)
         {
             InitializeComponent();
+
             lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
-            
+
             for (int i = 0; i < 3; i++)
             {
                 exerciseText.Add(RandomStringFollowList(listKeys));
             }
+
+            //Đếm số câu trong bài, dùng cho ProgressBar
+            numSentence = exerciseText.Count;
+
+            //Cập nhật ProgressBar
+            progressBar1.Maximum = numSentence;
+            lbStatus.Text = "Progress: 0/" + numSentence + " sentence.";
         }
 
         Random rnd = new Random();
@@ -222,7 +233,7 @@ namespace Project_LTDM
             aTimer.Stop();
         }
 
-       
+
         private void HighLight(Button btn)
         {
             Normal(btn_oldHighLight);
@@ -280,7 +291,7 @@ namespace Project_LTDM
         {
             lb.BackColor = SystemColors.Control;
         }
-     
+
         private Control FindControl(Control parent, string name)
         {
             // Check the parent.
@@ -333,7 +344,7 @@ namespace Project_LTDM
             // If we still haven't found it, it's not here.
             return null;
         }
-      
+
 
         private void SetFingerVisible(string skey)
         {
@@ -523,6 +534,7 @@ namespace Project_LTDM
                     }
                     if (PositionKey == text.Length)
                     {
+                        ChangeInfo();
                         /*Nếu PositionKey đã ở cuối dòng nhưng vẫn còn dòng trong bài tập
                          * thì xoá toàn bộ control trong pn_stringKeys, sau đó hiển thị các
                          * control mới, trả PositionKey về vị trí đầu dòng mới  */
@@ -624,6 +636,18 @@ namespace Project_LTDM
 
                 this.Close();
             }
+        }
+
+        private void DismissFocus(object sender, EventArgs e)
+        {
+            label1.Focus();
+        }
+
+        //Thay đổi thông báo số dòng còn lại
+        private void ChangeInfo()
+        {
+            progressBar1.Increment(1);
+            lbStatus.Text = "Progress: " + progressBar1.Value + "/" + numSentence + " sentence.";
         }
     }
 }

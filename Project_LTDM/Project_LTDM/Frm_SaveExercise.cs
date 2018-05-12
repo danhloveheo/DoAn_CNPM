@@ -104,6 +104,7 @@ namespace Project_LTDM
             else
             {
                 BUS_Exercise.AddExercise(txtName.Text, int.Parse(txtTime.Text), rtxtText.Lines);
+                Global.Global.ExerciseList = BUS_Exercise.FindAllExercise();
                 MessageBox.Show("Insert Exercise in database success!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }

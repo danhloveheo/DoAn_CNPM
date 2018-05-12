@@ -95,6 +95,7 @@
       <DependentUpon>Frm_Typing.cs</DependentUpon>
     </Compile>
     <Compile Include="Global\Finger.cs" />
+    <Compile Include="Global\Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControls\Information.cs">
@@ -211,6 +212,10 @@
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{2d329e2c-633a-4fbf-bb08-aeb4749cc6c9}</Project>
       <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{fa7f1b61-1d75-4270-aa85-92f716be328f}</Project>
+      <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

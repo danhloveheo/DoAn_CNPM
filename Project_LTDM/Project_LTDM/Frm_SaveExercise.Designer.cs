@@ -48,17 +48,19 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(13, 13);
+            this.lblName.Location = new System.Drawing.Point(10, 11);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(45, 17);
+            this.lblName.Size = new System.Drawing.Size(27, 13);
             this.lblName.TabIndex = 0;
-            this.lblName.Text = "Name";
+            this.lblName.Text = "Title";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(66, 13);
+            this.txtName.Location = new System.Drawing.Point(50, 11);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(185, 22);
+            this.txtName.Size = new System.Drawing.Size(240, 20);
             this.txtName.TabIndex = 1;
             this.txtName.Validating += new System.ComponentModel.CancelEventHandler(this.txtName_Validating);
             this.txtName.Validated += new System.EventHandler(this.txtName_Validated);
@@ -66,17 +68,19 @@
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(392, 13);
+            this.lblTime.Location = new System.Drawing.Point(294, 11);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(39, 17);
+            this.lblTime.Size = new System.Drawing.Size(30, 13);
             this.lblTime.TabIndex = 2;
             this.lblTime.Text = "Time";
             // 
             // txtTime
             // 
-            this.txtTime.Location = new System.Drawing.Point(437, 13);
+            this.txtTime.Location = new System.Drawing.Point(328, 11);
+            this.txtTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(185, 22);
+            this.txtTime.Size = new System.Drawing.Size(140, 20);
             this.txtTime.TabIndex = 3;
             this.txtTime.Validating += new System.ComponentModel.CancelEventHandler(this.txtTime_Validating);
             this.txtTime.Validated += new System.EventHandler(this.txtTime_Validated);
@@ -85,18 +89,20 @@
             // 
             this.lblText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblText.AutoSize = true;
-            this.lblText.Location = new System.Drawing.Point(13, 43);
+            this.lblText.Location = new System.Drawing.Point(10, 35);
+            this.lblText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(35, 17);
+            this.lblText.Size = new System.Drawing.Size(28, 13);
             this.lblText.TabIndex = 4;
             this.lblText.Text = "Text";
             // 
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Location = new System.Drawing.Point(531, 351);
+            this.btnOK.Location = new System.Drawing.Point(398, 285);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(56, 19);
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -106,9 +112,10 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(640, 351);
+            this.btnCancel.Location = new System.Drawing.Point(480, 285);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(56, 19);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -130,9 +137,10 @@
             // 
             this.rtxtText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rtxtText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtxtText.Location = new System.Drawing.Point(66, 41);
+            this.rtxtText.Location = new System.Drawing.Point(50, 33);
+            this.rtxtText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtxtText.Name = "rtxtText";
-            this.rtxtText.Size = new System.Drawing.Size(633, 304);
+            this.rtxtText.Size = new System.Drawing.Size(476, 248);
             this.rtxtText.TabIndex = 5;
             this.rtxtText.Text = "";
             this.rtxtText.Validating += new System.ComponentModel.CancelEventHandler(this.rtxtText_Validating);
@@ -140,11 +148,11 @@
             // 
             // Frm_SaveExercise
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(728, 386);
+            this.ClientSize = new System.Drawing.Size(546, 314);
             this.Controls.Add(this.rtxtText);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
@@ -153,6 +161,7 @@
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Frm_SaveExercise";
             this.Text = "Save Exercise";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_SaveExercise_FormClosing);

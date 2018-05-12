@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
-
+using DTO;
 namespace Project_LTDM.UserControls
 {
     public partial class LuyenText : UserControl
@@ -18,8 +18,8 @@ namespace Project_LTDM.UserControls
             InitializeComponent();
 
             //Tạo danh sách bài tập
-            List<Object> exerciseList = BUS_Exercise.FindAllExercise();
-            foreach (Object o in exerciseList)
+            //Global.Global.ExerciseList = BUS_Exercise.FindAllExercise();
+            foreach (Object o in Global.Global.ExerciseList)
             {
                 lbxExerciseList.Items.Add(o);
             }
@@ -32,7 +32,9 @@ namespace Project_LTDM.UserControls
         {
             Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
             int time = 0;
-            Frm_Typing exercise = new Frm_Typing(BUS_Exercise.FindContent(lbxExerciseList.SelectedItem, ref time), "Paragraph", time);
+            //Frm_Typing exercise = new Frm_Typing(BUS_Exercise.FindContent(lbxExerciseList.SelectedItem, ref time), time);
+            DTO_Exercise ob = lbxExerciseList.SelectedItem as DTO_Exercise;
+            Frm_Typing exercise = new Frm_Typing(lbxExerciseList.SelectedItem as DTO_Exercise);
             exercise.ShowDialog(form);
         }
 
@@ -46,8 +48,8 @@ namespace Project_LTDM.UserControls
             lbxExerciseList.Items.Clear();
             lbxExerciseList.Sorted = false;
 
-            List<Object> exerciseList = BUS_Exercise.FindAllExercise();
-            foreach (Object o in exerciseList)
+            List<DTO_Exercise> exerciseList = BUS_Exercise.FindAllExercise();
+            foreach (DTO_Exercise o in exerciseList)
             {
                 lbxExerciseList.Items.Add(o);
             }
@@ -68,8 +70,9 @@ namespace Project_LTDM.UserControls
                 //Refresh ListBox
                 lbxExerciseList.Items.Clear();
 
-                List<Object> exerciseList = BUS_Exercise.FindAllExercise();
-                foreach (Object o in exerciseList)
+                //List<DTO_Exercise> exerciseList = BUS_Exercise.FindAllExercise();
+                Global.Global.ExerciseList = BUS_Exercise.FindAllExercise();
+                foreach (DTO_Exercise o in Global.Global.ExerciseList)
                 {
                     lbxExerciseList.Items.Add(o);
                 }
