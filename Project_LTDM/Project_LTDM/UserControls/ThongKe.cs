@@ -37,13 +37,13 @@ namespace Project_LTDM.UserControls
                 ls.SubItems.Add(exerciseList[i].Star.ToString());
                 ls.SubItems.Add(exerciseList[i].Position.ToString());
                 ls.SubItems.Add(exerciseList[i].FileName);
-                if (exerciseList[i].Star == 0 && exerciseList[i].Timeleft > 0)// chua hoan thanh
+                if (exerciseList[i].Timeleft == exerciseList[i].Time)// chua lam
+                {
+                    ls.SubItems.Add("TODO"); 
+                }
+                else if (exerciseList[i].Star == 0 && exerciseList[i].Timeleft > 0 && exerciseList[i].Timeleft < exerciseList[i].Time)// chua hoan thanh
                 {
                     ls.SubItems.Add("Inprocess");
-                }
-                else if (exerciseList[i].Timeleft == exerciseList[i].Time)// chua lam
-                {
-                    ls.SubItems.Add("TODO");
                 }
                 else if (exerciseList[i].Star > 0)// hoan thanh
                 {
@@ -100,24 +100,6 @@ namespace Project_LTDM.UserControls
 
         private void lsv_tk_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if (lsv_tk.SelectedItems.Count == 0)
-            //    return;
-            //if(lsv_tk.SelectedItems[0].SubItems[5].Text != "0" && !string.IsNullOrWhiteSpace(lsv_tk.SelectedItems[0].SubItems[5].Text))
-            //{
-            //    string fileNameselect = lsv_tk.SelectedItems[0].SubItems[7].Text;
-            //    //string fileNameselect2 = lsv_tk.SelectedItems[0].SubItems["clFileName"].Text;
-            //    var exerciseTexts = Global.Global.ExerciseList.First(x => x.FileName == fileNameselect);
-            //    if (exerciseTexts != null)
-            //    {
-            //        Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
-
-            //        exerciseTexts.Timeleft = exerciseTexts.Time;
-            //        exerciseTexts.Star = 0;
-            //        exerciseTexts.Position = 0;
-            //        Frm_Typing exercise = new Frm_Typing(exerciseTexts);
-            //        exercise.ShowDialog(form);
-            //    }
-            //}
         }
     }
 }

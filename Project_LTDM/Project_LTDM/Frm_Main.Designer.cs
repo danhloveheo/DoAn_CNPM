@@ -219,7 +219,7 @@
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(1041, 77);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(23, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -231,12 +231,12 @@
             // 
             this.lbLogOut.AutoSize = true;
             this.lbLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbLogOut.Font = new System.Drawing.Font("Vinhan", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLogOut.ForeColor = System.Drawing.Color.White;
             this.lbLogOut.Location = new System.Drawing.Point(1024, 103);
             this.lbLogOut.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbLogOut.Name = "lbLogOut";
-            this.lbLogOut.Size = new System.Drawing.Size(65, 22);
+            this.lbLogOut.Size = new System.Drawing.Size(73, 20);
             this.lbLogOut.TabIndex = 14;
             this.lbLogOut.Text = "Log Out";
             this.lbLogOut.Click += new System.EventHandler(this.lbLogOut_Click);
@@ -245,12 +245,12 @@
             // 
             this.lbCurrentUser.AutoSize = true;
             this.lbCurrentUser.BackColor = System.Drawing.Color.Transparent;
-            this.lbCurrentUser.Font = new System.Drawing.Font("Vinhan", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCurrentUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCurrentUser.ForeColor = System.Drawing.Color.White;
             this.lbCurrentUser.Location = new System.Drawing.Point(929, 103);
             this.lbCurrentUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCurrentUser.Name = "lbCurrentUser";
-            this.lbCurrentUser.Size = new System.Drawing.Size(100, 22);
+            this.lbCurrentUser.Size = new System.Drawing.Size(109, 20);
             this.lbCurrentUser.TabIndex = 13;
             this.lbCurrentUser.Text = "Hello, Guest";
             // 
@@ -315,7 +315,7 @@
             // 
             this.khoaHoc1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.khoaHoc1.Location = new System.Drawing.Point(176, 130);
-            this.khoaHoc1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.khoaHoc1.Margin = new System.Windows.Forms.Padding(4);
             this.khoaHoc1.Name = "khoaHoc1";
             this.khoaHoc1.Size = new System.Drawing.Size(919, 543);
             this.khoaHoc1.TabIndex = 15;
@@ -324,7 +324,7 @@
             // 
             this.thongKe1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.thongKe1.Location = new System.Drawing.Point(176, 130);
-            this.thongKe1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.thongKe1.Margin = new System.Windows.Forms.Padding(4);
             this.thongKe1.Name = "thongKe1";
             this.thongKe1.Size = new System.Drawing.Size(919, 543);
             this.thongKe1.TabIndex = 14;
@@ -333,7 +333,7 @@
             // 
             this.information1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.information1.Location = new System.Drawing.Point(176, 130);
-            this.information1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.information1.Margin = new System.Windows.Forms.Padding(4);
             this.information1.Name = "information1";
             this.information1.Size = new System.Drawing.Size(919, 543);
             this.information1.TabIndex = 11;
@@ -343,7 +343,7 @@
             this.luyenTap1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(226)))), ((int)(((byte)(255)))));
             this.luyenTap1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.luyenTap1.Location = new System.Drawing.Point(176, 130);
-            this.luyenTap1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.luyenTap1.Margin = new System.Windows.Forms.Padding(4);
             this.luyenTap1.Name = "luyenTap1";
             this.luyenTap1.Size = new System.Drawing.Size(919, 543);
             this.luyenTap1.TabIndex = 10;

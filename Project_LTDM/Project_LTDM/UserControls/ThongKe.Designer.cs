@@ -82,7 +82,7 @@
             this.btnRemake.TabIndex = 6;
             this.btnRemake.Text = "Remake Exercise";
             this.btnRemake.UseVisualStyleBackColor = true;
-            this.btnRemake.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.btnRemake.Click += new System.EventHandler(this.btnRemake_Click);
             // 
             // lsv_tk
             // 
@@ -133,12 +133,12 @@
             // 
             // clPosition
             // 
-            this.clPosition.Text = "position";
+            this.clPosition.Text = "position key";
             // 
             // clFileName
             // 
             this.clFileName.Text = "FileName";
-            this.clFileName.Width = 160;
+            this.clFileName.Width = 0;
             // 
             // clProcess
             // 

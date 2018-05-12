@@ -3,7 +3,7 @@
     <Title>Astronauts</Title>
     <Time>1800</Time>
     <FileName>astronauts.txt</FileName>
-    <Timeleft>0</Timeleft>
+    <Timeleft>1800</Timeleft>
     <Star>0</Star>
     <Position>0</Position>
   </Exercise>
@@ -11,15 +11,15 @@
     <Title>Observations of the "Father of Computing" (1791-1871)"</Title>
     <Time>1800</Time>
     <FileName>babbage.txt</FileName>
-    <Timeleft>0</Timeleft>
-    <Star>1</Star>
-    <Position>1</Position>
+    <Timeleft>1800</Timeleft>
+    <Star>0</Star>
+    <Position>0</Position>
   </Exercise>
   <Exercise>
     <Title>Rules of Baseball (from 1889)</Title>
     <Time>1800</Time>
     <FileName>baseball.txt</FileName>
-    <Timeleft>0</Timeleft>
+    <Timeleft>1800</Timeleft>
     <Star>0</Star>
     <Position>0</Position>
   </Exercise>
@@ -27,7 +27,7 @@
     <Title>What is a cast?</Title>
     <Time>1800</Time>
     <FileName>cast.txt</FileName>
-    <Timeleft>0</Timeleft>
+    <Timeleft>1800</Timeleft>
     <Star>0</Star>
     <Position>0</Position>
   </Exercise>
@@ -35,7 +35,7 @@
     <Title>Behind the scene: Movie credits</Title>
     <Time>1800</Time>
     <FileName>credits.txt</FileName>
-    <Timeleft>0</Timeleft>
+    <Timeleft>1800</Timeleft>
     <Star>0</Star>
     <Position>0</Position>
   </Exercise>
@@ -43,7 +43,7 @@
     <Title>DNA Research -- the Human Genome Project</Title>
     <Time>1800</Time>
     <FileName>dna.txt</FileName>
-    <Timeleft>0</Timeleft>
+    <Timeleft>1800</Timeleft>
     <Star>0</Star>
     <Position>0</Position>
   </Exercise>
@@ -51,15 +51,15 @@
     <Title>Aeshop's fables</Title>
     <Time>1800</Time>
     <FileName>fables.txt</FileName>
-    <Timeleft>1720</Timeleft>
+    <Timeleft>1786</Timeleft>
     <Star>0</Star>
-    <Position>100</Position>
+    <Position>13</Position>
   </Exercise>
   <Exercise>
     <Title>sadsa</Title>
     <Time>12</Time>
     <FileName>799c043d-1f96-4ffb-8931-d57bff5477a1.txt</FileName>
-    <Timeleft>0</Timeleft>
+    <Timeleft>12</Timeleft>
     <Star>0</Star>
     <Position>0</Position>
   </Exercise>
@@ -67,7 +67,7 @@
     <Title>b1</Title>
     <Time>10</Time>
     <FileName>6f40a756-5e82-48dc-945d-0d9dc3dbc4d3.txt</FileName>
-    <Timeleft>0</Timeleft>
+    <Timeleft>10</Timeleft>
     <Star>0</Star>
     <Position>0</Position>
   </Exercise>
@@ -83,7 +83,7 @@
     <Title>test</Title>
     <Time>50</Time>
     <FileName>50809844-6181-4625-9838-27848c86543f.txt</FileName>
-    <Timeleft>0</Timeleft>
+    <Timeleft>50</Timeleft>
     <Star>0</Star>
     <Position>0</Position>
   </Exercise>
