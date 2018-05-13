@@ -60,6 +60,7 @@ namespace Project_LTDM
         private void button3_Click(object sender, EventArgs e)
         {
             thongKe1.BringToFront();
+            thongKe1.InitData();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -23,9 +23,10 @@ namespace Project_LTDM.UserControls
         {
             InitData();
         }
-        void InitData()
+        public void InitData()
         {
             lsv_tk.Items.Clear();
+            Global.Global.ExerciseList = BUS_Exercise.FindAllExercise();
             List<DTO_Exercise> exerciseList = Global.Global.ExerciseList;
             for (int i = 0; i < exerciseList.Count; i++)
             {
@@ -52,11 +53,6 @@ namespace Project_LTDM.UserControls
             }
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            Global.Global.ExerciseList = BUS_Exercise.FindAllExercise();
-            InitData();
-        }
 
         private void btnContinue_Click(object sender, EventArgs e)
         {
@@ -70,6 +66,7 @@ namespace Project_LTDM.UserControls
                 Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
                 Frm_Typing exercise = new Frm_Typing(exerciseTexts);
                 exercise.ShowDialog(form);
+                InitData();
             }
         }
 
@@ -89,6 +86,7 @@ namespace Project_LTDM.UserControls
                     Frm_Typing exercise = new Frm_Typing(exerciseTexts);
                     Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
                     exercise.ShowDialog(form);
+                    InitData();
                 }
 
             }

@@ -3,9 +3,9 @@
     <Title>Astronauts</Title>
     <Time>1800</Time>
     <FileName>astronauts.txt</FileName>
-    <Timeleft>1800</Timeleft>
+    <Timeleft>1797</Timeleft>
     <Star>0</Star>
-    <Position>0</Position>
+    <Position>3</Position>
   </Exercise>
   <Exercise>
     <Title>Observations of the "Father of Computing" (1791-1871)"</Title>
@@ -59,9 +59,9 @@
     <Title>sadsa</Title>
     <Time>12</Time>
     <FileName>799c043d-1f96-4ffb-8931-d57bff5477a1.txt</FileName>
-    <Timeleft>12</Timeleft>
-    <Star>0</Star>
-    <Position>0</Position>
+    <Timeleft>1</Timeleft>
+    <Star>1</Star>
+    <Position>20</Position>
   </Exercise>
   <Exercise>
     <Title>b1</Title>

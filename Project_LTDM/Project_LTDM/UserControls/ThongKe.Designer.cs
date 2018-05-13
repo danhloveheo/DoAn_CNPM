@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.btnContinue = new System.Windows.Forms.Button();
             this.btnRemake = new System.Windows.Forms.Button();
             this.lsv_tk = new System.Windows.Forms.ListView();
@@ -53,16 +52,6 @@
             this.label1.Size = new System.Drawing.Size(183, 39);
             this.label1.TabIndex = 2;
             this.label1.Text = "  Statistics";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(22, 76);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 6;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnContinue
             // 
@@ -151,7 +140,6 @@
             this.Controls.Add(this.lsv_tk);
             this.Controls.Add(this.btnRemake);
             this.Controls.Add(this.btnContinue);
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.label1);
             this.Name = "ThongKe";
             this.Size = new System.Drawing.Size(924, 543);
@@ -164,7 +152,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.Button btnRemake;
         private System.Windows.Forms.ListView lsv_tk;
