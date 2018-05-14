@@ -684,35 +684,12 @@ namespace Project_LTDM
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            if(BUS.BUS_Typing.SaveDataPause(objectmodel, timeLeft, PositionKey, 0)==true)
-            {
-                MessageBox.Show("Save successful");
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Save Fail");
-            }
-            label1.Focus();
+          
         }
 
         private void btnPause_Continue_Click(object sender, EventArgs e)
         {
-            if(pause==false)//pause
-            {
-                pause = true;
-                btnPause_Continue.Text = "Continue";
-                timer1.Stop();
-                pn_Keys.Enabled = false;
-            }
-            else
-            {
-                pause = false;
-                btnPause_Continue.Text = "Pause";
-                timer1.Start();
-                pn_Keys.Enabled = true;
-            }
-            label1.Focus();
+          
         }
 
         //Xoá Focus để nhận phím Enter
@@ -739,6 +716,39 @@ namespace Project_LTDM
         {
             // Change the value of the ProgressBar to the BackgroundWorker progress.
             progressBar1.Value = e.ProgressPercentage;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (pause == false)//pause
+            {
+                pause = true;
+                btnPause_Continue.Text = "Continue";
+                timer1.Stop();
+                pn_Keys.Enabled = false;
+            }
+            else
+            {
+                pause = false;
+                btnPause_Continue.Text = "Pause";
+                timer1.Start();
+                pn_Keys.Enabled = true;
+            }
+            label1.Focus();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (BUS.BUS_Typing.SaveDataPause(objectmodel, timeLeft, PositionKey, 0) == true)
+            {
+                MessageBox.Show("Save successful");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Save Fail");
+            }
+            label1.Focus();
         }
     }
 }

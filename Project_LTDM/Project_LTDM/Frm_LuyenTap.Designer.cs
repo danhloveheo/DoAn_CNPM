@@ -113,6 +113,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbStatus = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.btnPause_Continue = new System.Windows.Forms.Button();
             this.pn_RH.SuspendLayout();
             this.pn_LH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1123,16 +1124,33 @@
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(198, 347);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(252, 33);
             this.progressBar1.TabIndex = 125;
+            // 
+            // btnPause_Continue
+            // 
+            this.btnPause_Continue.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPause_Continue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPause_Continue.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPause_Continue.ForeColor = System.Drawing.Color.Black;
+            this.btnPause_Continue.Image = ((System.Drawing.Image)(resources.GetObject("btnPause_Continue.Image")));
+            this.btnPause_Continue.Location = new System.Drawing.Point(676, 333);
+            this.btnPause_Continue.Name = "btnPause_Continue";
+            this.btnPause_Continue.Size = new System.Drawing.Size(141, 45);
+            this.btnPause_Continue.TabIndex = 128;
+            this.btnPause_Continue.Text = "     Pause";
+            this.btnPause_Continue.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPause_Continue.UseVisualStyleBackColor = false;
+            this.btnPause_Continue.Click += new System.EventHandler(this.btnPause_Continue_Click);
             // 
             // Frm_LuyenTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1107, 609);
+            this.Controls.Add(this.btnPause_Continue);
             this.Controls.Add(this.lbStatus);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.lbTimer);
@@ -1246,5 +1264,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbStatus;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button btnPause_Continue;
     }
 }

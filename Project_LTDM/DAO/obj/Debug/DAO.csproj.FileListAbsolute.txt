@@ -139,3 +139,10 @@ C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojR
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
 C:\Users\labyr\Documents\GitHub\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 11\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 11\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DAO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 11\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 11\DoAn_CNPM\Project_LTDM\DAO\bin\Debug\DTO.pdb
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 11\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 11\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.dll
+E:\BaiTap\KHTN\test giao dien\DoAn_CNPM 11\DoAn_CNPM\Project_LTDM\DAO\obj\Debug\DAO.pdb

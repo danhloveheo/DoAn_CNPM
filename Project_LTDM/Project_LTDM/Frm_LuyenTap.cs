@@ -20,7 +20,7 @@ namespace Project_LTDM
         Button btn_oldHighLight = new Button();
         Button btn_oldHighLight1 = new Button();
         Panel label_oldDefault = new Panel();
-
+        bool pause = false;
         //Dùng cho ProgressBar
         int numSentence = 0; //Số câu trong đoạn văn.
 
@@ -648,6 +648,27 @@ namespace Project_LTDM
         {
             progressBar1.Increment(1);
             lbStatus.Text = "Progress: " + progressBar1.Value + "/" + numSentence + " sentence.";
+        }
+
+        private void btnPause_Continue_Click(object sender, EventArgs e)
+        {
+            if (pause == false)//pause
+            {
+                pause = true;
+                btnPause_Continue.Image = Image.FromFile("continue.png");
+                btnPause_Continue.Text = "Continue";
+                timer1.Stop();
+                pn_Keys.Enabled = false;
+            }
+            else
+            {
+                pause = false;
+                btnPause_Continue.Image = Image.FromFile("pause.png");
+                btnPause_Continue.Text = "     Pause";
+                timer1.Start();
+                pn_Keys.Enabled = true;
+            }
+            label1.Focus();
         }
     }
 }
