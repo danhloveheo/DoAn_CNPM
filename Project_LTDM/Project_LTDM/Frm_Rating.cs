@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 
 namespace Project_LTDM
 {
@@ -16,11 +17,17 @@ namespace Project_LTDM
         {
             InitializeComponent();
         }
+
         int z;
         int i = 1;
+        bool canSave;
+        DTO_Exercise ex;
+
         public Frm_Rating(int numStar)
         {
             InitializeComponent();
+            btnRemake.Hide();
+            canSave = false;
             z = numStar;
             switch (numStar)
             {
@@ -51,9 +58,18 @@ namespace Project_LTDM
          
         }
 
-        private void btnOK_Click(object sender, EventArgs e)
+        int timeLeft;
+        int PositionKey;
+        int numStar;
+
+        public Frm_Rating (int numStar, DTO_Exercise ex, int timeLeft, int PositionKey) : this (numStar)
         {
-            this.Close();
+            btnRemake.Show();
+            canSave = true;
+            this.ex = ex;
+            this.numStar = numStar;
+            this.timeLeft = timeLeft;
+            this.PositionKey = PositionKey;
         }
        
         private void timer1_Tick(object sender, EventArgs e)
@@ -68,7 +84,37 @@ namespace Project_LTDM
 
         private void btnChangeCourse_Click(object sender, EventArgs e)
         {
+            if (canSave == true)
+            {
+                if (BUS.BUS_Typing.SaveDataPause(ex, timeLeft, PositionKey, numStar) == true)
+                {
+                    MessageBox.Show("Save successful");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Save Fail");
+                }
+            }
+            
             this.Close();
+        }
+
+        private void btnRemake_Click(object sender, EventArgs e)
+        {
+            ex.Position = 0;
+            ex.Star = 0;
+            ex.Timeleft = ex.Time;
+
+            if (BUS.BUS_Typing.SaveDataPause(ex, ex.Time, 0, 0) == true)
+            {
+                MessageBox.Show("Remake successful");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Remake Fail");
+            }
         }
     }
 }

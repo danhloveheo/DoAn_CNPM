@@ -42,7 +42,7 @@ namespace Project_LTDM
 
             lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 exerciseText.Add(RandomStringFollowList(listKeys));
             }
@@ -669,6 +669,11 @@ namespace Project_LTDM
                 pn_Keys.Enabled = true;
             }
             label1.Focus();
+        }
+
+        private void Frm_LuyenTap_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer1.Stop();
         }
     }
 }

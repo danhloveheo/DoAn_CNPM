@@ -42,7 +42,7 @@ namespace BUS
             {
                 Label lbLessonCnt = new Label();
                 lbLessonCnt.Text = repetition + ". ";
-                lbLessonCnt.Location = new Point(20, (repetition * 40) - 15);
+                lbLessonCnt.Location = new Point(20, (repetition * 35) - 20);
                 lbLessonCnt.AutoSize = true;
                 lbLessonCnt.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
@@ -57,7 +57,7 @@ namespace BUS
 
                 //Gán biến chứa tag vào thuộc tính Tag
                 lbLesson.Tag = lessonTag;
-                lbLesson.Location = new Point(50, (repetition * 40) - 15);
+                lbLesson.Location = new Point(60, (repetition * 35) - 20);
                 lbLesson.AutoSize = true;
                 lbLesson.Cursor = System.Windows.Forms.Cursors.Hand;
                 lbLesson.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,8 +109,8 @@ namespace BUS
             foreach (DTO_LessonSection section in sections)
             {
                 Label lbSectionCnt = new Label();
-                lbSectionCnt.Text = tag.courseId + ". " + repetition;
-                lbSectionCnt.Location = new Point(40, (repetition - 1) * 60 + 10);
+                lbSectionCnt.Text = tag.lessonNumber + ". " + repetition;
+                lbSectionCnt.Location = new Point(20, (repetition - 1) * 60 + 10);
                 lbSectionCnt.AutoSize = true;
                 lbSectionCnt.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold);
                 lbSectionCnt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);

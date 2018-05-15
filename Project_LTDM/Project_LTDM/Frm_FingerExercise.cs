@@ -667,5 +667,10 @@ namespace Project_LTDM
             }
             label1.Focus();
         }
+
+        private void Frm_FingerExercise_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer1.Stop();
+        }
     }
 }

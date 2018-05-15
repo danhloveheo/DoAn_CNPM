@@ -39,7 +39,7 @@ namespace Project_LTDM.UserControls
                 ls.SubItems.Add(exerciseList[i].Star.ToString());
                 ls.SubItems.Add(exerciseList[i].Position.ToString());
                 ls.SubItems.Add(exerciseList[i].FileName);
-                if (exerciseList[i].Timeleft == exerciseList[i].Time)// chua lam
+                if (exerciseList[i].Timeleft == exerciseList[i].Time && exerciseList[i].Star == 0)// chua lam
                 {
                     ls.SubItems.Add("New");
                     ls.SubItems[8].ForeColor = Color.Red;
@@ -135,7 +135,7 @@ namespace Project_LTDM.UserControls
             if (exerciseTexts != null)
             {
                 Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
-                Frm_Typing exercise = new Frm_Typing(exerciseTexts);
+                Frm_Typing exercise = new Frm_Typing(exerciseTexts, true);
                 exercise.ShowDialog(form);
                 InitData();
             }

@@ -34,7 +34,7 @@ namespace Project_LTDM.UserControls
             int time = 0;
             //Frm_Typing exercise = new Frm_Typing(BUS_Exercise.FindContent(lbxExerciseList.SelectedItem, ref time), time);
             DTO_Exercise ob = lbxExerciseList.SelectedItem as DTO_Exercise;
-            Frm_Typing exercise = new Frm_Typing(lbxExerciseList.SelectedItem as DTO_Exercise);
+            Frm_Typing exercise = new Frm_Typing(lbxExerciseList.SelectedItem as DTO_Exercise, true);
             exercise.ShowDialog(form);
         }
 

@@ -37,7 +37,9 @@ namespace Project_LTDM
         string NameFile;
         string Title;
         List<string> exerciseText = new List<string>();
-        
+
+        //Dùng xác định có thể remake hay không;
+        bool canRemake = false;
 
         public Frm_Typing()
         {
@@ -80,6 +82,7 @@ namespace Project_LTDM
             time = objectmodel.Timeleft;
             Title = objectmodel.Title;
             NameFile = objectmodel.FileName;
+            PositionKey = objectmodel.Position;
             //exerciseText = objectmodel.ExerciseText;
             //BUS.BUS_Typing.FindContent(ob, ref time, ref Title, ref NameFile,ref exerciseText);
             this.type = objectmodel.ExerciseType;
@@ -118,34 +121,31 @@ namespace Project_LTDM
                 lbTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"hh\:mm\:ss");
             }
             RTB_String.Lines = exerciseText.ToArray();
-            PositionKey = ob.Position;
 
             //Đếm số câu trong bài, dùng cho ProgressBar
-            if (objectmodel.IsLesson == false)
+            for (int i = 0; i < RTB_String.Text.Length; i++)
             {
-                for (int i = 0; i < RTB_String.Text.Length; i++)
+                if (RTB_String.Text[i] == '.' || RTB_String.Text[i] == '?' || RTB_String.Text[i] == '↵')
                 {
-                    if (RTB_String.Text[i] == '.')
-                    {
-                        numSentence++;
-                        if (i < PositionKey)
-                        {
-                            curSentence++;
-                        }
-                    }
+                    numSentence++;
                 }
-            }
-            else
-            {
-                for (int i = 0; i < RTB_String.Text.Length; i++)
+
+                if (i > 0 && RTB_String.Text[i] == '↵' && (RTB_String.Text[i - 1] == '.' || RTB_String.Text[i - 1] == '?'))
                 {
-                    if (RTB_String.Text[i] == '↵')
-                    {
-                        numSentence++;
-                    }
+                    numSentence--;
+                }
+
+                if (i < PositionKey)
+                {
+                    curSentence = numSentence;
                 }
             }
 
+            if (ob.Star > 0) //Đã hoàn thành
+            {
+                finished = true;
+                curSentence = numSentence;
+            }
 
             //Cập nhật ProgressBar
             progressBar1.Maximum = numSentence;
@@ -162,13 +162,18 @@ namespace Project_LTDM
             LoadKeyPressed();
             ScrollText();
         }
-        
+
+        public Frm_Typing(DTO_Exercise ob, bool canRemake) : this(ob)
+        {
+            this.canRemake = canRemake;
+        }
+
         private void Frm_Typing_Load(object sender, EventArgs e)
         {
             // Start the BackgroundWorker.
             backgroundWorker1.RunWorkerAsync();
 
-            finished = false;
+            //finished = false;
             aTimer.Tick += ATimer_Tick;
             aTimer.Interval = 3000;
             // danh cho check van ban
@@ -177,7 +182,17 @@ namespace Project_LTDM
             //richTextBox1.Select(1, 3);
             //richTextBox1.SelectionColor = Color.Red;
             //RandomString();
+
+            if (finished == true && PositionKey != 0)
+            {
+                PositionKey--;
+            }
+
             int iAscii = RTB_String.Text[PositionKey];
+            RTB_String.Select(0, PositionKey);
+            RTB_String.SelectionColor = Color.Green;
+            RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 14.5F, System.Drawing.FontStyle.Underline);
+
             BUS_Typing.StopFocus(this);
             Control ctn = FindControlByTag(pn_Keys, iAscii); //.Controls[name];
             if (ctn != null)
@@ -188,6 +203,24 @@ namespace Project_LTDM
             if (PositionKey < RTB_String.Text.Length)
                 SetFingerVisible(RTB_String.Text[PositionKey].ToString().ToLower());
             this.KeyPreview = true;
+
+            if (finished == true)
+            {
+                Frm_Rating rating;
+
+                if (canRemake == true)
+                {
+                    rating = new Frm_Rating(objectmodel.Star, objectmodel, timeLeft, PositionKey);
+                }
+                else
+                {
+                    rating = new Frm_Rating(objectmodel.Star);
+                }
+
+                this.Show();
+                rating.ShowDialog(this);
+                this.Close();
+            }
         }
         private void Button_False(Button btn)
         {
@@ -509,7 +542,12 @@ namespace Project_LTDM
                         RTB_String.Select(PositionKey, 1);
                         RTB_String.SelectionColor = Color.Green;
 
-                        if ((objectmodel.IsLesson == true &&  keyText == '↵') || (objectmodel.IsLesson == false && keyText == '.')) //Nếu cuối câu.
+                        if ((keyText == '.' || keyText == '?') && RTB_String.Text[PositionKey + 1] != '↵')
+                        {
+                            ChangeInfo();
+                        }
+
+                        if (keyText == '↵')
                         {
                             ChangeInfo();
                         }
@@ -666,10 +704,20 @@ namespace Project_LTDM
             SoundPlayer spwinner = new SoundPlayer(@"sound\winner.wav");
             spwinner.Play();
 
-            Frm_Rating rating = new Frm_Rating(star);
+            Frm_Rating rating;
+
+            if (canRemake == true)
+            {
+                rating = new Frm_Rating(star, objectmodel, timeLeft, PositionKey);
+            }
+            else
+            {
+                rating = new Frm_Rating(star);
+            }
+
             rating.ShowDialog(this);
 
-            if (BUS.BUS_Typing.SaveDataPause(objectmodel, timeLeft, PositionKey, star) == true)
+            /*if (BUS.BUS_Typing.SaveDataPause(objectmodel, timeLeft, PositionKey, star) == true)
             {
                 MessageBox.Show("Save successful");
                 this.Close();
@@ -677,7 +725,7 @@ namespace Project_LTDM
             else
             {
                 MessageBox.Show("Save Fail");
-            }
+            }*/ 
 
             this.Close();
         }
@@ -749,6 +797,11 @@ namespace Project_LTDM
                 MessageBox.Show("Save Fail");
             }
             label1.Focus();
+        }
+
+        private void Frm_Typing_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer1.Stop();
         }
     }
 }

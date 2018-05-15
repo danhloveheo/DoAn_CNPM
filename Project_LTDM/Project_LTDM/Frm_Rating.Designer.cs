@@ -39,6 +39,7 @@
             this.pcbStar1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnChangeCourse = new System.Windows.Forms.Button();
+            this.btnRemake = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbStar5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbStar4)).BeginInit();
@@ -147,11 +148,29 @@
             this.btnChangeCourse.UseVisualStyleBackColor = false;
             this.btnChangeCourse.Click += new System.EventHandler(this.btnChangeCourse_Click);
             // 
+            // btnRemake
+            // 
+            this.btnRemake.BackColor = System.Drawing.SystemColors.Control;
+            this.btnRemake.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemake.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.btnRemake.ForeColor = System.Drawing.Color.Black;
+            this.btnRemake.Image = ((System.Drawing.Image)(resources.GetObject("btnRemake.Image")));
+            this.btnRemake.Location = new System.Drawing.Point(471, 199);
+            this.btnRemake.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRemake.Name = "btnRemake";
+            this.btnRemake.Size = new System.Drawing.Size(167, 55);
+            this.btnRemake.TabIndex = 114;
+            this.btnRemake.Text = "Remake";
+            this.btnRemake.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRemake.UseVisualStyleBackColor = false;
+            this.btnRemake.Click += new System.EventHandler(this.btnRemake_Click);
+            // 
             // Frm_Rating
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 266);
+            this.Controls.Add(this.btnRemake);
             this.Controls.Add(this.btnChangeCourse);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbComment);
@@ -181,5 +200,6 @@
         private System.Windows.Forms.PictureBox pcbStar1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnChangeCourse;
+        private System.Windows.Forms.Button btnRemake;
     }
 }

@@ -51,16 +51,16 @@
     <Title>Aeshop's fables</Title>
     <Time>1800</Time>
     <FileName>fables.txt</FileName>
-    <Timeleft>1786</Timeleft>
+    <Timeleft>1777</Timeleft>
     <Star>0</Star>
-    <Position>13</Position>
+    <Position>42</Position>
   </Exercise>
   <Exercise>
     <Title>sadsa</Title>
     <Time>12</Time>
     <FileName>799c043d-1f96-4ffb-8931-d57bff5477a1.txt</FileName>
-    <Timeleft>1</Timeleft>
-    <Star>1</Star>
+    <Timeleft>8</Timeleft>
+    <Star>3</Star>
     <Position>20</Position>
   </Exercise>
   <Exercise>
@@ -77,30 +77,38 @@
     <FileName>82e673d6-0c59-4816-8630-05ab20483be8.txt</FileName>
     <Timeleft>101</Timeleft>
     <Star>5</Star>
-    <Position>5</Position>
+    <Position>3</Position>
   </Exercise>
   <Exercise>
     <Title>test</Title>
     <Time>50</Time>
     <FileName>50809844-6181-4625-9838-27848c86543f.txt</FileName>
-    <Timeleft>50</Timeleft>
-    <Star>0</Star>
-    <Position>0</Position>
+    <Timeleft>40</Timeleft>
+    <Star>4</Star>
+    <Position>11</Position>
   </Exercise>
   <Exercise>
     <Title>test2</Title>
     <Time>20</Time>
     <FileName>e124a36a-820b-4cb3-aa3b-b4e7e87ef51d.txt</FileName>
-    <Timeleft>0</Timeleft>
-    <Star>1</Star>
-    <Position>12</Position>
+    <Timeleft>20</Timeleft>
+    <Star>0</Star>
+    <Position>0</Position>
   </Exercise>
   <Exercise>
     <Title>123</Title>
     <Time>120</Time>
     <FileName>2c67d422-0659-4854-bb7b-f67eb28518e3.txt</FileName>
-    <Timeleft>103</Timeleft>
+    <Timeleft>120</Timeleft>
+    <Star>0</Star>
+    <Position>0</Position>
+  </Exercise>
+  <Exercise>
+    <Title>test4</Title>
+    <Time>1234</Time>
+    <FileName>24d68b25-7441-40d0-8cde-d63ac4cf877a.txt</FileName>
+    <Timeleft>1212</Timeleft>
     <Star>5</Star>
-    <Position>12</Position>
+    <Position>23</Position>
   </Exercise>
 </ExerciseDetails>
