@@ -109,7 +109,7 @@ namespace Project_LTDM.UserControls
                     exerciseTexts.Timeleft = exerciseTexts.Time;
                     exerciseTexts.Star = 0;
                     exerciseTexts.Position = 0;
-                    Frm_Typing exercise = new Frm_Typing(exerciseTexts);
+                    Frm_Typing exercise = new Frm_Typing(exerciseTexts, true);
                     Form form = (Form)(((Control)sender).TopLevelControl); //Tìm form ngoài cùng của sender
                     exercise.ShowDialog(form);
                     InitData();

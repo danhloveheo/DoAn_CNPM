@@ -56,59 +56,11 @@
     <Position>42</Position>
   </Exercise>
   <Exercise>
-    <Title>sadsa</Title>
-    <Time>12</Time>
-    <FileName>799c043d-1f96-4ffb-8931-d57bff5477a1.txt</FileName>
-    <Timeleft>8</Timeleft>
-    <Star>3</Star>
-    <Position>20</Position>
-  </Exercise>
-  <Exercise>
-    <Title>b1</Title>
-    <Time>10</Time>
-    <FileName>6f40a756-5e82-48dc-945d-0d9dc3dbc4d3.txt</FileName>
-    <Timeleft>10</Timeleft>
-    <Star>0</Star>
-    <Position>0</Position>
-  </Exercise>
-  <Exercise>
-    <Title>abx</Title>
-    <Time>111</Time>
-    <FileName>82e673d6-0c59-4816-8630-05ab20483be8.txt</FileName>
-    <Timeleft>101</Timeleft>
-    <Star>5</Star>
-    <Position>3</Position>
-  </Exercise>
-  <Exercise>
     <Title>test</Title>
-    <Time>50</Time>
-    <FileName>50809844-6181-4625-9838-27848c86543f.txt</FileName>
-    <Timeleft>40</Timeleft>
-    <Star>4</Star>
-    <Position>11</Position>
-  </Exercise>
-  <Exercise>
-    <Title>test2</Title>
-    <Time>20</Time>
-    <FileName>e124a36a-820b-4cb3-aa3b-b4e7e87ef51d.txt</FileName>
-    <Timeleft>20</Timeleft>
-    <Star>0</Star>
-    <Position>0</Position>
-  </Exercise>
-  <Exercise>
-    <Title>123</Title>
     <Time>120</Time>
-    <FileName>2c67d422-0659-4854-bb7b-f67eb28518e3.txt</FileName>
-    <Timeleft>120</Timeleft>
-    <Star>0</Star>
-    <Position>0</Position>
-  </Exercise>
-  <Exercise>
-    <Title>test4</Title>
-    <Time>1234</Time>
-    <FileName>24d68b25-7441-40d0-8cde-d63ac4cf877a.txt</FileName>
-    <Timeleft>1212</Timeleft>
-    <Star>5</Star>
-    <Position>23</Position>
+    <FileName>90303f68-2fa2-4d9a-b9a0-12e219c7c88d.txt</FileName>
+    <Timeleft>106</Timeleft>
+    <Star>4</Star>
+    <Position>32</Position>
   </Exercise>
 </ExerciseDetails>

@@ -555,13 +555,13 @@ namespace Project_LTDM
                         switch (type)
                         {
                             case "Word":
-                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 36.5F, System.Drawing.FontStyle.Underline);
+                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Underline);
                                 break;
                             case "Sentence":
-                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 28.5F, System.Drawing.FontStyle.Underline);
+                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 27.5F, System.Drawing.FontStyle.Underline);
                                 break;
                             case "Paragraph":
-                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 14.5F, System.Drawing.FontStyle.Underline);
+                                RTB_String.SelectionFont = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Underline);
                                 break;
                         }
 
